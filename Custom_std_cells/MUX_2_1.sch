@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 430 -240 430 -170 {lab=#net1}
 N 280 -360 350 -360 {lab=VINA}
@@ -23,9 +24,9 @@ N 430 -320 430 -240 {lab=#net1}
 N 110 -240 180 -240 {lab=VS}
 N 230 -300 230 -280 {lab=VDD}
 N 230 -200 230 -180 {lab=VSS}
-C {tg_custom.sym} 430 -360 0 0 {name=x1}
-C {tg_custom.sym} 430 -130 0 0 {name=x2}
-C {inv.sym} 140 -100 0 0 {name=x3}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sym} 430 -360 0 0 {name=x1}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sym} 430 -130 0 0 {name=x2}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 140 -100 0 0 {name=x3}
 C {opin.sym} 650 -240 0 0 {name=p2 lab=VOUT}
 C {ipin.sym} 280 -360 0 0 {name=p3 lab=VINA}
 C {ipin.sym} 280 -130 0 0 {name=p1 lab=VINB}

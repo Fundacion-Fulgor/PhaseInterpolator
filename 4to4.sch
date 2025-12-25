@@ -33,26 +33,26 @@ N 180 -160 260 -160 {lab=VINQB}
 N 580 -520 660 -520 {lab=VOUTQ}
 N 580 -340 660 -340 {lab=VOUTIB}
 N 580 -160 660 -160 {lab=VOUTQB}
-C {inv.sym} 220 -560 0 0 {name=x0}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 220 -560 0 0 {name=x0[7:0]}
 C {lab_wire.sym} 310 -640 2 0 {name=p13 sig_type=std_logic lab=VSS}
-C {inv.sym} 220 -380 0 0 {name=x1}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 220 -380 0 0 {name=x1[7:0]}
 C {lab_wire.sym} 310 -580 2 0 {name=p1 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 310 -460 2 0 {name=p2 sig_type=std_logic lab=VSS}
-C {inv.sym} 220 -200 0 0 {name=x2}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 220 -200 0 0 {name=x2[7:0]}
 C {lab_wire.sym} 310 -400 2 0 {name=p3 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 310 -280 2 0 {name=p4 sig_type=std_logic lab=VSS}
-C {inv.sym} 220 -20 0 0 {name=x3}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 220 -20 0 0 {name=x3[7:0]}
 C {lab_wire.sym} 310 -220 2 0 {name=p5 sig_type=std_logic lab=VDD}
-C {inv.sym} 420 -560 0 0 {name=x4}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 420 -560 0 0 {name=x4[15:0]}
 C {lab_wire.sym} 510 -760 2 0 {name=p7 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 510 -640 2 0 {name=p8 sig_type=std_logic lab=VSS}
-C {inv.sym} 420 -380 0 0 {name=x5}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 420 -380 0 0 {name=x5[15:0]}
 C {lab_wire.sym} 510 -580 2 0 {name=p9 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 510 -460 2 0 {name=p10 sig_type=std_logic lab=VSS}
-C {inv.sym} 420 -200 0 0 {name=x6}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 420 -200 0 0 {name=x6[15:0]}
 C {lab_wire.sym} 510 -400 2 0 {name=p11 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 510 -280 2 0 {name=p14 sig_type=std_logic lab=VSS}
-C {inv.sym} 420 -20 0 0 {name=x7}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 420 -20 0 0 {name=x7[15:0]}
 C {lab_wire.sym} 510 -220 2 0 {name=p15 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 510 -100 2 0 {name=p16 sig_type=std_logic lab=VSS}
 C {iopin.sym} 310 -760 2 0 {name=p17 lab=VDD}
