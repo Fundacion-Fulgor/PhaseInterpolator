@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 150 -30 180 -30 {lab=vo_s1t}
 N 180 -230 180 -30 {lab=vo_s1t}
@@ -185,7 +186,6 @@ set output_path = tb_bin2thermo_tran/
 C {lab_pin.sym} 245 -95 1 0 {name=p21 sig_type=std_logic lab=vo_s2t}
 C {lab_pin.sym} 245 65 1 0 {name=p22 sig_type=std_logic lab=vo_s3t}
 C {lab_pin.sym} 220 220 1 0 {name=p23 sig_type=std_logic lab=vo_s4t}
-C {/home/designer/UNIC-CASS-Aug25/BinarytoThermo/Circuit_stdcells.sym} 0 0 0 0 {name=x1}
 C {lab_pin.sym} 0 120 0 0 {name=p8 sig_type=std_logic lab=avss}
 C {lab_pin.sym} 390 -10 2 0 {name=p9 sig_type=std_logic lab=avss}
 C {lab_pin.sym} 400 -160 2 0 {name=p10 sig_type=std_logic lab=avss}
@@ -202,3 +202,4 @@ C {lab_pin.sym} 940 -265 1 0 {name=p24 sig_type=std_logic lab=avdd}
 C {lab_pin.sym} 870 265 2 0 {name=p25 sig_type=std_logic lab=vs4}
 C {vsource.sym} 810 340 0 0 {name=V7 value="PULSE(\{c*1.2\} \{d*1.2\} 250PS 2PS 2PS 500PS)" savecurrent=false}
 C {lab_pin.sym} 810 390 3 0 {name=p32 sig_type=std_logic lab=avss}
+C {Circuit_stdcells.sym} 0 0 0 0 {name=x1}

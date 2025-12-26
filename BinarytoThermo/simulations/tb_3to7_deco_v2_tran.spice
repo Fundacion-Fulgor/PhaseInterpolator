@@ -1,0 +1,255 @@
+** sch_path: /foss/designs/PhaseInterpolator/BinarytoThermo/tb_3to7_deco_v2_tran.sch
+**.subckt tb_3to7_deco_v2_tran
+V7 VS[0] VSS PULSE({c*1.2} {d*1.2} 250PS 2PS 2PS 500PS)
+V1 VS[1] VSS PULSE({c*1.2} {d*1.2} 250PS 2PS 2PS 500PS)
+V2 VS[2] VSS PULSE({c*1.2} {d*1.2} 250PS 2PS 2PS 500PS)
+V3 VSS GND DC{VSS}
+V4 VDD VSS DC{VDD}
+x4[6] VDD net1[6] vo_st[7] VSS inv
+x4[5] VDD net1[5] vo_st[6] VSS inv
+x4[4] VDD net1[4] vo_st[5] VSS inv
+x4[3] VDD net1[3] vo_st[4] VSS inv
+x4[2] VDD net1[2] vo_st[3] VSS inv
+x4[1] VDD net1[1] vo_st[2] VSS inv
+x4[0] VDD net1[0] vo_st[1] VSS inv
+C3[6] net1[6] VSS 1p m=1
+C3[5] net1[5] VSS 1p m=1
+C3[4] net1[4] VSS 1p m=1
+C3[3] net1[3] VSS 1p m=1
+C3[2] net1[2] VSS 1p m=1
+C3[1] net1[1] VSS 1p m=1
+C3[0] net1[0] VSS 1p m=1
+x1 vo_st[7] vo_st[6] vo_st[5] vo_st[4] vo_st[3] vo_st[2] vo_st[1] VS[2] VS[1] VS[0] VDD VSS 3to7_deco_v2
+**** begin user architecture code
+
+
+
+* Circuit Parameters
+.param vdd = 1.2
+.param vss = 0.0
+.param a=0
+.param b=0
+.param c=0
+.param d=1
+.param Tclk = 500P
+.options TEMP = 65.0
+
+* Include Models
+.lib /opt/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.lib /opt/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerMOShv.lib mos_tt
+.lib /opt/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerHBT.lib hbt_typ
+.lib /opt/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ
+
+
+* OP Parameters & Singals to save
+.save all
+
+*Simulations
+.control
+set output_path = tb_bin2thermo_tran/
+	* Desde (s3,s4)=00 a 01
+	tran 0.2PS 750PS
+	setplot tran1
+	plot vs3 vs4 vo_s3t ylabel vout xlabel vin
+	set filetype = ascii
+	write {$output_path}tran00to01.raw V(vo_s3t) V(vs3) V(vs4)
+	* Desde (s3,s4)=00 a 10
+	alterparam d=0
+	alterparam b=1
+	reset
+	tran 0.2PS 750PS
+	setplot tran2
+	plot vs3 vs4 vo_s2t vo_s3t ylabel vout xlabel vin
+	set filetype = ascii
+	write {$output_path}tran00to10.raw V(vo_s2t) V(vo_s3t) V(vs3) V(vs4)
+	* Desde (s3,s4)=00 a 11
+	alterparam d = 1
+	reset
+	tran 0.2PS 750PS
+	setplot tran3
+	plot vs3 vs4 vo_s1t vo_s2t vo_s3t ylabel vout xlabel vin
+	set filetype = ascii
+	write {$output_path}tran00to11.raw V(vo_s1t) V(vo_s2t) V(vo_s3t) V(vs3) V(vs4)
+	* Desde (s3,s4)=01 a 10
+	alterparam c=1
+	alterparam d=0
+	reset
+	tran 0.2PS 750PS
+	setplot tran4
+	plot vs3 vs4 vo_s2t ylabel vout xlabel vin
+	set filetype = ascii
+	write {$output_path}tran01to10.raw V(vo_s2t) V(vs3) V(vs4)
+	* Desde (s3,s4)=01 a 11
+	alterparam a=0
+	alterparam b=1
+	alterparam d=1
+	reset
+	tran 0.2PS 750PS
+	setplot tran5
+	plot vs3 vs4 vo_s1t vo_s2t ylabel vout xlabel vin
+	set filetype = ascii
+	write {$output_path}tran01to11.raw V(vo_s1t) V(vo_s2t) V(vs3) V(vs4)
+	* Desde (s3,s4)=10 a 11
+	alterparam a=1
+	alterparam c=0
+	alterparam d=1
+	reset
+	tran 0.2PS 750PS
+	setplot tran6
+	plot vs3 vs4 vo_s1t ylabel vout xlabel vin ylimit 0 1.2
+	set filetype = ascii
+	write {$output_path}tran10to11.raw V(vo_s1t) V(vs3) V(vs4)
+.endc
+.end
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sch
+.subckt inv VDD VOUT VIN VSS
+*.iopin VDD
+*.iopin VSS
+*.opin VOUT
+*.ipin VIN
+XM2 VOUT VIN VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=2
+XM1 VOUT VIN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  3to7_deco_v2.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/BinarytoThermo/3to7_deco_v2.sym
+** sch_path: /foss/designs/PhaseInterpolator/BinarytoThermo/3to7_deco_v2.sch
+.subckt 3to7_deco_v2 ST[7] ST[6] ST[5] ST[4] ST[3] ST[2] ST[1] S[2] S[1] S[0] VDD VSS
+*.opin ST[7],ST[6],ST[5],ST[4],ST[3],ST[2],ST[1]
+*.ipin S[2],S[1],S[0]
+*.iopin VDD
+*.iopin VSS
+x1 VDD S[0] net4 VSS not_custom
+x2 VDD S[1] net2 VSS not_custom
+x3 VDD S[2] net1 VSS not_custom
+x4 VDD net1 net2 net4 ST[1] VSS nor_x3_custom
+x5 VDD net2 ST[2] net4 VSS nor_custom
+x6 VDD net6 ST[3] net4 VSS nor_custom
+x7 VDD net3 ST[4] VSS not_custom
+x8 VDD ST[5] net5 net4 VSS nand_custom
+x9 VDD ST[6] net2 net4 VSS nand_custom
+x11 VDD net6 net2 net1 VSS and_custom
+x12 VDD net1 net5 net2 VSS or_custom
+x10 VDD ST[7] net1 net2 net4 VSS nand_x3_custom
+.ends
+
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/not_custom.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/not_custom.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/not_custom.sch
+.subckt not_custom VDD A OUT VSS
+*.iopin VDD
+*.iopin VSS
+*.ipin A
+*.opin OUT
+XM4 OUT A VDD VDD sg13_lv_pmos w=0.45u l=0.13u ng=1 m=1
+XM1 OUT A VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/nor_x3_custom.sym # of pins=6
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/nor_x3_custom.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/nor_x3_custom.sch
+.subckt nor_x3_custom VDD A B C OUT VSS
+*.iopin VDD
+*.iopin VSS
+*.ipin B
+*.ipin C
+*.opin OUT
+*.ipin A
+XM1 OUT A VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+XM2 OUT C net1 VDD sg13_lv_pmos w=0.45u l=0.13u ng=1 m=1
+XM3 OUT B VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+XM4 net1 B net2 VDD sg13_lv_pmos w=0.45u l=0.13u ng=1 m=1
+XM5 net2 A VDD VDD sg13_lv_pmos w=0.45u l=0.13u ng=1 m=1
+XM6 OUT C VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/nor_custom.sym # of pins=5
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/nor_custom.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/nor_custom.sch
+.subckt nor_custom VDD A OUT B VSS
+*.iopin VDD
+*.iopin VSS
+*.ipin A
+*.ipin B
+*.opin OUT
+XM1 OUT B VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+XM2 OUT B net1 VDD sg13_lv_pmos w=0.45u l=0.13u ng=1 m=1
+XM3 OUT A VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+XM4 net1 A VDD VDD sg13_lv_pmos w=0.45u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/nand_custom.sym # of pins=5
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/nand_custom.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/nand_custom.sch
+.subckt nand_custom VDD OUT A B VSS
+*.iopin VDD
+*.iopin VSS
+*.ipin A
+*.ipin B
+*.opin OUT
+XM1 OUT A net1 VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+XM2 OUT A VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+XM3 net1 B VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+XM4 OUT B VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/and_custom.sym # of pins=5
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/and_custom.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/and_custom.sch
+.subckt and_custom VDD OUT A B VSS
+*.ipin A
+*.iopin VDD
+*.opin OUT
+*.iopin VSS
+*.ipin B
+x1 VDD OUT net1 VSS inv
+x2 VDD net1 A B VSS nand_custom
+.ends
+
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/or_custom.sym # of pins=5
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/or_custom.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/or_custom.sch
+.subckt or_custom VDD A OUT B VSS
+*.iopin VDD
+*.iopin VSS
+*.opin OUT
+*.ipin A
+*.ipin B
+x1 VDD A net1 B VSS nor_custom
+x2 VDD OUT net1 VSS inv
+.ends
+
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/nand_x3_custom.sym # of pins=6
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/nand_x3_custom.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/nand_x3_custom.sch
+.subckt nand_x3_custom VDD OUT A B C VSS
+*.ipin A
+*.ipin B
+*.ipin C
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+XM2 OUT A VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+XM1 OUT B VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+XM3 OUT C VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+XM4 OUT A net1 VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+XM5 net1 B net2 VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+XM6 net2 C VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+.ends
+
+.GLOBAL GND
+.end

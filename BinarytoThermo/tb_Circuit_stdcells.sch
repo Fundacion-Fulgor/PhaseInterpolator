@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 150 -30 180 -30 {lab=vo_s1t}
 N 180 -230 180 -30 {lab=vo_s1t}
@@ -169,7 +170,6 @@ value="
 C {lab_pin.sym} 245 -95 1 0 {name=p21 sig_type=std_logic lab=vo_s2t}
 C {lab_pin.sym} 245 65 1 0 {name=p22 sig_type=std_logic lab=vo_s3t}
 C {lab_pin.sym} 220 220 1 0 {name=p23 sig_type=std_logic lab=vo_s4t}
-C {/home/designer/UNIC-CASS-Aug25/BinarytoThermo/Circuit_stdcells.sym} 0 0 0 0 {name=x1}
 C {lab_pin.sym} 0 120 0 0 {name=p8 sig_type=std_logic lab=avss}
 C {lab_pin.sym} 390 -10 2 0 {name=p9 sig_type=std_logic lab=avss}
 C {lab_pin.sym} 400 -160 2 0 {name=p10 sig_type=std_logic lab=avss}
@@ -184,3 +184,4 @@ C {inv.sym} 360 80 0 0 {name=x4}
 C {inv.sym} 360 230 0 0 {name=x5}
 C {lab_pin.sym} 940 -265 1 0 {name=p24 sig_type=std_logic lab=avdd}
 C {bsource.sym} 980 130 0 0 {name=B1 VAR=I FUNC="'pwl(V(plus,minus),0,0, 1,10m, 2, 100m)'" m=1}
+C {Circuit_stdcells.sym} 0 0 0 0 {name=x1}
