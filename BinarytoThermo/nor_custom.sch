@@ -5,46 +5,37 @@ V {}
 S {}
 F {}
 E {}
-N -70 10 -70 30 {lab=out}
-N 90 10 90 30 {lab=out}
-N 0 10 90 10 {lab=out}
-N 0 -170 0 -160 {lab=vdd}
-N -0 -100 -0 -70 {lab=#net1}
-N 0 -10 0 10 {lab=out}
-N -70 10 0 10 {lab=out}
-N -0 -130 30 -130 {lab=vdd}
-N 30 -170 30 -130 {lab=vdd}
-N 0 -170 30 -170 {lab=vdd}
-N 0 -180 0 -170 {lab=vdd}
-N -0 -40 30 -40 {lab=vdd}
-N 30 -130 30 -40 {lab=vdd}
-N -70 90 -70 120 {lab=vss}
-N -0 120 90 120 {lab=vss}
-N 90 110 90 120 {lab=vss}
-N -0 120 -0 140 {lab=vss}
-N -50 120 -0 120 {lab=vss}
-N -70 60 -50 60 {lab=vss}
-N -50 60 -50 120 {lab=vss}
-N -70 120 -50 120 {lab=vss}
-N 90 60 120 60 {lab=vss}
-N 120 60 120 110 {lab=vss}
-N 90 110 120 110 {lab=vss}
-N 90 90 90 110 {lab=vss}
-N -190 -70 -140 -70 {lab=A}
-N -140 -130 -140 -70 {lab=A}
-N -140 -130 -40 -130 {lab=A}
-N -140 -70 -140 -20 {lab=A}
-N -140 -20 -40 -20 {lab=A}
-N -40 -20 -40 20 {lab=A}
-N -40 20 30 20 {lab=A}
-N 30 20 30 60 {lab=A}
-N 30 60 50 60 {lab=A}
-N -190 40 -110 40 {lab=B}
-N -110 -40 -110 40 {lab=B}
-N -110 -40 -40 -40 {lab=B}
-N -110 40 -110 60 {lab=B}
-N 90 10 150 10 {lab=out}
-C {sg13g2_pr/sg13_lv_nmos.sym} -90 60 0 0 {name=M1
+N 200 -190 200 -170 {lab=OUT}
+N 360 -190 360 -170 {lab=OUT}
+N 270 -190 360 -190 {lab=OUT}
+N 270 -370 270 -360 {lab=VDD}
+N 270 -300 270 -270 {lab=#net1}
+N 270 -210 270 -190 {lab=OUT}
+N 200 -190 270 -190 {lab=OUT}
+N 270 -330 300 -330 {lab=VDD}
+N 300 -370 300 -330 {lab=VDD}
+N 270 -370 300 -370 {lab=VDD}
+N 270 -380 270 -370 {lab=VDD}
+N 270 -240 300 -240 {lab=VDD}
+N 300 -330 300 -240 {lab=VDD}
+N 200 -110 200 -80 {lab=VSS}
+N 270 -80 360 -80 {lab=VSS}
+N 360 -90 360 -80 {lab=VSS}
+N 270 -80 270 -60 {lab=VSS}
+N 220 -80 270 -80 {lab=VSS}
+N 200 -140 220 -140 {lab=VSS}
+N 220 -140 220 -80 {lab=VSS}
+N 200 -80 220 -80 {lab=VSS}
+N 360 -140 390 -140 {lab=VSS}
+N 390 -140 390 -90 {lab=VSS}
+N 360 -90 390 -90 {lab=VSS}
+N 360 -110 360 -90 {lab=VSS}
+N 130 -330 230 -330 {lab=A}
+N 300 -140 320 -140 {lab=A}
+N 360 -190 420 -190 {lab=OUT}
+N 130 -140 160 -140 {lab=A}
+N 130 -240 230 -240 {lab=B}
+C {sg13g2_pr/sg13_lv_nmos.sym} 180 -140 0 0 {name=M1
 l=0.13u
 w=0.15u
 ng=1
@@ -52,7 +43,7 @@ m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_pmos.sym} -20 -40 0 0 {name=M2
+C {sg13g2_pr/sg13_lv_pmos.sym} 250 -240 0 0 {name=M2
 l=0.13u
 w=0.45u
 ng=1
@@ -60,7 +51,7 @@ m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 70 60 0 0 {name=M3
+C {sg13g2_pr/sg13_lv_nmos.sym} 340 -140 0 0 {name=M3
 l=0.13u
 w=0.15u
 ng=1
@@ -68,7 +59,7 @@ m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_pmos.sym} -20 -130 0 0 {name=M4
+C {sg13g2_pr/sg13_lv_pmos.sym} 250 -330 0 0 {name=M4
 l=0.13u
 w=0.45u
 ng=1
@@ -76,8 +67,10 @@ m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
-C {iopin.sym} 0 -180 3 0 {name=p3 lab=vdd}
-C {iopin.sym} 0 140 1 0 {name=p4 lab=vss}
-C {iopin.sym} -190 -70 2 0 {name=p1 lab=A}
-C {iopin.sym} -190 40 2 0 {name=p2 lab=B}
-C {iopin.sym} 150 10 0 0 {name=p5 lab=out}
+C {iopin.sym} 270 -380 3 0 {name=p3 lab=VDD}
+C {iopin.sym} 270 -60 1 0 {name=p4 lab=VSS}
+C {iopin.sym} 130 -330 2 0 {name=p1 lab=A}
+C {iopin.sym} 130 -240 2 0 {name=p2 lab=B}
+C {iopin.sym} 420 -190 0 0 {name=p5 lab=OUT}
+C {lab_pin.sym} 130 -140 0 0 {name=p6 sig_type=std_logic lab=A}
+C {lab_pin.sym} 300 -140 0 0 {name=p7 sig_type=std_logic lab=B}
