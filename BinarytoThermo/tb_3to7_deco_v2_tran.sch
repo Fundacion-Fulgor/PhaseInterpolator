@@ -143,4 +143,4 @@ C {devices/launcher.sym} 300 -600 0 0 {name=h1
 descr="Simulate" 
 tclcommand="xschem save; xschem netlist; xschem simulate"
 }
-C {3to7_deco_v2.sym} 380 -370 0 0 {name=x1}
+C {/foss/designs/PhaseInterpolator/BinarytoThermo/3to7_deco_v2.sym} 380 -370 0 0 {name=x1}
