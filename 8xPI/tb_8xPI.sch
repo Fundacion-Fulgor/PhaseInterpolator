@@ -90,8 +90,8 @@ color=7
 node=vinQB
 linewidth_mult=5}
 B 2 2620 -1815 4470 -1055 {flags=graph
-y1=-0.011
-y2=1.2
+y1=-0.029
+y2=1.3
 ypos1=0
 ypos2=2
 divy=5
@@ -113,7 +113,8 @@ Vout5I3Q
 Vout4I4Q
 Vout3I5Q
 Vout8Q"
-linewidth_mult=5}
+linewidth_mult=5
+hilight_wave=-1}
 N 120 -500 120 -480 {
 lab=GND}
 N 120 -620 120 -560 {
@@ -146,13 +147,13 @@ lab=vinIB}
 N 130 -110 150 -110 {
 lab=vinQB}
 N 450 -170 480 -170 {
-lab=VoutI}
+lab=VoutI[4:0]}
 N 450 -150 480 -150 {
-lab=VoutQ}
+lab=VoutQ[4:0]}
 N 450 -130 480 -130 {
-lab=VoutIB}
+lab=VoutIB[4:0]}
 N 450 -110 480 -110 {
-lab=VoutQB}
+lab=VoutQB[4:0]}
 N 440 -310 440 -290 {
 lab=GND}
 N 320 -830 320 -790 {lab=VDD}
@@ -166,13 +167,13 @@ N 220 -730 220 -690 {lab=VSS}
 N 320 -730 320 -690 {lab=VSS}
 N 300 -60 300 -20 {lab=VSS}
 N 1010 -780 1040 -780 {
-lab=VoutI}
+lab=VoutI[0]}
 N 1010 -700 1040 -700 {
-lab=VoutQ}
+lab=VoutQ[0]}
 N 1010 -740 1040 -740 {
-lab=VoutIB}
+lab=VoutIB[0]}
 N 1010 -660 1040 -660 {
-lab=VoutQB}
+lab=VoutQB[0]}
 N 1260 -590 1260 -550 {lab=VSS}
 N 1260 -870 1260 -830 {lab=VDD}
 N 1480 -710 1490 -710 {
@@ -180,13 +181,13 @@ lab=Vout8I}
 N 1140 -590 1140 -550 {lab="v0, v0"}
 N 1130 -870 1130 -830 {lab="v0, v0, v0, v0, v0, v0, v0, v0"}
 N 1010 -390 1040 -390 {
-lab=VoutI}
+lab=VoutI[1]}
 N 1010 -310 1040 -310 {
-lab=VoutQ}
+lab=VoutQ[1]}
 N 1010 -350 1040 -350 {
-lab=VoutIB}
+lab=VoutIB[1]}
 N 1010 -270 1040 -270 {
-lab=VoutQB}
+lab=VoutQB[1]}
 N 1260 -200 1260 -160 {lab=VSS}
 N 1260 -480 1260 -440 {lab=VDD}
 N 1480 -320 1490 -320 {
@@ -194,13 +195,13 @@ lab=Vout4I4Q}
 N 1140 -200 1140 -160 {lab="v0, v0"}
 N 1130 -480 1130 -440 {lab="v1, v1, v1, v1, v0, v0, v0, v0"}
 N 1740 -780 1770 -780 {
-lab=VoutI}
+lab=VoutI[2]}
 N 1740 -700 1770 -700 {
-lab=VoutQ}
+lab=VoutQ[2]}
 N 1740 -740 1770 -740 {
-lab=VoutIB}
+lab=VoutIB[2]}
 N 1740 -660 1770 -660 {
-lab=VoutQB}
+lab=VoutQB[2]}
 N 1990 -590 1990 -550 {lab=VSS}
 N 1990 -870 1990 -830 {lab=VDD}
 N 2210 -710 2220 -710 {
@@ -208,13 +209,13 @@ lab=Vout8Q}
 N 1870 -590 1870 -550 {lab="v0, v0"}
 N 1860 -870 1860 -830 {lab="v1, v1, v1, v1, v1, v1, v1, v1"}
 N 1770 -390 1800 -390 {
-lab=VoutI}
+lab=VoutI[3]}
 N 1770 -310 1800 -310 {
-lab=VoutQ}
+lab=VoutQ[3]}
 N 1770 -350 1800 -350 {
-lab=VoutIB}
+lab=VoutIB[3]}
 N 1770 -270 1800 -270 {
-lab=VoutQB}
+lab=VoutQB[3]}
 N 2020 -200 2020 -160 {lab=VSS}
 N 2020 -480 2020 -440 {lab=VDD}
 N 2240 -320 2250 -320 {
@@ -222,13 +223,13 @@ lab=Vout5I3Q}
 N 1900 -200 1900 -160 {lab="v0, v0"}
 N 1890 -480 1890 -440 {lab="v1, v1, v1, v0, v0, v0, v0, v0"}
 N 2500 -370 2530 -370 {
-lab=VoutI}
+lab=VoutI[4]}
 N 2500 -290 2530 -290 {
-lab=VoutQ}
+lab=VoutQ[4]}
 N 2500 -330 2530 -330 {
-lab=VoutIB}
+lab=VoutIB[4]}
 N 2500 -250 2530 -250 {
-lab=VoutQB}
+lab=VoutQB[4]}
 N 2750 -180 2750 -140 {lab=VSS}
 N 2750 -460 2750 -420 {lab=VDD}
 N 2970 -300 2980 -300 {
@@ -266,16 +267,16 @@ C {devices/vsource.sym} 440 -530 0 0 {name=Vin5 value="dc 0 ac 0 pulse(0, 1.2, 2
 C {devices/lab_pin.sym} 420 -620 0 0 {name=p3 sig_type=std_logic lab=vinIB}
 C {devices/vsource.sym} 440 -340 0 0 {name=Vin6 value="dc 0 ac 0 pulse(0, 1.2, 375p, 25p, 25p, 225p, 500p ) "}
 C {devices/lab_pin.sym} 420 -430 0 0 {name=p6 sig_type=std_logic lab=vinQB}
-C {4to4.sym} 300 -140 0 0 {name=x2}
+C {4to4.sym} 300 -140 0 0 {name=x2[4:0]}
 C {devices/lab_pin.sym} 300 -260 0 0 {name=p4 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 130 -170 0 0 {name=p14 sig_type=std_logic lab=vinI}
 C {devices/lab_pin.sym} 130 -150 0 0 {name=p8 sig_type=std_logic lab=vinQ}
 C {devices/lab_pin.sym} 130 -130 0 0 {name=p17 sig_type=std_logic lab=vinIB}
 C {devices/lab_pin.sym} 130 -110 0 0 {name=p18 sig_type=std_logic lab=vinQB}
-C {devices/lab_pin.sym} 480 -170 2 0 {name=p19 sig_type=std_logic lab=VoutI}
-C {devices/lab_pin.sym} 480 -150 2 0 {name=p20 sig_type=std_logic lab=VoutQ}
-C {devices/lab_pin.sym} 480 -130 2 0 {name=p21 sig_type=std_logic lab=VoutIB}
-C {devices/lab_pin.sym} 480 -110 2 0 {name=p22 sig_type=std_logic lab=VoutQB}
+C {devices/lab_pin.sym} 480 -170 2 0 {name=p19 sig_type=std_logic lab=VoutI[4:0]}
+C {devices/lab_pin.sym} 480 -150 2 0 {name=p20 sig_type=std_logic lab=VoutQ[4:0]}
+C {devices/lab_pin.sym} 480 -130 2 0 {name=p21 sig_type=std_logic lab=VoutIB[4:0]}
+C {devices/lab_pin.sym} 480 -110 2 0 {name=p22 sig_type=std_logic lab=VoutQB[4:0]}
 C {devices/gnd.sym} 120 -290 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 440 -290 0 0 {name=l5 lab=GND}
 C {devices/vsource.sym} 320 -760 0 0 {name=Vdd4 value=1.2}
@@ -291,10 +292,10 @@ C {devices/lab_pin.sym} 120 -690 2 0 {name=p7 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 220 -690 2 0 {name=p9 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 320 -690 2 0 {name=p12 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 300 -20 2 0 {name=p13 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1010 -780 0 0 {name=p15 sig_type=std_logic lab=VoutI}
-C {devices/lab_pin.sym} 1010 -700 0 0 {name=p16 sig_type=std_logic lab=VoutQ}
-C {devices/lab_pin.sym} 1010 -740 0 0 {name=p23 sig_type=std_logic lab=VoutIB}
-C {devices/lab_pin.sym} 1010 -660 0 0 {name=p24 sig_type=std_logic lab=VoutQB}
+C {devices/lab_pin.sym} 1010 -780 0 0 {name=p15 sig_type=std_logic lab=VoutI[0]}
+C {devices/lab_pin.sym} 1010 -700 0 0 {name=p16 sig_type=std_logic lab=VoutQ[0]}
+C {devices/lab_pin.sym} 1010 -740 0 0 {name=p23 sig_type=std_logic lab=VoutIB[0]}
+C {devices/lab_pin.sym} 1010 -660 0 0 {name=p24 sig_type=std_logic lab=VoutQB[0]}
 C {devices/lab_pin.sym} 1260 -550 2 0 {name=p25 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1260 -870 0 0 {name=p27 sig_type=std_logic lab=VDD}
 C {devices/code_shown.sym} 1800 -1590 0 0 {name=NGSPICE only_toplevel=true value="
@@ -337,26 +338,25 @@ value="
 "}
 C {devices/launcher.sym} 1860 -1720 0 0 {name=h1
 descr="Simulate" 
-tclcommand="xschem save; xschem netlist; xschem simulate"
-}
+tclcommand="xschem save; xschem netlist; xschem simulate"}
 C {devices/lab_pin.sym} 1490 -320 2 0 {name=p28 sig_type=std_logic lab=Vout4I4Q}
 C {devices/lab_pin.sym} 1140 -550 2 0 {name=p29 sig_type=std_logic lab="v0, v0"}
 C {devices/lab_pin.sym} 1130 -870 0 0 {name=p30 sig_type=std_logic lab="v0, v0, v0, v0, v0, v0, v0, v0"}
 C {/foss/designs/PhaseInterpolator/8xPI/8xPI.sym} 1020 -180 0 0 {name=x3}
-C {devices/lab_pin.sym} 1010 -390 0 0 {name=p31 sig_type=std_logic lab=VoutI}
-C {devices/lab_pin.sym} 1010 -310 0 0 {name=p32 sig_type=std_logic lab=VoutQ}
-C {devices/lab_pin.sym} 1010 -350 0 0 {name=p33 sig_type=std_logic lab=VoutIB}
-C {devices/lab_pin.sym} 1010 -270 0 0 {name=p34 sig_type=std_logic lab=VoutQB}
+C {devices/lab_pin.sym} 1010 -390 0 0 {name=p31 sig_type=std_logic lab=VoutI[1]}
+C {devices/lab_pin.sym} 1010 -310 0 0 {name=p32 sig_type=std_logic lab=VoutQ[1]}
+C {devices/lab_pin.sym} 1010 -350 0 0 {name=p33 sig_type=std_logic lab=VoutIB[1]}
+C {devices/lab_pin.sym} 1010 -270 0 0 {name=p34 sig_type=std_logic lab=VoutQB[1]}
 C {devices/lab_pin.sym} 1260 -160 2 0 {name=p35 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1260 -480 0 0 {name=p36 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1490 -710 2 0 {name=p37 sig_type=std_logic lab=Vout8I}
 C {devices/lab_pin.sym} 1140 -160 2 0 {name=p38 sig_type=std_logic lab="v0, v0"}
 C {devices/lab_pin.sym} 1130 -480 0 0 {name=p39 sig_type=std_logic lab="v1, v1, v1, v1, v0, v0, v0, v0"}
 C {/foss/designs/PhaseInterpolator/8xPI/8xPI.sym} 1750 -570 0 0 {name=x4}
-C {devices/lab_pin.sym} 1740 -780 0 0 {name=p40 sig_type=std_logic lab=VoutI}
-C {devices/lab_pin.sym} 1740 -700 0 0 {name=p41 sig_type=std_logic lab=VoutQ}
-C {devices/lab_pin.sym} 1740 -740 0 0 {name=p42 sig_type=std_logic lab=VoutIB}
-C {devices/lab_pin.sym} 1740 -660 0 0 {name=p43 sig_type=std_logic lab=VoutQB}
+C {devices/lab_pin.sym} 1740 -780 0 0 {name=p40 sig_type=std_logic lab=VoutI[2]}
+C {devices/lab_pin.sym} 1740 -700 0 0 {name=p41 sig_type=std_logic lab=VoutQ[2]}
+C {devices/lab_pin.sym} 1740 -740 0 0 {name=p42 sig_type=std_logic lab=VoutIB[2]}
+C {devices/lab_pin.sym} 1740 -660 0 0 {name=p43 sig_type=std_logic lab=VoutQB[2]}
 C {devices/lab_pin.sym} 1990 -550 2 0 {name=p44 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1990 -870 0 0 {name=p45 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 2220 -710 2 0 {name=p46 sig_type=std_logic lab=Vout8Q}
@@ -364,20 +364,20 @@ C {devices/lab_pin.sym} 1870 -550 2 0 {name=p47 sig_type=std_logic lab="v0, v0"}
 C {devices/lab_pin.sym} 1860 -870 0 0 {name=p48 sig_type=std_logic lab="v1, v1, v1, v1, v1, v1, v1, v1"}
 C {devices/lab_pin.sym} 2250 -320 2 0 {name=p49 sig_type=std_logic lab=Vout5I3Q}
 C {/foss/designs/PhaseInterpolator/8xPI/8xPI.sym} 1780 -180 0 0 {name=x5}
-C {devices/lab_pin.sym} 1770 -390 0 0 {name=p50 sig_type=std_logic lab=VoutI}
-C {devices/lab_pin.sym} 1770 -310 0 0 {name=p51 sig_type=std_logic lab=VoutQ}
-C {devices/lab_pin.sym} 1770 -350 0 0 {name=p52 sig_type=std_logic lab=VoutIB}
-C {devices/lab_pin.sym} 1770 -270 0 0 {name=p53 sig_type=std_logic lab=VoutQB}
+C {devices/lab_pin.sym} 1770 -390 0 0 {name=p50 sig_type=std_logic lab=VoutI[3]}
+C {devices/lab_pin.sym} 1770 -310 0 0 {name=p51 sig_type=std_logic lab=VoutQ[3]}
+C {devices/lab_pin.sym} 1770 -350 0 0 {name=p52 sig_type=std_logic lab=VoutIB[3]}
+C {devices/lab_pin.sym} 1770 -270 0 0 {name=p53 sig_type=std_logic lab=VoutQB[3]}
 C {devices/lab_pin.sym} 2020 -160 2 0 {name=p54 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 2020 -480 0 0 {name=p55 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1900 -160 2 0 {name=p56 sig_type=std_logic lab="v0, v0"}
 C {devices/lab_pin.sym} 1890 -480 0 0 {name=p57 sig_type=std_logic lab="v1, v1, v1, v0, v0, v0, v0, v0"}
 C {devices/lab_pin.sym} 2980 -300 2 0 {name=p58 sig_type=std_logic lab=Vout3I5Q}
 C {/foss/designs/PhaseInterpolator/8xPI/8xPI.sym} 2510 -160 0 0 {name=x6}
-C {devices/lab_pin.sym} 2500 -370 0 0 {name=p59 sig_type=std_logic lab=VoutI}
-C {devices/lab_pin.sym} 2500 -290 0 0 {name=p60 sig_type=std_logic lab=VoutQ}
-C {devices/lab_pin.sym} 2500 -330 0 0 {name=p61 sig_type=std_logic lab=VoutIB}
-C {devices/lab_pin.sym} 2500 -250 0 0 {name=p62 sig_type=std_logic lab=VoutQB}
+C {devices/lab_pin.sym} 2500 -370 0 0 {name=p59 sig_type=std_logic lab=VoutI[4]}
+C {devices/lab_pin.sym} 2500 -290 0 0 {name=p60 sig_type=std_logic lab=VoutQ[4]}
+C {devices/lab_pin.sym} 2500 -330 0 0 {name=p61 sig_type=std_logic lab=VoutIB[4]}
+C {devices/lab_pin.sym} 2500 -250 0 0 {name=p62 sig_type=std_logic lab=VoutQB[4]}
 C {devices/lab_pin.sym} 2750 -140 2 0 {name=p63 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 2750 -460 0 0 {name=p64 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 2630 -140 2 0 {name=p65 sig_type=std_logic lab="v0, v0"}

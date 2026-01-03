@@ -69,7 +69,7 @@ N 150 -250 150 -210 {lab=VDD}
 N 370 -90 380 -90 {
 lab=Vout}
 N 30 30 30 70 {lab="v1, v0"}
-N 20 -250 20 -210 {lab="VSS, v6_st, v5_st, v4_st, v3_st, v2_st, v1_st, v0_st"}
+N 20 -250 20 -210 {lab="vXOR, v6_st, v5_st, v4_st, v3_st, v2_st, v1_st, v0_st"}
 N 370 -90 370 -60 {lab=Vout}
 N 350 -90 370 -90 {
 lab=Vout}
@@ -124,6 +124,8 @@ lab=VoutIB2}
 N -780 670 -750 670 {
 lab=VoutQB2}
 N -930 720 -930 760 {lab=VSS}
+N 690 610 690 650 {lab=vXOR}
+N 690 710 690 750 {lab=VSS}
 C {devices/gnd.sym} -1110 20 0 0 {name=l2 lab=GND}
 C {devices/vsource.sym} -1110 -30 0 0 {name=Vin3 value="dc 0 ac 0 pulse(0, 1.2, 0, 25p, 25p, 225p, 500p) "}
 C {devices/lab_pin.sym} -1130 -120 0 0 {name=p1 sig_type=std_logic lab=vinI}
@@ -167,7 +169,7 @@ C {devices/lab_pin.sym} -100 -40 0 0 {name=p24 sig_type=std_logic lab=VoutQB1}
 C {devices/lab_pin.sym} 150 70 2 0 {name=p25 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 150 -250 0 0 {name=p27 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 30 70 2 0 {name=p29 sig_type=std_logic lab="v1, v0"}
-C {devices/lab_pin.sym} 20 -250 0 0 {name=p30 sig_type=std_logic lab="VSS, v6_st, v5_st, v4_st, v3_st, v2_st, v1_st, v0_st"}
+C {devices/lab_pin.sym} 20 -250 0 0 {name=p30 sig_type=std_logic lab="vXOR, v6_st, v5_st, v4_st, v3_st, v2_st, v1_st, v0_st"}
 C {devices/lab_pin.sym} 380 -90 2 0 {name=p37 sig_type=std_logic lab=Vout}
 C {capa.sym} 370 -30 0 0 {name=C1
 m=1
@@ -214,16 +216,17 @@ value="
 
 
 * OP Parameters & Singals to save
-.save all
+.save V(Vout) V(Vout8I) V(vinI) V(VoutI1) V(VoutI2) V(VoutQ1) V(VoutIB1) V(VoutQB1)
 
 *Simulations
 .control
-set output_path = tb_linearity_8xpi/
+*set output_path = tb_linearity_8xpi/
 	tran 5PS 80NS
 	*setplot tran1
 	*plot v0 v1+1.5 v0_st+3 v6_st+4.5 Vout+6 Vout8I+7.5 ylabel vout xlabel vin
 	set filetype = ascii
-	write \{$output_path\}tran_linearity_termoless.raw V(Vout) V(Vout8I) V(vinI) V(VoutI1) V(VoutI2) V(VoutQ1) V(VoutIB1) V(VoutQB1)
+        write tran_linearity_termoless.raw V(Vout) V(Vout8I) V(vinI) V(VoutI1) V(VoutI2) V(VoutQ1) V(VoutIB1) V(VoutQB1)
+	*write \{$output_path\}tran_linearity_termoless.raw V(Vout) V(Vout8I) V(vinI) V(VoutI1) V(VoutI2) V(VoutQ1) V(VoutIB1) V(VoutQB1)
 .endc
 .end"}
 C {devices/vsource.sym} 1010 -300 0 0 {name=Vdd5 value="dc 0 ac 0 pulse(0, 1.2, 15n, 25p, 25p, 5n, 20n)"}
@@ -258,3 +261,6 @@ C {devices/lab_pin.sym} -750 630 2 0 {name=p61 sig_type=std_logic lab=VoutQ2}
 C {devices/lab_pin.sym} -750 650 2 0 {name=p62 sig_type=std_logic lab=VoutIB2}
 C {devices/lab_pin.sym} -750 670 2 0 {name=p63 sig_type=std_logic lab=VoutQB2}
 C {devices/lab_pin.sym} -930 760 2 0 {name=p64 sig_type=std_logic lab=VSS}
+C {devices/vsource.sym} 690 680 0 0 {name=Vdd12 value="dc 0 ac 0 pulse(0, 1.2, 20n, 25p, 25p, 20n, 40n) "}
+C {devices/lab_pin.sym} 690 610 0 0 {name=p65 sig_type=std_logic lab=vXOR}
+C {devices/lab_pin.sym} 690 750 2 0 {name=p66 sig_type=std_logic lab=VSS}

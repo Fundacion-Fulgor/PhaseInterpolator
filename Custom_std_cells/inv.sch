@@ -27,7 +27,7 @@ C {sg13g2_pr/sg13_lv_pmos.sym} 150 -210 0 0 {name=M2
 l=0.13u
 w=0.15u
 ng=1
-m=2
+m=3
 model=sg13_lv_pmos
 spiceprefix=X
 }
@@ -39,7 +39,7 @@ C {sg13g2_pr/sg13_lv_nmos.sym} 150 -80 0 0 {name=M1
 l=0.13u
 w=0.15u
 ng=1
-m=1
+m=2
 model=sg13_lv_nmos
 spiceprefix=X
 }
