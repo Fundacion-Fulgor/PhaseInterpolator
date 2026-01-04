@@ -2,7 +2,7 @@
 <report-database>
  <description>design rules: sg13g2_minimal | layout cell: inv</description>
  <original-file>/foss/designs/PhaseInterpolator/inv.gds</original-file>
- <generator>drc: script='/foss/pdks/ihp-sg13g2/libs.tech/klayout/tech/drc/sg13g2_minimal.lydrc'</generator>
+ <generator>drc: script='/foss/designs/PhaseInterpolator/drc/sg13g2_minimal.lydrc'</generator>
  <top-cell>inv</top-cell>
  <tags>
  </tags>
@@ -483,18 +483,6 @@
   <item>
    <tags/>
    <category>'AFil.g/g1'</category>
-   <cell>inv</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (1.18,-0.58;1.18,2.06;2.67,2.06;2.67,-0.58)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'AFil.g2/g3'</category>
    <cell>inv</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>

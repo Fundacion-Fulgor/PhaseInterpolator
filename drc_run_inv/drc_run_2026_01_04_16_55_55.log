@@ -1,0 +1,13 @@
+04-Jan-2026 17:55:56 | INFO    | KLayout version detected: 0.30.5
+04-Jan-2026 17:55:56 | INFO    | Using DRC JSON file: /foss/pdks/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
+04-Jan-2026 17:55:56 | INFO    | Running IHP-SG13G2 main checks on design /foss/designs/PhaseInterpolator/inv.gds, topcell: inv
+04-Jan-2026 17:55:59 | INFO    | Running IHP-SG13G2 density checks on design /foss/designs/PhaseInterpolator/inv.gds, topcell: inv
+04-Jan-2026 17:56:01 | INFO    | Completed running Density checks.
+04-Jan-2026 17:56:01 | INFO    | Running IHP-SG13G2 sg13g2_maximal checks on design /foss/designs/PhaseInterpolator/inv.gds, topcell: inv
+04-Jan-2026 17:56:08 | INFO    | Completed running Sg13g2_maximal checks.
+04-Jan-2026 17:56:08 | ERROR   | ==================================================================================
+04-Jan-2026 17:56:08 | ERROR   | ❌ --- KLayout DRC Check Failed: Violations were detected in the layout. --- ❌
+04-Jan-2026 17:56:08 | ERROR   | ==================================================================================
+04-Jan-2026 17:56:08 | ERROR   | Violated rules are : {'CntB.a1', 'M3Fil.h', 'M4.j', 'M3.j', 'AFil.g2', 'M5Fil.h', 'pSD.a', 'GFil.g', 'M2Fil.h', 'TM1.c', 'LU.b', 'M1.d', 'M4Fil.h', 'AFil.g', 'M2.j', 'NW.e', 'CntB.g', 'TM2.c', 'M1.j', 'M5.j', 'CntB.a', 'CntB.c'}
+
+04-Jan-2026 17:56:08 | INFO    | Total DRC Run time: 12.69 seconds (including execution, analysis, and reporting)
