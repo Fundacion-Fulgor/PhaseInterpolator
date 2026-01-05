@@ -25,8 +25,8 @@ N 170 -30 190 -30 {lab=VSS}
 N 170 -50 170 -30 {lab=VSS}
 C {sg13g2_pr/sg13_lv_pmos.sym} 150 -210 0 0 {name=M2
 l=0.13u
-w=0.15u
-ng=1
+w=0.45u
+ng=3
 m=1
 model=sg13_lv_pmos
 spiceprefix=X
@@ -37,8 +37,8 @@ C {opin.sym} 210 -140 0 0 {name=p3 lab=VOUT}
 C {ipin.sym} 50 -140 0 0 {name=p4 lab=VIN}
 C {sg13g2_pr/sg13_lv_nmos.sym} 150 -80 0 0 {name=M1
 l=0.13u
-w=0.15u
-ng=1
+w=0.3u
+ng=2
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
