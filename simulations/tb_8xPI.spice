@@ -82,21 +82,21 @@ x1[3] VINI VINIB VDD net1 VS[1] VS[0] VINQ VSS VINQB VST[3] MUX_4_1
 x1[2] VINI VINIB VDD net1 VS[1] VS[0] VINQ VSS VINQB VST[2] MUX_4_1
 x1[1] VINI VINIB VDD net1 VS[1] VS[0] VINQ VSS VINQB VST[1] MUX_4_1
 x1[0] VINI VINIB VDD net1 VS[1] VS[0] VINQ VSS VINQB VST[0] MUX_4_1
-x2 VDD net2 net1 VSS inv
-x3[1] VDD net3[1] net2 VSS inv
-x3[0] VDD net3[0] net2 VSS inv
-x4[3] VDD net4[3] net3[1] VSS inv
-x4[2] VDD net4[2] net3[0] VSS inv
-x4[1] VDD net4[1] net3[1] VSS inv
-x4[0] VDD net4[0] net3[0] VSS inv
-x5[7] VDD VOUT net4[3] VSS inv
-x5[6] VDD VOUT net4[2] VSS inv
-x5[5] VDD VOUT net4[1] VSS inv
-x5[4] VDD VOUT net4[0] VSS inv
-x5[3] VDD VOUT net4[3] VSS inv
-x5[2] VDD VOUT net4[2] VSS inv
-x5[1] VDD VOUT net4[1] VSS inv
-x5[0] VDD VOUT net4[0] VSS inv
+x2 VDD net2 net1 VSS inv_PI
+x3[1] VDD net3_1 net2 VSS inv_PI
+x3[0] VDD net3_0 net2 VSS inv_PI
+x4[3] VDD net4_3 net3_1 VSS inv_PI
+x4[2] VDD net4_2 net3_0 VSS inv_PI
+x4[1] VDD net4_1 net3_1 VSS inv_PI
+x4[0] VDD net4_0 net3_0 VSS inv_PI
+x5[7] VDD VOUT net4_3 VSS inv_PI
+x5[6] VDD VOUT net4_2 VSS inv_PI
+x5[5] VDD VOUT net4_1 VSS inv_PI
+x5[4] VDD VOUT net4_0 VSS inv_PI
+x5[3] VDD VOUT net4_3 VSS inv_PI
+x5[2] VDD VOUT net4_2 VSS inv_PI
+x5[1] VDD VOUT net4_1 VSS inv_PI
+x5[0] VDD VOUT net4_0 VSS inv_PI
 .ends
 
 
@@ -114,102 +114,102 @@ x5[0] VDD VOUT net4[0] VSS inv
 *.opin VOUTQ
 *.opin VOUTIB
 *.opin VOUTQB
-x0[7] VDD net4[7] VINI VSS inv
-x0[6] VDD net4[6] VINI VSS inv
-x0[5] VDD net4[5] VINI VSS inv
-x0[4] VDD net4[4] VINI VSS inv
-x0[3] VDD net4[3] VINI VSS inv
-x0[2] VDD net4[2] VINI VSS inv
-x0[1] VDD net4[1] VINI VSS inv
-x0[0] VDD net4[0] VINI VSS inv
-x1[7] VDD net3[7] VINQ VSS inv
-x1[6] VDD net3[6] VINQ VSS inv
-x1[5] VDD net3[5] VINQ VSS inv
-x1[4] VDD net3[4] VINQ VSS inv
-x1[3] VDD net3[3] VINQ VSS inv
-x1[2] VDD net3[2] VINQ VSS inv
-x1[1] VDD net3[1] VINQ VSS inv
-x1[0] VDD net3[0] VINQ VSS inv
-x2[7] VDD net1[7] VINIB VSS inv
-x2[6] VDD net1[6] VINIB VSS inv
-x2[5] VDD net1[5] VINIB VSS inv
-x2[4] VDD net1[4] VINIB VSS inv
-x2[3] VDD net1[3] VINIB VSS inv
-x2[2] VDD net1[2] VINIB VSS inv
-x2[1] VDD net1[1] VINIB VSS inv
-x2[0] VDD net1[0] VINIB VSS inv
-x3[7] VDD net2[7] VINQB VSS inv
-x3[6] VDD net2[6] VINQB VSS inv
-x3[5] VDD net2[5] VINQB VSS inv
-x3[4] VDD net2[4] VINQB VSS inv
-x3[3] VDD net2[3] VINQB VSS inv
-x3[2] VDD net2[2] VINQB VSS inv
-x3[1] VDD net2[1] VINQB VSS inv
-x3[0] VDD net2[0] VINQB VSS inv
-x4[15] VDD VOUTI net4[7] VSS inv
-x4[14] VDD VOUTI net4[6] VSS inv
-x4[13] VDD VOUTI net4[5] VSS inv
-x4[12] VDD VOUTI net4[4] VSS inv
-x4[11] VDD VOUTI net4[3] VSS inv
-x4[10] VDD VOUTI net4[2] VSS inv
-x4[9] VDD VOUTI net4[1] VSS inv
-x4[8] VDD VOUTI net4[0] VSS inv
-x4[7] VDD VOUTI net4[7] VSS inv
-x4[6] VDD VOUTI net4[6] VSS inv
-x4[5] VDD VOUTI net4[5] VSS inv
-x4[4] VDD VOUTI net4[4] VSS inv
-x4[3] VDD VOUTI net4[3] VSS inv
-x4[2] VDD VOUTI net4[2] VSS inv
-x4[1] VDD VOUTI net4[1] VSS inv
-x4[0] VDD VOUTI net4[0] VSS inv
-x5[15] VDD VOUTQ net3[7] VSS inv
-x5[14] VDD VOUTQ net3[6] VSS inv
-x5[13] VDD VOUTQ net3[5] VSS inv
-x5[12] VDD VOUTQ net3[4] VSS inv
-x5[11] VDD VOUTQ net3[3] VSS inv
-x5[10] VDD VOUTQ net3[2] VSS inv
-x5[9] VDD VOUTQ net3[1] VSS inv
-x5[8] VDD VOUTQ net3[0] VSS inv
-x5[7] VDD VOUTQ net3[7] VSS inv
-x5[6] VDD VOUTQ net3[6] VSS inv
-x5[5] VDD VOUTQ net3[5] VSS inv
-x5[4] VDD VOUTQ net3[4] VSS inv
-x5[3] VDD VOUTQ net3[3] VSS inv
-x5[2] VDD VOUTQ net3[2] VSS inv
-x5[1] VDD VOUTQ net3[1] VSS inv
-x5[0] VDD VOUTQ net3[0] VSS inv
-x6[15] VDD VOUTIB net1[7] VSS inv
-x6[14] VDD VOUTIB net1[6] VSS inv
-x6[13] VDD VOUTIB net1[5] VSS inv
-x6[12] VDD VOUTIB net1[4] VSS inv
-x6[11] VDD VOUTIB net1[3] VSS inv
-x6[10] VDD VOUTIB net1[2] VSS inv
-x6[9] VDD VOUTIB net1[1] VSS inv
-x6[8] VDD VOUTIB net1[0] VSS inv
-x6[7] VDD VOUTIB net1[7] VSS inv
-x6[6] VDD VOUTIB net1[6] VSS inv
-x6[5] VDD VOUTIB net1[5] VSS inv
-x6[4] VDD VOUTIB net1[4] VSS inv
-x6[3] VDD VOUTIB net1[3] VSS inv
-x6[2] VDD VOUTIB net1[2] VSS inv
-x6[1] VDD VOUTIB net1[1] VSS inv
-x6[0] VDD VOUTIB net1[0] VSS inv
-x7[15] VDD VOUTQB net2[7] VSS inv
-x7[14] VDD VOUTQB net2[6] VSS inv
-x7[13] VDD VOUTQB net2[5] VSS inv
-x7[12] VDD VOUTQB net2[4] VSS inv
-x7[11] VDD VOUTQB net2[3] VSS inv
-x7[10] VDD VOUTQB net2[2] VSS inv
-x7[9] VDD VOUTQB net2[1] VSS inv
-x7[8] VDD VOUTQB net2[0] VSS inv
-x7[7] VDD VOUTQB net2[7] VSS inv
-x7[6] VDD VOUTQB net2[6] VSS inv
-x7[5] VDD VOUTQB net2[5] VSS inv
-x7[4] VDD VOUTQB net2[4] VSS inv
-x7[3] VDD VOUTQB net2[3] VSS inv
-x7[2] VDD VOUTQB net2[2] VSS inv
-x7[1] VDD VOUTQB net2[1] VSS inv
-x7[0] VDD VOUTQB net2[0] VSS inv
+x0[7] VDD net4_7 VINI VSS inv
+x0[6] VDD net4_6 VINI VSS inv
+x0[5] VDD net4_5 VINI VSS inv
+x0[4] VDD net4_4 VINI VSS inv
+x0[3] VDD net4_3 VINI VSS inv
+x0[2] VDD net4_2 VINI VSS inv
+x0[1] VDD net4_1 VINI VSS inv
+x0[0] VDD net4_0 VINI VSS inv
+x1[7] VDD net3_7 VINQ VSS inv
+x1[6] VDD net3_6 VINQ VSS inv
+x1[5] VDD net3_5 VINQ VSS inv
+x1[4] VDD net3_4 VINQ VSS inv
+x1[3] VDD net3_3 VINQ VSS inv
+x1[2] VDD net3_2 VINQ VSS inv
+x1[1] VDD net3_1 VINQ VSS inv
+x1[0] VDD net3_0 VINQ VSS inv
+x2[7] VDD net1_7 VINIB VSS inv
+x2[6] VDD net1_6 VINIB VSS inv
+x2[5] VDD net1_5 VINIB VSS inv
+x2[4] VDD net1_4 VINIB VSS inv
+x2[3] VDD net1_3 VINIB VSS inv
+x2[2] VDD net1_2 VINIB VSS inv
+x2[1] VDD net1_1 VINIB VSS inv
+x2[0] VDD net1_0 VINIB VSS inv
+x3[7] VDD net2_7 VINQB VSS inv
+x3[6] VDD net2_6 VINQB VSS inv
+x3[5] VDD net2_5 VINQB VSS inv
+x3[4] VDD net2_4 VINQB VSS inv
+x3[3] VDD net2_3 VINQB VSS inv
+x3[2] VDD net2_2 VINQB VSS inv
+x3[1] VDD net2_1 VINQB VSS inv
+x3[0] VDD net2_0 VINQB VSS inv
+x4[15] VDD VOUTI net4_7 VSS inv
+x4[14] VDD VOUTI net4_6 VSS inv
+x4[13] VDD VOUTI net4_5 VSS inv
+x4[12] VDD VOUTI net4_4 VSS inv
+x4[11] VDD VOUTI net4_3 VSS inv
+x4[10] VDD VOUTI net4_2 VSS inv
+x4[9] VDD VOUTI net4_1 VSS inv
+x4[8] VDD VOUTI net4_0 VSS inv
+x4[7] VDD VOUTI net4_7 VSS inv
+x4[6] VDD VOUTI net4_6 VSS inv
+x4[5] VDD VOUTI net4_5 VSS inv
+x4[4] VDD VOUTI net4_4 VSS inv
+x4[3] VDD VOUTI net4_3 VSS inv
+x4[2] VDD VOUTI net4_2 VSS inv
+x4[1] VDD VOUTI net4_1 VSS inv
+x4[0] VDD VOUTI net4_0 VSS inv
+x5[15] VDD VOUTQ net3_7 VSS inv
+x5[14] VDD VOUTQ net3_6 VSS inv
+x5[13] VDD VOUTQ net3_5 VSS inv
+x5[12] VDD VOUTQ net3_4 VSS inv
+x5[11] VDD VOUTQ net3_3 VSS inv
+x5[10] VDD VOUTQ net3_2 VSS inv
+x5[9] VDD VOUTQ net3_1 VSS inv
+x5[8] VDD VOUTQ net3_0 VSS inv
+x5[7] VDD VOUTQ net3_7 VSS inv
+x5[6] VDD VOUTQ net3_6 VSS inv
+x5[5] VDD VOUTQ net3_5 VSS inv
+x5[4] VDD VOUTQ net3_4 VSS inv
+x5[3] VDD VOUTQ net3_3 VSS inv
+x5[2] VDD VOUTQ net3_2 VSS inv
+x5[1] VDD VOUTQ net3_1 VSS inv
+x5[0] VDD VOUTQ net3_0 VSS inv
+x6[15] VDD VOUTIB net1_7 VSS inv
+x6[14] VDD VOUTIB net1_6 VSS inv
+x6[13] VDD VOUTIB net1_5 VSS inv
+x6[12] VDD VOUTIB net1_4 VSS inv
+x6[11] VDD VOUTIB net1_3 VSS inv
+x6[10] VDD VOUTIB net1_2 VSS inv
+x6[9] VDD VOUTIB net1_1 VSS inv
+x6[8] VDD VOUTIB net1_0 VSS inv
+x6[7] VDD VOUTIB net1_7 VSS inv
+x6[6] VDD VOUTIB net1_6 VSS inv
+x6[5] VDD VOUTIB net1_5 VSS inv
+x6[4] VDD VOUTIB net1_4 VSS inv
+x6[3] VDD VOUTIB net1_3 VSS inv
+x6[2] VDD VOUTIB net1_2 VSS inv
+x6[1] VDD VOUTIB net1_1 VSS inv
+x6[0] VDD VOUTIB net1_0 VSS inv
+x7[15] VDD VOUTQB net2_7 VSS inv
+x7[14] VDD VOUTQB net2_6 VSS inv
+x7[13] VDD VOUTQB net2_5 VSS inv
+x7[12] VDD VOUTQB net2_4 VSS inv
+x7[11] VDD VOUTQB net2_3 VSS inv
+x7[10] VDD VOUTQB net2_2 VSS inv
+x7[9] VDD VOUTQB net2_1 VSS inv
+x7[8] VDD VOUTQB net2_0 VSS inv
+x7[7] VDD VOUTQB net2_7 VSS inv
+x7[6] VDD VOUTQB net2_6 VSS inv
+x7[5] VDD VOUTQB net2_5 VSS inv
+x7[4] VDD VOUTQB net2_4 VSS inv
+x7[3] VDD VOUTQB net2_3 VSS inv
+x7[2] VDD VOUTQB net2_2 VSS inv
+x7[1] VDD VOUTQB net2_1 VSS inv
+x7[0] VDD VOUTQB net2_0 VSS inv
 .ends
 
 
@@ -232,6 +232,19 @@ x5 VDD net1 VOUT VST net2 VSS MUX_2_1
 .ends
 
 
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sch
+.subckt inv_PI VDD VOUT VIN VSS
+*.iopin VDD
+*.iopin VSS
+*.opin VOUT
+*.ipin VIN
+XM2 VOUT VIN VDD VDD sg13_lv_pmos w=0.45u l=0.13u ng=3 m=1
+XM1 VOUT VIN VSS VSS sg13_lv_nmos w=0.3u l=0.13u ng=2 m=1
+.ends
+
+
 * expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym # of pins=4
 ** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym
 ** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sch
@@ -240,8 +253,8 @@ x5 VDD net1 VOUT VST net2 VSS MUX_2_1
 *.iopin VSS
 *.opin VOUT
 *.ipin VIN
-XM2 VOUT VIN VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=3
-XM1 VOUT VIN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=2
+XM2 VOUT VIN VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+XM1 VOUT VIN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
 .ends
 
 
@@ -258,8 +271,8 @@ XM1 VOUT VIN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=2
 x1 VOUT net1 VS net2 VDD VSS tg_custom
 x2 VOUT VS net1 net3 VDD VSS tg_custom
 x3 VDD net1 VS VSS inv
-x4 VDD net2 VINA VSS inv
-x5 VDD net3 VINB VSS inv
+x4 VDD net2 VINA VSS inv_PI
+x5 VDD net3 VINB VSS inv_PI
 x6[3] VOUT VSS VDD net2 VDD VSS tg_custom
 x6[2] VOUT VSS VDD net2 VDD VSS tg_custom
 x6[1] VOUT VSS VDD net2 VDD VSS tg_custom
@@ -282,7 +295,7 @@ x7[0] VOUT VSS VDD net3 VDD VSS tg_custom
 *.iopin VBN
 *.iopin VBP
 XM1 VOUT VSN VIN VBN sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
-XM2 VOUT VSP VIN VBP sg13_lv_pmos w=0.15u l=0.13u ng=1 m=2
+XM2 VOUT VSP VIN VBP sg13_lv_pmos w=0.3u l=0.13u ng=2 m=1
 .ends
 
 .GLOBAL GND

@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -63,10 +63,10 @@ C {lab_wire.sym} 470 -460 2 0 {name=p10 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 470 -410 2 0 {name=p11 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 330 -490 2 0 {name=p12 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 330 -370 2 0 {name=p13 sig_type=std_logic lab=VSS}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 140 -410 0 0 {name=x4}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sym} 140 -410 0 0 {name=x4}
 C {lab_wire.sym} 230 -610 2 0 {name=p9 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 230 -490 2 0 {name=p14 sig_type=std_logic lab=VSS}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 140 -180 0 0 {name=x5}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sym} 140 -180 0 0 {name=x5}
 C {lab_wire.sym} 230 -380 2 0 {name=p15 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 230 -260 2 0 {name=p16 sig_type=std_logic lab=VSS}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sym} 530 -750 0 0 {name=x6[3:0]

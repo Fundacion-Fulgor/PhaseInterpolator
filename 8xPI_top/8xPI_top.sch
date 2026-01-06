@@ -1,0 +1,68 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {}
+V {}
+S {}
+F {}
+E {}
+L 4 860 -640 860 -570 {}
+L 4 860 -640 960 -640 {}
+L 4 860 -570 960 -570 {}
+L 4 960 -640 960 -570 {}
+L 4 790 -600 860 -600 {}
+L 4 960 -600 1030 -600 {}
+T {VQ} 980 -630 0 0 0.4 0.4 {}
+T {capaz usar algun bit de la seleccion de cuadrante} 760 -690 0 0 0.4 0.4 {}
+N 770 -500 770 -400 {lab="VST[7:1], VSQ"}
+N 550 -590 620 -590 {lab=VST[7:1]}
+N 600 -320 640 -320 {lab=#net1}
+N 640 -350 640 -320 {lab=#net1}
+N 640 -350 680 -350 {lab=#net1}
+N 600 -260 640 -260 {lab=#net2}
+N 640 -260 640 -230 {lab=#net2}
+N 640 -230 680 -230 {lab=#net2}
+N 600 -280 660 -280 {lab=#net3}
+N 660 -280 660 -270 {lab=#net3}
+N 660 -270 680 -270 {lab=#net3}
+N 600 -300 660 -300 {lab=#net4}
+N 660 -310 660 -300 {lab=#net4}
+N 660 -310 680 -310 {lab=#net4}
+N 260 -330 300 -330 {lab=VINI}
+N 260 -290 300 -290 {lab=VINIB}
+N 260 -250 300 -250 {lab=VCONT}
+N 900 -460 900 -400 {lab=VDD}
+N 900 -160 900 -100 {lab=VSS}
+N 1100 -280 1160 -280 {lab=VOUT}
+N 450 -210 450 -150 {lab=VSS}
+N 450 -430 450 -370 {lab=VDD}
+N 450 -540 450 -480 {lab=VSS}
+N 450 -700 450 -640 {lab=VDD}
+N 310 -590 350 -590 {lab=VS[2:0]}
+N 780 -160 780 -100 {lab=VS[4:3]}
+N 740 -100 780 -100 {lab=VS[4:3]}
+C {/foss/designs/PhaseInterpolator/8xPI/8xPI.sym} 660 -140 0 0 {name=x1}
+C {/foss/designs/PhaseInterpolator/2to4/2to4prelim.sym} 450 -290 0 0 {name=x2}
+C {/foss/designs/PhaseInterpolator/BinarytoThermo/3to7_deco_v2.sym} 320 -520 0 0 {name=x3}
+C {ipin.sym} 260 -330 0 0 {name=p7 lab=VINI
+
+}
+C {ipin.sym} 260 -290 0 0 {name=p9 lab=VINIB
+
+}
+C {ipin.sym} 260 -250 0 0 {name=p6 lab=VCONT
+}
+C {iopin.sym} 900 -460 2 0 {name=p1 lab=VDD}
+C {iopin.sym} 900 -100 2 0 {name=p3 lab=VSS
+}
+C {devices/lab_pin.sym} 450 -430 2 0 {name=p2 sig_type=std_logic lab=VDD}
+C {opin.sym} 1160 -280 0 0 {name=p8 lab=VOUT}
+C {devices/lab_pin.sym} 450 -150 2 0 {name=p4 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 450 -480 0 0 {name=p5 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 450 -700 2 0 {name=p10 sig_type=std_logic lab=VDD}
+C {ipin.sym} 320 -420 0 0 {name=p11 lab=VS[4:0]
+
+}
+C {devices/lab_pin.sym} 310 -590 0 0 {name=p12 sig_type=std_logic lab=VS[2:0]}
+C {devices/lab_pin.sym} 740 -100 0 0 {name=p13 sig_type=std_logic lab=VS[4:3]}
+C {devices/lab_pin.sym} 620 -590 2 0 {name=p14 sig_type=std_logic lab=VST[7:1]}
+C {devices/lab_pin.sym} 770 -500 2 0 {name=p15 sig_type=std_logic lab="VST[7:1], VSQ"}
