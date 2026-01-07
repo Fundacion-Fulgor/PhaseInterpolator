@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -79,13 +79,13 @@ N 1090 -580 1110 -580 {lab=VSS}
 N 1230 -580 1250 -580 {lab=VDD}
 N 960 -960 960 -400 {lab=#net3}
 N 690 -960 960 -960 {lab=#net3}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/not_custom.sym} 90 -870 0 0 {name=x1}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/not_custom.sym} 90 -710 0 0 {name=x2}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/not_custom.sym} 90 -550 0 0 {name=x3}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 70 -820 0 0 {name=x1}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 70 -660 0 0 {name=x2}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 70 -500 0 0 {name=x3}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/nor_x3_custom.sym} 340 -440 1 0 {name=x4}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/nor_custom.sym} 550 -410 1 0 {name=x5}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/nor_custom.sym} 730 -410 1 0 {name=x6}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/not_custom.sym} 870 -420 1 0 {name=x7}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 820 -440 1 0 {name=x7}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/nand_custom.sym} 1030 -450 1 0 {name=x8}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/nand_custom.sym} 1240 -450 1 0 {name=x9}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/and_custom.sym} 700 -670 1 0 {name=x11}
