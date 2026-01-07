@@ -1,23 +1,26 @@
-** sch_path: /foss/designs/PhaseInterpolator/2to4/2to4prelim.sch
-**.subckt 2to4prelim VDD VQB VQ VINI VSS VCONT VIB VI VINIB
-*.iopin VDD
-*.iopin VSS
+** sch_path: /foss/designs/PhaseInterpolator/2to4/2to4_2v.sch
+**.subckt 2to4_2v VDD VINI VCONT VINIB VSS VQ VIB VQB VI
 *.ipin VCONT
 *.ipin VINI
 *.opin VIB
 *.opin VQ
-*.opin VQB
 *.ipin VINIB
 *.opin VI
+*.opin VQB
+*.iopin VDD
+*.iopin VSS
 x1 VDD VINI net2 VCONT VSS delay_variable
 x2 VDD net1 net2 VSS inv
-x3 VDD net5 net1 VSS inv
-x6 VDD net4 VINI VSS inv
-x5 VDD net3 VINIB VSS inv
-x7 VDD VI net3 VSS buff_d16
-x8 VDD VIB net4 VSS buff_d16
-x9 VDD VQ net5 VSS buff_d16
-x10 VDD VQB net1 VSS buff_d16
+x3 VDD net4 net1 VSS inv
+x6 VDD net3 VINI VSS inv
+x8 VDD VIB net3 VSS buff_d16
+x9 VDD VQ net4 VSS buff_d16
+x11 VDD VINIB net6 VCONT VSS delay_variable
+x12 VDD net5 net6 VSS inv
+x13 VDD net8 net5 VSS inv
+x15 VDD net7 VINIB VSS inv
+x16 VDD VI net7 VSS buff_d16
+x17 VDD VQB net8 VSS buff_d16
 **.ends
 
 * expanding   symbol:  /foss/designs/PhaseInterpolator/2to4/delay_variable.sym # of pins=5

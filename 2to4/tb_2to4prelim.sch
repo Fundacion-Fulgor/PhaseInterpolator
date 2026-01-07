@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=3e-09
+x1=1.5e-10
+x2=3.15e-09
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -35,8 +35,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=3e-09
+x1=1.5e-10
+x2=3.15e-09
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -57,8 +57,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=3e-09
+x1=1.5e-10
+x2=3.15e-09
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -79,8 +79,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=3e-09
+x1=1.5e-10
+x2=3.15e-09
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -101,8 +101,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=3e-09
+x1=1.5e-10
+x2=3.15e-09
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -153,52 +153,6 @@ C {devices/lab_pin.sym} 1440 -1340 2 0 {name=p4 sig_type=std_logic lab=v90
 }
 C {devices/lab_pin.sym} 1440 -1360 2 0 {name=p5 sig_type=std_logic lab=v180}
 C {devices/lab_pin.sym} 1440 -1380 2 0 {name=p6 sig_type=std_logic lab=v0}
-C {devices/code_shown.sym} 65 -935 0 0 {name=s1 only_toplevel=false 
-value="
-.save v(vin1) v(v0) v(v90) v(v270) v(v180) v(vin2) v(vout)
-
-.tran 10p 3n
-.save all
-
-.control
-run
-set color0=white
-write tran_logic.raw
-
-* --- 1. MEDICIONES DE FASE Y RETARDO (Usando v90) ---
-* Periodo Entrada (Ref)
-meas tran T_per TRIG v(vin1) VAL=0.6 RISE=3 TARG v(vin1) VAL=0.6 RISE=4
-  
-* Retardo (Entrada vs v90)
-meas tran T_del TRIG v(vin1) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 RISE=3
-
-* Calculo Fase 
-let Phase_Deg = (T_del / T_per) * 360
-  
-print T_per
-print T_del
-print Phase_Deg
-
-
-* --- 2. DUTY CYCLE (Usando v90) ---
-* Periodo Salida
-meas tran T_period TRIG v(v90) VAL=0.6 RISE=2 TARG v(v90) VAL=0.6 RISE=3
-
-* Tiempo en ALTO (Ton)
-* Desde que sube (RISE=2) hasta que baja (FALL=2)
-meas tran T_high TRIG v(v90) VAL=0.6 RISE=2 TARG v(v90) VAL=0.6 FALL=2
-
-* Tiempo en BAJO (Toff)
-* Desde que baja (FALL=2) hasta que sube de nuevo (RISE=3)
-meas tran T_low TRIG v(v90) VAL=0.6 FALL=2 TARG v(v90) VAL=0.6 RISE=3
-
-let Duty_High = (T_high / T_period) * 100
-let Duty_Low  = (T_low / T_period) * 100
-
-print Duty_High
-print Duty_Low
-.endc
-"}
 C {devices/code_shown.sym} 40 -1050 0 0 {name=MODEL1 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -248,3 +202,49 @@ C {devices/lab_pin.sym} 1580 -1290 0 0 {name=p18 sig_type=std_logic lab=v270}
 C {devices/lab_pin.sym} 1860 -1500 0 0 {name=p19 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 1730 -1500 0 0 {name=p20 sig_type=std_logic lab="vdd, vdd, vdd, vdd, vss, vss, vss, vss"}
 C {devices/lab_pin.sym} 2160 -1340 2 0 {name=p21 sig_type=std_logic lab=vout}
+C {devices/code_shown.sym} 25 -905 0 0 {name=s1 only_toplevel=false 
+value="
+.save v(vin1) v(v0) v(v90) v(v270) v(v180) v(vin2) v(vout)
+
+* CAMBIO CRITICO: 1p en vez de 10p para que el 'meas' encuentre los cruces
+.tran 1p 3n
+.save all
+
+.control
+run
+set color0=white
+write tran_logic.raw
+
+* --- MEDICIONES DE FASE Y RETARDO (Usando v90) ---
+* Periodo Entrada (Ref)
+meas tran T_p90 TRIG v(v0) VAL=0.6 RISE=3 TARG v(v0) VAL=0.6 RISE=4
+
+* Retardo (Entrada vs v90)
+meas tran T_d90 TRIG v(v0) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 RISE=3
+
+* Calculo Fase (Agregue espacios para que Ngspice no de error)
+let Phase_D90 = ( T_d90 / T_p90 ) * 360
+
+print T_p90
+print T_d90
+print Phase_D90
+
+* --- DUTY CYCLE (Usando v90) ---
+* Periodo Salida
+meas tran T_pe90 TRIG v(v90) VAL=0.6 RISE=2 TARG v(v90) VAL=0.6 RISE=3
+
+* Tiempo en ALTO (Ton)
+meas tran T_h90 TRIG v(v90) VAL=0.6 RISE=2 TARG v(v90) VAL=0.6 FALL=2
+
+* Tiempo en BAJO (Toff)
+meas tran T_l90 TRIG v(v90) VAL=0.6 FALL=2 TARG v(v90) VAL=0.6 RISE=3
+
+* Calculo Duty (Agregue espacios vitales)
+let Duty_H90 = ( T_h90 / T_pe90 ) * 100
+let Duty_L90 = ( T_l90 / T_pe90 ) * 100
+
+print Duty_H90
+print Duty_L90
+
+.endc
+"}
