@@ -1,55 +1,22 @@
 """
+Created by Phase Interpolator team (Victor Muñoz & Agustina Trabichet)
+
 hierarchical.py
 
-Qué hace
---------
-- Construye jerarquía Layout desde un SPICE (xschem), contando instancias desde el TEXTO.
-- Reusa celdas de GDS existentes por nombre normalizado (case-insensitive, ignora símbolos).
-- Soporta directivas comentadas "*.subckt", "**.subckt", "*.ends", "**.ends", etc.
-- Placement: auto-step usando bbox del child + margen (evita instancias lejanas y bbox enorme).
-- gallery opcional: -rd gallery=0/1
-- TOP name: por defecto = stem(output). Si coincide con el top subckt, NO crea wrapper (evita ciclos).
+- Construye jerarquía Layout desde SPICE (xschem) leyendo el TEXTO del netlist.
+- Reusa celdas de GDS existentes por nombre (autoload desde sch_path o reuse_dir, y/o reuse manual).
+- FIX: NO interpreta XM1/XM2 como instancias jerárquicas: solo instancia subckts reales.
+- Opcional: genera PCells de tecnología (MOS/R/C/antennas) cuando el netlist NO tiene jerarquía interna
+  o cuando un subckt NO tiene layout reusado (celda vacía).
 
-FIX importante
---------------
-- Ya NO interpreta líneas XM1/XM2 como instancias de subckt.
-  Solo crea jerarquía para instancias X... cuyo "child" sea un subckt REAL (definido con .subckt).
-
-Autoload de GDS (opcional)
---------------------------
-Puede cargar automáticamente GDS candidatos basándose en:
-  - líneas "** sch_path: /.../cell.sch"  ->  /.../cell.gds
-  - opcionalmente buscar en reuse_dir: reuse_dir/cell.gds
-
-Actívalo con:
-  -rd autoload=1
-y opcional:
-  -rd reuse_dir=/path/to/gds_folder
-
-Ejemplos
---------
-(1) inv_PI_d2 con autoload:
-klayout -n sg13g2 -zz -r /foss/designs/PhaseInterpolator/hierarchical.py \
-  -rd netlist=/foss/designs/PhaseInterpolator/Custom_std_cells/simulations/inv_PI_d2.spice \
-  -rd output=/foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d2.gds \
-  -rd autoload=1 \
-  -rd reuse_dir=/foss/designs/PhaseInterpolator/Custom_std_cells \
-  -rd gallery=0
-
-(2) xor_custom con autoload:
-klayout -n sg13g2 -zz -r /foss/designs/PhaseInterpolator/hierarchical.py \
-  -rd netlist=/foss/designs/PhaseInterpolator/Custom_std_cells/simulations/xor_custom.spice \
-  -rd output=/foss/designs/PhaseInterpolator/Custom_std_cells/xor_custom.gds \
-  -rd autoload=1 \
-  -rd reuse_dir=/foss/designs/PhaseInterpolator/Custom_std_cells \
-  -rd gallery=0
-
-(3) reuse manual:
-klayout -n sg13g2 -zz -r hierarchical.py \
-  -rd netlist=/path/top.spice \
-  -rd output=/path/top.gds \
-  -rd reuse=/path/reuse.gds \
-  -rd gallery=0
+Flags (klayout -rd ...)
+- netlist=<path>   (requerido)
+- output=<path>    (requerido)
+- reuse=<path.gds> (opcional)
+- autoload=0/1     (opcional)  carga gds candidatos desde sch_path (.sch->.gds) y/o reuse_dir
+- reuse_dir=<dir>  (opcional)  dir para buscar <cell>.gds
+- leaf=0/1         (opcional)  1 = generar PCells para leaf devices (como tu script original)
+- gallery=0/1      (opcional)  1 = crea una celda "gallery" con los leaf PCells generados
 """
 
 import pathlib
@@ -62,7 +29,36 @@ import klayout.db
 
 
 # -----------------------------
-# Helpers: argumentos y strings
+# Config
+# -----------------------------
+PCELL_LIB = "SG13_dev"  # librería PCells (IHP SG13G2)
+
+# Modelos de netlist -> nombre PCell en SG13_dev
+MOS_PCELLS = {
+    "sg13_lv_nmos": "nmos",
+    "sg13_hv_nmos": "nmosHV",
+    "sg13_lv_pmos": "pmos",
+    "sg13_hv_pmos": "pmosHV",
+}
+
+RES_PCELLS = {
+    "rppd": "rppd",
+    "rhigh": "rhigh",
+    "rsil": "rsil",
+}
+
+CAP_PCELLS = {
+    "cap_cmim": "cmim",
+}
+
+ANT_PCELLS = {
+    "dantenna": "dantenna",
+    "dpantenna": "dpantenna",
+}
+
+
+# -----------------------------
+# Helpers
 # -----------------------------
 def _rd_bool(v, default: bool = False) -> bool:
     if v is None:
@@ -76,15 +72,98 @@ def _basename_noext(path: str) -> str:
 
 
 def _norm_name(s: str) -> str:
-    # case-insensitive + ignora símbolos
     return re.sub(r"[^a-z0-9]+", "", str(s).lower()) if s is not None else ""
+
+
+def _maybe_uncomment_spice_directive(line: str) -> Optional[str]:
+    """
+    - directivas comentadas tipo **.subckt, *.ends, *.ipin, etc => las "descomenta"
+    - comentario normal => None
+    - línea normal => limpia
+    """
+    s = line.strip()
+    if not s:
+        return None
+    if s.startswith("*"):
+        if re.match(r"^\*+\.((subckt)|(ends)|(ipin)|(opin)|(iopin))\b", s, re.IGNORECASE):
+            return s.lstrip("*").strip()
+        return None
+    return s
+
+
+def _parse_params(tokens: List[str]) -> Dict[str, str]:
+    out: Dict[str, str] = {}
+    for t in tokens:
+        if "=" in t:
+            k, v = t.split("=", 1)
+            out[k.strip().lower()] = v.strip()
+    return out
+
+
+_SPICE_SUFFIX = {
+    "t": 1e12,
+    "g": 1e9,
+    "meg": 1e6,
+    "k": 1e3,
+    "m": 1e-3,
+    "u": 1e-6,
+    "n": 1e-9,
+    "p": 1e-12,
+    "f": 1e-15,
+}
+
+
+def _to_float_spice(x: str) -> float:
+    """
+    Parse de número SPICE con sufijos (u,n,p,m,k,meg,...) o notación científica.
+    Devuelve valor en unidades base (sin asumir um/m).
+    """
+    s = str(x).strip().lower()
+
+    # meg (3 letras)
+    if s.endswith("meg"):
+        return float(s[:-3]) * _SPICE_SUFFIX["meg"]
+
+    # sufijo 1 letra
+    m = re.match(r"^([+-]?\d*\.?\d+(?:e[+-]?\d+)?)\s*([a-z])?$", s)
+    if m:
+        num = float(m.group(1))
+        suf = m.group(2)
+        if suf and suf in _SPICE_SUFFIX:
+            return num * _SPICE_SUFFIX[suf]
+        return num
+
+    # fallback
+    return float(s)
+
+
+def _len_to_um(x: str) -> float:
+    """
+    Convierte a micrómetros.
+    Heurística:
+      - si trae sufijo (u,n,...) se interpreta como SI y se convierte a um
+      - si no trae sufijo:
+           si valor < 1e-3 -> asumimos metros
+           else -> asumimos ya está en um
+    """
+    s = str(x).strip().lower()
+    has_suffix = bool(re.search(r"(meg|[a-z])$", s)) and not bool(re.search(r"e[+-]?\d+$", s))
+    val = _to_float_spice(s)
+
+    if has_suffix:
+        # val está en SI (metros si el parámetro era longitud con u/n/etc)
+        return val * 1e6
+
+    # sin sufijo: heurística
+    if abs(val) < 1e-3:
+        return val * 1e6  # metros -> um
+    return val  # ya um
 
 
 # -----------------------------
 # Reuse / Cells
 # -----------------------------
 def build_existing_cell_map(layout: klayout.db.Layout) -> Dict[str, int]:
-    """normalized_name -> cell_index para todas las celdas existentes (incluye reuse/autoload)."""
     m: Dict[str, int] = {}
     for cell in layout.each_cell():
         m[_norm_name(cell.name)] = cell.cell_index()
@@ -92,12 +171,11 @@ def build_existing_cell_map(layout: klayout.db.Layout) -> Dict[str, int]:
 
 
 def get_or_create_cell_index(layout: klayout.db.Layout, name: str, existing_map: Dict[str, int]) -> int:
-    """Reusa por nombre normalizado si existe, si no crea."""
     nn = _norm_name(name)
     if nn in existing_map:
         return existing_map[nn]
 
-    c = layout.cell(name)  # Cell o None
+    c = layout.cell(name)
     if c is None:
         c = layout.create_cell(name)
 
@@ -105,11 +183,33 @@ def get_or_create_cell_index(layout: klayout.db.Layout, name: str, existing_map:
     return c.cell_index()
 
 
+def _cell_has_content(cell: klayout.db.Cell) -> bool:
+    """
+    True si la celda ya tiene algo (instancias o shapes).
+    Útil para no "reconstruir" una celda que ya vino de un reuse.gds/autoload.
+    """
+    try:
+        if cell.each_inst().at_end() is False:
+            return True
+    except Exception:
+        # fallback si API cambia
+        pass
+
+    try:
+        # revisa shapes en cualquier layer
+        for li in cell.layout().layer_indices():
+            if not cell.shapes(li).is_empty():
+                return True
+    except Exception:
+        pass
+
+    return False
+
+
 # -----------------------------
-# Netlist reader (solo validación)
+# Netlist reader (validación)
 # -----------------------------
 def read_hierarchical_netlist(spice_path: str) -> klayout.db.Netlist:
-    """Opcional: valida que KLayout puede leerlo. No dependemos de esto para instanciar."""
     nl = klayout.db.Netlist()
     reader = klayout.db.NetlistSpiceReader()
     nl.read(spice_path, reader)
@@ -120,11 +220,6 @@ def read_hierarchical_netlist(spice_path: str) -> klayout.db.Netlist:
 # Autoload de GDS desde netlist
 # -----------------------------
 def parse_sch_paths(netlist_text: str) -> List[str]:
-    """
-    Encuentra líneas tipo:
-      ** sch_path: /path/to/cell.sch
-    Devuelve lista de paths .sch encontrados.
-    """
     out: List[str] = []
     for raw in netlist_text.splitlines():
         m = re.search(r"\bsch_path:\s*(\S+)", raw)
@@ -134,37 +229,23 @@ def parse_sch_paths(netlist_text: str) -> List[str]:
 
 
 def sch_to_gds_candidates(sch_path: str, reuse_dir: Optional[str] = None) -> List[str]:
-    """
-    Genera candidatos .gds desde un sch_path.
-    Regla 1: mismo directorio, .sch -> .gds
-    Regla 2 (opcional): reuse_dir/<stem>.gds
-    """
     p = pathlib.Path(sch_path)
     candidates: List[str] = []
-
     if p.suffix.lower() == ".sch":
         candidates.append(str(p.with_suffix(".gds")))
-
     if reuse_dir:
         candidates.append(str(pathlib.Path(reuse_dir) / f"{p.stem}.gds"))
-
     return candidates
 
 
 def autoload_reuse_gds(layout: klayout.db.Layout, netlist_text: str, reuse_dir: Optional[str] = None):
-    """
-    Carga GDS encontrados automáticamente (si existen en disco).
-    Ignora errores de lectura.
-    """
     sch_paths = parse_sch_paths(netlist_text)
     seen = set()
-
     for sch in sch_paths:
         for gds in sch_to_gds_candidates(sch, reuse_dir=reuse_dir):
             if gds in seen:
                 continue
             seen.add(gds)
-
             if pathlib.Path(gds).exists():
                 try:
                     layout.read(gds)
@@ -173,45 +254,24 @@ def autoload_reuse_gds(layout: klayout.db.Layout, netlist_text: str, reuse_dir: 
 
 
 # -----------------------------
-# Parseo robusto del TEXTO del SPICE
+# Parse SPICE: subckts + instancias
 # -----------------------------
-def _maybe_uncomment_spice_directive(line: str) -> Optional[str]:
-    """
-    - Si es directiva comentada (*.subckt, **.subckt, *.ends, etc), la "descomenta".
-    - Si es comentario normal, la ignora (None).
-    - Si no es comentario, la devuelve limpia.
-    """
-    s = line.strip()
-    if not s:
-        return None
-
-    if s.startswith("*"):
-        if re.match(r"^\*+\.((subckt)|(ends)|(ipin)|(opin)|(iopin))\b", s, re.IGNORECASE):
-            return s.lstrip("*").strip()
-        return None
-
-    return s
-
-
-def parse_spice_structure(netlist_text: str) -> Tuple[Set[str], List[str], Dict[str, List[str]]]:
+def parse_spice(netlist_text: str) -> Tuple[List[str], Set[str], Dict[str, List[Dict]]]:
     """
     Retorna:
-      subckts: set de subckt encontrados
-      tops: lista de tops (heurística: primer subckt definido)
-      inst_map: parent -> [child, child, ...] SOLO para child que sea subckt real
-
-    FIX:
-      - Ya no cuenta XM1/XM2 como instancias jerárquicas.
-      - Solo considera X... cuyo último token (child) esté en el set de subckts definidos.
+      subckts_order: lista subckts en orden
+      subckts_set: set subckts
+      inst_map: parent -> list of instances dict:
+          {"kind":"subckt","child":"inv"}
+          {"kind":"leaf","model":"sg13_lv_nmos","params":{...}}
     """
-    # Preprocesar líneas (aplica "descomentado" de directivas)
     cooked_lines: List[str] = []
     for raw in netlist_text.splitlines():
         line = _maybe_uncomment_spice_directive(raw)
         if line is not None:
             cooked_lines.append(line)
 
-    # 1) Primer pase: recolectar subckts
+    # primer pase: subckts
     subckts_order: List[str] = []
     subckts_set: Set[str] = set()
     for line in cooked_lines:
@@ -221,8 +281,8 @@ def parse_spice_structure(netlist_text: str) -> Tuple[Set[str], List[str], Dict[
             subckts_order.append(name)
             subckts_set.add(name)
 
-    # 2) Segundo pase: instancias SOLO si child es subckt real
-    inst_map: Dict[str, List[str]] = {}
+    # segundo pase: instancias
+    inst_map: Dict[str, List[Dict]] = {}
     current: Optional[str] = None
 
     for line in cooked_lines:
@@ -241,58 +301,166 @@ def parse_spice_structure(netlist_text: str) -> Tuple[Set[str], List[str], Dict[
             if len(toks) < 2:
                 continue
 
-            # child = último token que NO sea key=val
+            # child/model: último token que NO sea key=val
             child = None
-            for t in reversed(toks[1:]):
-                if "=" in t:
+            child_pos = None
+            for i in range(len(toks) - 1, 0, -1):
+                if "=" in toks[i]:
                     continue
-                child = t
+                child = toks[i]
+                child_pos = i
                 break
+            if not child:
+                continue
 
-            # >>> CLAVE: solo considerar si child es subckt definido <<<
-            if child and (child in subckts_set):
-                inst_map[current].append(child)
+            params = _parse_params(toks[child_pos + 1 :]) if child_pos is not None else {}
 
-    tops = subckts_order[:1]  # heurística: primer subckt es top (xschem)
-    return subckts_set, tops, inst_map
+            # FIX: solo es jerárquico si child es subckt definido
+            if child in subckts_set:
+                inst_map[current].append({"kind": "subckt", "child": child})
+            else:
+                inst_map[current].append({"kind": "leaf", "model": child, "params": params})
+
+    return subckts_order, subckts_set, inst_map
 
 
 # -----------------------------
-# Construcción de jerarquía
+# PCell factory + cache
 # -----------------------------
-def build_hierarchy_from_text(
+class PCellFactory:
+    def __init__(self, layout: klayout.db.Layout, lib: pya.Library):
+        self.layout = layout
+        self.lib = lib
+        self.cache: Dict[Tuple[str, Tuple[Tuple[str, str], ...]], int] = {}  # (pcell_name, sorted_params) -> cell_index
+
+    def _get_variant(self, pcell_name: str, params: Dict[str, str]) -> Optional[int]:
+        decl = self.lib.layout().pcell_declaration(pcell_name)
+        if decl is None:
+            return None
+        key = (pcell_name, tuple(sorted((str(k), str(v)) for k, v in params.items())))
+        if key in self.cache:
+            return self.cache[key]
+
+        idx = self.layout.add_pcell_variant(self.lib, decl.id(), params)
+        self.cache[key] = idx
+        return idx
+
+    def create_mos(self, model: str, params: Dict[str, str]) -> Optional[int]:
+        mkey = model.strip()
+        if mkey not in MOS_PCELLS:
+            return None
+        pcell_name = MOS_PCELLS[mkey]
+
+        w_um = _len_to_um(params.get("w", "0.15u"))
+        l_um = _len_to_um(params.get("l", "0.13u"))
+        ng = params.get("ng", "1")
+
+        return self._get_variant(
+            pcell_name,
+            {"w": f"{w_um}u", "l": f"{l_um}u", "ng": f"{int(float(ng))}"},
+        )
+
+    def create_res(self, model: str, params: Dict[str, str]) -> Optional[int]:
+        mkey = model.strip()
+        if mkey not in RES_PCELLS:
+            return None
+        pcell_name = RES_PCELLS[mkey]
+
+        w_um = _len_to_um(params.get("w", "1e-6"))
+        l_um = _len_to_um(params.get("l", "1e-6"))
+        b = params.get("b", "0")
+
+        return self._get_variant(
+            pcell_name,
+            {"w": f"{w_um}u", "l": f"{l_um}u", "b": f"{int(float(b))}"},
+        )
+
+    def create_cap(self, model: str, params: Dict[str, str]) -> Optional[int]:
+        mkey = model.strip()
+        if mkey not in CAP_PCELLS:
+            return None
+        pcell_name = CAP_PCELLS[mkey]
+
+        w_um = _len_to_um(params.get("w", "1e-6"))
+        l_um = _len_to_um(params.get("l", "1e-6"))
+
+        return self._get_variant(
+            pcell_name,
+            {"w": f"{w_um}u", "l": f"{l_um}u"},
+        )
+
+    def create_ant(self, model: str, params: Dict[str, str]) -> Optional[int]:
+        mkey = model.strip()
+        if mkey not in ANT_PCELLS:
+            return None
+        pcell_name = ANT_PCELLS[mkey]
+
+        w_um = _len_to_um(params.get("w", "0.3u"))
+        l_um = _len_to_um(params.get("l", "0.3u"))
+
+        return self._get_variant(
+            pcell_name,
+            {"w": f"{w_um}u", "l": f"{l_um}u"},
+        )
+
+    def create_leaf(self, model: str, params: Dict[str, str]) -> Optional[int]:
+        # intenta en orden (como tu script original)
+        idx = self.create_res(model, params)
+        if idx is not None:
+            return idx
+        idx = self.create_mos(model, params)
+        if idx is not None:
+            return idx
+        idx = self.create_cap(model, params)
+        if idx is not None:
+            return idx
+        idx = self.create_ant(model, params)
+        if idx is not None:
+            return idx
+        return None
+
+    def all_cached_cells(self) -> List[int]:
+        return list(set(self.cache.values()))
+
+
+# -----------------------------
+# Construcción Layout: jerarquía + leaf PCells
+# -----------------------------
+def build_layout(
     layout: klayout.db.Layout,
     netlist_text: str,
     desired_top_name: str,
     existing_map: Dict[str, int],
-    margin_um: float = 5.0,          # margen entre instancias
-    fallback_step_um: float = 20.0,  # fallback si bbox viene raro/vacío
-):
+    leaf_enable: bool,
+    margin_um: float = 5.0,
+    fallback_step_um: float = 20.0,
+) -> List[int]:
     """
-    - Crea/reusa celdas para cada .subckt
-    - Inserta instancias según las líneas X usando auto-step:
-        step = child_bbox.width() + margin
-    - TOP name:
-        * Si desired_top_name coincide con el top subckt => NO se crea wrapper (evita ciclo)
-        * Si no coincide => se crea wrapper desired_top_name que instancia al top subckt
+    Devuelve lista de cell_indices de PCells leaf creadas (para gallery opcional).
     """
-    subckts, tops, inst_map = parse_spice_structure(netlist_text)
-
-    if not subckts:
+    subckts_order, subckts_set, inst_map = parse_spice(netlist_text)
+    if not subckts_order:
         raise RuntimeError("No se encontraron .subckt en el netlist (ni comentados como **.subckt).")
 
-    top_subckt = tops[0] if tops else next(iter(subckts))
+    top_subckt = subckts_order[0]
 
-    # 1) Crear/reusar celdas para subckts
+    # crear/reusar celdas para subckts
     cell_map: Dict[str, int] = {}
-    for s in subckts:
+    for s in subckts_set:
         cell_map[s] = get_or_create_cell_index(layout, s, existing_map)
 
     margin = int(margin_um / layout.dbu)
     fallback_step = int(fallback_step_um / layout.dbu)
 
-    # 2) Instanciar jerarquía según texto (auto-step)
-    for parent, children in inst_map.items():
+    # PCell factory
+    factory = None
+    if leaf_enable:
+        lib = pya.Library.library_by_name(PCELL_LIB)
+        if lib is not None:
+            factory = PCellFactory(layout, lib)
+
+    # poblar cada subckt SOLO si está vacío (si vino de reuse/autoload, lo dejamos tal cual)
+    for parent, insts in inst_map.items():
         parent_id = cell_map.get(parent)
         if parent_id is None:
             parent_id = get_or_create_cell_index(layout, parent, existing_map)
@@ -300,49 +468,112 @@ def build_hierarchy_from_text(
 
         parent_cell = layout.cell(parent_id)
 
-        x = 0
-        for child in children:
-            child_id = cell_map.get(child)
-            if child_id is None:
-                child_id = get_or_create_cell_index(layout, child, existing_map)
-                cell_map[child] = child_id
+        if _cell_has_content(parent_cell):
+            # ya tiene layout (reuse/autoload). No reconstruir.
+            continue
 
-            parent_cell.insert(
+        x = 0
+        y = 0
+
+        for inst in insts:
+            if inst["kind"] == "subckt":
+                child = inst["child"]
+                child_id = cell_map.get(child)
+                if child_id is None:
+                    child_id = get_or_create_cell_index(layout, child, existing_map)
+                    cell_map[child] = child_id
+
+                parent_cell.insert(
+                    klayout.db.CellInstArray(
+                        child_id,
+                        klayout.db.Trans(klayout.db.Point(x, y)),
+                    )
+                )
+
+                child_bbox = layout.cell(child_id).bbox()
+                step = child_bbox.width() + margin
+                if step <= margin:
+                    step = fallback_step
+                x += step
+
+            else:
+                # leaf device -> PCell
+                if not leaf_enable or factory is None:
+                    continue
+
+                model = inst["model"]
+                params = inst["params"]
+
+                # multiplicidad m=...
+                m_str = params.get("m", "1")
+                try:
+                    mult = int(float(m_str))
+                except Exception:
+                    mult = 1
+                mult = max(1, mult)
+
+                for _ in range(mult):
+                    pcell_idx = factory.create_leaf(model, params)
+                    if pcell_idx is None:
+                        # modelo leaf no soportado -> skip
+                        x += fallback_step
+                        continue
+
+                    parent_cell.insert(
+                        klayout.db.CellInstArray(
+                            pcell_idx,
+                            klayout.db.Trans(klayout.db.Point(x, y)),
+                        )
+                    )
+                    bb = layout.cell(pcell_idx).bbox()
+                    step = bb.width() + margin
+                    if step <= margin:
+                        step = fallback_step
+                    x += step
+
+    # wrapper top (evitar ciclos)
+    if _norm_name(desired_top_name) != _norm_name(top_subckt):
+        wrapper_id = get_or_create_cell_index(layout, desired_top_name, existing_map)
+        wrapper_cell = layout.cell(wrapper_id)
+        if _cell_has_content(wrapper_cell) is False:
+            wrapper_cell.insert(
                 klayout.db.CellInstArray(
-                    child_id,
-                    klayout.db.Trans(klayout.db.Point(x, 0)),
+                    cell_map[top_subckt],
+                    klayout.db.Trans(klayout.db.Point(0, 0)),
                 )
             )
 
-            # auto-step: ancho real del child + margen
-            child_bbox = layout.cell(child_id).bbox()
-            step = child_bbox.width() + margin
-            if step <= margin:
-                step = fallback_step
-
-            x += step
-
-    # 3) TOP naming sin ciclos:
-    if _norm_name(desired_top_name) == _norm_name(top_subckt):
-        return
-
-    wrapper_id = get_or_create_cell_index(layout, desired_top_name, existing_map)
-    wrapper_cell = layout.cell(wrapper_id)
-
-    wrapper_cell.insert(
-        klayout.db.CellInstArray(
-            cell_map[top_subckt],
-            klayout.db.Trans(klayout.db.Point(0, 0)),
-        )
-    )
+    return factory.all_cached_cells() if factory is not None else []
 
 
 # -----------------------------
 # Gallery opcional
 # -----------------------------
-def add_gallery(layout: klayout.db.Layout):
-    """Stub minimal. Si quieres tu galería completa de PCells, pega tu lógica aquí."""
-    layout.add_cell("gallery")
+def build_gallery(layout: klayout.db.Layout, leaf_cells: List[int], name: str = "gallery"):
+    """
+    Crea una celda "gallery" y pone una instancia de cada PCell leaf generado.
+    """
+    if not leaf_cells:
+        return
+
+    gid = layout.add_cell(name)
+    gcell = layout.cell(gid)
+
+    margin = int(5.0 / layout.dbu)
+    x = 0
+    y = 0
+    row_h = 0
+
+    for idx in leaf_cells:
+        bb = layout.cell(idx).bbox()
+        if x > 0 and x + bb.width() > int(2000 / layout.dbu):  # wrap a la siguiente fila
+            x = 0
+            y += row_h + margin
+            row_h = 0
+
+        gcell.insert(klayout.db.CellInstArray(idx, klayout.db.Trans(klayout.db.Point(x, y))))
+        x += bb.width() + margin
+        row_h = max(row_h, bb.height())
 
 
 # -----------------------------
@@ -366,11 +597,6 @@ except NameError:
     reuse = None
 
 try:
-    gallery
-except NameError:
-    gallery = "0"
-
-try:
     autoload
 except NameError:
     autoload = "0"
@@ -379,6 +605,16 @@ try:
     reuse_dir
 except NameError:
     reuse_dir = None
+
+try:
+    leaf
+except NameError:
+    leaf = "0"
+
+try:
+    gallery
+except NameError:
+    gallery = "0"
 
 
 # -----------------------------
@@ -391,37 +627,37 @@ def main():
     layout = klayout.db.Layout(True)
     layout.dbu = 0.001
 
-    # 1) Reuse manual (si lo pasas)
+    # reuse manual
     if reuse:
         layout.read(reuse)
 
-    # 2) Autoload (si autoload=1)
+    # autoload gds (sch->gds y/o reuse_dir)
     if _rd_bool(autoload, default=False):
         autoload_reuse_gds(layout, netlist_text, reuse_dir=reuse_dir)
 
-    # Mapa de celdas existentes (después de cargar reuse/autoload)
     existing_map = build_existing_cell_map(layout)
 
-    # Validación opcional (si falla, el netlist no es parseable por KLayout)
+    # validación opcional (si falla, KLayout no puede leer el netlist)
     _ = read_hierarchical_netlist(netlist)
 
     desired_top_name = _basename_noext(output)
 
-    build_hierarchy_from_text(
+    leaf_cells = build_layout(
         layout=layout,
         netlist_text=netlist_text,
         desired_top_name=desired_top_name,
         existing_map=existing_map,
+        leaf_enable=_rd_bool(leaf, default=False),
         margin_um=5.0,
         fallback_step_um=20.0,
     )
 
     if _rd_bool(gallery, default=False):
-        add_gallery(layout)
+        build_gallery(layout, leaf_cells, name="gallery")
 
     pathlib.Path(output).parent.mkdir(parents=True, exist_ok=True)
     layout.write(output)
-    print(f"GDS created: {output} (top name requested: {desired_top_name})")
+    print(f"GDS created: {output}")
 
 
 if __name__ == "__main__":

@@ -31,7 +31,7 @@ N 490 -540 530 -540 {lab=#net3}
 N 650 -540 690 -540 {lab=VIB}
 N 170 -540 370 -540 {lab=VINI}
 N 740 -690 740 -660 {lab=VSS}
-N 810 -730 850 -730 {lab=VQ}
+N 810 -730 850 -730 {lab=VQB}
 N 580 -810 580 -770 {lab=VDD}
 N 420 -810 420 -770 {lab=VDD}
 N 650 -730 690 -730 {lab=#net4}
@@ -61,7 +61,7 @@ N 500 -130 540 -130 {lab=#net7}
 N 660 -130 700 -130 {lab=VI}
 N 180 -130 380 -130 {lab=VINIB}
 N 750 -280 750 -250 {lab=VSS}
-N 820 -320 860 -320 {lab=VQB}
+N 820 -320 860 -320 {lab=#net8}
 N 590 -400 590 -360 {lab=VDD}
 N 430 -400 430 -360 {lab=VDD}
 N 660 -320 700 -320 {lab=#net9}
@@ -96,7 +96,7 @@ C {ipin.sym} 100 -790 0 0 {name=p7 lab=VINI
 
 }
 C {opin.sym} 690 -540 0 0 {name=p8 lab=VIB}
-C {opin.sym} 850 -730 0 0 {name=p4 lab=VQ}
+C {opin.sym} 860 -320 0 0 {name=p4 lab=VQ}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_d16.sym} 580 -540 0 0 {name=x8}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_d16.sym} 740 -730 0 0 {name=x9}
 C {devices/lab_pin.sym} 580 -620 2 0 {name=p11 sig_type=std_logic lab=VDD}
@@ -111,7 +111,7 @@ C {ipin.sym} 110 -380 0 0 {name=p18 lab=VINIB
 }
 C {opin.sym} 700 -130 0 0 {name=p19 lab=VI
 }
-C {opin.sym} 860 -320 0 0 {name=p21 lab=VQB}
+C {opin.sym} 850 -730 0 0 {name=p21 lab=VQB}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_d16.sym} 590 -130 0 0 {name=x16}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_d16.sym} 750 -320 0 0 {name=x17}
 C {devices/lab_pin.sym} 270 -400 0 0 {name=p22 sig_type=std_logic lab=VDD}

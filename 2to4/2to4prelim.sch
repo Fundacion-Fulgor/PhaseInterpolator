@@ -42,11 +42,11 @@ N 2050 -920 2090 -920 {lab=VIB}
 N 1570 -920 1770 -920 {lab=VINI}
 N 1780 -680 1820 -680 {lab=VSS}
 N 2140 -1070 2140 -1040 {lab=VSS}
-N 2210 -1110 2250 -1110 {lab=VQ}
+N 2210 -1110 2250 -1110 {lab=VQB}
 N 1980 -1190 1980 -1150 {lab=VDD}
 N 1820 -1190 1820 -1150 {lab=VDD}
 N 2140 -1190 2140 -1150 {lab=VDD}
-N 2200 -1300 2240 -1300 {lab=VQB}
+N 2200 -1300 2240 -1300 {lab=#net5}
 N 1570 -1170 1570 -1110 {lab=VINI}
 N 1660 -1190 1820 -1190 {lab=VDD}
 N 1660 -1190 1660 -1160 {lab=VDD}
@@ -56,7 +56,7 @@ N 1820 -1190 1980 -1190 {lab=VDD}
 N 1820 -1000 1980 -1000 {lab=VDD}
 N 1820 -820 1980 -820 {lab=VDD}
 N 2050 -1230 2130 -1230 {lab=VSS}
-N 2050 -1110 2090 -1110 {lab=#net5}
+N 2050 -1110 2090 -1110 {lab=#net6}
 N 1980 -1190 2140 -1190 {lab=VDD}
 N 1980 -1040 2140 -1040 {lab=VSS}
 N 1890 -1110 1900 -1110 {lab=#net1}
@@ -75,8 +75,8 @@ C {ipin.sym} 1500 -1170 0 0 {name=p7 lab=VINI
 
 }
 C {opin.sym} 2090 -920 0 0 {name=p8 lab=VIB}
-C {opin.sym} 2250 -1110 0 0 {name=p4 lab=VQ}
-C {opin.sym} 2240 -1300 0 0 {name=p2 lab=VQB}
+C {opin.sym} 2240 -1300 0 0 {name=p4 lab=VQ}
+C {opin.sym} 2250 -1110 0 0 {name=p2 lab=VQB}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 1730 -610 0 0 {name=x5}
 C {ipin.sym} 1600 -750 0 0 {name=p9 lab=VINIB
 
