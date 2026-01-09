@@ -1,9 +1,19 @@
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d4.sch
+.subckt inv_PI_d4 VDD VOUT VIN VSS
+*.PININFO VIN:I VOUT:O VDD:B VSS:B
+x1[1] VDD VOUT VIN VSS inv_PI_d2
+x1[0] VDD VOUT VIN VSS inv_PI_d2
+.ends
+
+* expanding   symbol:  inv_PI_d2.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d2.sym
 ** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d2.sch
 .subckt inv_PI_d2 VDD VOUT VIN VSS
 *.PININFO VIN:I VOUT:O VDD:B VSS:B
 x1[1] VDD VOUT VIN VSS inv_PI
 x1[0] VDD VOUT VIN VSS inv_PI
 .ends
+
 
 * expanding   symbol:  inv_PI.sym # of pins=4
 ** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sym
