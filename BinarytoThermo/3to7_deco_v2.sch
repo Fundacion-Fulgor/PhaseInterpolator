@@ -63,9 +63,9 @@ N 1060 -350 1080 -350 {lab=VSS}
 N 1220 -350 1240 -350 {lab=VDD}
 N 1270 -350 1290 -350 {lab=VSS}
 N 1430 -350 1450 -350 {lab=VDD}
-N 80 -960 110 -960 {lab=S[0]}
+N 80 -960 110 -960 {lab=S[2]}
 N 80 -800 110 -800 {lab=S[1]}
-N 80 -640 110 -640 {lab=S[2]}
+N 80 -640 110 -640 {lab=S[1]}
 N 420 -260 420 -220 {lab=ST[1]}
 N 620 -250 620 -220 {lab=ST[2]}
 N 800 -250 800 -220 {lab=ST[3]}
@@ -100,9 +100,9 @@ C {lab_pin.sym} 960 -220 3 0 {name=p4 sig_type=std_logic lab=ST[4]}
 C {lab_pin.sym} 1150 -220 3 0 {name=p5 sig_type=std_logic lab=ST[5]}
 C {lab_pin.sym} 1360 -220 3 0 {name=p6 sig_type=std_logic lab=ST[6]}
 C {lab_pin.sym} 1630 -220 3 0 {name=p7 sig_type=std_logic lab=ST[7]}
-C {lab_pin.sym} 80 -960 0 0 {name=p8 sig_type=std_logic lab=S[0]}
+C {lab_pin.sym} 80 -960 0 0 {name=p8 sig_type=std_logic lab=S[2]}
 C {lab_pin.sym} 80 -800 0 0 {name=p9 sig_type=std_logic lab=S[1]}
-C {lab_pin.sym} 80 -640 0 0 {name=p10 sig_type=std_logic lab=S[2]}
+C {lab_pin.sym} 80 -640 0 0 {name=p10 sig_type=std_logic lab=S[0]}
 C {iopin.sym} 160 -1020 0 0 {name=p11 lab=VDD}
 C {iopin.sym} 160 -900 0 0 {name=p12 lab=VSS}
 C {lab_pin.sym} 160 -860 0 0 {name=p14 sig_type=std_logic lab=VDD}

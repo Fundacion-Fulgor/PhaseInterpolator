@@ -33,7 +33,7 @@ N 1660 -500 1660 -460 {lab=VSS}
 N 1500 -620 1500 -580 {lab=VDD}
 N 1500 -620 1660 -620 {lab=VDD}
 N 1660 -620 1660 -580 {lab=VDD}
-N 1390 -540 1450 -540 {lab=Sbuff[4]}
+N 1390 -540 1450 -540 {lab=Sbuff[3]}
 N 1730 -540 1770 -540 {lab=SC[7:1]}
 N 1030 -250 1070 -250 {lab=STQ[7:1]}
 N 850 -260 910 -260 {lab=SC[7:1]}
@@ -56,7 +56,7 @@ N 770 -410 770 -350 {lab=VDD}
 N 560 -350 770 -350 {lab=VDD}
 N 770 -150 770 -90 {lab=VSS}
 N 560 -150 770 -150 {lab=VSS}
-N 170 -340 230 -340 {lab=S[4]}
+N 170 -340 230 -340 {lab=S[3]}
 N 280 -440 280 -380 {lab=VDD}
 N 280 -300 280 -240 {lab=VSS}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 860 -400 0 0 {name=x1}
@@ -64,7 +64,7 @@ C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 1020 -400 0 0 {name
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/xor_custom.sym} 460 -160 0 0 {name=x3}
 C {ipin.sym} 740 -660 0 0 {name=p1 lab=S[4:3]}
 C {iopin.sym} 1020 -400 0 0 {name=p2 lab=VSS}
-C {lab_pin.sym} 170 -340 0 0 {name=p3 sig_type=std_logic lab=S[4]}
+C {lab_pin.sym} 170 -340 0 0 {name=p3 sig_type=std_logic lab=S[3]}
 C {opin.sym} 1070 -250 0 0 {name=p4 lab=STQ[7:1]}
 C {lab_pin.sym} 1220 -540 2 0 {name=p5 sig_type=std_logic lab=SQ[1]}
 C {lab_pin.sym} 670 -250 2 0 {name=p6 sig_type=std_logic lab=SQ[0]}
@@ -89,6 +89,6 @@ C {opin.sym} 800 -660 0 0 {name=p19 lab=SQ[2:0]}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_d8.sym} 280 -340 0 0 {name=x6}
 C {lab_pin.sym} 280 -440 0 0 {name=p20 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 280 -240 0 0 {name=p21 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 350 -340 2 0 {name=p22 sig_type=std_logic lab=Sbuff[4]}
-C {lab_pin.sym} 840 -540 0 0 {name=p23 sig_type=std_logic lab=Sbuff[4]}
-C {lab_pin.sym} 1390 -540 0 0 {name=p11 sig_type=std_logic lab=Sbuff[4]}
+C {lab_pin.sym} 350 -340 2 0 {name=p22 sig_type=std_logic lab=Sbuff[3]}
+C {lab_pin.sym} 840 -540 0 0 {name=p23 sig_type=std_logic lab=S[4]}
+C {lab_pin.sym} 1390 -540 0 0 {name=p11 sig_type=std_logic lab=Sbuff[3]}
