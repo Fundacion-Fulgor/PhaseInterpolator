@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -56,7 +56,7 @@ spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 280 -370 0 0 {name=M2
 l=0.13u
-w=0.45u
+w=0.15u
 ng=1
 m=1
 model=sg13_lv_pmos
@@ -72,7 +72,7 @@ spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 280 -460 0 0 {name=M4
 l=0.13u
-w=0.45u
+w=0.15u
 ng=1
 m=1
 model=sg13_lv_pmos
@@ -86,7 +86,7 @@ C {ipin.sym} 210 -370 0 0 {name=p8 lab=C}
 C {opin.sym} 460 -310 0 0 {name=p1 lab=OUT}
 C {sg13g2_pr/sg13_lv_pmos.sym} 280 -570 0 0 {name=M5
 l=0.13u
-w=0.45u
+w=0.15u
 ng=1
 m=1
 model=sg13_lv_pmos
