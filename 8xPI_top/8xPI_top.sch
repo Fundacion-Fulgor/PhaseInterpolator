@@ -1,24 +1,24 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
 F {}
 E {}
-N 770 -500 770 -400 {lab="VSTQ[7:1], VSQ[2:1]"}
+N 770 -500 770 -400 {lab="VSTQ[7:1], VSQ[2]"}
 N 550 -590 620 -590 {lab=VST[7:1]}
-N 600 -320 640 -320 {lab=#net1}
-N 640 -350 640 -320 {lab=#net1}
-N 640 -350 680 -350 {lab=#net1}
-N 600 -260 640 -260 {lab=#net2}
-N 640 -260 640 -230 {lab=#net2}
-N 640 -230 680 -230 {lab=#net2}
-N 600 -280 660 -280 {lab=#net3}
-N 660 -280 660 -270 {lab=#net3}
-N 660 -270 680 -270 {lab=#net3}
-N 600 -300 660 -300 {lab=#net4}
-N 660 -310 660 -300 {lab=#net4}
-N 660 -310 680 -310 {lab=#net4}
+N 600 -320 640 -320 {lab=VI}
+N 640 -350 640 -320 {lab=VI}
+N 660 -350 680 -350 {lab=VI}
+N 600 -260 640 -260 {lab=VQB}
+N 640 -260 640 -230 {lab=VQB}
+N 650 -230 680 -230 {lab=VQB}
+N 620 -280 660 -280 {lab=VQB}
+N 660 -280 660 -270 {lab=VQB}
+N 660 -270 680 -270 {lab=VQB}
+N 620 -300 660 -300 {lab=VIB}
+N 660 -310 660 -300 {lab=VIB}
+N 660 -310 680 -310 {lab=VIB}
 N 260 -330 300 -330 {lab=VINI}
 N 260 -290 300 -290 {lab=VINIB}
 N 260 -250 300 -250 {lab=VCONT}
@@ -38,6 +38,14 @@ N 820 -570 860 -570 {lab=VST[7:1]}
 N 1160 -570 1200 -570 {lab=VSTQ[7:1]}
 N 1010 -710 1010 -650 {lab=VDD}
 N 450 -540 450 -480 {lab=VSS}
+N 660 -400 660 -350 {lab=VI}
+N 640 -350 660 -350 {lab=VI}
+N 620 -400 620 -300 {lab=VIB}
+N 600 -300 620 -300 {lab=VIB}
+N 650 -230 650 -200 {lab=VQB}
+N 640 -230 650 -230 {lab=VQB}
+N 620 -280 620 -200 {lab=VQB}
+N 600 -280 620 -280 {lab=VQB}
 C {/foss/designs/PhaseInterpolator/8xPI/8xPI.sym} 660 -140 0 0 {name=x1}
 C {/foss/designs/PhaseInterpolator/2to4/2to4prelim.sym} 450 -290 0 0 {name=x2}
 C {/foss/designs/PhaseInterpolator/BinarytoThermo/3to7_deco_v2.sym} 320 -520 0 0 {name=x3}
@@ -71,3 +79,7 @@ C {devices/lab_pin.sym} 820 -570 0 0 {name=p18 sig_type=std_logic lab=VST[7:1]}
 C {devices/lab_pin.sym} 1200 -570 2 0 {name=p19 sig_type=std_logic lab=VSTQ[7:1]}
 C {devices/lab_pin.sym} 1010 -710 2 0 {name=p20 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 450 -480 0 0 {name=p21 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 660 -400 1 0 {name=p22 sig_type=std_logic lab=VI}
+C {devices/lab_pin.sym} 620 -400 1 0 {name=p23 sig_type=std_logic lab=VIB}
+C {devices/lab_pin.sym} 650 -200 3 0 {name=p24 sig_type=std_logic lab=VQB}
+C {devices/lab_pin.sym} 620 -200 3 0 {name=p25 sig_type=std_logic lab=VQ}
