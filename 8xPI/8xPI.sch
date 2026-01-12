@@ -20,12 +20,12 @@ N 340 -160 650 -160 {lab=VSS}
 N 340 -180 340 -160 {lab=VSS}
 N 830 -420 830 -330 {lab=VDD}
 N 830 -250 830 -160 {lab=VSS}
-N 650 -160 830 -160 {lab=VSS}
-N 650 -420 830 -420 {lab=VDD}
 N 720 -290 780 -290 {lab=#net2}
 N 900 -290 960 -290 {lab=VOUT}
 N 430 -180 430 -100 {lab=VS[1:0]}
 N 410 -180 410 -100 {lab=VST[7:0]}
+N 650 -160 830 -160 {lab=VSS}
+N 650 -420 830 -420 {lab=VDD}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/MUX_4_1.sym} 210 -140 0 0 {name=x1[7:0]}
 C {ipin.sym} 290 -350 0 0 {name=p3 lab=VINI}
 C {ipin.sym} 290 -270 0 0 {name=p4 lab=VINQ}

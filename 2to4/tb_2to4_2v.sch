@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -6,15 +6,15 @@ S {}
 F {}
 E {}
 B 2 -1103120 -1113200 -1102050 -1112720 {flags=graph
-y1=-0.044
+y1=-0.057
 y2=1.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.5e-10
-x2=3.15e-09
+x1=0
+x2=3e-09
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -28,21 +28,21 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 -1103120 -1112680 -1102050 -1112200 {flags=graph
-y1=-0.04
+y1=-0.057
 y2=1.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.5e-10
-x2=3.15e-09
+x1=0
+x2=3e-09
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 node="v270
-v0"
+v180"
 color="21 17"
 dataset=-1
 unitx=1
@@ -50,20 +50,20 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 -1101890 -1113220 -1100820 -1112740 {flags=graph
-y1=-0.04
+y1=-0.057
 y2=1.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.5e-10
-x2=3.15e-09
+x1=0
+x2=3e-09
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="v270
+node="v180
 v90"
 color="21 17"
 dataset=-1
@@ -72,20 +72,20 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 -1101900 -1112670 -1100830 -1112190 {flags=graph
-y1=-0.041
+y1=-0.057
 y2=1.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.5e-10
-x2=3.15e-09
+x1=0
+x2=3e-09
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="v180
+node="v270
 v0"
 color="10 17"
 dataset=-1
@@ -94,15 +94,15 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 -1101650 -1113730 -1100580 -1113250 {flags=graph
-y1=-0.058
+y1=-0.057
 y2=1.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.5e-10
-x2=3.15e-09
+x1=0
+x2=3e-09
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -144,7 +144,7 @@ N -1102360 -1113400 -1102300 -1113400 {lab=v270}
 N -1102080 -1113610 -1102080 -1113570 {lab=vdd}
 N -1102210 -1113610 -1102210 -1113570 {lab="vdd, vdd, vdd, vdd, vss, vss, vss, vss" vss}
 N -1101880 -1113450 -1101780 -1113450 {lab=vout}
-C {/foss/designs/PhaseInterpolator/2to4/2to4_2v.sym} -1102750 -1113460 0 0 {name=x1}
+C {2to4_2v.sym} -1102750 -1113460 0 0 {name=x1}
 C {devices/vsource.sym} -1103560 -1113570 0 0 {name=Vdd1 value=1.2 savecurrent=false
 }
 C {devices/gnd.sym} -1103560 -1113510 0 0 {name=l4 lab=GND}
@@ -158,7 +158,7 @@ C {devices/code_shown.sym} -1103875 -1113045 0 0 {name=s1 only_toplevel=false
 value="
 .save v(vin1) v(v0) v(v90) v(v270) v(v180) v(vin2) v(vout)
 
-.tran 10p 3n
+.tran 5p 3n
 .save all
 
 .control
@@ -168,36 +168,59 @@ write tran_logic.raw
 
 * --- MEDICIONES DE FASE Y RETARDO (Usando v90) ---
 * Periodo Entrada (Ref)
-meas tran T_p90 TRIG v(vin1) VAL=0.6 RISE=3 TARG v(vin1) VAL=0.6 RISE=4
+*meas tran T_p90 TRIG v(vin1) VAL=0.6 RISE=3 TARG v(vin1) VAL=0.6 RISE=4
   
 * Retardo (Entrada vs v90)
-meas tran T_d90 TRIG v(vin1) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 RISE=3
+*meas tran T_d90 TRIG v(vin1) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 RISE=3
 
 * Calculo Fase 
-let Phase_D90= (T_d90 / T_p90) * 360
+*let Phase_D90= (T_d90 / T_p90) * 360
   
-print T_p90
-print T_d90
-print Phase_D90
+*print T_p90
+*print T_d90
+*print Phase_D90
 
 
 * --- DUTY CYCLE (Usando v90) ---
 * Periodo Salida
-meas tran T_pe90 TRIG v(v90) VAL=0.6 RISE=2 TARG v(v90) VAL=0.6 RISE=3
+*meas tran T_pe90 TRIG v(v90) VAL=0.6 RISE=2 TARG v(v90) VAL=0.6 RISE=3
 
 * Tiempo en ALTO (Ton)
 * Desde que sube (RISE=2) hasta que baja (FALL=2)
-meas tran T_h90 TRIG v(v90) VAL=0.6 RISE=2 TARG v(v90) VAL=0.6 FALL=2
+*meas tran T_h90 TRIG v(v90) VAL=0.6 RISE=2 TARG v(v90) VAL=0.6 FALL=2
 
 * Tiempo en BAJO (Toff)
 * Desde que baja (FALL=2) hasta que sube de nuevo (RISE=3)
-meas tran T_l90 TRIG v(v90) VAL=0.6 FALL=2 TARG v(v90) VAL=0.6 RISE=3
+*meas tran T_l90 TRIG v(v90) VAL=0.6 FALL=2 TARG v(v90) VAL=0.6 RISE=3
 
-let Duty_H90 = (T_h90 / T_pe90) * 100
-let Duty_L90 = (T_l90 / T_pe90) * 100
+*let Duty_H90 = (T_h90 / T_pe90) * 100
+*let Duty_L90 = (T_l90 / T_pe90) * 100
 
-print Duty_H90
-print Duty_L90
+*print Duty_H90
+*print Duty_L90
+
+meas tran SKEW0_90 TRIG v(v0) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 RISE=3
+meas tran SKEW90_180 TRIG v(v90) VAL=0.6 RISE=3 TARG v(v180) VAL=0.6 RISE=4
+meas tran SKEW180_270 TRIG v(v180) VAL=0.6 RISE=3 TARG v(v270) VAL=0.6 RISE=3
+meas tran SKEW270_0 TRIG v(v270) VAL=0.6 RISE=3 TARG v(v0) VAL=0.6 RISE=3
+
+meas tran T90 TRIG v(v90) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 RISE=4
+meas tran T180 TRIG v(v180) VAL=0.6 RISE=3 TARG v(v180) VAL=0.6 RISE=4
+meas tran T270 TRIG v(v270) VAL=0.6 RISE=3 TARG v(v270) VAL=0.6 RISE=4
+meas tran T0 TRIG v(v0) VAL=0.6 RISE=3 TARG v(v0) VAL=0.6 RISE=4
+
+let phase0_90 = (SKEW0_90 / 500p) * 360
+let phase90_180 = (SKEW90_180 / 500p) * 360
+let phase180_270 = (SKEW180_270 / 500p) * 360
+let phase270_0 = (SKEW270_0 / 500p) * 360
+
+
+meas tran PW0 TRIG v(v0) VAL=0.6 RISE=3 TARG v(v0) VAL=0.6 FALL=4
+meas tran PW90 TRIG v(v90) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 FALL=4
+meas tran PW180 TRIG v(v180) VAL=0.6 RISE=3 TARG v(v180) VAL=0.6 FALL=4
+meas tran PW270 TRIG v(v270) VAL=0.6 RISE=3 TARG v(v270) VAL=0.6 FALL=4
+
+print SKEW0_90 SKEW90_180 SKEW180_270 SKEW270_0 phase0_90 phase90_180 phase180_270 phase270_0 PW0 PW90 PW180 PW270
 
 .endc
 "}

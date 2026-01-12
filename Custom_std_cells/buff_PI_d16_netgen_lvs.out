@@ -68,5 +68,51 @@ VSS                                        |VSS
 Cell pin lists are equivalent.
 Device classes inv_PI_d8 and inv_PI_d8 are equivalent.
 
+Subcircuit summary:
+Circuit 1: inv_PI_d16                      |Circuit 2: inv_PI_d16                      
+-------------------------------------------|-------------------------------------------
+inv_PI_d8 (2)                              |inv_PI_d8 (2)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 1 symmetry.
+
+Subcircuit pins:
+Circuit 1: inv_PI_d16                      |Circuit 2: inv_PI_d16                      
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VOUT                                       |VOUT                                       
+VIN                                        |VIN                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv_PI_d16 and inv_PI_d16 are equivalent.
+
+Subcircuit summary:
+Circuit 1: buff_PI_d16                     |Circuit 2: buff_PI_d16                     
+-------------------------------------------|-------------------------------------------
+inv_PI_d16 (1)                             |inv_PI_d16 (1)                             
+inv_PI_d8 (1)                              |inv_PI_d8 (1)                              
+inv_PI_d4 (1)                              |inv_PI_d4 (1)                              
+inv_PI_d2 (1)                              |inv_PI_d2 (1)                              
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: buff_PI_d16                     |Circuit 2: buff_PI_d16                     
+-------------------------------------------|-------------------------------------------
+VIN                                        |VIN                                        
+VOUT                                       |VOUT                                       
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes buff_PI_d16 and buff_PI_d16 are equivalent.
+
 Final result: Circuits match uniquely.
 .

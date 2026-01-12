@@ -61,10 +61,10 @@ N 500 -130 540 -130 {lab=#net7}
 N 660 -130 700 -130 {lab=VI}
 N 180 -130 380 -130 {lab=VINIB}
 N 750 -280 750 -250 {lab=VSS}
-N 820 -320 860 -320 {lab=#net8}
+N 820 -320 860 -320 {lab=VQ}
 N 590 -400 590 -360 {lab=VDD}
 N 430 -400 430 -360 {lab=VDD}
-N 660 -320 700 -320 {lab=#net9}
+N 660 -320 700 -320 {lab=#net8}
 N 750 -400 750 -360 {lab=VDD}
 N 180 -380 180 -320 {lab=VINIB}
 N 270 -400 430 -400 {lab=VDD}
@@ -87,9 +87,9 @@ N 580 -810 740 -810 {lab=VDD}
 N 590 -250 750 -250 {lab=VSS}
 N 590 -400 750 -400 {lab=VDD}
 C {/foss/designs/PhaseInterpolator/2to4/delay_variable.sym} 260 -730 0 0 {name=x1}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 330 -590 0 0 {name=x2}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 490 -590 0 0 {name=x3}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 330 -400 0 0 {name=x6}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sym} 330 -590 0 0 {name=x2}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sym} 490 -590 0 0 {name=x3}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sym} 330 -400 0 0 {name=x6}
 C {ipin.sym} 170 -450 0 0 {name=p6 lab=VCONT
 }
 C {ipin.sym} 100 -790 0 0 {name=p7 lab=VINI
@@ -97,23 +97,23 @@ C {ipin.sym} 100 -790 0 0 {name=p7 lab=VINI
 }
 C {opin.sym} 690 -540 0 0 {name=p8 lab=VIB}
 C {opin.sym} 860 -320 0 0 {name=p4 lab=VQ}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_d16.sym} 580 -540 0 0 {name=x8}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_d16.sym} 740 -730 0 0 {name=x9}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_PI_d16.sym} 580 -540 0 0 {name=x8}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_PI_d16.sym} 740 -730 0 0 {name=x9}
 C {devices/lab_pin.sym} 580 -620 2 0 {name=p11 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 420 -470 0 0 {name=p14 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 240 -660 0 0 {name=p15 sig_type=std_logic lab=VSS}
 C {/foss/designs/PhaseInterpolator/2to4/delay_variable.sym} 270 -320 0 0 {name=x11}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 340 -180 0 0 {name=x12}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 500 -180 0 0 {name=x13}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 340 10 0 0 {name=x15}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sym} 340 -180 0 0 {name=x12}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sym} 500 -180 0 0 {name=x13}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sym} 340 10 0 0 {name=x15}
 C {ipin.sym} 110 -380 0 0 {name=p18 lab=VINIB
 
 }
 C {opin.sym} 700 -130 0 0 {name=p19 lab=VI
 }
 C {opin.sym} 850 -730 0 0 {name=p21 lab=VQB}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_d16.sym} 590 -130 0 0 {name=x16}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_d16.sym} 750 -320 0 0 {name=x17}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_PI_d16.sym} 590 -130 0 0 {name=x16}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_PI_d16.sym} 750 -320 0 0 {name=x17}
 C {devices/lab_pin.sym} 270 -400 0 0 {name=p22 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 590 -210 2 0 {name=p23 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 250 -250 0 0 {name=p25 sig_type=std_logic lab=VSS}

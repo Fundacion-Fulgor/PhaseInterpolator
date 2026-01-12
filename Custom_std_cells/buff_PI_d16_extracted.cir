@@ -1,4 +1,16 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 12/01/2026 18:23
+* Extracted by KLayout with SG13G2 LVS runset on : 12/01/2026 19:30
+
+.SUBCKT buff_PI_d16 VSS VDD VOUT VIN
+X$1 VDD VSS VOUT \$6 inv_PI_d16
+X$2 \$6 \$5 VSS VDD inv_PI_d8
+X$3 VSS \$5 \$4 VDD inv_PI_d4
+X$4 VSS VIN VDD \$4 inv_PI_d2
+.ENDS buff_PI_d16
+
+.SUBCKT inv_PI_d16 VDD VSS VOUT VIN
+X$1 VOUT VIN VSS VDD inv_PI_d8
+X$2 VOUT VIN VSS VDD inv_PI_d8
+.ENDS inv_PI_d16
 
 .SUBCKT inv_PI_d8 VOUT VIN VSS VDD
 X$1 VSS VOUT VIN VDD inv_PI_d4

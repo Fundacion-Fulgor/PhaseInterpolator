@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -13,9 +13,9 @@ N 660 -350 680 -350 {lab=VI}
 N 600 -260 640 -260 {lab=VQB}
 N 640 -260 640 -230 {lab=VQB}
 N 650 -230 680 -230 {lab=VQB}
-N 620 -280 660 -280 {lab=VQB}
-N 660 -280 660 -270 {lab=VQB}
-N 660 -270 680 -270 {lab=VQB}
+N 620 -280 660 -280 {lab=VQ}
+N 660 -280 660 -270 {lab=VQ}
+N 660 -270 680 -270 {lab=VQ}
 N 620 -300 660 -300 {lab=VIB}
 N 660 -310 660 -300 {lab=VIB}
 N 660 -310 680 -310 {lab=VIB}
@@ -44,10 +44,10 @@ N 620 -400 620 -300 {lab=VIB}
 N 600 -300 620 -300 {lab=VIB}
 N 650 -230 650 -200 {lab=VQB}
 N 640 -230 650 -230 {lab=VQB}
-N 620 -280 620 -200 {lab=VQB}
-N 600 -280 620 -280 {lab=VQB}
+N 620 -280 620 -200 {lab=VQ}
+N 600 -280 620 -280 {lab=VQ}
 C {/foss/designs/PhaseInterpolator/8xPI/8xPI.sym} 660 -140 0 0 {name=x1}
-C {/foss/designs/PhaseInterpolator/2to4/2to4prelim.sym} 450 -290 0 0 {name=x2}
+C {/foss/designs/PhaseInterpolator/2to4/2to4_2v.sym} 450 -290 0 0 {name=x2}
 C {/foss/designs/PhaseInterpolator/BinarytoThermo/3to7_deco_v2.sym} 320 -520 0 0 {name=x3}
 C {ipin.sym} 260 -330 0 0 {name=p7 lab=VINI
 
