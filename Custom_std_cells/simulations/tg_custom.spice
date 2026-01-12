@@ -1,0 +1,6 @@
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sch
+.subckt tg_custom VOUT VSN VSP VIN VBP VBN
+*.PININFO VIN:B VSN:B VOUT:B VSP:B VBN:B VBP:B
+M1 VOUT VSN VIN VBN sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+M2 VOUT VSP VIN VBP sg13_lv_pmos w=0.3u l=0.13u ng=2 m=1
+.ends
