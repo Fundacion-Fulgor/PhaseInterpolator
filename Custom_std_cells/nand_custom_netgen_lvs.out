@@ -1,0 +1,25 @@
+
+Subcircuit summary:
+Circuit 1: nand_custom                     |Circuit 2: nand_custom                     
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (2)                           |sg13_lv_nmos (2)                           
+sg13_lv_pmos (2)                           |sg13_lv_pmos (2)                           
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: nand_custom                     |Circuit 2: nand_custom                     
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+B                                          |B                                          
+A                                          |A                                          
+OUT                                        |OUT                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nand_custom and nand_custom are equivalent.
+
+Final result: Circuits match uniquely.
+.
