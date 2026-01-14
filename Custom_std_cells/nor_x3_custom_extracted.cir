@@ -1,16 +1,16 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 09/01/2026 04:55
+* Extracted by KLayout with SG13G2 LVS runset on : 14/01/2026 20:09
 
-.SUBCKT nor_x3_custom VSS VDD OUT A B
+.SUBCKT nor_x3_custom VDD VSS C B A OUT
 M$1 VSS A OUT VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.1005p AD=0.0555p PS=1.34u
 + PD=0.74u
 M$2 OUT B VSS VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.0555p AD=0.0555p PS=0.74u
 + PD=0.74u
-M$3 VSS \$6 OUT VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.0555p AD=0.1005p PS=0.74u
+M$3 VSS C OUT VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.0555p AD=0.1005p PS=0.74u
 + PD=1.34u
-M$4 VDD A \$7 VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.1005p AD=0.0555p PS=1.34u
+M$4 VDD A \$13 VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.1005p AD=0.0555p PS=1.34u
 + PD=0.74u
-M$5 \$7 B \$8 VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.0555p AD=0.0555p PS=0.74u
+M$5 \$13 B \$11 VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.0555p AD=0.0555p PS=0.74u
 + PD=0.74u
-M$6 \$8 \$6 OUT VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.0555p AD=0.1005p PS=0.74u
+M$6 \$11 C OUT VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.0555p AD=0.1005p PS=0.74u
 + PD=1.34u
 .ENDS nor_x3_custom
