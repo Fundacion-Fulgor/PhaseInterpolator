@@ -1,11 +1,11 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 12/01/2026 18:00
+* Extracted by KLayout with SG13G2 LVS runset on : 14/01/2026 23:25
 
-.SUBCKT inv_PI_d4 VSS VOUT VIN VDD
-X$1 VSS VIN VDD VOUT inv_PI_d2
-X$2 VSS VIN VDD VOUT inv_PI_d2
+.SUBCKT inv_PI_d4 VSS VDD VIN VOUT
+X$1 VSS VIN VOUT VDD inv_PI_d2
+X$2 VSS VIN VOUT VDD inv_PI_d2
 .ENDS inv_PI_d4
 
-.SUBCKT inv_PI_d2 VSS VIN VDD VOUT
+.SUBCKT inv_PI_d2 VSS VIN VOUT VDD
 M$1 VSS VIN VOUT VSS sg13_lv_nmos L=0.13u W=0.6u AS=0.267p AD=0.267p PS=3.56u
 + PD=3.56u
 M$5 VDD VIN VOUT VDD sg13_lv_pmos L=0.13u W=0.9u AS=0.378p AD=0.378p PS=5.04u
