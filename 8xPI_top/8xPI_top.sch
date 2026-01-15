@@ -47,7 +47,7 @@ N 640 -230 650 -230 {lab=VQB}
 N 620 -280 620 -200 {lab=VQ}
 N 600 -280 620 -280 {lab=VQ}
 C {/foss/designs/PhaseInterpolator/8xPI/8xPI.sym} 660 -140 0 0 {name=x1}
-C {/foss/designs/PhaseInterpolator/2to4/2to4_2v.sym} 450 -290 0 0 {name=x2}
+C {/foss/designs/PhaseInterpolator/2to4/2to4.sym} 450 -290 0 0 {name=x2}
 C {/foss/designs/PhaseInterpolator/BinarytoThermo/3to7_deco_v2.sym} 320 -520 0 0 {name=x3}
 C {ipin.sym} 260 -330 0 0 {name=p7 lab=VINI
 
