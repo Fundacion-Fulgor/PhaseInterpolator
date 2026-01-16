@@ -70,22 +70,13 @@ N 975 -610 1055 -610 {lab=VDD}
 N 1135 -490 1205 -490 {lab=VSS}
 N 285 -490 355 -490 {lab=VSS}
 N 1360 -450 1360 -390 {lab=CTRL}
-N 1540 -450 1540 -395 {lab=CTRL}
 N 1360 -330 1360 -270 {lab=CTRL}
 N 1540 -330 1540 -270 {lab=CTRL}
-N 1440 -270 1540 -270 {lab=CTRL}
-N 1440 -360 1440 -270 {lab=CTRL}
-N 1360 -360 1440 -360 {lab=CTRL}
-N 1360 -270 1440 -270 {lab=CTRL}
-N 1460 -450 1460 -360 {lab=CTRL}
+N 1360 -360 1540 -360 {lab=VDD}
+N 1460 -270 1540 -270 {lab=CTRL}
 N 1460 -450 1540 -450 {lab=CTRL}
-N 1460 -360 1540 -360 {lab=CTRL}
-N 1420 -450 1460 -450 {lab=CTRL}
-N 1440 -360 1460 -360 {lab=CTRL}
 N 1420 -490 1420 -450 {lab=CTRL}
 N 1360 -450 1420 -450 {lab=CTRL}
-N 1280 -360 1320 -360 {lab=VOUTDN}
-N 1610 -360 1640 -360 {lab=VOUTDP}
 N 1915 -490 1915 -455 {lab=VSS}
 N 1915 -605 1915 -570 {lab=VDD}
 N 1915 -230 1915 -195 {lab=VSS}
@@ -94,16 +85,13 @@ N 1985 -530 2065 -530 {lab=VOUTP}
 N 1985 -270 2065 -270 {lab=VOUTN}
 N 1805 -270 1865 -270 {lab=VOUTDN}
 N 1805 -530 1865 -530 {lab=VOUTDP}
-N 1280 -360 1280 -290 {lab=VOUTDN}
-N 1260 -360 1280 -360 {lab=VOUTDN}
-N 1610 -360 1610 -290 {lab=VOUTDP}
-N 1580 -360 1610 -360 {lab=VOUTDP}
-N 1280 -230 1280 -170 {lab=VSS}
-N 1455 -170 1610 -170 {lab=VSS}
-N 1610 -230 1610 -170 {lab=VSS}
-N 1455 -170 1455 -120 {lab=VSS}
-N 1280 -170 1455 -170 {lab=VSS}
+N 1260 -360 1320 -360 {lab=VOUTDN}
+N 1580 -360 1640 -360 {lab=VOUTDP}
 N 435 -260 515 -260 {lab=CLKP}
+N 1460 -450 1460 -270 {lab=CTRL}
+N 1420 -450 1460 -450 {lab=CTRL}
+N 1360 -270 1460 -270 {lab=CTRL}
+N 1540 -450 1540 -390 {lab=CTRL}
 C {sg13g2_pr/sg13_lv_nmos.sym} 535 -260 0 0 {name=M1
 l=0.13u
 w=0.15u
@@ -181,7 +169,7 @@ C {sg13g2_pr/sg13_lv_pmos.sym} 1560 -360 0 1 {name=M10
 l=0.13u
 w=1u
 ng=1
-m=42
+m=36
 model=sg13_lv_pmos
 spiceprefix=X
 }
@@ -189,7 +177,7 @@ C {sg13g2_pr/sg13_lv_pmos.sym} 1340 -360 0 0 {name=M9
 l=0.13u
 w=1u
 ng=1
-m=42
+m=36
 model=sg13_lv_pmos
 spiceprefix=X
 }
@@ -208,16 +196,4 @@ C {lab_pin.sym} 1015 -390 3 0 {name=p3 sig_type=std_logic lab=VOUTDP}
 C {lab_pin.sym} 475 -400 3 0 {name=p6 sig_type=std_logic lab=VOUTDN}
 C {lab_pin.sym} 1805 -270 1 0 {name=p21 sig_type=std_logic lab=VOUTDN}
 C {lab_pin.sym} 1805 -530 3 0 {name=p22 sig_type=std_logic lab=VOUTDP}
-C {lab_pin.sym} 1455 -120 3 0 {name=p23 sig_type=std_logic lab=VSS}
-C {capa-2.sym} 1610 -260 0 0 {name=C2
-m=1
-value=47f
-footprint=1206
-device=polarized_capacitor
-spice_ignore=true}
-C {capa-2.sym} 1280 -260 0 0 {name=C1
-m=1
-value=47f
-footprint=1206
-device=polarized_capacitor
-spice_ignore=true}
+C {lab_pin.sym} 1435 -360 1 0 {name=p24 sig_type=std_logic lab=VDD}
