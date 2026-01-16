@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -35,7 +35,7 @@ N -950 240 -950 270 {lab=GND}
 N -950 150 -950 180 {lab=vss}
 N -180 -200 -140 -200 {lab=vinI}
 N -180 -160 -140 -160 {lab=vinIB}
-N -180 -130 -140 -130 {lab="v4,v3, v0, v1, v2" v3, v2, v1, v0}
+N -180 -130 -140 -130 {lab="v4,v3, v2, v1, v0" v3, v2, v1, v0}
 N -180 -100 -140 -100 {lab=vcont}
 N 0 -50 -0 -30 {lab=vss}
 N -0 -300 -0 -250 {lab=vdd}
@@ -47,14 +47,14 @@ N -180 230 -140 230 {lab="vss, vss, vss, vss, vss" vss, vss, vss, vss}
 N -180 260 -140 260 {lab=vcont}
 N 120 -150 140 -150 {lab=vout}
 N 120 210 140 210 {lab=vout8i}
-C {/foss/designs/PhaseInterpolator/8xPI_top/8xPI_top.sym} 0 -150 0 0 {name=x1}
+C {8xPI_top.sym} 0 -150 0 0 {name=x1}
 C {devices/gnd.sym} -950 -170 0 0 {name=l2 lab=GND}
 C {devices/vsource.sym} -950 -220 0 0 {name=Vin3 value="dc 0 ac 0 pulse(0, 1.2, 0, 25p, 25p, 225p, 500p) "}
 C {devices/lab_pin.sym} -970 -310 0 0 {name=p1 sig_type=std_logic lab=vinI}
 C {devices/gnd.sym} -630 -170 0 0 {name=l4 lab=GND}
 C {devices/vsource.sym} -630 -220 0 0 {name=Vin5 value="dc 0 ac 0 pulse(0, 1.2, 250p, 25p, 25p, 225p, 500p ) "}
 C {devices/lab_pin.sym} -650 -310 0 0 {name=p3 sig_type=std_logic lab=vinIB}
-C {/foss/designs/PhaseInterpolator/8xPI_top/8xPI_top.sym} 0 210 0 0 {name=x2}
+C {8xPI_top.sym} 0 210 0 0 {name=x2}
 C {devices/lab_pin.sym} -180 -200 0 0 {name=p4 sig_type=std_logic lab=vinI}
 C {devices/lab_pin.sym} -180 160 0 0 {name=p5 sig_type=std_logic lab=vinI}
 C {devices/lab_pin.sym} -180 -160 0 0 {name=p7 sig_type=std_logic lab=vinIB}
@@ -80,7 +80,7 @@ C {devices/vsource.sym} -950 10 0 0 {name=Vdd3 value=1.2 savecurrent=false
 }
 C {devices/gnd.sym} -950 70 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} -630 -50 2 0 {name=p12 sig_type=std_logic lab=vcont}
-C {devices/vsource.sym} -630 10 0 0 {name=Vdd4 value=0.6575 savecurrent=false
+C {devices/vsource.sym} -630 10 0 0 {name=Vdd4 value=0.9 savecurrent=false
 }
 C {devices/gnd.sym} -630 70 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} -950 -50 2 0 {name=p13 sig_type=std_logic lab=vdd}

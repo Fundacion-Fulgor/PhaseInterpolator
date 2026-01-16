@@ -10,7 +10,7 @@ Vdd11 v0 VSS dc 0 ac 0 pulse(0, 1.2, 2.5n, 25p, 25p, 2.5n, 5n)
 Vdd1 v3 VSS dc 0 ac 0 pulse(0, 1.2, 20n, 25p, 25p, 20n, 40n)
 Vdd2 v4 VSS dc 0 ac 0 pulse(0, 1.2, 40n, 25p, 25p, 40n, 80n)
 Vdd3 vdd GND 1.2
-Vdd4 vcont GND 0.6575
+Vdd4 vcont GND 0.9
 Vdd5 vss GND 0
 **** begin user architecture code
 
@@ -66,7 +66,7 @@ Vdd5 vss GND 0
 *.opin VOUT
 *.ipin VS[4],VS[3],VS[2],VS[1],VS[0]
 x1 VI VIB VQ VQB VSQ[1] VSQ[0] VSTQ[7] VSTQ[6] VSTQ[5] VSTQ[4] VSTQ[3] VSTQ[2] VSTQ[1] VSQ[2] VOUT VDD VSS 8xPI
-x2 VDD VINI VCONT VINIB VSS VQ VIB VQB VI 2to4_2v
+x2 VDD VINI VCONT VINIB VSS VQ VIB VQB VI 2to4
 x3 VST[7] VST[6] VST[5] VST[4] VST[3] VST[2] VST[1] VS[2] VS[1] VS[0] VDD VSS 3to7_deco_v2
 x4 VDD VSQ[2] VSQ[1] VSQ[0] VS[4] VS[3] VSS VSTQ[7] VSTQ[6] VSTQ[5] VSTQ[4] VSTQ[3] VSTQ[2] VSTQ[1] VST[7] VST[6] VST[5] VST[4]
 + VST[3] VST[2] VST[1] 8xPI_logic
@@ -94,16 +94,15 @@ x1[3] VINI VINIB VDD net1 VS[1] VS[0] VINQ VSS VINQB VST[3] MUX_4_1
 x1[2] VINI VINIB VDD net1 VS[1] VS[0] VINQ VSS VINQB VST[2] MUX_4_1
 x1[1] VINI VINIB VDD net1 VS[1] VS[0] VINQ VSS VINQB VST[1] MUX_4_1
 x1[0] VINI VINIB VDD net1 VS[1] VS[0] VINQ VSS VINQB VST[0] MUX_4_1
-x2 VDD net3 net1 VSS inv_PI
+x2 VDD net2 net1 VSS inv_PI
 x1 VDD VOUT net2 VSS buff_PI_d16
-x3 VDD net2 net3 VSS inv_PI
 .ends
 
 
-* expanding   symbol:  /foss/designs/PhaseInterpolator/2to4/2to4_2v.sym # of pins=9
-** sym_path: /foss/designs/PhaseInterpolator/2to4/2to4_2v.sym
-** sch_path: /foss/designs/PhaseInterpolator/2to4/2to4_2v.sch
-.subckt 2to4_2v VDD VINI VCONT VINIB VSS VQ VIB VQB VI
+* expanding   symbol:  /foss/designs/PhaseInterpolator/2to4/2to4.sym # of pins=9
+** sym_path: /foss/designs/PhaseInterpolator/2to4/2to4.sym
+** sch_path: /foss/designs/PhaseInterpolator/2to4/2to4.sch
+.subckt 2to4 VDD VINI VCONT VINIB VSS VQ VIB VQB VI
 *.ipin VCONT
 *.ipin VINI
 *.opin VIB
@@ -113,18 +112,15 @@ x3 VDD net2 net3 VSS inv_PI
 *.opin VQB
 *.iopin VDD
 *.iopin VSS
-x1 VDD VINI net2 VCONT VSS delay_variable
-x2 VDD net1 net2 VSS inv_PI
-x3 VDD net4 net1 VSS inv_PI
-x6 VDD net3 VINI VSS inv_PI
-x8 VDD VIB net3 VSS buff_PI_d16
-x9 VDD VQB net4 VSS buff_PI_d16
-x11 VDD VINIB net6 VCONT VSS delay_variable
-x12 VDD net5 net6 VSS inv_PI
-x13 VDD net8 net5 VSS inv_PI
-x15 VDD net7 VINIB VSS inv_PI
-x16 VDD VI net7 VSS buff_PI_d16
-x17 VDD VQ net8 VSS buff_PI_d16
+x1 VDD VQB VQ VCONT net5 net3 VSS dcvsl_variable
+x2 VDD VIB net1 VSS buff_PI_d16
+x3 VDD VI net2 VSS buff_PI_d16
+x4 VDD net1 VINI VSS inv_PI
+x5 VDD net2 VINIB VSS inv_PI
+x6 VDD net3 net4 VSS buff_PI_d16
+x7 VDD net4 VINIB VSS inv_PI
+x8 VDD net5 net6 VSS buff_PI_d16
+x9 VDD net6 VINI VSS inv_PI
 .ends
 
 
@@ -239,21 +235,29 @@ x10 VDD VOUT net3 VSS inv_PI_d16
 .ends
 
 
-* expanding   symbol:  /foss/designs/PhaseInterpolator/2to4/delay_variable.sym # of pins=5
-** sym_path: /foss/designs/PhaseInterpolator/2to4/delay_variable.sym
-** sch_path: /foss/designs/PhaseInterpolator/2to4/delay_variable.sch
-.subckt delay_variable VDD VIN VOUT VCONT VSS
+* expanding   symbol:  /foss/designs/PhaseInterpolator/2to4/dcvsl_variable.sym # of pins=7
+** sym_path: /foss/designs/PhaseInterpolator/2to4/dcvsl_variable.sym
+** sch_path: /foss/designs/PhaseInterpolator/2to4/dcvsl_variable.sch
+.subckt dcvsl_variable VDD VOUTN VOUTP CTRL CLKN CLKP VSS
 *.iopin VSS
+*.ipin CLKP
+*.ipin CLKN
 *.iopin VDD
-*.opin VOUT
-*.ipin VCONT
-*.ipin VIN
-XM1 VOUT VIN net2 VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=4
-XM2 net2 VCONT VSS VSS sg13_lv_nmos w=0.15u l=0.25u ng=1 m=4
-XM3 net3 VCONT VSS VSS sg13_lv_nmos w=0.15u l=0.25u ng=1 m=5
-XM5 VOUT VIN net1 VDD sg13_lv_pmos w=0.2u l=0.13u ng=1 m=5
-XM6 net1 net3 VDD VDD sg13_lv_pmos w=0.2u l=0.25u ng=1 m=5
-XM4 net3 net3 VDD VDD sg13_lv_pmos w=0.15u l=0.25u ng=1 m=5
+*.ipin CTRL
+*.opin VOUTP
+*.opin VOUTN
+XM1 VOUTDN CLKP VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=33
+XM2 VOUTDP CLKN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=33
+XM3 net1 CTRL VOUTDN VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=2
+XM4 net2 CTRL VOUTDP VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=2
+XM6 VOUTDP net1 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=10
+XM5 VOUTDN net2 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=10
+XM7 VOUTDN VSS VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=20
+XM8 VOUTDP VSS VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=20
+XM10 CTRL VOUTDP CTRL VDD sg13_lv_pmos w=1u l=0.13u ng=1 m=36
+XM9 CTRL VOUTDN CTRL VDD sg13_lv_pmos w=1u l=0.13u ng=1 m=36
+x2 VDD VOUTP VOUTDP VSS buff_PI_d16
+x3 VDD VOUTN VOUTDN VSS buff_PI_d16
 .ends
 
 
