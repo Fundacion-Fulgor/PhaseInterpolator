@@ -1,0 +1,19 @@
+** sch_path: /foss/designs/PhaseInterpolator/2to4/2to4_psdiff.sch
+**.subckt 2to4_psdiff VDD VOUTDN VOUTDP CTRL CLKN CLKP VSS
+*.iopin VSS
+*.ipin CLKP
+*.ipin CLKN
+*.iopin VDD
+*.ipin CTRL
+*.opin VOUTDN
+*.opin VOUTDP
+XM1 VOUTDN CLKP VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=33
+XM2 VOUTDP CLKN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=33
+XM3 net1 CTRL VOUTDN VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=2
+XM4 net2 CTRL VOUTDP VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=2
+XM6 VOUTDP net1 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=10
+XM5 VOUTDN net2 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=10
+XM7 VOUTDN VSS VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=20
+XM8 VOUTDP VSS VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=20
+**.ends
+.end

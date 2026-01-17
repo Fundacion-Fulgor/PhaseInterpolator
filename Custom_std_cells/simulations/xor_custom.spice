@@ -6,8 +6,8 @@
 *.iopin VDD
 *.iopin VSS
 x1 VDD Bb B VSS inv
-x2 B VOUT A Bb inv
-x3 A Bb B VOUT net1 net2 tg_custom
+x3 A Bb B VOUT VDD VSS tg_custom
+x2 B VDD A VSS Bb VOUT inv_xor
 **.ends
 
 * expanding   symbol:  inv.sym # of pins=4
@@ -35,6 +35,21 @@ XM1 VOUT VIN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
 *.iopin VBP
 XM1 VOUT VSN VIN VBN sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
 XM2 VOUT VSP VIN VBP sg13_lv_pmos w=0.3u l=0.13u ng=2 m=1
+.ends
+
+
+* expanding   symbol:  inv_xor.sym # of pins=6
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_xor.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_xor.sch
+.subckt inv_xor VDD VBP VIN VBN VSS VOUT
+*.iopin VDD
+*.iopin VSS
+*.opin VOUT
+*.ipin VIN
+*.iopin VBP
+*.iopin VBN
+XM2 VOUT VIN VDD VBP sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+XM1 VOUT VIN VSS VBN sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
 .ends
 
 .end
