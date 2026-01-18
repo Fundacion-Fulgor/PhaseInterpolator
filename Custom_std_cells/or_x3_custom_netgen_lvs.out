@@ -1,0 +1,70 @@
+
+Subcircuit summary:
+Circuit 1: nor_x3_custom                   |Circuit 2: nor_x3_custom                   
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (3)                           |sg13_lv_nmos (3)                           
+sg13_lv_pmos (3)                           |sg13_lv_pmos (3)                           
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: nor_x3_custom                   |Circuit 2: nor_x3_custom                   
+-------------------------------------------|-------------------------------------------
+OUT                                        |OUT                                        
+VDD                                        |VDD                                        
+C                                          |C                                          
+A                                          |A                                          
+B                                          |B                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nor_x3_custom and nor_x3_custom are equivalent.
+
+Subcircuit summary:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
+sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+VOUT                                       |VOUT                                       
+VIN                                        |VIN                                        
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv and inv are equivalent.
+
+Subcircuit summary:
+Circuit 1: or_x3_custom                    |Circuit 2: or_x3_custom                    
+-------------------------------------------|-------------------------------------------
+nor_x3_custom (1)                          |nor_x3_custom (1)                          
+inv (1)                                    |inv (1)                                    
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: or_x3_custom                    |Circuit 2: or_x3_custom                    
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+OUT                                        |OUT                                        
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes or_x3_custom and or_x3_custom are equivalent.
+
+Final result: Circuits match uniquely.
+.

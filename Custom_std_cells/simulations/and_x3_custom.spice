@@ -1,31 +1,21 @@
 ** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/and_x3_custom.sch
-**.subckt and_x3_custom VDD A OUT B C VSS
-*.iopin VDD
-*.iopin VSS
-*.ipin A
-*.ipin B
-*.ipin C
-*.opin OUT
+.subckt and_x3_custom VDD A OUT B C VSS
+*.PININFO VDD:B VSS:B A:I B:I C:I OUT:O
 x1 VDD net1 A B C VSS nand_x3_custom
 x2 VDD OUT net1 VSS inv
-**.ends
+.ends
 
 * expanding   symbol:  nand_x3_custom.sym # of pins=6
 ** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/nand_x3_custom.sym
 ** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/nand_x3_custom.sch
 .subckt nand_x3_custom VDD OUT A B C VSS
-*.ipin A
-*.ipin B
-*.ipin C
-*.iopin VSS
-*.iopin VDD
-*.opin OUT
-XM2 OUT A VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
-XM1 OUT B VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
-XM3 OUT C VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
-XM4 OUT A net1 VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
-XM5 net1 B net2 VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
-XM6 net2 C VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+*.PININFO A:I B:I C:I VSS:B VDD:B OUT:O
+M2 OUT A VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+M1 OUT B VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+M3 OUT C VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+M4 OUT A net1 VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+M5 net1 B net2 VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+M6 net2 C VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
 .ends
 
 
@@ -33,12 +23,8 @@ XM6 net2 C VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
 ** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym
 ** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sch
 .subckt inv VDD VOUT VIN VSS
-*.iopin VDD
-*.iopin VSS
-*.opin VOUT
-*.ipin VIN
-XM2 VOUT VIN VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
-XM1 VOUT VIN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+*.PININFO VDD:B VSS:B VOUT:O VIN:I
+M2 VOUT VIN VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+M1 VOUT VIN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
 .ends
 
-.end
