@@ -50,26 +50,23 @@ Circuit 1: inv_PI_d8                       |Circuit 2: inv_PI_d8
 -------------------------------------------|-------------------------------------------
 inv_PI_d4 (2)                              |inv_PI_d4 (2)                              
 Number of devices: 2                       |Number of devices: 2                       
-Number of nets: 5 **Mismatch**             |Number of nets: 4 **Mismatch**             
+Number of nets: 4                          |Number of nets: 4                          
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: inv_PI_d8                       |Circuit 2: inv_PI_d8                       
-
----------------------------------------------------------------------------------------
-Net: VDD                                   |Net: VDD                                   
-  inv_PI_d4/VDD = 1                        |  inv_PI_d4/VDD = 2                        
-                                           |                                           
-Net: \$I4                                  |(no matching net)                          
-  inv_PI_d4/VDD = 1                        |                                           
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 1 symmetry.
 
 Subcircuit pins:
 Circuit 1: inv_PI_d8                       |Circuit 2: inv_PI_d8                       
 -------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VOUT                                       |VOUT                                       
+VIN                                        |VIN                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes inv_PI_d8 and inv_PI_d8 are equivalent.
 
-Final result: Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Final result: Circuits match uniquely.
+.

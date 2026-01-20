@@ -96,23 +96,52 @@ Circuit 1: buff_PI_d16                     |Circuit 2: buff_PI_d16
 -------------------------------------------|-------------------------------------------
 inv_PI_d16 (1)                             |inv_PI_d16 (1)                             
 inv_PI_d8 (1)                              |inv_PI_d8 (1)                              
-inv_PI_d4 (1)                              |inv_PI_d4 (1)                              
 inv_PI_d2 (1)                              |inv_PI_d2 (1)                              
+inv_PI_d4 (1)                              |inv_PI_d4 (1)                              
 Number of devices: 4                       |Number of devices: 4                       
-Number of nets: 7                          |Number of nets: 7                          
+Number of nets: 5 **Mismatch**             |Number of nets: 7 **Mismatch**             
 ---------------------------------------------------------------------------------------
-Netlists match uniquely.
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: buff_PI_d16                     |Circuit 2: buff_PI_d16                     
+
+---------------------------------------------------------------------------------------
+Net: VDD|VSS                               |Net: net3                                  
+  inv_PI_d16/VDD = 1                       |  inv_PI_d8/VOUT = 1                       
+  inv_PI_d16/VSS = 1                       |  inv_PI_d16/VIN = 1                       
+  inv_PI_d16/VIN = 1                       |                                           
+  inv_PI_d8/VOUT = 1                       |                                           
+  inv_PI_d8/VSS = 1                        |                                           
+  inv_PI_d8/VDD = 1                        |                                           
+  inv_PI_d2/VSS = 1                        |                                           
+  inv_PI_d2/VDD = 1                        |                                           
+  inv_PI_d4/VSS = 1                        |                                           
+  inv_PI_d4/VDD = 1                        |                                           
+                                           |                                           
+(no matching net)                          |Net: VDD                                   
+                                           |  inv_PI_d2/VDD = 1                        
+                                           |  inv_PI_d4/VDD = 1                        
+                                           |  inv_PI_d8/VDD = 1                        
+                                           |  inv_PI_d16/VDD = 1                       
+                                           |                                           
+(no matching net)                          |Net: VSS                                   
+                                           |  inv_PI_d2/VSS = 1                        
+                                           |  inv_PI_d4/VSS = 1                        
+                                           |  inv_PI_d8/VSS = 1                        
+                                           |  inv_PI_d16/VSS = 1                       
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
 
 Subcircuit pins:
 Circuit 1: buff_PI_d16                     |Circuit 2: buff_PI_d16                     
 -------------------------------------------|-------------------------------------------
+VDD|VSS                                    |(no pin, node is net3)                     
 VIN                                        |VIN                                        
 VOUT                                       |VOUT                                       
-VDD                                        |VDD                                        
-VSS                                        |VSS                                        
+(no pin, node is VDD|VSS)                  |VDD                                        
+(no pin, node is VDD|VSS)                  |VSS                                        
 ---------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
+Cell pin lists for buff_PI_d16 and buff_PI_d16 altered to match.
 Device classes buff_PI_d16 and buff_PI_d16 are equivalent.
 
-Final result: Circuits match uniquely.
-.
+Final result: Top level cell failed pin matching.
