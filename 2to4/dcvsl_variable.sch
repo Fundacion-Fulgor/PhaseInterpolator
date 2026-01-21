@@ -24,10 +24,10 @@ N 280 -160 280 -140 {lab=VDD}
 N 160 -60 180 -60 {lab=VOUTDP}
 N 160 -80 180 -80 {lab=VOUTDN}
 N 280 -470 280 -440 {lab=VDD}
-C {buff_PI_d16.sym} 675 -360 0 0 {name=x2}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_PI_d16.sym} 675 -360 0 0 {name=x2}
 C {devices/lab_pin.sym} 675 -285 2 0 {name=p15 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 675 -435 2 0 {name=p16 sig_type=std_logic lab=VDD}
-C {buff_PI_d16.sym} 675 -100 0 0 {name=x3}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_PI_d16.sym} 675 -100 0 0 {name=x3}
 C {devices/lab_pin.sym} 675 -25 2 0 {name=p17 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 675 -175 2 0 {name=p18 sig_type=std_logic lab=VDD}
 C {opin.sym} 825 -360 0 0 {name=p19 lab=VOUTP}
@@ -43,7 +43,7 @@ C {lab_pin.sym} 160 -100 0 0 {name=p29 sig_type=std_logic lab=CTRL}
 C {lab_pin.sym} 280 -160 1 0 {name=p30 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 160 -60 0 0 {name=p31 sig_type=std_logic lab=VOUTDP}
 C {lab_pin.sym} 160 -80 0 0 {name=p32 sig_type=std_logic lab=VOUTDN}
-C {/foss/designs/PhaseInterpolator/2to4/2to4_decap.sym} 150 -20 0 0 {name=x1}
+C {2to4_decap.sym} 150 -20 0 0 {name=x1}
 C {lab_pin.sym} 450 -390 2 0 {name=p1 sig_type=std_logic lab=VOUTDN}
 C {lab_pin.sym} 450 -370 2 0 {name=p2 sig_type=std_logic lab=VOUTDP}
-C {/foss/designs/PhaseInterpolator/2to4/2to4_psdiff.sym} 110 -320 0 0 {name=x4}
+C {2to4_psdiff.sym} 110 -320 0 0 {name=x4}
