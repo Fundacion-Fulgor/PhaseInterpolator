@@ -1,0 +1,42 @@
+Flattening unmatched subcell inv in circuit inv_d2 (1)(2 instances)
+
+Class inv_d2 (1):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: inv_d2                          |Circuit 2: inv_d2                          
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (1)                           |sg13_lv_nmos (2->1)                        
+sg13_lv_pmos (1)                           |sg13_lv_pmos (2->1)                        
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: inv_d2                          |Circuit 2: inv_d2                          
+
+---------------------------------------------------------------------------------------
+Net: VSS                                   |Net: VSS                                   
+  sg13_lv_nmos/drain = 1                   |  sg13_lv_nmos/source = 1                  
+  sg13_lv_nmos/bulk = 1                    |  sg13_lv_nmos/bulk = 1                    
+                                           |                                           
+Net: VOUT                                  |Net: VOUT                                  
+  sg13_lv_nmos/source = 1                  |  sg13_lv_pmos/drain = 1                   
+  sg13_lv_pmos/source = 1                  |  sg13_lv_nmos/drain = 1                   
+                                           |                                           
+Net: VDD                                   |Net: VDD                                   
+  sg13_lv_pmos/drain = 1                   |  sg13_lv_pmos/source = 1                  
+  sg13_lv_pmos/bulk = 1                    |  sg13_lv_pmos/bulk = 1                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: inv_d2                          |Circuit 2: inv_d2                          
+-------------------------------------------|-------------------------------------------
+VDD                                        |VSS **Mismatch**                           
+VOUT                                       |VOUT                                       
+VSS                                        |VDD **Mismatch**                           
+VIN                                        |VIN                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for inv_d2 and inv_d2 altered to match.
+Device classes inv_d2 and inv_d2 are equivalent.
+
+Final result: Top level cell failed pin matching.

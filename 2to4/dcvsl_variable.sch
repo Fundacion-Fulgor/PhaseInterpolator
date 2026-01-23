@@ -43,7 +43,7 @@ C {lab_pin.sym} 160 -100 0 0 {name=p29 sig_type=std_logic lab=CTRL}
 C {lab_pin.sym} 280 -160 1 0 {name=p30 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 160 -60 0 0 {name=p31 sig_type=std_logic lab=VOUTDP}
 C {lab_pin.sym} 160 -80 0 0 {name=p32 sig_type=std_logic lab=VOUTDN}
-C {2to4_decap.sym} 150 -20 0 0 {name=x1}
+C {/foss/designs/PhaseInterpolator/2to4/2to4_decap.sym} 150 -20 0 0 {name=x1}
 C {lab_pin.sym} 450 -390 2 0 {name=p1 sig_type=std_logic lab=VOUTDN}
 C {lab_pin.sym} 450 -370 2 0 {name=p2 sig_type=std_logic lab=VOUTDP}
-C {2to4_psdiff.sym} 110 -320 0 0 {name=x4}
+C {/foss/designs/PhaseInterpolator/2to4/2to4_psdiff.sym} 110 -320 0 0 {name=x4}
