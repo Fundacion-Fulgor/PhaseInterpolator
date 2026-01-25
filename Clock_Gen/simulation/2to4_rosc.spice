@@ -1,0 +1,129 @@
+** sch_path: /foss/designs/PhaseInterpolator/2to4/2to4_rosc.sch
+**.subckt 2to4_rosc CTRL Ph0 Ph3 Ph2 Ph5 Ph4 Ph1 VSS VDD
+*.iopin VDD
+*.iopin VSS
+*.ipin CTRL
+*.opin Ph0
+*.opin Ph2
+*.opin Ph5
+*.opin Ph1
+*.opin Ph4
+*.opin Ph3
+x1 VDD net1 net2 CTRL net6 net5 VSS 2to4_psdiff
+x2 VDD net3 net4 CTRL net2 net1 VSS 2to4_psdiff
+x3 VDD net5 net6 CTRL net4 net3 VSS 2to4_psdiff
+x4 CTRL Ph0 Ph3 VDD 2to4_decap
+x5 CTRL Ph2 Ph5 VDD 2to4_decap
+x6 CTRL Ph1 Ph4 VDD 2to4_decap
+x7 VDD Ph1 net2 VSS buff_d8
+x8 VDD Ph4 net1 VSS buff_d8
+x9 VDD Ph5 net4 VSS buff_d8
+x10 VDD Ph2 net3 VSS buff_d8
+x11 VDD Ph3 net6 VSS buff_d8
+x12 VDD Ph0 net5 VSS buff_d8
+**.ends
+
+* expanding   symbol:  2to4_psdiff.sym # of pins=7
+** sym_path: /foss/designs/PhaseInterpolator/2to4/2to4_psdiff.sym
+** sch_path: /foss/designs/PhaseInterpolator/2to4/2to4_psdiff.sch
+.subckt 2to4_psdiff VDD VOUTDN VOUTDP CTRL CLKN CLKP VSS
+*.iopin VSS
+*.ipin CLKP
+*.ipin CLKN
+*.iopin VDD
+*.ipin CTRL
+*.opin VOUTDN
+*.opin VOUTDP
+XM1 net1 CLKP VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=33
+XM2 net2 CLKN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=33
+XM3 net3 CTRL net1 VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=2
+XM4 net4 CTRL net2 VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=2
+XM6 net2 net3 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=10
+XM5 net1 net4 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=10
+XM7 net1 VSS VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=20
+XM8 net2 VSS VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=20
+x1 VDD VOUTDP net2 VSS buff_d8
+x2 VDD VOUTDN net1 VSS buff_d8
+.ends
+
+
+* expanding   symbol:  2to4_decap.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/2to4/2to4_decap.sym
+** sch_path: /foss/designs/PhaseInterpolator/2to4/2to4_decap.sch
+.subckt 2to4_decap CTRL VOUTDN VOUTDP VDD
+*.ipin CTRL
+*.ipin VDD
+*.ipin VOUTDN
+*.ipin VOUTDP
+XM10 CTRL VOUTDP CTRL VDD sg13_lv_pmos w=1u l=0.13u ng=1 m=16
+XM9 CTRL VOUTDN CTRL VDD sg13_lv_pmos w=1u l=0.13u ng=1 m=16
+.ends
+
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/buff_d8.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/buff_d8.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/buff_d8.sch
+.subckt buff_d8 VDD VOUT VIN VSS
+*.ipin VIN
+*.opin VOUT
+*.iopin VDD
+*.iopin VSS
+x7 VDD net1 VIN VSS inv
+x8 VDD net2 net1 VSS inv_d2
+x9 VDD net3 net2 VSS inv_d4
+x10 VDD VOUT net3 VSS inv_d8
+.ends
+
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sch
+.subckt inv VDD VOUT VIN VSS
+*.iopin VDD
+*.iopin VSS
+*.opin VOUT
+*.ipin VIN
+XM2 VOUT VIN VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+XM1 VOUT VIN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d2.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d2.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d2.sch
+.subckt inv_d2 VDD VOUT VIN VSS
+*.ipin VIN
+*.opin VOUT
+*.iopin VDD
+*.iopin VSS
+x1[1] VDD VOUT VIN VSS inv
+x1[0] VDD VOUT VIN VSS inv
+.ends
+
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d4.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d4.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d4.sch
+.subckt inv_d4 VDD VOUT VIN VSS
+*.ipin VIN
+*.opin VOUT
+*.iopin VDD
+*.iopin VSS
+x1[1] VDD VOUT VIN VSS inv_d2
+x1[0] VDD VOUT VIN VSS inv_d2
+.ends
+
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d8.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d8.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d8.sch
+.subckt inv_d8 VDD VOUT VIN VSS
+*.ipin VIN
+*.opin VOUT
+*.iopin VDD
+*.iopin VSS
+x1[1] VDD VOUT VIN VSS inv_d4
+x1[0] VDD VOUT VIN VSS inv_d4
+.ends
+
+.end

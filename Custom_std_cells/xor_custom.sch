@@ -22,8 +22,8 @@ N 120 -200 120 -180 {lab=B}
 N 120 -80 120 -60 {lab=Bb}
 N 360 -190 360 -170 {lab=VDD}
 N 360 -90 360 -70 {lab=VSS}
-C {inv.sym} 50 -160 0 0 {name=x1}
-C {tg_custom.sym} 420 -130 0 0 {name=x3}
+C {/foss/designs/PhaseInterpolator/Custom_std_Cells/inv.sym} 50 -160 0 0 {name=x1}
+C {/foss/designs/PhaseInterpolator/Custom_std_Cells/tg_custom.sym} 420 -130 0 0 {name=x3}
 C {ipin.sym} 60 -130 0 0 {name=p1 lab=A}
 C {ipin.sym} 60 -300 0 0 {name=p2 lab=B}
 C {lab_pin.sym} 240 -300 2 0 {name=p4 sig_type=std_logic lab=Bb}
@@ -37,6 +37,6 @@ C {iopin.sym} 140 -360 0 0 {name=p10 lab=VDD}
 C {iopin.sym} 140 -240 0 0 {name=p11 lab=VSS}
 C {lab_pin.sym} 120 -200 2 0 {name=p12 sig_type=std_logic lab=B}
 C {lab_pin.sym} 140 -70 2 0 {name=p13 sig_type=std_logic lab=VSS}
-C {inv_xor.sym} 50 -30 0 0 {name=x2}
+C {/foss/designs/PhaseInterpolator/Custom_std_Cells/inv_xor.sym} 50 -30 0 0 {name=x2}
 C {lab_pin.sym} 360 -70 2 0 {name=p14 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 360 -190 2 0 {name=p15 sig_type=std_logic lab=VDD}
