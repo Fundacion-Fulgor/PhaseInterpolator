@@ -1,0 +1,86 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 23/01/2026 22:37
+
+.SUBCKT 3to7_deco_v2 VSS ST[2] ST[5] ST[7] ST[1] ST[6] ST[3] ST[4] VDD S[2]
++ S[1] S[0]
+X$22 \$22 \$16 \$18 ST[7] VDD VSS nand_x3_custom
+X$27 VDD VSS \$18 \$16 \$22 ST[1] nor_x3_custom
+X$32 VSS \$16 \$22 VDD \$20 and_custom
+X$35 VSS ST[5] \$21 \$18 VDD nand_custom
+X$39 VSS ST[6] \$16 \$18 VDD nand_custom
+X$43 ST[3] \$20 VDD VSS \$18 nor_custom
+X$47 ST[2] \$16 VDD VSS \$18 nor_custom
+X$52 VSS \$21 \$22 \$16 VDD or_custom
+X$55 VDD \$18 VSS ST[4] inv
+X$58 VDD S[2] VSS \$18 inv
+X$59 VDD S[1] VSS \$16 inv
+X$62 VDD S[0] VSS \$22 inv
+.ENDS 3to7_deco_v2
+
+.SUBCKT nor_x3_custom VDD VSS C B A OUT
+M$1 VSS A OUT VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.1005p AD=0.0555p PS=1.34u
++ PD=0.74u
+M$2 OUT B VSS VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.0555p AD=0.0555p PS=0.74u
++ PD=0.74u
+M$3 VSS C OUT VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.0555p AD=0.1005p PS=0.74u
++ PD=1.34u
+M$4 VDD A \$13 VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.1005p AD=0.0555p PS=1.34u
++ PD=0.74u
+M$5 \$13 B \$12 VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.0555p AD=0.0555p PS=0.74u
++ PD=0.74u
+M$6 \$12 C OUT VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.0555p AD=0.1005p PS=0.74u
++ PD=1.34u
+.ENDS nor_x3_custom
+
+.SUBCKT nand_x3_custom A B C OUT VDD VSS
+M$1 OUT A \$8 VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.1005p AD=0.0555p PS=1.34u
++ PD=0.74u
+M$2 \$8 B \$7 VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.0555p AD=0.0555p PS=0.74u
++ PD=0.74u
+M$3 \$7 C VSS VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.0555p AD=0.1005p PS=0.74u
++ PD=1.34u
+M$4 VDD A OUT VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.1005p AD=0.0555p PS=1.34u
++ PD=0.74u
+M$5 OUT B VDD VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.0555p AD=0.0555p PS=0.74u
++ PD=0.74u
+M$6 VDD C OUT VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.0555p AD=0.1005p PS=0.74u
++ PD=1.34u
+.ENDS nand_x3_custom
+
+.SUBCKT or_custom VSS OUT A B VDD
+X$1 VDD \$2 VSS OUT inv
+X$3 \$2 A VDD VSS B nor_custom
+.ENDS or_custom
+
+.SUBCKT and_custom VSS A B VDD OUT
+X$1 VDD \$7 VSS OUT inv
+X$2 VSS \$7 A B VDD nand_custom
+.ENDS and_custom
+
+.SUBCKT nor_custom OUT A VDD VSS B
+M$1 VSS A OUT VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.1005p AD=0.0555p PS=1.34u
++ PD=0.74u
+M$2 OUT B VSS VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.0555p AD=0.1005p PS=0.74u
++ PD=1.34u
+M$3 VDD A \$10 VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.1005p AD=0.0555p PS=1.34u
++ PD=0.74u
+M$4 \$10 B OUT VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.0555p AD=0.1005p PS=0.74u
++ PD=1.34u
+.ENDS nor_custom
+
+.SUBCKT nand_custom VSS OUT A B VDD
+M$1 OUT A \$5 VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.1005p AD=0.0555p PS=1.34u
++ PD=0.74u
+M$2 \$5 B VSS VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.0555p AD=0.1005p PS=0.74u
++ PD=1.34u
+M$3 VDD A OUT VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.1005p AD=0.0555p PS=1.34u
++ PD=0.74u
+M$4 OUT B VDD VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.0555p AD=0.1005p PS=0.74u
++ PD=1.34u
+.ENDS nand_custom
+
+.SUBCKT inv VDD VIN VSS VOUT
+M$1 VSS VIN VOUT VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.1005p AD=0.1005p
++ PS=1.34u PD=1.34u
+M$2 VDD VIN VOUT VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.1005p AD=0.1005p
++ PS=1.34u PD=1.34u
+.ENDS inv
