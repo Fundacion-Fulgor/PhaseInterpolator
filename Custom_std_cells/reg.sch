@@ -63,7 +63,7 @@ N 750 -270 750 -250 {lab=Q}
 N 210 -180 230 -180 {lab=CLK_B}
 N 60 -180 90 -180 {lab=CLK}
 N 140 -240 140 -220 {lab=VDD}
-N 140 -140 140 -120 {lab=CLK_B}
+N 140 -140 140 -120 {lab=VSS}
 C {sg13g2_pr/sg13_lv_pmos.sym} 450 -300 0 0 {name=M2
 l=0.13u
 w=0.15u
@@ -137,7 +137,7 @@ C {ipin.sym} 410 -300 0 0 {name=p6 lab=CLK}
 C {lab_pin.sym} 690 -300 0 0 {name=p8 sig_type=std_logic lab=CLK_B}
 C {lab_pin.sym} 690 -200 0 0 {name=p9 sig_type=std_logic lab=CLK}
 C {lab_pin.sym} 410 -200 0 0 {name=p7 sig_type=std_logic lab=CLK_B}
-C {inv.sym} 50 -40 0 0 {name=x1}
+C {/foss/designs/PhaseInterpolator/Custom_std_Cells/inv.sym} 50 -40 0 0 {name=x1}
 C {lab_pin.sym} 60 -180 0 0 {name=p10 sig_type=std_logic lab=CLK}
 C {lab_pin.sym} 230 -180 2 0 {name=p11 sig_type=std_logic lab=CLK_B}
 C {lab_pin.sym} 140 -240 0 0 {name=p12 sig_type=std_logic lab=VDD}
