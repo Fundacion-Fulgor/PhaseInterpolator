@@ -10,24 +10,24 @@
 x1 CTRL v0 v3 v2 v5 v4 v1 VSS VDD 6ph_rosc
 x16 VDD v4 v270 v5 VSS PI_clk
 x2 VDD v1 v90 v2 VSS PI_clk
-x8 VDD net1 v0 VSS inv_PI_d2
-x9 VDD net2 v3 VSS inv_PI_d2
-x10 VDD v360 net1 VSS inv_PI_d2
-x11 VDD v180 net2 VSS inv_PI_d2
-x3 VDD net5 v180 VSS buff_PI_d16
-x4 VDD net4 v90 VSS buff_PI_d16
-x5 VDD net3 v360 VSS buff_PI_d16
-x6 VDD net6 v270 VSS buff_PI_d16
+x8 VDD net9 v0 VSS inv_PI_d2
+x9 VDD net10 v3 VSS inv_PI_d2
+x10 VDD v360 net9 VSS inv_PI_d2
+x11 VDD v180 net10 VSS inv_PI_d2
+x3 VDD net6 v180 VSS buff_PI_d16
+x4 VDD net7 v90 VSS buff_PI_d16
+x5 VDD net5 v360 VSS buff_PI_d16
+x6 VDD net8 v270 VSS buff_PI_d16
 x7 VDD v180 v360 VSS flywheel_clk
 x12 VDD v270 v90 VSS flywheel_clk
-x13 VDD net8 net5 VSS inv_PI_d16
-x14 VDD net9 net4 VSS inv_PI_d16
-x15 VDD net10 net3 VSS inv_PI_d16
-x17 VDD net7 net6 VSS inv_PI_d16
-x18 VDD PH180 net8 VSS inv_PI_d32
-x19 VDD PH90 net9 VSS inv_PI_d32
-x20 VDD PH0 net10 VSS inv_PI_d32
-x21 VDD PH270 net7 VSS inv_PI_d32
+x13 VDD net2 net6 VSS inv_PI_d16
+x14 VDD net3 net7 VSS inv_PI_d16
+x15 VDD net4 net5 VSS inv_PI_d16
+x17 VDD net1 net8 VSS inv_PI_d16
+x18 VDD PH180 net2 VSS inv_PI_d32
+x19 VDD PH90 net3 VSS inv_PI_d32
+x20 VDD PH0 net4 VSS inv_PI_d32
+x21 VDD PH270 net1 VSS inv_PI_d32
 **.ends
 
 * expanding   symbol:  6ph_rosc.sym # of pins=9
@@ -112,8 +112,8 @@ x10 VDD VOUT net3 VSS inv_PI_d16
 *.iopin VSS
 *.iopin PH1
 *.iopin PH0
-x13 VDD PH1 PH0 VSS inv_PI_d2
-x14 VDD PH0 PH1 VSS inv_PI_d4
+x13 VDD PH1 PH0 VSS inv_d4
+x14 VDD PH0 PH1 VSS inv_d2
 .ends
 
 
@@ -154,14 +154,14 @@ x1[0] VDD VOUT VIN VSS inv_PI_d16
 *.ipin CTRL
 *.opin VOUTDN
 *.opin VOUTDP
-XM1 net1 CLKP VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=30
-XM2 net2 CLKN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=30
-XM3 net3 CTRL net1 VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=2
-XM4 net4 CTRL net2 VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=2
-XM6 net2 net3 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=10
-XM5 net1 net4 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=10
-XM7 net1 VSS VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=20
-XM8 net2 VSS VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=20
+XM1 net1 CLKP VSS VSS sg13_lv_nmos w=1.5u l=0.13u ng=10 m=3
+XM2 net2 CLKN VSS VSS sg13_lv_nmos w=1.5u l=0.13u ng=10 m=3
+XM3 net3 CTRL net1 VSS sg13_lv_nmos w=0.3u l=0.13u ng=2 m=1
+XM4 net4 CTRL net2 VSS sg13_lv_nmos w=0.3u l=0.13u ng=2 m=1
+XM6 net2 net3 VDD VDD sg13_lv_pmos w=1.5u l=0.13u ng=10 m=1
+XM5 net1 net4 VDD VDD sg13_lv_pmos w=1.5u l=0.13u ng=10 m=1
+XM7 net1 VSS VDD VDD sg13_lv_pmos w=1.5u l=0.13u ng=10 m=2
+XM8 net2 VSS VDD VDD sg13_lv_pmos w=1.5u l=0.13u ng=10 m=2
 x1 VDD VOUTDP net2 VSS buff_d8
 x2 VDD VOUTDN net1 VSS buff_d8
 .ends
@@ -175,8 +175,8 @@ x2 VDD VOUTDN net1 VSS buff_d8
 *.ipin VDD
 *.ipin VOUTDN
 *.ipin VOUTDP
-XM10 CTRL VOUTDP CTRL VDD sg13_lv_pmos w=1u l=0.13u ng=1 m=32
-XM9 CTRL VOUTDN CTRL VDD sg13_lv_pmos w=1u l=0.13u ng=1 m=32
+XM10 CTRL VOUTDP CTRL VDD sg13_lv_pmos w=8u l=0.13u ng=8 m=4
+XM9 CTRL VOUTDN CTRL VDD sg13_lv_pmos w=8u l=0.13u ng=8 m=4
 .ends
 
 
@@ -247,16 +247,16 @@ x1[0] VDD VOUT VIN VSS inv_PI_d4
 .ends
 
 
-* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym # of pins=4
-** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym
-** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sch
-.subckt inv VDD VOUT VIN VSS
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d4.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d4.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d4.sch
+.subckt inv_d4 VDD VOUT VIN VSS
+*.ipin VIN
+*.opin VOUT
 *.iopin VDD
 *.iopin VSS
-*.opin VOUT
-*.ipin VIN
-XM2 VOUT VIN VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
-XM1 VOUT VIN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+x1[1] VDD VOUT VIN VSS inv_d2
+x1[0] VDD VOUT VIN VSS inv_d2
 .ends
 
 
@@ -273,16 +273,16 @@ x1[0] VDD VOUT VIN VSS inv
 .ends
 
 
-* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d4.sym # of pins=4
-** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d4.sym
-** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d4.sch
-.subckt inv_d4 VDD VOUT VIN VSS
-*.ipin VIN
-*.opin VOUT
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sch
+.subckt inv VDD VOUT VIN VSS
 *.iopin VDD
 *.iopin VSS
-x1[1] VDD VOUT VIN VSS inv_d2
-x1[0] VDD VOUT VIN VSS inv_d2
+*.opin VOUT
+*.ipin VIN
+XM2 VOUT VIN VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+XM1 VOUT VIN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
 .ends
 
 
