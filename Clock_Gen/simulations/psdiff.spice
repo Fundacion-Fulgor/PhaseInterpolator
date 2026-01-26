@@ -7,14 +7,14 @@
 *.ipin CTRL
 *.opin VOUTDN
 *.opin VOUTDP
-XM1 net1 CLKP VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=30
-XM2 net2 CLKN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=30
-XM3 net3 CTRL net1 VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=2
-XM4 net4 CTRL net2 VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=2
-XM6 net2 net3 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=10
-XM5 net1 net4 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=10
-XM7 net1 VSS VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=20
-XM8 net2 VSS VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=20
+XM1 net1 CLKP VSS VSS sg13_lv_nmos w=1.5u l=0.13u ng=10 m=3
+XM2 net2 CLKN VSS VSS sg13_lv_nmos w=1.5u l=0.13u ng=10 m=3
+XM3 net3 CTRL net1 VSS sg13_lv_nmos w=0.3u l=0.13u ng=2 m=1
+XM4 net4 CTRL net2 VSS sg13_lv_nmos w=0.3u l=0.13u ng=2 m=1
+XM6 net2 net3 VDD VDD sg13_lv_pmos w=1.5u l=0.13u ng=10 m=1
+XM5 net1 net4 VDD VDD sg13_lv_pmos w=1.5u l=0.13u ng=10 m=1
+XM7 net1 VSS VDD VDD sg13_lv_pmos w=1.5u l=0.13u ng=10 m=2
+XM8 net2 VSS VDD VDD sg13_lv_pmos w=1.5u l=0.13u ng=10 m=2
 x1 VDD VOUTDP net2 VSS buff_d8
 x2 VDD VOUTDN net1 VSS buff_d8
 **.ends

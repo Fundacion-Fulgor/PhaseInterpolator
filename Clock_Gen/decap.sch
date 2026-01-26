@@ -21,17 +21,17 @@ N 380 -270 380 -210 {lab=CTRL}
 N 100 -180 160 -180 {lab=VOUTDN}
 C {sg13g2_pr/sg13_lv_pmos.sym} 400 -180 0 1 {name=M10
 l=0.13u
-w=1u
-ng=1
-m=32
+w=8u
+ng=8
+m=4
 model=sg13_lv_pmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 180 -180 0 0 {name=M9
 l=0.13u
-w=1u
-ng=1
-m=32
+w=8u
+ng=8
+m=4
 model=sg13_lv_pmos
 spiceprefix=X
 }

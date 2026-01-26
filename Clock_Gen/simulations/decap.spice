@@ -1,0 +1,10 @@
+** sch_path: /foss/designs/PhaseInterpolator/Clock_Gen/decap.sch
+**.subckt decap CTRL VOUTDN VOUTDP VDD
+*.ipin CTRL
+*.ipin VDD
+*.ipin VOUTDN
+*.ipin VOUTDP
+XM10 CTRL VOUTDP CTRL VDD sg13_lv_pmos w=8u l=0.13u ng=8 m=4
+XM9 CTRL VOUTDN CTRL VDD sg13_lv_pmos w=8u l=0.13u ng=8 m=4
+**.ends
+.end
