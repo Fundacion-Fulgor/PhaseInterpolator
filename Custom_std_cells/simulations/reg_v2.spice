@@ -18,9 +18,9 @@ x5 VDD net1 net7 VSS inv
 x1 VDD Q net6 VSS inv
 **.ends
 
-* expanding   symbol:  tg_custom.sym # of pins=6
-** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sym
-** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sch
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_Cells/tg_custom.sym # of pins=6
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_Cells/tg_custom.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_Cells/tg_custom.sch
 .subckt tg_custom VOUT VSN VSP VIN VBP VBN
 *.iopin VIN
 *.iopin VSN
@@ -33,9 +33,9 @@ XM2 VOUT VSP VIN VBP sg13_lv_pmos w=0.3u l=0.13u ng=2 m=1
 .ends
 
 
-* expanding   symbol:  inv.sym # of pins=4
-** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym
-** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sch
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_Cells/inv.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_Cells/inv.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_Cells/inv.sch
 .subckt inv VDD VOUT VIN VSS
 *.iopin VDD
 *.iopin VSS

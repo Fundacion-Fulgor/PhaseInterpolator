@@ -105,12 +105,12 @@ C {devices/lab_pin.sym} 1055 -920 0 0 {name=p21 sig_type=std_logic lab=v2
 }
 C {devices/lab_pin.sym} 1065 -360 0 0 {name=p30 sig_type=std_logic lab=v5
 }
-C {/foss/designs/PhaseInterpolator/Clock_Gen/PI_clk.sym} 1340 -410 0 0 {name=x16}
+C {/foss/designs/PhaseInterpolator/Clock_Gen/PI_clk.sym} 1140 -270 0 0 {name=x16}
 C {devices/lab_pin.sym} 1340 -260 2 0 {name=p55 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1340 -560 2 0 {name=p56 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1065 -460 0 0 {name=p57 sig_type=std_logic lab=v4
 }
-C {/foss/designs/PhaseInterpolator/Clock_Gen/PI_clk.sym} 1330 -970 0 0 {name=x2}
+C {/foss/designs/PhaseInterpolator/Clock_Gen/PI_clk.sym} 1130 -830 0 0 {name=x2}
 C {devices/lab_pin.sym} 1330 -1120 2 0 {name=p12 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1330 -820 2 0 {name=p13 sig_type=std_logic lab=VSS}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d2.sym} 1200 -1230 0 0 {name=x8}
