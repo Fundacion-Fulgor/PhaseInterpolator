@@ -8,7 +8,6 @@ E {}
 N 120 -110 140 -110 {lab=#net1}
 N 120 -280 150 -280 {lab=#net1}
 N 270 -280 320 -280 {lab=CLKOUT}
-N 300 -100 320 -100 {lab=CLKOUT}
 N 80 -90 140 -90 {lab=CLKIN}
 N 220 -240 220 -220 {lab=VSS}
 N 120 -280 120 -110 {lab=#net1}
@@ -17,7 +16,8 @@ N 220 -340 220 -320 {lab=VDD}
 N 220 -170 220 -150 {lab=VDD}
 N 220 -50 220 -30 {lab=VSS}
 N 320 -100 360 -100 {lab=CLKOUT}
-C {/foss/designs/PhaseInterpolator/Custom_std_Cells/reg.sym} 120 -10 0 0 {name=x1}
+N 310 -100 320 -100 {lab=CLKOUT}
+C {/foss/designs/PhaseInterpolator/Custom_std_Cells/reg_v2.sym} 110 -50 0 0 {name=x1}
 C {/foss/designs/PhaseInterpolator/Custom_std_Cells/inv.sym} 310 -140 0 1 {name=x4}
 C {iopin.sym} 220 -340 0 0 {name=p1 lab=VDD}
 C {iopin.sym} 220 -220 0 0 {name=p2 lab=VSS}

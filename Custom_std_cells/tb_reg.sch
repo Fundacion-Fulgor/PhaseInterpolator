@@ -6,15 +6,15 @@ S {}
 F {}
 E {}
 B 2 340 -260 1410 220 {flags=graph
-y1=-0.5
-y2=1.6
+y1=-0.11
+y2=1.7
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.8817683e-09
-x2=1.0294119e-08
+x1=0
+x2=6e-09
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -85,7 +85,7 @@ value="
 .save v(clk) v(in) v(out)
 
 
-.tran 5p 16n
+.tran 5p 6n
 
 .control
 run

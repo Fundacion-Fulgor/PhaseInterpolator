@@ -6,22 +6,23 @@ S {}
 F {}
 E {}
 B 2 -1103120 -1113200 -1102050 -1112720 {flags=graph
-y1=-0.057
-y2=1.3
+y1=-0.10349421
+y2=1.33721
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=8e-09
+x2=1e-08
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 node="v90
-v0"
-color="4 17"
+v0
+Pi_vout"
+color="4 17 12"
 dataset=-1
 unitx=1
 logx=0
@@ -36,7 +37,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=8e-09
+x2=1e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -58,7 +59,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=8e-09
+x2=1e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -80,7 +81,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=8e-09
+x2=1e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -94,28 +95,27 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 -1101650 -1113730 -1100580 -1113250 {flags=graph
-y1=-0.057
-y2=1.3
+y2=1.2939178
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=8e-09
+x2=1e-08
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="v0
-vout
-v90"
-color="10 6 11"
+node="pi_vout
+vout"
+color="6 10"
 dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=-1}
+hilight_wave=-1
+y1=-0.1}
 N -1103560 -1113540 -1103560 -1113510 {lab=GND}
 N -1103560 -1113630 -1103560 -1113600 {lab=vdd}
 N -1102750 -1113380 -1102750 -1113350 {lab=GND}
@@ -136,8 +136,13 @@ N -1102360 -1113480 -1102300 -1113480 {lab=v180}
 N -1102360 -1113440 -1102300 -1113440 {lab=v90}
 N -1102360 -1113400 -1102300 -1113400 {lab=v270}
 N -1102080 -1113610 -1102080 -1113570 {lab=vdd}
-N -1102210 -1113610 -1102210 -1113570 {lab="vss, vss, vss, vss, vdd, vdd, vdd, vdd" vss}
-N -1101880 -1113450 -1101780 -1113450 {lab=vout}
+N -1102210 -1113610 -1102210 -1113570 {lab="vdd, vdd, vdd, vdd, vss, vss, vss, vss" vss}
+N -1101880 -1113450 -1101780 -1113450 {lab=pi_vout}
+N -1101760 -1113710 -1101760 -1113690 {lab=vdd}
+N -1101760 -1113570 -1101760 -1113550 {lab=vss}
+N -1101680 -1113570 -1101660 -1113570 {lab=vout}
+N -1101660 -1113630 -1101660 -1113570 {lab=vout}
+N -1101900 -1113630 -1101870 -1113630 {lab=pi_vout}
 C {devices/vsource.sym} -1103560 -1113570 0 0 {name=Vdd1 value=1.2 savecurrent=false
 }
 C {devices/gnd.sym} -1103560 -1113510 0 0 {name=l4 lab=GND}
@@ -149,9 +154,10 @@ C {devices/lab_pin.sym} -1102500 -1113440 2 0 {name=p5 sig_type=std_logic lab=v1
 C {devices/lab_pin.sym} -1102500 -1113500 2 0 {name=p6 sig_type=std_logic lab=v0}
 C {devices/code.sym} -1103875 -1113045 0 0 {name=s1 only_toplevel=false 
 value="
-.save v(vin1) v(v0) v(v90) v(v270) v(v180) v(vin2) v(vout)
+.save v(vin1) v(v0) v(v90) v(v270) v(v180) v(vin2) v(vout) v(pi_vout)
 
-.tran 5p 8n
+
+.tran 5p 16n
 .save all
 
 .control
@@ -257,6 +263,11 @@ C {devices/lab_pin.sym} -1102360 -1113440 0 0 {name=p17 sig_type=std_logic lab=v
 }
 C {devices/lab_pin.sym} -1102360 -1113400 0 0 {name=p18 sig_type=std_logic lab=v270}
 C {devices/lab_pin.sym} -1102080 -1113610 0 0 {name=p19 sig_type=std_logic lab=vdd}
-C {devices/lab_pin.sym} -1102210 -1113610 0 0 {name=p20 sig_type=std_logic lab="vss, vss, vss, vss, vdd, vdd, vdd, vdd"}
-C {devices/lab_pin.sym} -1101780 -1113450 2 0 {name=p21 sig_type=std_logic lab=vout}
+C {devices/lab_pin.sym} -1102210 -1113610 0 0 {name=p20 sig_type=std_logic lab="vdd, vdd, vdd, vdd, vss, vss, vss, vss"}
+C {devices/lab_pin.sym} -1101780 -1113450 2 0 {name=p21 sig_type=std_logic lab=pi_vout}
 C {clock_gen.sym} -1102750 -1113460 0 0 {name=x1}
+C {devices/lab_pin.sym} -1101760 -1113710 0 0 {name=p1 sig_type=std_logic lab=vdd}
+C {devices/lab_pin.sym} -1101760 -1113550 0 0 {name=p7 sig_type=std_logic lab=vss}
+C {devices/lab_pin.sym} -1101680 -1113570 3 0 {name=p11 sig_type=std_logic lab=vout}
+C {devices/lab_pin.sym} -1101900 -1113630 0 0 {name=p12 sig_type=std_logic lab=pi_vout}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/div_freq_x8.sym} -1101890 -1113560 0 0 {name=x2}
