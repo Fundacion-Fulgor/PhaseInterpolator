@@ -1,0 +1,40 @@
+
+Subcircuit summary:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
+sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: inv                             |Circuit 2: inv                             
+
+---------------------------------------------------------------------------------------
+Net: VSS                                   |Net: VSS                                   
+  sg13_lv_nmos/drain = 1                   |  sg13_lv_nmos/source = 1                  
+  sg13_lv_nmos/bulk = 1                    |  sg13_lv_nmos/bulk = 1                    
+                                           |                                           
+Net: VDD                                   |Net: VDD                                   
+  sg13_lv_pmos/drain = 1                   |  sg13_lv_pmos/source = 1                  
+  sg13_lv_pmos/bulk = 1                    |  sg13_lv_pmos/bulk = 1                    
+                                           |                                           
+Net: VOUT                                  |Net: VOUT                                  
+  sg13_lv_nmos/source = 1                  |  sg13_lv_pmos/drain = 1                   
+  sg13_lv_pmos/source = 1                  |  sg13_lv_nmos/drain = 1                   
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+VDD                                        |VSS **Mismatch**                           
+VOUT                                       |VDD **Mismatch**                           
+VSS                                        |VOUT **Mismatch**                          
+VIN                                        |VIN                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for inv and inv altered to match.
+Device classes inv and inv are equivalent.
+
+Final result: Top level cell failed pin matching.
