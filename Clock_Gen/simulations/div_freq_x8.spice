@@ -1,12 +1,26 @@
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/div_freq_x8.sch
+**.subckt div_freq_x8 VDD VINPI VOUT VSS
+*.iopin VDD
+*.iopin VSS
+*.iopin VINPI
+*.opin VOUT
+x7 VDD VSS net1 VINPI div_freq_x2
+x8 net3 VSS net2 net1 div_freq_x2
+x9 VDD VSS VOUT net2 div_freq_x2
+**.ends
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_Cells/div_freq_x2.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_Cells/div_freq_x2.sym
 ** sch_path: /foss/designs/PhaseInterpolator/Custom_std_Cells/div_freq_x2.sch
-**.subckt div_freq_x2 VDD VSS CLKOUT CLKIN
+.subckt div_freq_x2 VDD VSS CLKOUT CLKIN
 *.iopin VDD
 *.iopin VSS
 *.ipin CLKIN
 *.opin CLKOUT
 x1 VDD CLKIN VSS CLKOUT net1 reg_v2
 x4 VDD net1 CLKOUT VSS inv
-**.ends
+.ends
+
 
 * expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_Cells/reg_v2.sym # of pins=5
 ** sym_path: /foss/designs/PhaseInterpolator/Custom_std_Cells/reg_v2.sym

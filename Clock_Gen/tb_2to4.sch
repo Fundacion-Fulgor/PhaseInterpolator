@@ -6,30 +6,7 @@ S {}
 F {}
 E {}
 B 2 -1103120 -1113200 -1102050 -1112720 {flags=graph
-y1=-0.10349421
-y2=1.33721
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=0
-x2=1e-08
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-node="v90
-v0
-Pi_vout"
-color="4 17 12"
-dataset=-1
-unitx=1
-logx=0
-logy=0
-hilight_wave=-1}
-B 2 -1103120 -1112680 -1102050 -1112200 {flags=graph
-y1=-0.057
+y1=-0.068
 y2=1.3
 ypos1=0
 ypos2=2
@@ -37,7 +14,29 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1e-08
+x2=1.6e-08
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="v90
+v0"
+color="4 17"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+hilight_wave=-1}
+B 2 -1103120 -1112680 -1102050 -1112200 {flags=graph
+y1=-0.069
+y2=1.3
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=1.6e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -59,7 +58,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1e-08
+x2=1.6e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -81,7 +80,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1e-08
+x2=1.6e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -102,7 +101,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1e-08
+x2=1.6e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -129,7 +128,6 @@ N -1103480 -1113540 -1103480 -1113510 {lab=GND}
 N -1102940 -1113500 -1102900 -1113500 {lab=vc}
 N -1103560 -1113340 -1103560 -1113310 {lab=GND}
 N -1103560 -1113430 -1103560 -1113400 {lab=vss}
-N -1102080 -1113330 -1102080 -1113300 {lab=GND}
 N -1102200 -1113330 -1102200 -1113300 {lab="vss, vss"}
 N -1102360 -1113520 -1102300 -1113520 {lab=v0}
 N -1102360 -1113480 -1102300 -1113480 {lab=v180}
@@ -143,6 +141,7 @@ N -1101760 -1113570 -1101760 -1113550 {lab=vss}
 N -1101680 -1113570 -1101660 -1113570 {lab=vout}
 N -1101660 -1113630 -1101660 -1113570 {lab=vout}
 N -1101900 -1113630 -1101870 -1113630 {lab=pi_vout}
+N -1102080 -1113330 -1102080 -1113310 {lab=vss}
 C {devices/vsource.sym} -1103560 -1113570 0 0 {name=Vdd1 value=1.2 savecurrent=false
 }
 C {devices/gnd.sym} -1103560 -1113510 0 0 {name=l4 lab=GND}
@@ -199,9 +198,9 @@ write tran_logic.raw
 *print Duty_L90
 
 meas tran SKEW0_90 TRIG v(v0) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 RISE=4
-meas tran SKEW90_180 TRIG v(v90) VAL=0.6 RISE=3 TARG v(v180) VAL=0.6 RISE=4
-meas tran SKEW180_270 TRIG v(v180) VAL=0.6 RISE=3 TARG v(v270) VAL=0.6 RISE=3
-meas tran SKEW270_0 TRIG v(v270) VAL=0.6 RISE=3 TARG v(v0) VAL=0.6 RISE=3
+meas tran SKEW90_180 TRIG v(v90) VAL=0.6 RISE=3 TARG v(v180) VAL=0.6 RISE=3
+meas tran SKEW180_270 TRIG v(v180) VAL=0.6 RISE=3 TARG v(v270) VAL=0.6 RISE=4
+meas tran SKEW270_0 TRIG v(v270) VAL=0.6 RISE=4 TARG v(v0) VAL=0.6 RISE=3
 
 meas tran T90 TRIG v(v90) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 RISE=4
 meas tran T180 TRIG v(v180) VAL=0.6 RISE=3 TARG v(v180) VAL=0.6 RISE=4
@@ -209,6 +208,9 @@ meas tran T270 TRIG v(v270) VAL=0.6 RISE=3 TARG v(v270) VAL=0.6 RISE=4
 meas tran T0 TRIG v(v0) VAL=0.6 RISE=3 TARG v(v0) VAL=0.6 RISE=4
 
 let period_0 = T0
+let period_90 = T90
+let period_180 = T180
+let period_270 = T270
 
 let phase0_90 = (SKEW0_90 / period_0) * 360 
 let phase90_180 = (SKEW90_180 / period_0) * 360
@@ -217,13 +219,19 @@ let phase270_0 = (SKEW270_0 / period_0) * 360
 
 
 meas tran PW0 TRIG v(v0) VAL=0.6 RISE=3 TARG v(v0) VAL=0.6 FALL=4
-meas tran PW90 TRIG v(v90) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 FALL=3
-meas tran PW180 TRIG v(v180) VAL=0.6 RISE=3 TARG v(v180) VAL=0.6 FALL=4
+meas tran PW90 TRIG v(v90) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 FALL=4
+meas tran PW180 TRIG v(v180) VAL=0.6 RISE=3 TARG v(v180) VAL=0.6 FALL=3
 meas tran PW270 TRIG v(v270) VAL=0.6 RISE=3 TARG v(v270) VAL=0.6 FALL=3
+
+let Duty0 = PW0 / period_0
+let Duty90 = PW90 / period_90
+let Duty180 = PW180 / period_180
+let Duty270 = PW270 / period_270
+
 
 let freq = 1 / period_0
 
-print SKEW0_90 SKEW90_180 SKEW180_270 SKEW270_0 phase0_90 phase90_180 phase180_270 phase270_0 PW0 PW90 PW180 PW270 freq
+print SKEW0_90 SKEW90_180 SKEW180_270 SKEW270_0 phase0_90 phase90_180 phase180_270 phase270_0 PW0 PW90 PW180 PW270 Duty0 Duty90 Duty180 Duty270 freq
 
 .endc
 "}
@@ -255,7 +263,6 @@ C {devices/vsource.sym} -1103560 -1113370 0 0 {name=Vdd3 value=0 savecurrent=fal
 C {devices/gnd.sym} -1103560 -1113310 0 0 {name=l6 lab=GND
 value=0}
 C {devices/lab_pin.sym} -1103560 -1113430 2 0 {name=p14 sig_type=std_logic lab=vss}
-C {devices/gnd.sym} -1102080 -1113300 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} -1102200 -1113300 2 0 {name=p13 sig_type=std_logic lab="vss, vss"}
 C {devices/lab_pin.sym} -1102360 -1113520 0 0 {name=p15 sig_type=std_logic lab=v0}
 C {devices/lab_pin.sym} -1102360 -1113480 0 0 {name=p16 sig_type=std_logic lab=v180}
@@ -270,4 +277,6 @@ C {devices/lab_pin.sym} -1101760 -1113710 0 0 {name=p1 sig_type=std_logic lab=vd
 C {devices/lab_pin.sym} -1101760 -1113550 0 0 {name=p7 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} -1101680 -1113570 3 0 {name=p11 sig_type=std_logic lab=vout}
 C {devices/lab_pin.sym} -1101900 -1113630 0 0 {name=p12 sig_type=std_logic lab=pi_vout}
-C {/foss/designs/PhaseInterpolator/Custom_std_cells/div_freq_x8.sym} -1101890 -1113560 0 0 {name=x2}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/div_freq_x8.sym} -1101890 -1113560 0 0 {name=x2
+}
+C {devices/lab_pin.sym} -1102080 -1113310 0 0 {name=p22 sig_type=std_logic lab=vss}

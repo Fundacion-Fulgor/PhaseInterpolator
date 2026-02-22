@@ -1,5 +1,23 @@
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/MUX_4_1.sch
+**.subckt MUX_4_1 VINA VINB VDD VOUT VS[1],VS[0] VINC VSS VIND VST
+*.opin VOUT
+*.iopin VDD
+*.iopin VSS
+*.ipin VINA
+*.ipin VINB
+*.ipin VINC
+*.ipin VIND
+*.ipin VS[1],VS[0]
+*.ipin VST
+x3 VDD VINC net2 VS[1] VIND VSS MUX_2_1
+x4 VDD VINA net1 VS[0] VINB VSS MUX_2_1
+x5 VDD net1 VOUT VST net2 VSS MUX_2_1
+**.ends
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/MUX_2_1.sym # of pins=6
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/MUX_2_1.sym
 ** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/MUX_2_1.sch
-**.subckt MUX_2_1 VDD VINA VOUT VS VINB VSS
+.subckt MUX_2_1 VDD VINA VOUT VS VINB VSS
 *.opin VOUT
 *.ipin VINA
 *.ipin VINB
@@ -25,7 +43,8 @@ x7[1] net2 VSS VDD net4 VDD VSS tg_custom
 x7[0] net2 VSS VDD net4 VDD VSS tg_custom
 x2 VOUT VDD VSS net5 VSS VDD tg_custom
 x6 VOUT VDD VSS net2 VSS VDD tg_custom
-**.ends
+.ends
+
 
 * expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sym # of pins=6
 ** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sym

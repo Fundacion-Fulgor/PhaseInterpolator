@@ -33,32 +33,24 @@ N -630 -50 -630 -20 {lab=vcont}
 N -630 40 -630 70 {lab=GND}
 N -950 240 -950 270 {lab=GND}
 N -950 150 -950 180 {lab=vss}
-N -180 -200 -140 -200 {lab=vinI}
-N -180 -160 -140 -160 {lab=vinIB}
 N -180 -130 -140 -130 {lab="v4,v3, v2, v1, v0" v3, v2, v1, v0}
 N -180 -100 -140 -100 {lab=vcont}
 N 0 -50 -0 -30 {lab=vss}
 N -0 -300 -0 -250 {lab=vdd}
 N -0 310 -0 330 {lab=vss}
 N -0 60 -0 110 {lab=vdd}
-N -180 160 -140 160 {lab=vinI}
-N -180 200 -140 200 {lab=vinIB}
 N -180 230 -140 230 {lab="vss, vss, vss, vss, vss" vss, vss, vss, vss}
 N -180 260 -140 260 {lab=vcont}
 N 120 -150 140 -150 {lab=vout}
 N 120 210 140 210 {lab=vout8i}
-C {8xPI_top.sym} 0 -150 0 0 {name=x1}
+C {/foss/designs/PhaseInterpolator/8xPI_top/8xPI_top.sym} -260 70 0 0 {name=x1}
 C {devices/gnd.sym} -950 -170 0 0 {name=l2 lab=GND}
 C {devices/vsource.sym} -950 -220 0 0 {name=Vin3 value="dc 0 ac 0 pulse(0, 1.2, 0, 25p, 25p, 225p, 500p) "}
 C {devices/lab_pin.sym} -970 -310 0 0 {name=p1 sig_type=std_logic lab=vinI}
 C {devices/gnd.sym} -630 -170 0 0 {name=l4 lab=GND}
 C {devices/vsource.sym} -630 -220 0 0 {name=Vin5 value="dc 0 ac 0 pulse(0, 1.2, 250p, 25p, 25p, 225p, 500p ) "}
 C {devices/lab_pin.sym} -650 -310 0 0 {name=p3 sig_type=std_logic lab=vinIB}
-C {8xPI_top.sym} 0 210 0 0 {name=x2}
-C {devices/lab_pin.sym} -180 -200 0 0 {name=p4 sig_type=std_logic lab=vinI}
-C {devices/lab_pin.sym} -180 160 0 0 {name=p5 sig_type=std_logic lab=vinI}
-C {devices/lab_pin.sym} -180 -160 0 0 {name=p7 sig_type=std_logic lab=vinIB}
-C {devices/lab_pin.sym} -180 200 0 0 {name=p8 sig_type=std_logic lab=vinIB}
+C {/foss/designs/PhaseInterpolator/8xPI_top/8xPI_top.sym} -260 430 0 0 {name=x2}
 C {devices/vsource.sym} 680 20 0 0 {name=Vdd9 value="dc 0 ac 0 pulse(0, 1.2, 5n, 25p, 25p, 5n, 10n)"}
 C {devices/vsource.sym} 360 20 0 0 {name=Vdd10 value="dc 0 ac 0 pulse(0, 1.2, 10n, 25p, 25p, 10n, 20n) "}
 C {devices/lab_pin.sym} 360 -50 0 0 {name=p49 sig_type=std_logic lab=v2}
@@ -135,3 +127,7 @@ value="
 	*write \{$output_path\}tran_linearity_termoless.raw V(Vout) V(Vout8I) V(vinI) V(VoutI1) V(VoutI2) V(VoutQ1) V(VoutIB1) V(VoutQB1)
 .endc
 .end"}
+C {devices/launcher.sym} -424.375 95 0 0 {name=h1
+descr="Simulate" 
+tclcommand="xschem save; xschem netlist; xschem simulate"
+}
