@@ -2,8 +2,8 @@
 Subcircuit summary:
 Circuit 1: tg_custom                       |Circuit 2: tg_custom                       
 -------------------------------------------|-------------------------------------------
-sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
 sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
 Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 6                          |Number of nets: 6                          
 ---------------------------------------------------------------------------------------

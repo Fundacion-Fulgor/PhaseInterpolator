@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 -1103120 -1113200 -1102050 -1112720 {flags=graph
-y1=-0.068
-y2=1.3
+y1=-0.046
+y2=1.4
 ypos1=0
 ypos2=2
 divy=5
@@ -94,7 +94,7 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 -1101650 -1113730 -1100580 -1113250 {flags=graph
-y2=1.2939178
+y2=1.3
 ypos1=0
 ypos2=2
 divy=5
@@ -114,7 +114,7 @@ unitx=1
 logx=0
 logy=0
 hilight_wave=-1
-y1=-0.1}
+y1=-0.13}
 N -1103560 -1113540 -1103560 -1113510 {lab=GND}
 N -1103560 -1113630 -1103560 -1113600 {lab=vdd}
 N -1102750 -1113380 -1102750 -1113350 {lab=GND}
@@ -142,7 +142,7 @@ N -1101680 -1113570 -1101660 -1113570 {lab=vout}
 N -1101660 -1113630 -1101660 -1113570 {lab=vout}
 N -1101900 -1113630 -1101870 -1113630 {lab=pi_vout}
 N -1102080 -1113330 -1102080 -1113310 {lab=vss}
-C {devices/vsource.sym} -1103560 -1113570 0 0 {name=Vdd1 value=1.2 savecurrent=false
+C {devices/vsource.sym} -1103560 -1113570 0 0 {name=Vdd1 value=\{vdd\} savecurrent=false
 }
 C {devices/gnd.sym} -1103560 -1113510 0 0 {name=l4 lab=GND}
 C {devices/gnd.sym} -1102750 -1113350 0 0 {name=l2 lab=GND}
@@ -153,8 +153,11 @@ C {devices/lab_pin.sym} -1102500 -1113440 2 0 {name=p5 sig_type=std_logic lab=v1
 C {devices/lab_pin.sym} -1102500 -1113500 2 0 {name=p6 sig_type=std_logic lab=v0}
 C {devices/code.sym} -1103875 -1113045 0 0 {name=s1 only_toplevel=false 
 value="
-.save v(vin1) v(v0) v(v90) v(v270) v(v180) v(vin2) v(vout) v(pi_vout)
 
+.save v(vin1) v(v0) v(v90) v(v270) v(v180) v(vin2) v(vout) v(pi_vout) v(vdd)
+
+.param vdd = 1.14
+.options TEMP = -40
 
 .tran 5p 16n
 .save all
@@ -164,48 +167,32 @@ run
 set color0=white
 write tran_logic.raw
 
-* --- MEDICIONES DE FASE Y RETARDO (Usando v90) ---
-* Periodo Entrada (Ref)
-*meas tran T_p90 TRIG v(vin1) VAL=0.6 RISE=3 TARG v(vin1) VAL=0.6 RISE=4
-  
-* Retardo (Entrada vs v90)
-*meas tran T_d90 TRIG v(vin1) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 RISE=3
-
-* Calculo Fase 
-*let Phase_D90= (T_d90 / T_p90) * 360
-  
-*print T_p90
-*print T_d90
-*print Phase_D90
+meas tran ymax MAX v(vdd) from=0 to=1n
+let vdd_half = ymax/2
 
 
-* --- DUTY CYCLE (Usando v90) ---
-* Periodo Salida
-*meas tran T_pe90 TRIG v(v90) VAL=0.6 RISE=2 TARG v(v90) VAL=0.6 RISE=3
+*TT
+*meas tran SKEW0_90 TRIG v(v0) VAL=vdd_half RISE=3 TARG v(v90) VAL=vdd_half RISE=4
+*meas tran SKEW90_180 TRIG v(v90) VAL=vdd_half RISE=3 TARG v(v180) VAL=vdd_half RISE=3
+*meas tran SKEW180_270 TRIG v(v180) VAL=vdd_half RISE=3 TARG v(v270) VAL=vdd_half RISE=4
+*meas tran SKEW270_0 TRIG v(v270) VAL=vdd_half RISE=4 TARG v(v0) VAL=vdd_half RISE=3
 
-* Tiempo en ALTO (Ton)
-* Desde que sube (RISE=2) hasta que baja (FALL=2)
-*meas tran T_h90 TRIG v(v90) VAL=0.6 RISE=2 TARG v(v90) VAL=0.6 FALL=2
+*FF
+*meas tran SKEW0_90 TRIG v(v0) VAL=vdd_half RISE=5 TARG v(v90) VAL=vdd_half RISE=5
+*meas tran SKEW90_180 TRIG v(v90) VAL=vdd_half RISE=5 TARG v(v180) VAL=vdd_half RISE=6
+*meas tran SKEW180_270 TRIG v(v180) VAL=vdd_half RISE=5 TARG v(v270) VAL=vdd_half RISE=5
+*meas tran SKEW270_0 TRIG v(v270) VAL=vdd_half RISE=5 TARG v(v0) VAL=vdd_half RISE=5
 
-* Tiempo en BAJO (Toff)
-* Desde que baja (FALL=2) hasta que sube de nuevo (RISE=3)
-*meas tran T_l90 TRIG v(v90) VAL=0.6 FALL=2 TARG v(v90) VAL=0.6 RISE=3
+*SS
+meas tran SKEW0_90 TRIG v(v0) VAL=vdd_half RISE=15 TARG v(v90) VAL=vdd_half RISE=16
+meas tran SKEW90_180 TRIG v(v90) VAL=vdd_half RISE=15 TARG v(v180) VAL=vdd_half RISE=16
+meas tran SKEW180_270 TRIG v(v180) VAL=vdd_half RISE=15 TARG v(v270) VAL=vdd_half RISE=15
+meas tran SKEW270_0 TRIG v(v270) VAL=vdd_half RISE=15 TARG v(v0) VAL=vdd_half RISE=15
 
-*let Duty_H90 = (T_h90 / T_pe90) * 100
-*let Duty_L90 = (T_l90 / T_pe90) * 100
-
-*print Duty_H90
-*print Duty_L90
-
-meas tran SKEW0_90 TRIG v(v0) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 RISE=4
-meas tran SKEW90_180 TRIG v(v90) VAL=0.6 RISE=3 TARG v(v180) VAL=0.6 RISE=3
-meas tran SKEW180_270 TRIG v(v180) VAL=0.6 RISE=3 TARG v(v270) VAL=0.6 RISE=4
-meas tran SKEW270_0 TRIG v(v270) VAL=0.6 RISE=4 TARG v(v0) VAL=0.6 RISE=3
-
-meas tran T90 TRIG v(v90) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 RISE=4
-meas tran T180 TRIG v(v180) VAL=0.6 RISE=3 TARG v(v180) VAL=0.6 RISE=4
-meas tran T270 TRIG v(v270) VAL=0.6 RISE=3 TARG v(v270) VAL=0.6 RISE=4
-meas tran T0 TRIG v(v0) VAL=0.6 RISE=3 TARG v(v0) VAL=0.6 RISE=4
+meas tran T90 TRIG v(v90) VAL=vdd_half RISE=3 TARG v(v90) VAL=vdd_half RISE=4
+meas tran T180 TRIG v(v180) VAL=vdd_half RISE=3 TARG v(v180) VAL=vdd_half RISE=4
+meas tran T270 TRIG v(v270) VAL=vdd_half RISE=3 TARG v(v270) VAL=vdd_half RISE=4
+meas tran T0 TRIG v(v0) VAL=vdd_half RISE=3 TARG v(v0) VAL=vdd_half RISE=4
 
 let period_0 = T0
 let period_90 = T90
@@ -218,10 +205,10 @@ let phase180_270 = (SKEW180_270 / period_0) * 360
 let phase270_0 = (SKEW270_0 / period_0) * 360
 
 
-meas tran PW0 TRIG v(v0) VAL=0.6 RISE=3 TARG v(v0) VAL=0.6 FALL=4
-meas tran PW90 TRIG v(v90) VAL=0.6 RISE=3 TARG v(v90) VAL=0.6 FALL=4
-meas tran PW180 TRIG v(v180) VAL=0.6 RISE=3 TARG v(v180) VAL=0.6 FALL=3
-meas tran PW270 TRIG v(v270) VAL=0.6 RISE=3 TARG v(v270) VAL=0.6 FALL=3
+meas tran PW0 TRIG v(v0) VAL=vdd_half RISE=3 TARG v(v0) VAL=vdd_half FALL=4
+meas tran PW90 TRIG v(v90) VAL=vdd_half RISE=3 TARG v(v90) VAL=vdd_half FALL=4
+meas tran PW180 TRIG v(v180) VAL=vdd_half RISE=3 TARG v(v180) VAL=vdd_half FALL=3
+meas tran PW270 TRIG v(v270) VAL=vdd_half RISE=3 TARG v(v270) VAL=vdd_half FALL=3
 
 let Duty0 = PW0 / period_0
 let Duty90 = PW90 / period_90
@@ -238,7 +225,7 @@ print SKEW0_90 SKEW90_180 SKEW180_270 SKEW270_0 phase0_90 phase90_180 phase180_2
 C {devices/code_shown.sym} -1103900 -1113160 0 0 {name=MODEL1 only_toplevel=true
 format="tcleval( @value )"
 value="
-.lib cornerMOSlv.lib mos_tt
+.lib cornerMOSlv.lib mos_ss
 *.include /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
 
 "}
@@ -272,7 +259,7 @@ C {devices/lab_pin.sym} -1102360 -1113400 0 0 {name=p18 sig_type=std_logic lab=v
 C {devices/lab_pin.sym} -1102080 -1113610 0 0 {name=p19 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} -1102210 -1113610 0 0 {name=p20 sig_type=std_logic lab="vdd, vdd, vdd, vdd, vss, vss, vss, vss"}
 C {devices/lab_pin.sym} -1101780 -1113450 2 0 {name=p21 sig_type=std_logic lab=pi_vout}
-C {clock_gen.sym} -1102750 -1113460 0 0 {name=x1}
+C {/foss/designs/PhaseInterpolator/Clock_Gen/clock_gen.sym} -1102750 -1113460 0 0 {name=x1}
 C {devices/lab_pin.sym} -1101760 -1113710 0 0 {name=p1 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} -1101760 -1113550 0 0 {name=p7 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} -1101680 -1113570 3 0 {name=p11 sig_type=std_logic lab=vout}
