@@ -1,26 +1,77 @@
-Flattening unmatched subcell inv_PI in circuit inv_PI_d2 (1)(2 instances)
 
+Subcircuit summary:
+Circuit 1: inv_PI                          |Circuit 2: inv_PI                          
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
+(no matching element)                      |sg13_lv_pmos (1)                           
+Number of devices: 1 **Mismatch**          |Number of devices: 2 **Mismatch**          
+Number of nets: 3 **Mismatch**             |Number of nets: 4 **Mismatch**             
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: inv_PI                          |Circuit 2: inv_PI                          
+
+---------------------------------------------------------------------------------------
+Net: VIN                                   |Net: VIN                                   
+  sg13_lv_nmos/gate = 1                    |  sg13_lv_nmos/gate = 1                    
+                                           |  sg13_lv_pmos/gate = 1                    
+                                           |                                           
+Net: VOUT                                  |Net: VOUT                                  
+  sg13_lv_nmos/(drain|source) = 1          |  sg13_lv_nmos/(drain|source) = 1          
+                                           |  sg13_lv_pmos/(drain|source) = 1          
+                                           |                                           
+(no matching net)                          |Net: VDD                                   
+                                           |  sg13_lv_pmos/(drain|source) = 1          
+                                           |  sg13_lv_pmos/bulk = 1                    
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: inv_PI                          |Circuit 2: inv_PI                          
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: sg13_lv_pmos:2                   
+                                           |  (drain,source) = (2,2)                   
+                                           |  gate = 2                                 
+                                           |  bulk = 2                                 
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits inv_PI inv_PI
+
+Class inv_PI_d2 (0):  Merged 1 parallel devices.
 Class inv_PI_d2 (1):  Merged 2 parallel devices.
 Subcircuit summary:
 Circuit 1: inv_PI_d2                       |Circuit 2: inv_PI_d2                       
 -------------------------------------------|-------------------------------------------
-sg13_lv_nmos (1)                           |sg13_lv_nmos (2->1)                        
+sg13_lv_nmos (2->1)                        |sg13_lv_nmos (2->1)                        
 sg13_lv_pmos (1)                           |sg13_lv_pmos (2->1)                        
 Number of devices: 2                       |Number of devices: 2                       
-Number of nets: 4                          |Number of nets: 4                          
+Number of nets: 3 **Mismatch**             |Number of nets: 4 **Mismatch**             
 ---------------------------------------------------------------------------------------
-Netlists match uniquely.
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: inv_PI_d2                       |Circuit 2: inv_PI_d2                       
+
+---------------------------------------------------------------------------------------
+Net: VDD|VOUT                              |Net: VDD                                   
+  sg13_lv_nmos/(drain|source) = 1          |  sg13_lv_pmos/(drain|source) = 1          
+  sg13_lv_pmos/(drain|source) = 2          |  sg13_lv_pmos/bulk = 1                    
+  sg13_lv_pmos/bulk = 1                    |                                           
+                                           |                                           
+(no matching net)                          |Net: VOUT                                  
+                                           |  sg13_lv_pmos/(drain|source) = 1          
+                                           |  sg13_lv_nmos/(drain|source) = 1          
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
 
 Subcircuit pins:
 Circuit 1: inv_PI_d2                       |Circuit 2: inv_PI_d2                       
 -------------------------------------------|-------------------------------------------
-VDD                                        |VDD                                        
-VOUT                                       |VOUT                                       
-VIN                                        |VIN                                        
+VDD|VOUT                                   |VDD **Mismatch**                           
 VSS                                        |VSS                                        
+VIN                                        |VIN                                        
+(no pin, node is VDD|VOUT)                 |VOUT                                       
 ---------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
+Cell pin lists for inv_PI_d2 and inv_PI_d2 altered to match.
 Device classes inv_PI_d2 and inv_PI_d2 are equivalent.
 
-Final result: Circuits match uniquely.
-.
+Final result: Top level cell failed pin matching.
