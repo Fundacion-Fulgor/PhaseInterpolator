@@ -1,4 +1,6 @@
-En el terminal abrir magic: magic
+En el terminal abrir magic: 
+magic inv.gds &
+
 
 Luego, en el terminal de magic cargar una por una linea
 gds read inverter.gds
@@ -17,3 +19,17 @@ ext2spice lvs
 ext2spice cthresh 0
 ext2spice extresist on
 ext2spice
+
+
+
+____________________________
+extract all
+ext2sim labels on 
+ext2sim
+extresist tolerance 10 
+extresist simplify on 
+extresist 
+ext2spice lvs
+ext2spice cthresh 0
+ext2spice extresist on
+ext2spice 

@@ -14,8 +14,8 @@ node "VOUT" 1 120.191 238 177 m1 0 0 0 0 9216 640 0 0 0 0 0 0 0 0 0 0 0 0
 node "VIN" 0 233.522 124 265 m1 0 0 0 0 3600 240 0 0 0 0 0 0 0 0 0 0 0 0
 node "VDD" 1 157.333 48 531 m1 0 0 0 0 35960 1048 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSS" 0 0 48 40 m1 0 0 0 0 25200 974 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VIN" "VDD" 75.8942
 cap "VOUT" "VDD" 49.2123
 cap "VIN" "VOUT" 49.4716
-cap "VIN" "VDD" 75.8942
 device msubckt sg13_lv_nmos 184 188 185 189 l=26 w=30 "VSS" "VIN" 52 0 "VSS" 30 4020,268 "VOUT" 30 4020,268
 device msubckt sg13_lv_pmos 184 424 185 425 l=26 w=30 "VDD" "VIN" 52 0 "VDD" 30 4020,268 "VOUT" 30 4020,268
