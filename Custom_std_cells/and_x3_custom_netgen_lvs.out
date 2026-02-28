@@ -1,5 +1,26 @@
 
 Subcircuit summary:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
+sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+VOUT                                       |VOUT                                       
+VIN                                        |VIN                                        
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv and inv are equivalent.
+
+Subcircuit summary:
 Circuit 1: nand_x3_custom                  |Circuit 2: nand_x3_custom                  
 -------------------------------------------|-------------------------------------------
 sg13_lv_nmos (3)                           |sg13_lv_nmos (3)                           
@@ -23,31 +44,10 @@ Cell pin lists are equivalent.
 Device classes nand_x3_custom and nand_x3_custom are equivalent.
 
 Subcircuit summary:
-Circuit 1: inv                             |Circuit 2: inv                             
--------------------------------------------|-------------------------------------------
-sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
-sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
-Number of devices: 2                       |Number of devices: 2                       
-Number of nets: 4                          |Number of nets: 4                          
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: inv                             |Circuit 2: inv                             
--------------------------------------------|-------------------------------------------
-VOUT                                       |VOUT                                       
-VIN                                        |VIN                                        
-VDD                                        |VDD                                        
-VSS                                        |VSS                                        
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes inv and inv are equivalent.
-
-Subcircuit summary:
 Circuit 1: and_x3_custom                   |Circuit 2: and_x3_custom                   
 -------------------------------------------|-------------------------------------------
-nand_x3_custom (1)                         |nand_x3_custom (1)                         
 inv (1)                                    |inv (1)                                    
+nand_x3_custom (1)                         |nand_x3_custom (1)                         
 Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 7                          |Number of nets: 7                          
 ---------------------------------------------------------------------------------------
@@ -56,12 +56,12 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: and_x3_custom                   |Circuit 2: and_x3_custom                   
 -------------------------------------------|-------------------------------------------
-VDD                                        |VDD                                        
-VSS                                        |VSS                                        
 A                                          |A                                          
 B                                          |B                                          
 C                                          |C                                          
 OUT                                        |OUT                                        
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes and_x3_custom and and_x3_custom are equivalent.
