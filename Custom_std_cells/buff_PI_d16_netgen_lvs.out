@@ -1,15 +1,36 @@
-Flattening unmatched subcell inv_PI in circuit inv_PI_d2 (1)(2 instances)
 
-Class inv_PI_d2 (1):  Merged 2 parallel devices.
 Subcircuit summary:
-Circuit 1: inv_PI_d2                       |Circuit 2: inv_PI_d2                       
+Circuit 1: inv_PI                          |Circuit 2: inv_PI                          
 -------------------------------------------|-------------------------------------------
-sg13_lv_nmos (1)                           |sg13_lv_nmos (2->1)                        
-sg13_lv_pmos (1)                           |sg13_lv_pmos (2->1)                        
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
+sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
 Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 4                          |Number of nets: 4                          
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inv_PI                          |Circuit 2: inv_PI                          
+-------------------------------------------|-------------------------------------------
+VOUT                                       |VOUT                                       
+VIN                                        |VIN                                        
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv_PI and inv_PI are equivalent.
+
+Subcircuit summary:
+Circuit 1: inv_PI_d2                       |Circuit 2: inv_PI_d2                       
+-------------------------------------------|-------------------------------------------
+inv_PI (2)                                 |inv_PI (2)                                 
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 1 symmetry.
 
 Subcircuit pins:
 Circuit 1: inv_PI_d2                       |Circuit 2: inv_PI_d2                       
@@ -94,10 +115,10 @@ Device classes inv_PI_d16 and inv_PI_d16 are equivalent.
 Subcircuit summary:
 Circuit 1: buff_PI_d16                     |Circuit 2: buff_PI_d16                     
 -------------------------------------------|-------------------------------------------
-inv_PI_d16 (1)                             |inv_PI_d16 (1)                             
-inv_PI_d2 (1)                              |inv_PI_d2 (1)                              
-inv_PI_d4 (1)                              |inv_PI_d4 (1)                              
 inv_PI_d8 (1)                              |inv_PI_d8 (1)                              
+inv_PI_d16 (1)                             |inv_PI_d16 (1)                             
+inv_PI_d4 (1)                              |inv_PI_d4 (1)                              
+inv_PI_d2 (1)                              |inv_PI_d2 (1)                              
 Number of devices: 4                       |Number of devices: 4                       
 Number of nets: 7                          |Number of nets: 7                          
 ---------------------------------------------------------------------------------------

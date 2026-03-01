@@ -1,4 +1,4 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 23/02/2026 00:02
+* Extracted by KLayout with SG13G2 LVS runset on : 01/03/2026 17:39
 
 .SUBCKT tg_custom VBP VBN VSP VSN VOUT VIN
 M$1 VIN VSP VOUT VBP sg13_lv_pmos L=0.13u W=0.3u AS=0.156p AD=0.156p PS=2.08u
