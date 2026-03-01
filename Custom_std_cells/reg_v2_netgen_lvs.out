@@ -1,0 +1,227 @@
+
+Subcircuit summary:
+Circuit 1: tg_custom                       |Circuit 2: tg_custom                       
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
+sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with port and property errors.
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sg13_lv_pmos:$2 pin VSP connections are no connects (1)
+    Circuit2 instance sg13_lv_pmos:2 pin VSP connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sg13_lv_pmos:$2 pin VBP connections are no connects (1)
+    Circuit2 instance sg13_lv_pmos:2 pin VBP connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sg13_lv_nmos:$1 pin VSN connections are no connects (1)
+    Circuit2 instance sg13_lv_nmos:1 pin VSN connections are tied together (0)
+
+Subcircuit pins:
+Circuit 1: tg_custom                       |Circuit 2: tg_custom                       
+-------------------------------------------|-------------------------------------------
+VBN                                        |VBN                                        
+(no pin, node is VOUT)                     |VOUT                                       
+(no pin, node is VSN)                      |VSN                                        
+(no pin, node is VSP)                      |VSP                                        
+(no pin, node is VIN)                      |VIN                                        
+(no pin, node is VBP)                      |VBP                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for tg_custom and tg_custom altered to match.
+Device classes tg_custom and tg_custom are equivalent.
+
+Subcircuit summary:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
+sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+(no pin, node is VDD)                      |VDD                                        
+(no pin, node is VOUT)                     |VOUT                                       
+(no pin, node is VIN)                      |VIN                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for inv and inv altered to match.
+Device classes inv and inv are equivalent.
+
+Subcircuit summary:
+Circuit 1: reg_v2                          |Circuit 2: reg_v2                          
+-------------------------------------------|-------------------------------------------
+tg_custom (4)                              |tg_custom (4)                              
+inv (7)                                    |inv (7)                                    
+Number of devices: 11                      |Number of devices: 11                      
+Number of nets: 42 **Mismatch**            |Number of nets: 13 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: reg_v2                          |Circuit 2: reg_v2                          
+
+---------------------------------------------------------------------------------------
+Net: \$1                                   |Net: VDD                                   
+  tg_custom/VBN = 4                        |  tg_custom/VBP = 4                        
+  inv/VSS = 7                              |  inv/VDD = 7                              
+                                           |                                           
+Net: dummy_3                               |Net: VSS                                   
+  tg_custom/proxyVBP = 1                   |  tg_custom/VBN = 4                        
+                                           |  inv/VSS = 7                              
+                                           |                                           
+Net: dummy_8                               |Net: D                                     
+  tg_custom/proxyVBP = 1                   |  inv/VIN = 1                              
+                                           |                                           
+Net: dummy_13                              |Net: net7                                  
+  tg_custom/proxyVBP = 1                   |  tg_custom/VOUT = 2                       
+                                           |  inv/VIN = 1                              
+                                           |                                           
+Net: dummy_18                              |Net: net6                                  
+  tg_custom/proxyVBP = 1                   |  tg_custom/VOUT = 2                       
+                                           |  inv/VIN = 1                              
+                                           |                                           
+Net: dummy_4                               |Net: net1                                  
+  tg_custom/proxyVIN = 1                   |  inv/VIN = 2                              
+                                           |  inv/VOUT = 1                             
+                                           |                                           
+Net: dummy_9                               |Net: CLK                                   
+  tg_custom/proxyVIN = 1                   |  tg_custom/VSN = 2                        
+                                           |  inv/VIN = 1                              
+                                           |  tg_custom/VSP = 2                        
+                                           |                                           
+Net: dummy_14                              |Net: CLK_B                                 
+  tg_custom/proxyVIN = 1                   |  tg_custom/VSP = 2                        
+                                           |  inv/VOUT = 1                             
+                                           |  tg_custom/VSN = 2                        
+                                           |                                           
+Net: dummy_19                              |Net: net2                                  
+  tg_custom/proxyVIN = 1                   |  tg_custom/VIN = 1                        
+                                           |  inv/VOUT = 1                             
+                                           |                                           
+Net: dummy_5                               |Net: net4                                  
+  tg_custom/proxyVSP = 1                   |  inv/VOUT = 1                             
+                                           |  tg_custom/VIN = 1                        
+                                           |                                           
+Net: dummy_10                              |Net: net3                                  
+  tg_custom/proxyVSP = 1                   |  inv/VOUT = 1                             
+                                           |  tg_custom/VIN = 1                        
+                                           |                                           
+Net: dummy_15                              |Net: net5                                  
+  tg_custom/proxyVSP = 1                   |  inv/VOUT = 1                             
+                                           |  tg_custom/VIN = 1                        
+                                           |                                           
+Net: dummy_20                              |Net: Q                                     
+  tg_custom/proxyVSP = 1                   |  inv/VIN = 1                              
+                                           |  inv/VOUT = 1                             
+                                           |                                           
+Net: dummy_6                               |(no matching net)                          
+  tg_custom/proxyVSN = 1                   |                                           
+                                           |                                           
+Net: dummy_11                              |(no matching net)                          
+  tg_custom/proxyVSN = 1                   |                                           
+                                           |                                           
+Net: dummy_16                              |(no matching net)                          
+  tg_custom/proxyVSN = 1                   |                                           
+                                           |                                           
+Net: dummy_21                              |(no matching net)                          
+  tg_custom/proxyVSN = 1                   |                                           
+                                           |                                           
+Net: dummy_7                               |(no matching net)                          
+  tg_custom/proxyVOUT = 1                  |                                           
+                                           |                                           
+Net: dummy_12                              |(no matching net)                          
+  tg_custom/proxyVOUT = 1                  |                                           
+                                           |                                           
+Net: dummy_17                              |(no matching net)                          
+  tg_custom/proxyVOUT = 1                  |                                           
+                                           |                                           
+Net: dummy_22                              |(no matching net)                          
+  tg_custom/proxyVOUT = 1                  |                                           
+                                           |                                           
+Net: dummy_23                              |(no matching net)                          
+  inv/proxyVIN = 1                         |                                           
+                                           |                                           
+Net: dummy_26                              |(no matching net)                          
+  inv/proxyVIN = 1                         |                                           
+                                           |                                           
+Net: dummy_29                              |(no matching net)                          
+  inv/proxyVIN = 1                         |                                           
+                                           |                                           
+Net: dummy_32                              |(no matching net)                          
+  inv/proxyVIN = 1                         |                                           
+                                           |                                           
+Net: dummy_35                              |(no matching net)                          
+  inv/proxyVIN = 1                         |                                           
+                                           |                                           
+Net: dummy_38                              |(no matching net)                          
+  inv/proxyVIN = 1                         |                                           
+                                           |                                           
+Net: dummy_41                              |(no matching net)                          
+  inv/proxyVIN = 1                         |                                           
+                                           |                                           
+Net: dummy_24                              |(no matching net)                          
+  inv/proxyVOUT = 1                        |                                           
+                                           |                                           
+Net: dummy_27                              |(no matching net)                          
+  inv/proxyVOUT = 1                        |                                           
+                                           |                                           
+Net: dummy_30                              |(no matching net)                          
+  inv/proxyVOUT = 1                        |                                           
+                                           |                                           
+Net: dummy_33                              |(no matching net)                          
+  inv/proxyVOUT = 1                        |                                           
+                                           |                                           
+Net: dummy_36                              |(no matching net)                          
+  inv/proxyVOUT = 1                        |                                           
+                                           |                                           
+Net: dummy_39                              |(no matching net)                          
+  inv/proxyVOUT = 1                        |                                           
+                                           |                                           
+Net: dummy_42                              |(no matching net)                          
+  inv/proxyVOUT = 1                        |                                           
+                                           |                                           
+Net: dummy_25                              |(no matching net)                          
+  inv/proxyVDD = 1                         |                                           
+                                           |                                           
+Net: dummy_28                              |(no matching net)                          
+  inv/proxyVDD = 1                         |                                           
+                                           |                                           
+Net: dummy_31                              |(no matching net)                          
+  inv/proxyVDD = 1                         |                                           
+                                           |                                           
+Net: dummy_34                              |(no matching net)                          
+  inv/proxyVDD = 1                         |                                           
+                                           |                                           
+Net: dummy_37                              |(no matching net)                          
+  inv/proxyVDD = 1                         |                                           
+                                           |                                           
+Net: dummy_40                              |(no matching net)                          
+  inv/proxyVDD = 1                         |                                           
+                                           |                                           
+Net: dummy_43                              |(no matching net)                          
+  inv/proxyVDD = 1                         |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: reg_v2                          |Circuit 2: reg_v2                          
+-------------------------------------------|-------------------------------------------
+(no pin, node is dummy_43)                 |VDD                                        
+(no pin, node is dummy_43)                 |CLK                                        
+(no pin, node is dummy_43)                 |VSS                                        
+(no pin, node is dummy_43)                 |Q                                          
+(no pin, node is dummy_43)                 |D                                          
+---------------------------------------------------------------------------------------
+Cell pin lists for reg_v2 and reg_v2 altered to match.
+Device classes reg_v2 and reg_v2 are equivalent.
+
+Final result: Top level cell failed pin matching.
+
+The following cells had property errors:
+ tg_custom

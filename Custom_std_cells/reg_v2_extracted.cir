@@ -1,0 +1,29 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 01/03/2026 15:16
+
+.SUBCKT reg_v2
+X$1 \$1 tg_custom
+X$2 \$1 inv
+X$3 \$1 inv
+X$4 \$1 inv
+X$5 \$1 inv
+X$6 \$1 inv
+X$7 \$1 inv
+X$8 \$1 inv
+X$9 \$1 tg_custom
+X$10 \$1 tg_custom
+X$11 \$1 tg_custom
+.ENDS reg_v2
+
+.SUBCKT inv VSS
+M$1 VSS VIN VOUT VSS sg13_lv_nmos L=0.13u W=0.15u AS=0.1005p AD=0.1005p
++ PS=1.34u PD=1.34u
+M$2 VDD VIN VOUT VDD sg13_lv_pmos L=0.13u W=0.15u AS=0.1005p AD=0.1005p
++ PS=1.34u PD=1.34u
+.ENDS inv
+
+.SUBCKT tg_custom VBN
+M$1 VIN VSN VOUT VBN sg13_lv_nmos L=0.13u W=0.15u AS=0.1005p AD=0.1005p
++ PS=1.34u PD=1.34u
+M$2 VIN VSP VOUT VBP sg13_lv_pmos L=0.13u W=0.3u AS=0.156p AD=0.156p PS=2.08u
++ PD=2.08u
+.ENDS tg_custom
