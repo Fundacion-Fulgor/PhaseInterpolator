@@ -1,0 +1,23 @@
+
+Subcircuit summary:
+Circuit 1: tieh_custom                     |Circuit 2: tieh_custom                     
+-------------------------------------------|-------------------------------------------
+sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: tieh_custom                     |Circuit 2: tieh_custom                     
+-------------------------------------------|-------------------------------------------
+VOUT                                       |VOUT                                       
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes tieh_custom and tieh_custom are equivalent.
+
+Final result: Circuits match uniquely.
+.
