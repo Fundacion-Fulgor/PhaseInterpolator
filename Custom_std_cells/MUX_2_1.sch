@@ -66,9 +66,9 @@ N 760 -280 760 -240 {lab=tieh}
 N 760 -510 760 -470 {lab=tieh}
 N 760 -620 760 -590 {lab=tiel}
 N 760 -390 760 -360 {lab=tiel}
-C {tg_custom.sym} 530 -550 0 0 {name=x1}
-C {tg_custom.sym} 530 -320 0 0 {name=x8}
-C {inv.sym} 240 -290 0 0 {name=x3}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sym} 530 -550 0 0 {name=x1}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sym} 530 -320 0 0 {name=x8}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym} 240 -290 0 0 {name=x3}
 C {opin.sym} 980 -430 0 0 {name=p2 lab=VOUT}
 C {ipin.sym} 120 -550 0 0 {name=p3 lab=VINA}
 C {ipin.sym} 120 -320 0 0 {name=p1 lab=VINB}
@@ -81,30 +81,30 @@ C {lab_wire.sym} 470 -460 2 0 {name=p10 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 470 -410 2 0 {name=p11 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 330 -490 2 0 {name=p12 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 330 -370 2 0 {name=p13 sig_type=std_logic lab=VSS}
-C {inv_PI.sym} 140 -410 0 0 {name=x4}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sym} 140 -410 0 0 {name=x4}
 C {lab_wire.sym} 230 -610 2 0 {name=p9 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 230 -490 2 0 {name=p14 sig_type=std_logic lab=VSS}
-C {inv_PI.sym} 140 -180 0 0 {name=x5}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sym} 140 -180 0 0 {name=x5}
 C {lab_wire.sym} 230 -380 2 0 {name=p15 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 230 -260 2 0 {name=p16 sig_type=std_logic lab=VSS}
-C {tg_custom.sym} 530 -750 0 0 {name=x6[5:0]
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sym} 530 -750 0 0 {name=x6[5:0]
 }
-C {tg_custom.sym} 530 -120 0 0 {name=x7[5:0]
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sym} 530 -120 0 0 {name=x7[5:0]
 }
 C {lab_wire.sym} 470 -840 2 0 {name=p17 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 470 -660 2 0 {name=p18 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 470 -210 2 0 {name=p19 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 470 -30 2 0 {name=p20 sig_type=std_logic lab=VSS}
-C {tg_custom.sym} 760 -550 0 0 {name=x2
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sym} 760 -550 0 0 {name=x2
 }
 C {lab_wire.sym} 700 -460 0 0 {name=p27 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 700 -640 2 0 {name=p28 sig_type=std_logic lab=VDD}
-C {tg_custom.sym} 760 -320 0 0 {name=x6
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sym} 760 -320 0 0 {name=x6
 }
 C {lab_wire.sym} 700 -230 0 1 {name=p29 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 700 -410 0 0 {name=p32 sig_type=std_logic lab=VDD}
-C {tieh_custom.sym} 200 -750 0 0 {name=x7}
-C {tiel_custom.sym} 180 -120 0 0 {name=x9}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/tieh_custom.sym} 200 -750 0 0 {name=x7}
+C {/foss/designs/PhaseInterpolator/Custom_std_cells/tiel_custom.sym} 180 -120 0 0 {name=x9}
 C {lab_wire.sym} 200 -850 2 0 {name=p33 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 200 -650 2 0 {name=p34 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 180 -220 2 0 {name=p35 sig_type=std_logic lab=VDD}

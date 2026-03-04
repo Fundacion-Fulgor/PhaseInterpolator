@@ -1,31 +1,6 @@
 
 Subcircuit summary:
-Circuit 1: tg_custom                       |Circuit 2: tg_custom                       
--------------------------------------------|-------------------------------------------
-sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
-sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
-Number of devices: 2                       |Number of devices: 2                       
-Number of nets: 6                          |Number of nets: 6                          
----------------------------------------------------------------------------------------
-Resolving symmetries by property value.
-Resolving symmetries by pin name.
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: tg_custom                       |Circuit 2: tg_custom                       
--------------------------------------------|-------------------------------------------
-VSN                                        |VSN                                        
-VBN                                        |VBN                                        
-VSP                                        |VSP                                        
-VBP                                        |VBP                                        
-VOUT                                       |VOUT                                       
-VIN                                        |VIN                                        
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes tg_custom and tg_custom are equivalent.
-
-Subcircuit summary:
-Circuit 1: inv                             |Circuit 2: inv                             
+Circuit 1: inv_PI                          |Circuit 2: inv_PI                          
 -------------------------------------------|-------------------------------------------
 sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
 sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
@@ -35,7 +10,7 @@ Number of nets: 4                          |Number of nets: 4
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: inv                             |Circuit 2: inv                             
+Circuit 1: inv_PI                          |Circuit 2: inv_PI                          
 -------------------------------------------|-------------------------------------------
 VOUT                                       |VOUT                                       
 VIN                                        |VIN                                        
@@ -43,29 +18,53 @@ VDD                                        |VDD
 VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes inv and inv are equivalent.
+Device classes inv_PI and inv_PI are equivalent.
 
 Subcircuit summary:
-Circuit 1: reg_v2                          |Circuit 2: reg_v2                          
+Circuit 1: inv_PI_d2                       |Circuit 2: inv_PI_d2                       
 -------------------------------------------|-------------------------------------------
-tg_custom (4)                              |tg_custom (4)                              
-inv (7)                                    |inv (7)                                    
-Number of devices: 11                      |Number of devices: 11                      
-Number of nets: 13                         |Number of nets: 13                         
+inv_PI (2)                                 |inv_PI (2)                                 
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
 ---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 1 symmetry.
+
+Subcircuit pins:
+Circuit 1: inv_PI_d2                       |Circuit 2: inv_PI_d2                       
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VOUT                                       |VOUT                                       
+VIN                                        |VIN                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv_PI_d2 and inv_PI_d2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: PI_clk                          |Circuit 2: PI_clk                          
+-------------------------------------------|-------------------------------------------
+inv_PI_d2 (3)                              |inv_PI_d2 (3)                              
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: reg_v2                          |Circuit 2: reg_v2                          
+Circuit 1: PI_clk                          |Circuit 2: PI_clk                          
 -------------------------------------------|-------------------------------------------
-D                                          |D                                          
-Q                                          |Q                                          
-CLK                                        |CLK                                        
+PH0                                        |PH0                                        
+PH1                                        |PH1                                        
+PHOUT                                      |PHOUT                                      
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes reg_v2 and reg_v2 are equivalent.
+Device classes PI_clk and PI_clk are equivalent.
 
 Final result: Circuits match uniquely.
 .

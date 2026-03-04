@@ -6,9 +6,9 @@ x3 A Bb B VOUT VDD VSS tg_custom
 x2 B VDD A VSS Bb VOUT inv_xor
 .ends
 
-* expanding   symbol:  inv.sym # of pins=4
-** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym
-** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sch
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_Cells/inv.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_Cells/inv.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_Cells/inv.sch
 .subckt inv VDD VOUT VIN VSS
 *.PININFO VDD:B VSS:B VOUT:O VIN:I
 M2 VOUT VIN VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
@@ -16,9 +16,9 @@ M1 VOUT VIN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
 .ends
 
 
-* expanding   symbol:  tg_custom.sym # of pins=6
-** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sym
-** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sch
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_Cells/tg_custom.sym # of pins=6
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_Cells/tg_custom.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_Cells/tg_custom.sch
 .subckt tg_custom VOUT VSN VSP VIN VBP VBN
 *.PININFO VIN:B VSN:B VOUT:B VSP:B VBN:B VBP:B
 M1 VOUT VSN VIN VBN sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
@@ -26,9 +26,9 @@ M2 VOUT VSP VIN VBP sg13_lv_pmos w=0.3u l=0.13u ng=2 m=1
 .ends
 
 
-* expanding   symbol:  inv_xor.sym # of pins=6
-** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_xor.sym
-** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_xor.sch
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_Cells/inv_xor.sym # of pins=6
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_Cells/inv_xor.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_Cells/inv_xor.sch
 .subckt inv_xor VDD VBP VIN VBN VSS VOUT
 *.PININFO VDD:B VSS:B VOUT:O VIN:I VBP:B VBN:B
 M2 VOUT VIN VDD VBP sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
