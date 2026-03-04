@@ -1,32 +1,26 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 03/03/2026 20:08
+* Extracted by KLayout with SG13G2 LVS runset on : 03/03/2026 19:36
 
-.SUBCKT MUX_4_1 VST VSS VDD VINA VINB VINC VIND VS[0] VS[1] VOUT
-X$1 VSS VINB \$1 VS[0] VDD VINA MUX_2_1
-X$2 VSS \$2 VOUT VST VDD \$1 MUX_2_1
-X$3 VSS VIND \$2 VS[1] VDD VINC MUX_2_1
-.ENDS MUX_4_1
-
-.SUBCKT MUX_2_1 VSS VINB VOUT VS VDD VINA
-X$1 VSS \$6 \$9 \$15 \$11 VDD tg_custom
-X$2 VSS \$6 \$9 \$15 \$11 VDD tg_custom
-X$3 VSS VDD \$9 tiel_custom
-X$4 VSS \$6 \$9 \$15 \$11 VDD tg_custom
-X$5 VSS \$6 \$9 \$15 \$11 VDD tg_custom
-X$6 VSS \$6 \$9 \$15 \$11 VDD tg_custom
-X$7 VSS VOUT \$11 \$6 \$9 VDD tg_custom
-X$8 VSS \$6 \$9 \$15 \$11 VDD tg_custom
-X$9 VDD VINB VSS \$15 inv_PI
-X$10 VSS \$6 VS \$15 \$10 VDD tg_custom
-X$11 VSS \$19 \$9 \$21 \$11 VDD tg_custom
-X$12 VSS \$19 \$9 \$21 \$11 VDD tg_custom
-X$13 VSS VOUT \$11 \$19 \$9 VDD tg_custom
-X$14 VSS \$19 \$9 \$21 \$11 VDD tg_custom
-X$15 VSS \$19 \$9 \$21 \$11 VDD tg_custom
-X$16 VSS \$19 \$9 \$21 \$11 VDD tg_custom
-X$17 VSS \$19 \$9 \$21 \$11 VDD tg_custom
-X$18 VSS VDD \$11 tieh_custom
-X$19 VSS \$19 \$10 \$21 VS VDD tg_custom
-X$20 VDD VS VSS \$10 inv
+.SUBCKT MUX_2_1 VSS VOUT VS VINB VDD VINA
+X$1 VSS \$5 \$8 \$14 \$10 VDD tg_custom
+X$2 VSS \$5 \$8 \$14 \$10 VDD tg_custom
+X$3 VSS VDD \$8 tiel_custom
+X$4 VSS \$5 \$8 \$14 \$10 VDD tg_custom
+X$5 VSS \$5 \$8 \$14 \$10 VDD tg_custom
+X$6 VSS \$5 \$8 \$14 \$10 VDD tg_custom
+X$7 VSS VOUT \$10 \$5 \$8 VDD tg_custom
+X$8 VSS \$5 \$8 \$14 \$10 VDD tg_custom
+X$9 VDD VINB VSS \$14 inv_PI
+X$10 VSS \$5 VS \$14 \$18 VDD tg_custom
+X$11 VSS \$19 \$8 \$21 \$10 VDD tg_custom
+X$12 VSS \$19 \$8 \$21 \$10 VDD tg_custom
+X$13 VSS VOUT \$10 \$19 \$8 VDD tg_custom
+X$14 VSS \$19 \$8 \$21 \$10 VDD tg_custom
+X$15 VSS \$19 \$8 \$21 \$10 VDD tg_custom
+X$16 VSS \$19 \$8 \$21 \$10 VDD tg_custom
+X$17 VSS \$19 \$8 \$21 \$10 VDD tg_custom
+X$18 VSS VDD \$10 tieh_custom
+X$19 VSS \$19 \$18 \$21 VS VDD tg_custom
+X$20 VDD VS VSS \$18 inv
 X$21 VDD VINA VSS \$21 inv_PI
 .ENDS MUX_2_1
 
