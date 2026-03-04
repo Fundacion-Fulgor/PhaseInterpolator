@@ -1,12 +1,3 @@
-** sch_path: /foss/designs/PhaseInterpolator/Clock_Gen/flywheel.sch
-.subckt flywheel VDD PH1 PH0 VSS
-*.PININFO VDD:B VSS:B PH1:B PH0:B
-x13 VDD PH1 PH0 VSS inv_d2
-x14 VDD PH0 PH1 VSS inv_d2
-.ends
-
-* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d2.sym # of pins=4
-** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d2.sym
 ** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_d2.sch
 .subckt inv_d2 VDD VOUT VIN VSS
 *.PININFO VIN:I VOUT:O VDD:B VSS:B
@@ -14,8 +5,7 @@ x1[1] VDD VOUT VIN VSS inv
 x1[0] VDD VOUT VIN VSS inv
 .ends
 
-
-* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym # of pins=4
+* expanding   symbol:  inv.sym # of pins=4
 ** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sym
 ** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv.sch
 .subckt inv VDD VOUT VIN VSS

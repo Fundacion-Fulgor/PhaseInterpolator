@@ -1,0 +1,48 @@
+Flattening unmatched subcell inv in circuit inv_d2 (1)(2 instances)
+
+Class inv_d2 (1):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: inv_d2                          |Circuit 2: inv_d2                          
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (1)                           |sg13_lv_nmos (2->1)                        
+sg13_lv_pmos (1)                           |sg13_lv_pmos (2->1)                        
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inv_d2                          |Circuit 2: inv_d2                          
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VOUT                                       |VOUT                                       
+VIN                                        |VIN                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv_d2 and inv_d2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: flywheel                        |Circuit 2: flywheel                        
+-------------------------------------------|-------------------------------------------
+inv_d2 (2)                                 |inv_d2 (2)                                 
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: flywheel                        |Circuit 2: flywheel                        
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+PH0                                        |PH0                                        
+PH1                                        |PH1                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes flywheel and flywheel are equivalent.
+
+Final result: Circuits match uniquely.
+.
