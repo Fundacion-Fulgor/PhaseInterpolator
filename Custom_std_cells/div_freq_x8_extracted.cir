@@ -1,22 +1,28 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 02/03/2026 20:44
+* Extracted by KLayout with SG13G2 LVS runset on : 02/03/2026 22:33
+
+.SUBCKT div_freq_x8 VSS VDD VINPI VOUT
+X$1 \$2 VSS VINPI VDD div_freq_x2
+X$2 VOUT VSS \$3 VDD div_freq_x2
+X$3 \$3 VSS \$2 VDD div_freq_x2
+.ENDS div_freq_x8
 
 .SUBCKT div_freq_x2 CLKOUT VSS CLKIN VDD
-X$1 VSS VDD CLKIN \$2 CLKOUT reg_v2
+X$1 VDD VSS CLKIN \$2 CLKOUT reg_v2
 X$2 VSS CLKOUT \$2 VDD inv
 .ENDS div_freq_x2
 
-.SUBCKT reg_v2 VSS VDD CLK D Q
+.SUBCKT reg_v2 VDD VSS CLK D Q
 X$1 VSS \$8 \$7 \$3 CLK VDD tg_custom
 X$2 VSS D \$3 VDD inv
-X$3 VSS \$6 \$16 VDD inv
+X$3 VSS Q \$25 VDD inv
 X$4 VSS \$8 \$6 VDD inv
-X$5 VSS \$8 CLK \$16 \$7 VDD tg_custom
-X$6 VSS CLK \$7 VDD inv
-X$7 VSS Q \$17 VDD inv
-X$8 VSS \$9 CLK \$4 \$7 VDD tg_custom
-X$9 VSS \$9 \$7 \$17 CLK VDD tg_custom
-X$10 VSS \$6 \$4 VDD inv
-X$11 VSS \$9 Q VDD inv
+X$5 VSS \$9 \$7 \$25 CLK VDD tg_custom
+X$6 VSS \$6 \$24 VDD inv
+X$7 VSS \$8 CLK \$24 \$7 VDD tg_custom
+X$8 VSS CLK \$7 VDD inv
+X$9 VSS \$9 Q VDD inv
+X$10 VSS \$9 CLK \$4 \$7 VDD tg_custom
+X$11 VSS \$6 \$4 VDD inv
 .ENDS reg_v2
 
 .SUBCKT inv VSS VIN VOUT VDD
