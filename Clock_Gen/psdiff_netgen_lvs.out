@@ -106,26 +106,26 @@ NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: psdiff                          |Circuit 2: psdiff                          
 
 ---------------------------------------------------------------------------------------
-Net: \$1                                   |Net: net1                                  
-  buff_d8/VSS = 2                          |  sg13_lv_nmos/(drain|source) = 2          
-  sg13_lv_nmos/(drain|source) = 2          |  sg13_lv_pmos/(drain|source) = 2          
-  sg13_lv_nmos/bulk = 4                    |  buff_d8/VIN = 1                          
-                                           |                                           
-Net: \$108                                 |Net: net2                                  
-  buff_d8/VDD = 2                          |  sg13_lv_nmos/(drain|source) = 2          
-  sg13_lv_pmos/(drain|source) = 3          |  sg13_lv_pmos/(drain|source) = 2          
-  sg13_lv_pmos/bulk = 3                    |  buff_d8/VIN = 1                          
-                                           |                                           
-Net: \$2                                   |Net: VSS                                   
+Net: \$2                                   |Net: net1                                  
   buff_d8/VIN = 2                          |  sg13_lv_nmos/(drain|source) = 2          
-  sg13_lv_nmos/(drain|source) = 4          |  sg13_lv_nmos/bulk = 4                    
-  sg13_lv_pmos/(drain|source) = 3          |  sg13_lv_pmos/gate = 2                    
-                                           |  buff_d8/VSS = 2                          
+  sg13_lv_nmos/(drain|source) = 4          |  sg13_lv_pmos/(drain|source) = 2          
+  sg13_lv_pmos/(drain|source) = 3          |  buff_d8/VIN = 1                          
                                            |                                           
-Net: \$107                                 |Net: VDD                                   
-  sg13_lv_pmos/gate = 1                    |  sg13_lv_pmos/(drain|source) = 4          
-                                           |  sg13_lv_pmos/bulk = 4                    
-                                           |  buff_d8/VDD = 2                          
+Net: \$107                                 |Net: net2                                  
+  sg13_lv_pmos/gate = 1                    |  sg13_lv_nmos/(drain|source) = 2          
+                                           |  sg13_lv_pmos/(drain|source) = 2          
+                                           |  buff_d8/VIN = 1                          
+                                           |                                           
+Net: VSS                                   |Net: VSS                                   
+  buff_d8/VSS = 2                          |  buff_d8/VSS = 2                          
+  sg13_lv_nmos/(drain|source) = 2          |  sg13_lv_nmos/(drain|source) = 2          
+  sg13_lv_nmos/bulk = 4                    |  sg13_lv_nmos/bulk = 4                    
+                                           |  sg13_lv_pmos/gate = 2                    
+                                           |                                           
+Net: VDD                                   |Net: VDD                                   
+  buff_d8/VDD = 2                          |  buff_d8/VDD = 2                          
+  sg13_lv_pmos/(drain|source) = 3          |  sg13_lv_pmos/(drain|source) = 4          
+  sg13_lv_pmos/bulk = 3                    |  sg13_lv_pmos/bulk = 4                    
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
 Circuit 1: psdiff                          |Circuit 2: psdiff                          
@@ -148,6 +148,8 @@ Port matching may fail to disambiguate symmetries.
 Subcircuit pins:
 Circuit 1: psdiff                          |Circuit 2: psdiff                          
 -------------------------------------------|-------------------------------------------
+VSS                                        |(no pin, node is net1)                     
+VDD                                        |(no pin, node is net2)                     
 CLKN                                       |CLKN                                       
 CLKP                                       |CLKP                                       
 VOUTDN                                     |VOUTDN                                     
