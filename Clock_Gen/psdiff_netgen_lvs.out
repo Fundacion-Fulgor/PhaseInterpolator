@@ -98,67 +98,27 @@ Circuit 1: psdiff                          |Circuit 2: psdiff
 -------------------------------------------|-------------------------------------------
 buff_d8 (2)                                |buff_d8 (2)                                
 sg13_lv_nmos (4)                           |sg13_lv_nmos (8->4)                        
-sg13_lv_pmos (3)                           |sg13_lv_pmos (6->4) **Mismatch**           
-Number of devices: 9 **Mismatch**          |Number of devices: 10 **Mismatch**         
+sg13_lv_pmos (4)                           |sg13_lv_pmos (6->4)                        
+Number of devices: 10                      |Number of devices: 10                      
 Number of nets: 11                         |Number of nets: 11                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: psdiff                          |Circuit 2: psdiff                          
-
----------------------------------------------------------------------------------------
-Net: \$2                                   |Net: net1                                  
-  buff_d8/VIN = 2                          |  sg13_lv_nmos/(drain|source) = 2          
-  sg13_lv_nmos/(drain|source) = 4          |  sg13_lv_pmos/(drain|source) = 2          
-  sg13_lv_pmos/(drain|source) = 3          |  buff_d8/VIN = 1                          
-                                           |                                           
-Net: \$107                                 |Net: net2                                  
-  sg13_lv_pmos/gate = 1                    |  sg13_lv_nmos/(drain|source) = 2          
-                                           |  sg13_lv_pmos/(drain|source) = 2          
-                                           |  buff_d8/VIN = 1                          
-                                           |                                           
-Net: VSS                                   |Net: VSS                                   
-  buff_d8/VSS = 2                          |  buff_d8/VSS = 2                          
-  sg13_lv_nmos/(drain|source) = 2          |  sg13_lv_nmos/(drain|source) = 2          
-  sg13_lv_nmos/bulk = 4                    |  sg13_lv_nmos/bulk = 4                    
-                                           |  sg13_lv_pmos/gate = 2                    
-                                           |                                           
-Net: VDD                                   |Net: VDD                                   
-  buff_d8/VDD = 2                          |  buff_d8/VDD = 2                          
-  sg13_lv_pmos/(drain|source) = 3          |  sg13_lv_pmos/(drain|source) = 4          
-  sg13_lv_pmos/bulk = 3                    |  sg13_lv_pmos/bulk = 4                    
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: psdiff                          |Circuit 2: psdiff                          
-
----------------------------------------------------------------------------------------
-Instance: sg13_lv_pmos:$61                 |Instance: sg13_lv_pmos:7                   
-  (drain,source) = (9,8)                   |  (drain,source) = (10,5)                  
-  gate = 1                                 |  gate = 10                                
-  bulk = 8                                 |  bulk = 10                                
-                                           |                                           
-(no matching instance)                     |Instance: sg13_lv_pmos:8                   
-                                           |  (drain,source) = (10,5)                  
-                                           |  gate = 10                                
-                                           |  bulk = 10                                
-                                           |                                           
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: psdiff                          |Circuit 2: psdiff                          
 -------------------------------------------|-------------------------------------------
-VSS                                        |(no pin, node is net1)                     
-VDD                                        |(no pin, node is net2)                     
+CTRL                                       |CTRL                                       
 CLKN                                       |CLKN                                       
 CLKP                                       |CLKP                                       
 VOUTDN                                     |VOUTDN                                     
 VOUTDP                                     |VOUTDP                                     
-CTRL                                       |CTRL                                       
-(no pin, node is \$107)                    |VDD                                        
-(no pin, node is \$107)                    |VSS                                        
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
 ---------------------------------------------------------------------------------------
-Cell pin lists for psdiff and psdiff altered to match.
+Cell pin lists are equivalent.
 Device classes psdiff and psdiff are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.
