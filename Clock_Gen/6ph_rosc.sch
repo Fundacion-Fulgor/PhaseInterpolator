@@ -63,28 +63,28 @@ N 1300 -720 1300 -690 {lab=VDD}
 N 1160 -650 1200 -650 {lab=CTRL}
 N 1140 -630 1200 -630 {lab=Ph1}
 N 1140 -610 1200 -610 {lab=Ph4}
-N 630 120 630 160 {lab=Ph1}
+N 630 120 630 160 {lab=PH1}
 N 530 50 590 50 {lab=VSS}
 N 630 -340 630 -180 {lab=#net1}
-N 630 -500 630 -460 {lab=Ph4}
+N 630 -500 630 -460 {lab=PH4}
 N 670 -390 730 -390 {lab=VSS}
 N 530 -390 590 -390 {lab=VDD}
 N 1050 -160 1050 0 {lab=#net4}
-N 1050 -500 1050 -460 {lab=Ph2}
+N 1050 -500 1050 -460 {lab=PH2}
 N 950 50 1010 50 {lab=VSS}
 N 1090 50 1150 50 {lab=VDD}
 N 1050 -340 1050 -180 {lab=#net3}
 N 1090 -390 1150 -390 {lab=VSS}
 N 950 -390 1010 -390 {lab=VDD}
-N 1050 120 1050 160 {lab=Ph5}
+N 1050 120 1050 160 {lab=PH5}
 N 1470 -160 1470 0 {lab=#net6}
-N 1470 120 1470 160 {lab=Ph3}
+N 1470 120 1470 160 {lab=PH3}
 N 1370 50 1430 50 {lab=VSS}
 N 1510 50 1570 50 {lab=VDD}
 N 1470 -340 1470 -180 {lab=#net5}
 N 1510 -390 1570 -390 {lab=VSS}
 N 1370 -390 1430 -390 {lab=VDD}
-N 1470 -500 1470 -460 {lab=Ph0}
+N 1470 -500 1470 -460 {lab=PH0}
 N 620 -180 630 -180 {lab=#net1}
 N 620 -160 630 -160 {lab=#net2}
 N 1040 -180 1050 -180 {lab=#net3}
@@ -110,11 +110,11 @@ C {/foss/designs/PhaseInterpolator/Clock_Gen/psdiff.sym} 1150 -110 0 0 {name=x3}
 C {iopin.sym} 840 -310 0 0 {name=p1 lab=VDD}
 C {iopin.sym} 840 -90 2 0 {name=p2 lab=VSS}
 C {ipin.sym} 240 -240 0 0 {name=p3 lab=CTRL}
-C {opin.sym} 1470 -500 3 0 {name=p5 lab=Ph0}
-C {opin.sym} 1050 -500 3 0 {name=p6 lab=Ph2}
-C {opin.sym} 1050 160 1 0 {name=p7 lab=Ph5}
-C {opin.sym} 630 160 1 0 {name=p8 lab=Ph1}
-C {opin.sym} 630 -500 3 0 {name=p9 lab=Ph4}
+C {opin.sym} 1470 -500 3 0 {name=p5 lab=PH0}
+C {opin.sym} 1050 -500 3 0 {name=p6 lab=PH2}
+C {opin.sym} 1050 160 1 0 {name=p7 lab=PH5}
+C {opin.sym} 630 160 1 0 {name=p8 lab=PH1}
+C {opin.sym} 630 -500 3 0 {name=p9 lab=PH4}
 C {/foss/designs/PhaseInterpolator/Clock_Gen/decap.sym} 450 -570 0 0 {name=x4
 }
 C {lab_pin.sym} 580 -720 0 0 {name=p10 sig_type=std_logic lab=VDD}
@@ -153,7 +153,7 @@ C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_d8.sym} 1470 50 1 0 {na
 }
 C {lab_pin.sym} 1570 50 2 0 {name=p30 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 1370 50 0 0 {name=p31 sig_type=std_logic lab=VSS}
-C {opin.sym} 1470 160 1 0 {name=p32 lab=Ph3}
+C {opin.sym} 1470 160 1 0 {name=p32 lab=PH3}
 C {/foss/designs/PhaseInterpolator/Custom_std_cells/buff_d8.sym} 1470 -390 3 0 {name=x12
 }
 C {lab_pin.sym} 1370 -390 0 0 {name=p4 sig_type=std_logic lab=VDD}

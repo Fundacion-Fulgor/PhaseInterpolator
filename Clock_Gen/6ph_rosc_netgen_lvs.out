@@ -86,8 +86,8 @@ Subcircuit pins:
 Circuit 1: buff_d8                         |Circuit 2: buff_d8                         
 -------------------------------------------|-------------------------------------------
 VOUT                                       |VOUT                                       
-\$1                                        |(no pin, node is net1)                     
 VIN                                        |VIN                                        
+\$3                                        |(no pin, node is net3)                     
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
@@ -127,7 +127,7 @@ Number of nets: 13                         |Number of nets: 13
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match uniquely.
+Netlists match uniquely with port errors.
 
 Subcircuit pins:
 Circuit 1: psdiff                          |Circuit 2: psdiff                          
@@ -139,8 +139,9 @@ CLKN                                       |CLKN
 CLKP                                       |CLKP                                       
 VOUTDN                                     |VOUTDN                                     
 VOUTDP                                     |VOUTDP                                     
+\$I714                                     |(no pin, node is dummy_12)                 
 ---------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
+Cell pin lists for psdiff and psdiff altered to match.
 Device classes psdiff and psdiff are equivalent.
 
 Subcircuit summary:
@@ -173,95 +174,66 @@ psdiff (3)                                 |psdiff (3)
 buff_d8 (6)                                |buff_d8 (6)                                
 decap (3)                                  |decap (3)                                  
 Number of devices: 15                      |Number of devices: 15                      
-Number of nets: 23 **Mismatch**            |Number of nets: 21 **Mismatch**            
+Number of nets: 23 **Mismatch**            |Number of nets: 24 **Mismatch**            
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: 6ph_rosc                        |Circuit 2: 6ph_rosc                        
 
 ---------------------------------------------------------------------------------------
-Net: PH0                                   |Net: Ph0                                   
-  flywheel/PH1 = 1                         |  flywheel/PH1 = 1                         
+Net: PH0                                   |Net: PH0                                   
   decap/VOUTDN = 1                         |  decap/VOUTDN = 1                         
   buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
-                                           |                                           
-Net: PH2                                   |Net: Ph2                                   
   flywheel/PH1 = 1                         |  flywheel/PH1 = 1                         
-  buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
+                                           |                                           
+Net: PH1                                   |Net: PH1                                   
   decap/VOUTDN = 1                         |  decap/VOUTDN = 1                         
+  buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
+  flywheel/PH1 = 1                         |  flywheel/PH0 = 1                         
                                            |                                           
-Net: PH3                                   |Net: Ph3                                   
-  flywheel/PH0 = 1                         |  flywheel/PH0 = 1                         
+Net: PH2                                   |Net: PH2                                   
+  decap/VOUTDN = 1                         |  decap/VOUTDN = 1                         
+  buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
+  flywheel/PH1 = 1                         |  flywheel/PH1 = 1                         
+                                           |                                           
+Net: PH3                                   |Net: PH3                                   
   decap/VOUTDP = 1                         |  decap/VOUTDP = 1                         
   buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
-                                           |                                           
-Net: PH5                                   |Net: Ph5                                   
   flywheel/PH0 = 1                         |  flywheel/PH0 = 1                         
+                                           |                                           
+Net: PH4                                   |Net: PH4                                   
   decap/VOUTDP = 1                         |  decap/VOUTDP = 1                         
   buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
+  flywheel/PH0 = 1                         |  flywheel/PH1 = 1                         
                                            |                                           
-Net: \$33                                  |Net: net1                                  
-  psdiff/VOUTDN = 1                        |  psdiff/VOUTDN = 1                        
-  psdiff/CLKP = 1                          |  psdiff/CLKP = 1                          
-                                           |  buff_d8/VIN = 1                          
+Net: PH5                                   |Net: PH5                                   
+  decap/VOUTDP = 1                         |  decap/VOUTDP = 1                         
+  buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
+  flywheel/PH0 = 1                         |  flywheel/PH0 = 1                         
                                            |                                           
-Net: \$24                                  |Net: net5                                  
-  psdiff/CLKP = 1                          |  psdiff/CLKP = 1                          
-  psdiff/VOUTDN = 1                        |  psdiff/VOUTDN = 1                        
-                                           |  buff_d8/VIN = 1                          
-                                           |                                           
-Net: \$2                                   |Net: net3                                  
-  psdiff/VOUTDP = 1                        |  psdiff/VOUTDN = 1                        
-  psdiff/CLKN = 1                          |  psdiff/CLKP = 1                          
-  buff_d8/\$1 = 1                          |  buff_d8/VIN = 1                          
-                                           |                                           
-Net: \$25                                  |Net: net2                                  
+Net: \$2                                   |Net: net4                                  
   psdiff/CLKN = 1                          |  psdiff/VOUTDP = 1                        
   psdiff/VOUTDP = 1                        |  psdiff/CLKN = 1                          
-  buff_d8/\$1 = 1                          |  buff_d8/VIN = 1                          
-                                           |                                           
-Net: \$15                                  |Net: net6                                  
-  psdiff/CLKN = 1                          |  psdiff/CLKN = 1                          
-  psdiff/VOUTDP = 1                        |  psdiff/VOUTDP = 1                        
-  buff_d8/\$1 = 1                          |  buff_d8/VIN = 1                          
-                                           |                                           
-Net: \$29                                  |Net: net4                                  
-  psdiff/CLKP = 1                          |  psdiff/VOUTDP = 1                        
-  psdiff/VOUTDN = 1                        |  psdiff/CLKN = 1                          
   buff_d8/VIN = 1                          |  buff_d8/VIN = 1                          
                                            |                                           
-Net: PH1                                   |Net: Ph1                                   
-  flywheel/PH1 = 1                         |  flywheel/PH0 = 1                         
-  buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
-  decap/VOUTDN = 1                         |  decap/VOUTDN = 1                         
+Net: \$16                                  |Net: net6                                  
+  psdiff/CLKN = 1                          |  psdiff/CLKN = 1                          
+  psdiff/VOUTDP = 1                        |  psdiff/VOUTDP = 1                        
+  buff_d8/VIN = 1                          |  buff_d8/VIN = 1                          
                                            |                                           
-Net: PH4                                   |Net: Ph4                                   
-  flywheel/PH0 = 1                         |  flywheel/PH1 = 1                         
-  decap/VOUTDP = 1                         |  decap/VOUTDP = 1                         
-  buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
-                                           |                                           
-Net: \$I42                                 |Net: dummy_16                              
-  buff_d8/\$1 = 1                          |  buff_d8/proxy\$1 = 1                     
-                                           |                                           
-Net: \$I41                                 |Net: dummy_17                              
-  buff_d8/\$1 = 1                          |  buff_d8/proxy\$1 = 1                     
-                                           |                                           
-Net: \$I43                                 |Net: dummy_18                              
-  buff_d8/\$1 = 1                          |  buff_d8/proxy\$1 = 1                     
-                                           |                                           
-Net: \$I17                                 |Net: dummy_19                              
-  buff_d8/VIN = 1                          |  buff_d8/proxy\$1 = 1                     
-                                           |                                           
-Net: \$I18                                 |Net: dummy_20                              
-  buff_d8/VIN = 1                          |  buff_d8/proxy\$1 = 1                     
-                                           |                                           
-Net: \$I13                                 |Net: dummy_21                              
-  buff_d8/VIN = 1                          |  buff_d8/proxy\$1 = 1                     
-                                           |                                           
-Net: \$I14                                 |(no matching net)                          
+Net: \$3                                   |Net: net2                                  
+  psdiff/VOUTDP = 1                        |  psdiff/VOUTDP = 1                        
+  psdiff/\$I714 = 1                        |  psdiff/CLKN = 1                          
+  psdiff/CLKN = 1                          |  buff_d8/VIN = 1                          
   buff_d8/VIN = 1                          |                                           
                                            |                                           
-Net: \$I15                                 |(no matching net)                          
-  buff_d8/VIN = 1                          |                                           
+Net: \$I45                                 |Net: dummy_22                              
+  psdiff/\$I714 = 1                        |  psdiff/proxy\$I714 = 1                   
+                                           |                                           
+Net: \$I46                                 |Net: dummy_23                              
+  psdiff/\$I714 = 1                        |  psdiff/proxy\$I714 = 1                   
+                                           |                                           
+(no matching net)                          |Net: dummy_24                              
+                                           |  psdiff/proxy\$I714 = 1                   
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 Port matching may fail to disambiguate symmetries.
@@ -269,17 +241,17 @@ Port matching may fail to disambiguate symmetries.
 Subcircuit pins:
 Circuit 1: 6ph_rosc                        |Circuit 2: 6ph_rosc                        
 -------------------------------------------|-------------------------------------------
-PH1                                        |Ph0 **Mismatch**                           
-PH0                                        |Ph2 **Mismatch**                           
-PH2                                        |Ph3 **Mismatch**                           
-PH4                                        |Ph5 **Mismatch**                           
-PH3                                        |(no pin, node is net1)                     
-PH5                                        |(no pin, node is net5)                     
+PH0                                        |PH0                                        
+PH1                                        |PH2 **Mismatch**                           
+PH2                                        |PH3 **Mismatch**                           
+PH3                                        |PH5 **Mismatch**                           
+PH4                                        |(no pin, node is net2)                     
+PH5                                        |(no pin, node is net6)                     
 CTRL                                       |CTRL                                       
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
-(no pin, node is \$I15)                    |Ph4                                        
-(no pin, node is \$I15)                    |Ph1                                        
+(no pin, node is \$I46)                    |PH4                                        
+(no pin, node is \$I46)                    |PH1                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists for 6ph_rosc and 6ph_rosc altered to match.
 Device classes 6ph_rosc and 6ph_rosc are equivalent.

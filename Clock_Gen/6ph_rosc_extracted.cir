@@ -1,21 +1,21 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 06/03/2026 05:14
+* Extracted by KLayout with SG13G2 LVS runset on : 06/03/2026 20:55
 
-.SUBCKT 6ph_rosc VSS VDD CTRL PH1 PH4 PH2 PH5 PH0 PH3
-X$1 PH1 PH4 VSS VDD flywheel
-X$2 PH0 PH3 VSS VDD flywheel
+.SUBCKT 6ph_rosc VSS VDD CTRL PH0 PH3 PH2 PH5 PH1 PH4
+X$1 PH0 PH3 VSS VDD flywheel
+X$2 PH1 PH4 VSS VDD flywheel
 X$3 PH2 PH5 VSS VDD flywheel
-X$4 VSS \$2 \$29 CTRL \$25 VDD \$32 psdiff
-X$5 VSS \$25 \$24 CTRL \$15 VDD \$29 psdiff
-X$6 VSS \$15 \$32 CTRL \$2 VDD \$24 psdiff
-X$7 \$I42 VSS VDD \$I17 PH2 buff_d8
+X$4 VSS \$3 \$29 CTRL \$2 VDD \$33 \$3 psdiff
+X$5 VSS \$2 \$25 CTRL \$16 VDD \$29 \$I45 psdiff
+X$6 VSS \$16 \$33 CTRL \$3 VDD \$25 \$I46 psdiff
+X$7 \$I37 VSS VDD \$33 PH2 buff_d8
 X$8 CTRL PH2 VDD PH5 decap
-X$9 \$I41 VSS VDD \$29 PH1 buff_d8
-X$10 CTRL PH1 VDD PH4 decap
-X$11 CTRL PH0 VDD PH3 decap
-X$12 \$I43 VSS VDD \$I18 PH0 buff_d8
-X$13 \$25 VSS VDD \$I13 PH4 buff_d8
-X$14 \$2 VSS VDD \$I14 PH5 buff_d8
-X$15 \$15 VSS VDD \$I15 PH3 buff_d8
+X$9 \$I36 VSS VDD \$29 PH0 buff_d8
+X$10 CTRL PH0 VDD PH3 decap
+X$11 CTRL PH1 VDD PH4 decap
+X$12 \$I38 VSS VDD \$25 PH1 buff_d8
+X$13 \$I33 VSS VDD \$2 PH3 buff_d8
+X$14 \$I34 VSS VDD \$3 PH5 buff_d8
+X$15 \$I35 VSS VDD \$16 PH4 buff_d8
 .ENDS 6ph_rosc
 
 .SUBCKT flywheel PH1 PH0 VSS VDD
@@ -30,7 +30,7 @@ M$9 CTRL VOUTDP CTRL VDD sg13_lv_pmos L=0.13u W=32u AS=6.08p AD=6.68p PS=44.16u
 + PD=49.36u
 .ENDS decap
 
-.SUBCKT psdiff VSS VOUTDP CLKP CTRL CLKN VDD VOUTDN
+.SUBCKT psdiff VSS VOUTDP CLKP CTRL CLKN VDD VOUTDN \$I714
 X$1 \$I714 VSS VDD \$2 VOUTDP buff_d8
 X$4 \$I713 VSS VDD \$7 VOUTDN buff_d8
 M$1 VSS CLKP \$7 VSS sg13_lv_nmos L=0.13u W=4.5u AS=1.8p AD=1.665p PS=24u
@@ -49,7 +49,7 @@ M$123 \$2 CTRL \$64 VSS sg13_lv_nmos L=0.13u W=0.3u AS=0.156p AD=0.156p
 + PS=2.08u PD=2.08u
 .ENDS psdiff
 
-.SUBCKT buff_d8 \$1 VSS VDD VIN VOUT
+.SUBCKT buff_d8 \$3 VSS VDD VIN VOUT
 X$1 VSS \$2 \$1 VDD inv_d2
 X$3 VSS \$2 \$3 VDD inv_d4
 X$4 VOUT VSS \$3 VDD inv_d8
