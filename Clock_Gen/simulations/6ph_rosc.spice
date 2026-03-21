@@ -1,18 +1,18 @@
 ** sch_path: /foss/designs/PhaseInterpolator/Clock_Gen/6ph_rosc.sch
 .subckt 6ph_rosc CTRL PH0 PH3 PH2 PH5 PH4 PH1 VSS VDD
 *.PININFO VDD:B VSS:B CTRL:I PH0:O PH2:O PH5:O PH1:O PH4:O PH3:O
-x1 VDD net1 net2 CTRL net6 net5 VSS psdiff
-x2 VDD net3 net4 CTRL net2 net1 VSS psdiff
-x3 VDD net5 net6 CTRL net4 net3 VSS psdiff
+x1 VDD Ph4_in Ph1_in CTRL Ph3_in Ph0_in VSS psdiff
+x2 VDD Ph2_in Ph5_in CTRL Ph1_in Ph4_in VSS psdiff
+x3 VDD Ph0_in Ph3_in CTRL Ph5_in Ph2_in VSS psdiff
 x4 CTRL Ph0 Ph3 VDD decap
 x5 CTRL Ph2 Ph5 VDD decap
 x6 CTRL Ph1 Ph4 VDD decap
-x7 VDD PH1 net2 VSS buff_d8
-x8 VDD PH4 net1 VSS buff_d8
-x9 VDD PH5 net4 VSS buff_d8
-x10 VDD PH2 net3 VSS buff_d8
-x11 VDD PH3 net6 VSS buff_d8
-x12 VDD PH0 net5 VSS buff_d8
+x7 VDD PH1 Ph1_in VSS buff_d8
+x8 VDD PH4 Ph4_in VSS buff_d8
+x9 VDD PH5 Ph5_in VSS buff_d8
+x10 VDD PH2 Ph2_in VSS buff_d8
+x11 VDD PH3 Ph3_in VSS buff_d8
+x12 VDD PH0 Ph0_in VSS buff_d8
 x19 VDD Ph2 Ph5 VSS flywheel
 x17 VDD Ph0 Ph3 VSS flywheel
 x13 VDD Ph4 Ph1 VSS flywheel

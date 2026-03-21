@@ -80,18 +80,17 @@ sg13_lv_pmos (1)                           |sg13_lv_pmos (1)
 Number of devices: 5                       |Number of devices: 5                       
 Number of nets: 7                          |Number of nets: 7                          
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with port errors.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: buff_d8                         |Circuit 2: buff_d8                         
 -------------------------------------------|-------------------------------------------
 VOUT                                       |VOUT                                       
 VIN                                        |VIN                                        
-\$3                                        |(no pin, node is net3)                     
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
-Cell pin lists for buff_d8 and buff_d8 altered to match.
+Cell pin lists are equivalent.
 Device classes buff_d8 and buff_d8 are equivalent.
 
 Subcircuit summary:
@@ -123,25 +122,24 @@ buff_d8 (2)                                |buff_d8 (2)
 sg13_lv_nmos (4)                           |sg13_lv_nmos (8->4)                        
 sg13_lv_pmos (4)                           |sg13_lv_pmos (6->4)                        
 Number of devices: 10                      |Number of devices: 10                      
-Number of nets: 13                         |Number of nets: 13                         
+Number of nets: 11                         |Number of nets: 11                         
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match uniquely with port errors.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: psdiff                          |Circuit 2: psdiff                          
 -------------------------------------------|-------------------------------------------
 CTRL                                       |CTRL                                       
-VSS                                        |VSS                                        
-VDD                                        |VDD                                        
 CLKN                                       |CLKN                                       
 CLKP                                       |CLKP                                       
 VOUTDN                                     |VOUTDN                                     
 VOUTDP                                     |VOUTDP                                     
-\$I714                                     |(no pin, node is dummy_12)                 
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
 ---------------------------------------------------------------------------------------
-Cell pin lists for psdiff and psdiff altered to match.
+Cell pin lists are equivalent.
 Device classes psdiff and psdiff are equivalent.
 
 Subcircuit summary:
@@ -174,86 +172,25 @@ psdiff (3)                                 |psdiff (3)
 buff_d8 (6)                                |buff_d8 (6)                                
 decap (3)                                  |decap (3)                                  
 Number of devices: 15                      |Number of devices: 15                      
-Number of nets: 23 **Mismatch**            |Number of nets: 24 **Mismatch**            
+Number of nets: 15                         |Number of nets: 15                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: 6ph_rosc                        |Circuit 2: 6ph_rosc                        
-
----------------------------------------------------------------------------------------
-Net: PH0                                   |Net: PH0                                   
-  decap/VOUTDN = 1                         |  decap/VOUTDN = 1                         
-  buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
-  flywheel/PH1 = 1                         |  flywheel/PH1 = 1                         
-                                           |                                           
-Net: PH1                                   |Net: PH1                                   
-  decap/VOUTDN = 1                         |  decap/VOUTDN = 1                         
-  buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
-  flywheel/PH1 = 1                         |  flywheel/PH0 = 1                         
-                                           |                                           
-Net: PH2                                   |Net: PH2                                   
-  decap/VOUTDN = 1                         |  decap/VOUTDN = 1                         
-  buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
-  flywheel/PH1 = 1                         |  flywheel/PH1 = 1                         
-                                           |                                           
-Net: PH3                                   |Net: PH3                                   
-  decap/VOUTDP = 1                         |  decap/VOUTDP = 1                         
-  buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
-  flywheel/PH0 = 1                         |  flywheel/PH0 = 1                         
-                                           |                                           
-Net: PH4                                   |Net: PH4                                   
-  decap/VOUTDP = 1                         |  decap/VOUTDP = 1                         
-  buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
-  flywheel/PH0 = 1                         |  flywheel/PH1 = 1                         
-                                           |                                           
-Net: PH5                                   |Net: PH5                                   
-  decap/VOUTDP = 1                         |  decap/VOUTDP = 1                         
-  buff_d8/VOUT = 1                         |  buff_d8/VOUT = 1                         
-  flywheel/PH0 = 1                         |  flywheel/PH0 = 1                         
-                                           |                                           
-Net: \$2                                   |Net: net4                                  
-  psdiff/CLKN = 1                          |  psdiff/VOUTDP = 1                        
-  psdiff/VOUTDP = 1                        |  psdiff/CLKN = 1                          
-  buff_d8/VIN = 1                          |  buff_d8/VIN = 1                          
-                                           |                                           
-Net: \$16                                  |Net: net6                                  
-  psdiff/CLKN = 1                          |  psdiff/CLKN = 1                          
-  psdiff/VOUTDP = 1                        |  psdiff/VOUTDP = 1                        
-  buff_d8/VIN = 1                          |  buff_d8/VIN = 1                          
-                                           |                                           
-Net: \$3                                   |Net: net2                                  
-  psdiff/VOUTDP = 1                        |  psdiff/VOUTDP = 1                        
-  psdiff/\$I714 = 1                        |  psdiff/CLKN = 1                          
-  psdiff/CLKN = 1                          |  buff_d8/VIN = 1                          
-  buff_d8/VIN = 1                          |                                           
-                                           |                                           
-Net: \$I45                                 |Net: dummy_22                              
-  psdiff/\$I714 = 1                        |  psdiff/proxy\$I714 = 1                   
-                                           |                                           
-Net: \$I46                                 |Net: dummy_23                              
-  psdiff/\$I714 = 1                        |  psdiff/proxy\$I714 = 1                   
-                                           |                                           
-(no matching net)                          |Net: dummy_24                              
-                                           |  psdiff/proxy\$I714 = 1                   
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: 6ph_rosc                        |Circuit 2: 6ph_rosc                        
 -------------------------------------------|-------------------------------------------
-PH0                                        |PH0                                        
-PH1                                        |PH2 **Mismatch**                           
-PH2                                        |PH3 **Mismatch**                           
-PH3                                        |PH5 **Mismatch**                           
-PH4                                        |(no pin, node is net2)                     
-PH5                                        |(no pin, node is net6)                     
 CTRL                                       |CTRL                                       
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
-(no pin, node is \$I46)                    |PH4                                        
-(no pin, node is \$I46)                    |PH1                                        
+PH2                                        |PH2                                        
+PH0                                        |PH0                                        
+PH5                                        |PH5                                        
+PH3                                        |PH3                                        
+PH1                                        |PH1                                        
+PH4                                        |PH4                                        
 ---------------------------------------------------------------------------------------
-Cell pin lists for 6ph_rosc and 6ph_rosc altered to match.
+Cell pin lists are equivalent.
 Device classes 6ph_rosc and 6ph_rosc are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.
