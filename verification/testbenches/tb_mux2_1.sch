@@ -409,9 +409,9 @@ C {devices/launcher.sym} 725 935 0 0 {name=h5
 descr="load waves Ctrl + left click" 
 tclcommand="xschem raw_read $netlist_dir/tran_mux_2_1_pex.raw tran"
 }
-C {blocks-std/MUX_2_1/schematic/MUX_2_1.sym} -120 -400 0 0 {name=x1}
-C {blocks-std/MUX_2_1/schematic/MUX_2_1.sym} 80 -300 0 0 {name=x3}
-C {blocks-std/MUX_2_1/schematic/MUX_2_1.sym} -120 -190 0 0 {name=x2}
+C {blocks-std-custom/MUX_2_1/schematic/MUX_2_1.sym} -120 -400 0 0 {name=x1}
+C {blocks-std-custom/MUX_2_1/schematic/MUX_2_1.sym} 80 -300 0 0 {name=x3}
+C {blocks-std-custom/MUX_2_1/schematic/MUX_2_1.sym} -120 -190 0 0 {name=x2}
 C {devices/lab_pin.sym} -140 -15 0 0 {name=p26 sig_type=std_logic lab=vinI}
 C {devices/lab_pin.sym} -140 65 0 0 {name=p27 sig_type=std_logic lab=vinIB}
 C {devices/lab_pin.sym} -140 195 0 0 {name=p28 sig_type=std_logic lab=vinQ}
@@ -428,10 +428,10 @@ C {devices/lab_pin.sym} 170 245 2 0 {name=p38 sig_type=std_logic lab=vcont3}
 C {devices/lab_pin.sym} 80 -5 2 0 {name=p39 sig_type=std_logic lab=out1_pex}
 C {devices/lab_pin.sym} 75 290 2 0 {name=p40 sig_type=std_logic lab=out2_pex}
 C {devices/lab_pin.sym} 260 85 1 0 {name=p41 sig_type=std_logic lab=out3_pex}
-C {blocks-std/MUX_2_1/schematic/MUX_2_1_pex.sym} -45 25 0 0 {name=x4}
-C {blocks-std/MUX_2_1/schematic/MUX_2_1_pex.sym} 155 125 0 0 {name=x5}
-C {blocks-std/MUX_2_1/schematic/MUX_2_1_pex.sym} -45 235 0 0 {name=x6}
-C {blocks-std/inv_PI/schematic/inv_PI.sym} 230 -240 0 0 {name=x9}
+C {blocks-std-custom/MUX_2_1/schematic/MUX_2_1_pex.sym} -45 25 0 0 {name=x4}
+C {blocks-std-custom/MUX_2_1/schematic/MUX_2_1_pex.sym} 155 125 0 0 {name=x5}
+C {blocks-std-custom/MUX_2_1/schematic/MUX_2_1_pex.sym} -45 235 0 0 {name=x6}
+C {blocks-std-custom/inv_PI/schematic/inv_PI.sym} 230 -240 0 0 {name=x9}
 C {devices/lab_pin.sym} 320 -440 1 0 {name=p42 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 320 -320 3 0 {name=p43 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 245 -405 1 0 {name=p25 sig_type=std_logic lab=out3}
@@ -443,7 +443,7 @@ footprint=1206
 device="ceramic capacitor"
 }
 C {devices/lab_pin.sym} 430 -410 1 0 {name=p45 sig_type=std_logic lab=out4}
-C {blocks-std/inv_PI/schematic/inv_PI.sym} 305 265 0 0 {name=x7}
+C {blocks-std-custom/inv_PI/schematic/inv_PI.sym} 305 265 0 0 {name=x7}
 C {devices/lab_pin.sym} 395 65 1 0 {name=p46 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 395 185 3 0 {name=p47 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 530 200 3 0 {name=p49 sig_type=std_logic lab=vss}
@@ -454,8 +454,8 @@ footprint=1206
 device="ceramic capacitor"
 }
 C {devices/lab_pin.sym} 505 95 1 0 {name=p50 sig_type=std_logic lab=out4_pex}
-C {blocks-std/MUX_4_1/schematic/MUX_4_1_pex.sym} 0 600 0 0 {name=x8}
-C {blocks-std/inv_PI/schematic/inv_PI.sym} 205 740 0 0 {name=x10}
+C {blocks-std-custom/MUX_4_1/schematic/MUX_4_1_pex.sym} 0 600 0 0 {name=x8}
+C {blocks-std-custom/inv_PI/schematic/inv_PI.sym} 205 740 0 0 {name=x10}
 C {devices/lab_pin.sym} 295 540 1 0 {name=p48 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 295 660 3 0 {name=p51 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 430 675 3 0 {name=p52 sig_type=std_logic lab=vss}

@@ -56,7 +56,7 @@ value="
 .lib cornerMOSlv.lib mos_tt
 
 "}
-C {blocks-std/inv/schematic/inv.sym} 220 -140 0 0 {name=x1}
+C {blocks-std-custom/inv/schematic/inv.sym} 220 -140 0 0 {name=x1}
 C {devices/vsource.sym} 120 -280 0 0 {name=Vdd1 value=1.2 savecurrent=false
 }
 C {devices/gnd.sym} 120 -220 0 0 {name=l4 lab=GND}

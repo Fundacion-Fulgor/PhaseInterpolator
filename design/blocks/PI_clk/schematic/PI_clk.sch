@@ -19,11 +19,11 @@ N 70 -90 170 -90 {lab=PH1}
 N 70 -290 170 -290 {lab=PH0}
 N 400 -190 510 -190 {lab=#net1}
 N 400 -290 400 -190 {lab=#net1}
-C {blocks-std/inv_PI_d2/schematic/inv_PI_d2.sym} 220 -290 0 0 {name=x5}
+C {blocks-std-custom/inv_PI_d2/schematic/inv_PI_d2.sym} 220 -290 0 0 {name=x5}
 C {devices/lab_pin.sym} 220 -220 2 0 {name=p23 sig_type=std_logic lab=VSS}
-C {blocks-std/inv_PI_d2/schematic/inv_PI_d2.sym} 220 -90 0 0 {name=x6}
+C {blocks-std-custom/inv_PI_d2/schematic/inv_PI_d2.sym} 220 -90 0 0 {name=x6}
 C {devices/lab_pin.sym} 220 -160 2 0 {name=p24 sig_type=std_logic lab=VDD}
-C {blocks-std/inv_PI_d2/schematic/inv_PI_d2.sym} 560 -190 0 0 {name=x7}
+C {blocks-std-custom/inv_PI_d2/schematic/inv_PI_d2.sym} 560 -190 0 0 {name=x7}
 C {devices/lab_pin.sym} 560 -260 2 0 {name=p26 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 560 -120 2 0 {name=p27 sig_type=std_logic lab=VSS}
 C {iopin.sym} 220 -360 0 0 {name=p1 lab=VDD}

@@ -64,15 +64,15 @@ N 310 -760 310 -740 {lab=VSS}
 N 520 -760 520 -740 {lab=VSS}
 N 590 -800 720 -800 {lab=ST[4]}
 N 200 -800 260 -800 {lab=S[0]}
-C {blocks-std/and_custom/schematic/and_custom.sym} 390 -1310 0 0 {name=x1}
-C {blocks-std/and_x3_custom/schematic/and_x3_custom.sym} 410 -1560 0 0 {name=x2}
-C {blocks-std/or_custom/schematic/or_custom.sym} 460 -1050 0 0 {name=x3}
-C {blocks-std/and_custom/schematic/and_custom.sym} 180 -1100 0 0 {name=x4}
-C {blocks-std/and_custom/schematic/and_custom.sym} 180 -900 0 0 {name=x5}
-C {blocks-std/or_custom/schematic/or_custom.sym} 470 -450 0 0 {name=x6}
-C {blocks-std/and_custom/schematic/and_custom.sym} 190 -460 0 0 {name=x7}
-C {blocks-std/or_custom/schematic/or_custom.sym} 470 -250 0 0 {name=x8}
-C {blocks-std/or_x3_custom/schematic/or_x3_custom.sym} 450 -20 0 0 {name=x9}
+C {blocks-std-custom/and_custom/schematic/and_custom.sym} 390 -1310 0 0 {name=x1}
+C {blocks-std-custom/and_x3_custom/schematic/and_x3_custom.sym} 410 -1560 0 0 {name=x2}
+C {blocks-std-custom/or_custom/schematic/or_custom.sym} 460 -1050 0 0 {name=x3}
+C {blocks-std-custom/and_custom/schematic/and_custom.sym} 180 -1100 0 0 {name=x4}
+C {blocks-std-custom/and_custom/schematic/and_custom.sym} 180 -900 0 0 {name=x5}
+C {blocks-std-custom/or_custom/schematic/or_custom.sym} 470 -450 0 0 {name=x6}
+C {blocks-std-custom/and_custom/schematic/and_custom.sym} 190 -460 0 0 {name=x7}
+C {blocks-std-custom/or_custom/schematic/or_custom.sym} 470 -250 0 0 {name=x8}
+C {blocks-std-custom/or_x3_custom/schematic/or_x3_custom.sym} 450 -20 0 0 {name=x9}
 C {iopin.sym} 510 -1740 0 0 {name=p10 lab=VDD}
 C {iopin.sym} 510 -1560 0 0 {name=p11 lab=VSS}
 C {lab_pin.sym} 190 -1450 0 0 {name=p12 sig_type=std_logic lab=S[0]}
@@ -105,8 +105,8 @@ C {lab_pin.sym} 200 -300 0 0 {name=p38 sig_type=std_logic lab=S[1]}
 C {lab_pin.sym} 200 -140 0 0 {name=p39 sig_type=std_logic lab=S[0]}
 C {lab_pin.sym} 200 -120 0 0 {name=p40 sig_type=std_logic lab=S[1]}
 C {lab_pin.sym} 200 -100 0 0 {name=p41 sig_type=std_logic lab=S[2]}
-C {blocks-std/inv/schematic/inv.sym} 220 -660 0 0 {name=x10}
-C {blocks-std/inv/schematic/inv.sym} 430 -660 0 0 {name=x11}
+C {blocks-std-custom/inv/schematic/inv.sym} 220 -660 0 0 {name=x10}
+C {blocks-std-custom/inv/schematic/inv.sym} 430 -660 0 0 {name=x11}
 C {lab_pin.sym} 200 -800 0 0 {name=p42 sig_type=std_logic lab=S[0]}
 C {lab_pin.sym} 310 -740 0 0 {name=p43 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 310 -860 0 0 {name=p44 sig_type=std_logic lab=VDD}

@@ -264,6 +264,6 @@ C {devices/lab_pin.sym} -1101760 -1113710 0 0 {name=p1 sig_type=std_logic lab=vd
 C {devices/lab_pin.sym} -1101760 -1113550 0 0 {name=p7 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} -1101680 -1113570 3 0 {name=p11 sig_type=std_logic lab=vout}
 C {devices/lab_pin.sym} -1101900 -1113630 0 0 {name=p12 sig_type=std_logic lab=pi_vout}
-C {blocks-std/div_freq_x8/schematic/div_freq_x8.sym} -1101890 -1113560 0 0 {name=x2
+C {blocks-std-custom/div_freq_x8/schematic/div_freq_x8.sym} -1101890 -1113560 0 0 {name=x2
 }
 C {devices/lab_pin.sym} -1102080 -1113310 0 0 {name=p22 sig_type=std_logic lab=vss}

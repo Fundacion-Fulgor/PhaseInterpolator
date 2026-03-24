@@ -151,8 +151,8 @@ C {lab_pin.sym} 255 -460 1 0 {name=p10 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 1175 -460 1 0 {name=p11 sig_type=std_logic lab=VSS}
 C {opin.sym} 140 -370 2 0 {name=p19 lab=VOUTDN}
 C {opin.sym} 1310 -360 0 0 {name=p6 lab=VOUTDP}
-C {blocks-std/buff_d8/schematic/buff_d8.sym} 1170 -360 0 0 {name=x1}
-C {blocks-std/buff_d8/schematic/buff_d8.sym} 280 -370 0 1 {name=x2}
+C {blocks-std-custom/buff_d8/schematic/buff_d8.sym} 1170 -360 0 0 {name=x1}
+C {blocks-std-custom/buff_d8/schematic/buff_d8.sym} 280 -370 0 1 {name=x2}
 C {lab_pin.sym} 280 -305 2 0 {name=p12 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 280 -435 2 0 {name=p13 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 1170 -295 2 0 {name=p14 sig_type=std_logic lab=VSS}

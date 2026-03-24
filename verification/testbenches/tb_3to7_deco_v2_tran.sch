@@ -137,7 +137,7 @@ C {lab_pin.sym} 660 -140 3 0 {name=p4 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 370 -440 0 0 {name=p9 sig_type=std_logic lab=VS[2:0]}
 C {lab_pin.sym} 510 -520 0 0 {name=p11 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 510 -360 0 0 {name=p12 sig_type=std_logic lab=VSS}
-C {blocks-std/inv/schematic/inv.sym} 710 -300 0 0 {name=x4[6:0]}
+C {blocks-std-custom/inv/schematic/inv.sym} 710 -300 0 0 {name=x4[6:0]}
 C {capa.sym} 950 -440 3 0 {name=C3[6:0]
 m=1
 value=1p

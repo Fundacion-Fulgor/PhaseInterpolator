@@ -26,17 +26,17 @@ N 410 -180 410 -100 {lab=VST[7:0]}
 N 720 -290 780 -290 {lab=#net2}
 N 650 -420 830 -420 {lab=VDD}
 N 650 -160 830 -160 {lab=VSS}
-C {blocks-std/MUX_4_1/schematic/MUX_4_1.sym} 210 -140 0 0 {name=x1[7:0]}
+C {blocks-std-custom/MUX_4_1/schematic/MUX_4_1.sym} 210 -140 0 0 {name=x1[7:0]}
 C {ipin.sym} 290 -350 0 0 {name=p3 lab=VINI}
 C {ipin.sym} 290 -270 0 0 {name=p4 lab=VINQ}
 C {ipin.sym} 290 -310 0 0 {name=p15 lab=VINIB}
 C {ipin.sym} 290 -230 0 0 {name=p17 lab=VINQB}
 C {iopin.sym} 420 -440 0 0 {name=p1 lab=VDD}
 C {iopin.sym} 340 -140 2 0 {name=p2 lab=VSS}
-C {blocks-std/inv_PI/schematic/inv_PI.sym} 560 -150 0 0 {name=x2}
+C {blocks-std-custom/inv_PI/schematic/inv_PI.sym} 560 -150 0 0 {name=x2}
 C {opin.sym} 960 -290 0 0 {name=p5 lab=VOUT}
 C {ipin.sym} 290 -80 0 0 {name=p6 lab=VS[1:0]}
 C {ipin.sym} 290 -40 0 0 {name=p7 lab=VST[7:0]}
 C {lab_pin.sym} 430 -100 2 0 {name=p8 sig_type=std_logic lab=VS[1:0]}
 C {lab_pin.sym} 410 -100 0 0 {name=p9 sig_type=std_logic lab=VST[7:0]}
-C {blocks-std/buff_PI_d16/schematic/buff_PI_d16.sym} 830 -290 0 0 {name=x1}
+C {blocks-std-custom/buff_PI_d16/schematic/buff_PI_d16.sym} 830 -290 0 0 {name=x1}

@@ -133,28 +133,28 @@ C {lab_pin.sym} 1300 -720 0 0 {name=p18 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 1160 -650 0 0 {name=p19 sig_type=std_logic lab=CTRL}
 C {lab_pin.sym} 1140 -630 0 0 {name=p20 sig_type=std_logic lab=Ph1}
 C {lab_pin.sym} 1140 -610 0 0 {name=p21 sig_type=std_logic lab=Ph4}
-C {blocks-std/buff_d8/schematic/buff_d8.sym} 630 50 1 0 {name=x7
+C {blocks-std-custom/buff_d8/schematic/buff_d8.sym} 630 50 1 0 {name=x7
 }
 C {lab_pin.sym} 720 50 2 0 {name=p22 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 530 50 0 0 {name=p23 sig_type=std_logic lab=VSS}
-C {blocks-std/buff_d8/schematic/buff_d8.sym} 630 -390 3 0 {name=x8
+C {blocks-std-custom/buff_d8/schematic/buff_d8.sym} 630 -390 3 0 {name=x8
 }
 C {lab_pin.sym} 530 -390 0 0 {name=p24 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 730 -390 2 0 {name=p25 sig_type=std_logic lab=VSS}
-C {blocks-std/buff_d8/schematic/buff_d8.sym} 1050 50 1 0 {name=x9
+C {blocks-std-custom/buff_d8/schematic/buff_d8.sym} 1050 50 1 0 {name=x9
 }
 C {lab_pin.sym} 1150 50 2 0 {name=p26 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 950 50 0 0 {name=p27 sig_type=std_logic lab=VSS}
-C {blocks-std/buff_d8/schematic/buff_d8.sym} 1050 -390 3 0 {name=x10
+C {blocks-std-custom/buff_d8/schematic/buff_d8.sym} 1050 -390 3 0 {name=x10
 }
 C {lab_pin.sym} 950 -390 0 0 {name=p28 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 1150 -390 2 0 {name=p29 sig_type=std_logic lab=VSS}
-C {blocks-std/buff_d8/schematic/buff_d8.sym} 1470 50 1 0 {name=x11
+C {blocks-std-custom/buff_d8/schematic/buff_d8.sym} 1470 50 1 0 {name=x11
 }
 C {lab_pin.sym} 1570 50 2 0 {name=p30 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 1370 50 0 0 {name=p31 sig_type=std_logic lab=VSS}
 C {opin.sym} 1470 160 1 0 {name=p32 lab=PH3}
-C {blocks-std/buff_d8/schematic/buff_d8.sym} 1470 -390 3 0 {name=x12
+C {blocks-std-custom/buff_d8/schematic/buff_d8.sym} 1470 -390 3 0 {name=x12
 }
 C {lab_pin.sym} 1370 -390 0 0 {name=p4 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 1570 -390 2 0 {name=p33 sig_type=std_logic lab=VSS}

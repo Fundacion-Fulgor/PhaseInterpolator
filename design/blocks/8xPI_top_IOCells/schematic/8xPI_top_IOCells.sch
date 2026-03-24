@@ -29,8 +29,8 @@ N 420 -220 450 -220 {lab=VOUTPI}
 N 710 -260 710 -220 {lab=voutdiv}
 N 690 -220 710 -220 {lab=voutdiv}
 C {blocks/8xPI_top/schematic/8xPI_top.sym} 40 0 0 0 {name=x1}
-C {blocks-std/div_freq_x8/schematic/div_freq_x8.sym} 460 -150 0 0 {name=x2}
-C {blocks-std/buff_PI_d16/schematic/buff_PI_d16.sym} 790 -220 0 0 {name=x3}
+C {blocks-std-custom/div_freq_x8/schematic/div_freq_x8.sym} 460 -150 0 0 {name=x2}
+C {blocks-std-custom/buff_PI_d16/schematic/buff_PI_d16.sym} 790 -220 0 0 {name=x3}
 C {ipin.sym} 80 -200 0 0 {name=p1 lab=VS[4:0]}
 C {ipin.sym} 80 -170 0 0 {name=p2 lab=VCONT}
 C {opin.sym} 940 -220 0 0 {name=p3 lab=VOUT}

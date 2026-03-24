@@ -612,16 +612,16 @@ value="
 .include diodes.lib
 .include sg13g2_bondpad.lib
 "}
-C {blocks-std/inv/schematic/inv.sym} -1240 200 3 0 {name=x37}
-C {blocks-std/inv/schematic/inv.sym} -1240 20 3 0 {name=x38}
-C {blocks-std/inv/schematic/inv.sym} -1240 600 3 0 {name=x39}
-C {blocks-std/inv/schematic/inv.sym} -1240 420 3 0 {name=x40}
-C {blocks-std/inv/schematic/inv.sym} -1040 600 3 0 {name=x41}
-C {blocks-std/inv/schematic/inv.sym} -1040 420 3 0 {name=x42}
-C {blocks-std/inv/schematic/inv.sym} -1040 200 3 0 {name=x43}
-C {blocks-std/inv/schematic/inv.sym} -1040 20 3 0 {name=x44}
-C {blocks-std/inv/schematic/inv.sym} -1440 200 3 0 {name=x45}
-C {blocks-std/inv/schematic/inv.sym} -1440 20 3 0 {name=x46}
+C {blocks-std-custom/inv/schematic/inv.sym} -1240 200 3 0 {name=x37}
+C {blocks-std-custom/inv/schematic/inv.sym} -1240 20 3 0 {name=x38}
+C {blocks-std-custom/inv/schematic/inv.sym} -1240 600 3 0 {name=x39}
+C {blocks-std-custom/inv/schematic/inv.sym} -1240 420 3 0 {name=x40}
+C {blocks-std-custom/inv/schematic/inv.sym} -1040 600 3 0 {name=x41}
+C {blocks-std-custom/inv/schematic/inv.sym} -1040 420 3 0 {name=x42}
+C {blocks-std-custom/inv/schematic/inv.sym} -1040 200 3 0 {name=x43}
+C {blocks-std-custom/inv/schematic/inv.sym} -1040 20 3 0 {name=x44}
+C {blocks-std-custom/inv/schematic/inv.sym} -1440 200 3 0 {name=x45}
+C {blocks-std-custom/inv/schematic/inv.sym} -1440 20 3 0 {name=x46}
 C {devices/lab_pin.sym} -1770 70 0 0 {name=p6 sig_type=std_logic lab=IO_vdd}
 C {devices/lab_pin.sym} -1380 580 3 0 {name=p13 sig_type=std_logic lab=iv3}
 C {devices/lab_pin.sym} -1360 170 2 0 {name=p14 sig_type=std_logic lab=iv2}

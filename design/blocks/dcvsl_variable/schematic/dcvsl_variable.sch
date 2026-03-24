@@ -24,10 +24,10 @@ N 280 -160 280 -140 {lab=VDD}
 N 160 -60 180 -60 {lab=VOUTDP}
 N 160 -80 180 -80 {lab=VOUTDN}
 N 280 -470 280 -440 {lab=VDD}
-C {blocks-std/buff_PI_d16/schematic/buff_PI_d16.sym} 675 -360 0 0 {name=x2}
+C {blocks-std-custom/buff_PI_d16/schematic/buff_PI_d16.sym} 675 -360 0 0 {name=x2}
 C {devices/lab_pin.sym} 675 -285 2 0 {name=p15 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 675 -435 2 0 {name=p16 sig_type=std_logic lab=VDD}
-C {blocks-std/buff_PI_d16/schematic/buff_PI_d16.sym} 675 -100 0 0 {name=x3}
+C {blocks-std-custom/buff_PI_d16/schematic/buff_PI_d16.sym} 675 -100 0 0 {name=x3}
 C {devices/lab_pin.sym} 675 -25 2 0 {name=p17 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 675 -175 2 0 {name=p18 sig_type=std_logic lab=VDD}
 C {opin.sym} 825 -360 0 0 {name=p19 lab=VOUTP}

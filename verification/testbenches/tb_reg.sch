@@ -94,4 +94,4 @@ write tran_logic.raw
 
 .endc
 "}
-C {blocks-std/reg_v2/schematic/reg_v2.sym} 20 50 0 0 {name=x1}
+C {blocks-std-custom/reg_v2/schematic/reg_v2.sym} 20 50 0 0 {name=x1}

@@ -293,9 +293,9 @@ device="ceramic capacitor"
 }
 C {blocks-std/sg13g2_IOPadOut4mA/schematic/sg13g2_IOPadOut4mA.sym} 420 -470 0 0 {name=x25
 }
-C {blocks-std/buff_PI_d16/schematic/buff_PI_d16.sym} 140 -470 0 0 {name=x1}
+C {blocks-std-custom/buff_PI_d16/schematic/buff_PI_d16.sym} 140 -470 0 0 {name=x1}
 C {lab_pin.sym} -160 -390 2 0 {name=p6 sig_type=std_logic lab=voutpi}
-C {blocks-std/div_freq_x8/schematic/div_freq_x8.sym} -190 -400 0 0 {name=x2}
+C {blocks-std-custom/div_freq_x8/schematic/div_freq_x8.sym} -190 -400 0 0 {name=x2}
 C {lab_pin.sym} 60 -510 1 0 {name=p7 sig_type=std_logic lab=voutdiv}
 C {blocks/8xPI/schematic/8xPI.sym} -1060 110 0 0 {name=x12}
 C {blocks/3to7_deco_v2/schematic/3to7_deco_v2.sym} -1400 -270 0 0 {name=x13}

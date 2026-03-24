@@ -402,7 +402,7 @@ C {blocks-std/sg13g2_IOPadOut4mA/schematic/sg13g2_IOPadOut4mA.sym} 420 -470 0 0 
 spice_ignore=true}
 C {blocks/8xPI_top/schematic/8xPI_top.sym} -260 -250 0 0 {name=x1
 }
-C {blocks-std/inv/schematic/inv.sym} 20 -460 1 0 {name=x2
+C {blocks-std-custom/inv/schematic/inv.sym} 20 -460 1 0 {name=x2
 }
 C {capa.sym} 160 -260 0 0 {name=C2
 m=1

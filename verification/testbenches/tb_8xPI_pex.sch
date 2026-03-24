@@ -344,7 +344,7 @@ C {devices/lab_pin.sym} -820 540 2 0 {name=p63 sig_type=std_logic lab=VoutQB2}
 C {devices/lab_pin.sym} -1000 630 2 0 {name=p64 sig_type=std_logic lab=VSS}
 C {/foss/designs/PhaseInterpolator/4xPI/4to4.sym} -1000 230 0 0 {name=x3}
 C {/foss/designs/PhaseInterpolator/4xPI/4to4.sym} -1000 510 0 0 {name=x4}
-C {blocks-std/inv/schematic/inv.sym} 350 -530 1 0 {name=x5}
+C {blocks-std-custom/inv/schematic/inv.sym} 350 -530 1 0 {name=x5}
 C {capa.sym} 490 -320 0 0 {name=C1
 m=1
 value=1f
@@ -354,7 +354,7 @@ device="ceramic capacitor"
 C {devices/lab_pin.sym} 540 -440 2 0 {name=p68 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 440 -440 0 0 {name=p69 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 490 -280 3 0 {name=p70 sig_type=std_logic lab=VSS}
-C {blocks-std/inv/schematic/inv.sym} 320 -100 1 0 {name=x6}
+C {blocks-std-custom/inv/schematic/inv.sym} 320 -100 1 0 {name=x6}
 C {capa.sym} 460 110 0 0 {name=C3
 m=1
 value=1f
@@ -400,7 +400,7 @@ C {devices/lab_pin.sym} -60 650 0 0 {name=p88 sig_type=std_logic lab="VSS, VSS, 
 }
 C {devices/lab_pin.sym} 300 810 1 0 {name=p89 sig_type=std_logic lab=Vout8I_pex
 }
-C {blocks-std/inv/schematic/inv.sym} 320 370 1 0 {name=x9
+C {blocks-std-custom/inv/schematic/inv.sym} 320 370 1 0 {name=x9
 }
 C {capa.sym} 460 580 0 0 {name=C2
 m=1
@@ -414,7 +414,7 @@ C {devices/lab_pin.sym} 410 460 0 0 {name=p91 sig_type=std_logic lab=VSS
 }
 C {devices/lab_pin.sym} 460 620 3 0 {name=p92 sig_type=std_logic lab=VSS
 }
-C {blocks-std/inv/schematic/inv.sym} 290 800 1 0 {name=x10
+C {blocks-std-custom/inv/schematic/inv.sym} 290 800 1 0 {name=x10
 }
 C {capa.sym} 430 1010 0 0 {name=C4
 m=1

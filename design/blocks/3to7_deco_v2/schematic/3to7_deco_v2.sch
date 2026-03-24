@@ -79,18 +79,18 @@ N 1090 -580 1110 -580 {lab=VSS}
 N 1230 -580 1250 -580 {lab=VDD}
 N 960 -960 960 -400 {lab=#net3}
 N 690 -960 960 -960 {lab=#net3}
-C {blocks-std/inv/schematic/inv.sym} 70 -820 0 0 {name=x1}
-C {blocks-std/inv/schematic/inv.sym} 70 -660 0 0 {name=x2}
-C {blocks-std/inv/schematic/inv.sym} 70 -500 0 0 {name=x3}
-C {blocks-std/nor_x3_custom/schematic/nor_x3_custom.sym} 340 -440 1 0 {name=x4}
-C {blocks-std/nor_custom/schematic/nor_custom.sym} 550 -410 1 0 {name=x5}
-C {blocks-std/nor_custom/schematic/nor_custom.sym} 730 -410 1 0 {name=x6}
-C {blocks-std/inv/schematic/inv.sym} 820 -440 1 0 {name=x7}
-C {blocks-std/nand_custom/schematic/nand_custom.sym} 1030 -450 1 0 {name=x8}
-C {blocks-std/nand_custom/schematic/nand_custom.sym} 1240 -450 1 0 {name=x9}
-C {blocks-std/and_custom/schematic/and_custom.sym} 700 -670 1 0 {name=x11}
-C {blocks-std/or_custom/schematic/or_custom.sym} 1100 -630 1 0 {name=x12}
-C {blocks-std/nand_x3_custom/schematic/nand_x3_custom.sym} 1530 -430 1 0 {name=x10}
+C {blocks-std-custom/inv/schematic/inv.sym} 70 -820 0 0 {name=x1}
+C {blocks-std-custom/inv/schematic/inv.sym} 70 -660 0 0 {name=x2}
+C {blocks-std-custom/inv/schematic/inv.sym} 70 -500 0 0 {name=x3}
+C {blocks-std-custom/nor_x3_custom/schematic/nor_x3_custom.sym} 340 -440 1 0 {name=x4}
+C {blocks-std-custom/nor_custom/schematic/nor_custom.sym} 550 -410 1 0 {name=x5}
+C {blocks-std-custom/nor_custom/schematic/nor_custom.sym} 730 -410 1 0 {name=x6}
+C {blocks-std-custom/inv/schematic/inv.sym} 820 -440 1 0 {name=x7}
+C {blocks-std-custom/nand_custom/schematic/nand_custom.sym} 1030 -450 1 0 {name=x8}
+C {blocks-std-custom/nand_custom/schematic/nand_custom.sym} 1240 -450 1 0 {name=x9}
+C {blocks-std-custom/and_custom/schematic/and_custom.sym} 700 -670 1 0 {name=x11}
+C {blocks-std-custom/or_custom/schematic/or_custom.sym} 1100 -630 1 0 {name=x12}
+C {blocks-std-custom/nand_x3_custom/schematic/nand_x3_custom.sym} 1530 -430 1 0 {name=x10}
 C {opin.sym} 270 -1070 0 0 {name=p48 lab=ST[7:1]}
 C {ipin.sym} 340 -1050 0 0 {name=p49 lab=S[2:0]}
 C {lab_pin.sym} 420 -220 3 0 {name=p3 sig_type=std_logic lab=ST[1]}
