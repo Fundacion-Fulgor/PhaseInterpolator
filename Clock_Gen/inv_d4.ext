@@ -1,0 +1,62 @@
+timestamp 1602713833
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11
+use inv_d2 inv_d2_0 1 0 1360 0 1 0
+use inv_d2 inv_d2_1 1 0 1000 0 1 0
+port "VSS" 4 1048 53 1820 125 m1
+port "VOUT" 2 1238 190 1270 532 m1
+port "VDD" 3 1048 598 1820 706 m1
+node "VIN" 0 0 1147 353 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VIN" 0 0 1147 353 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VIN" 0 0 1147 353 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VIN" 0 0 1147 353 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VIN" 0 0 1147 353 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VIN" 0 0 1147 353 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VIN" 0 0 1147 353 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VIN" 0 0 1147 353 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_1334_342#" 0 56.6794 1334 342 m2 0 0 0 0 0 0 8000 480 0 0 0 0 0 0 0 0 0 0
+node "VSS" 1 320.284 1048 53 m1 0 0 0 0 55584 1688 0 0 0 0 0 0 0 0 0 0 0 0
+node "VOUT" 4 407.455 1238 190 m1 0 0 0 0 24072 1600 24000 1280 0 0 0 0 0 0 0 0 0 0
+node "VDD" 1 354.588 1048 598 m1 0 0 0 0 83376 1760 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1412_59#" 0 0 1412 59 ndif 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1412_598#" 0 0 1412 598 nnd 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "a_1412_59#" "VSS" 3.83909
+cap "VSS" "m2_1334_342#" 5.4686
+cap "VDD" "m2_1334_342#" 1.51723
+cap "VOUT" "m2_1334_342#" 52.7928
+cap "a_1412_598#" "VDD" 3.83909
+cap "VDD" "VSS" 40.7131
+cap "VOUT" "VSS" 39.3099
+cap "VDD" "VOUT" 114.495
+cap "inv_d2_0/inv_0/VSS" "inv_d2_0/inv_0/VIN" -1.55429
+cap "inv_d2_0/inv_0/VSS" "inv_d2_0/VDD" -49.1354
+cap "inv_d2_0/inv_0/VIN" "inv_d2_0/VOUT" 76.4238
+cap "inv_d2_0/VDD" "inv_d2_0/VOUT" 45.3511
+cap "inv_d2_0/inv_0/VSS" "inv_d2_0/VOUT" -34.9161
+cap "inv_d2_0/VDD" "inv_d2_0/inv_0/VIN" 1.20819
+merge "inv_d2_1/inv_0/VDD" "inv_d2_1/inv_1/VDD" -451.152 0 0 0 0 -88992 -2080 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_d2_1/inv_1/VDD" "inv_d2_1/VDD"
+merge "inv_d2_1/VDD" "inv_d2_0/inv_0/VDD"
+merge "inv_d2_0/inv_0/VDD" "inv_d2_0/inv_1/VDD"
+merge "inv_d2_0/inv_1/VDD" "inv_d2_0/VDD"
+merge "inv_d2_0/VDD" "VDD"
+merge "VDD" "a_1412_598#"
+merge "inv_d2_1/inv_1/VSS" "inv_d2_1/inv_0/VSS" -406.502 0 0 0 0 -59328 -1936 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_d2_1/inv_0/VSS" "inv_d2_0/inv_1/VSS"
+merge "inv_d2_0/inv_1/VSS" "inv_d2_0/inv_0/VSS"
+merge "inv_d2_0/inv_0/VSS" "VSS"
+merge "inv_d2_1/inv_0/VOUT" "inv_d2_1/inv_1/VOUT" -345.242 0 0 0 0 -21888 -1496 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_d2_1/inv_1/VOUT" "inv_d2_1/VOUT"
+merge "inv_d2_1/VOUT" "inv_d2_0/inv_0/VOUT"
+merge "inv_d2_0/inv_0/VOUT" "inv_d2_0/inv_1/VOUT"
+merge "inv_d2_0/inv_1/VOUT" "inv_d2_0/VOUT"
+merge "inv_d2_0/VOUT" "VOUT"
+merge "inv_d2_1/inv_0/VIN" "VIN" -167.301 0 0 0 0 0 0 -3920 -356 0 0 0 0 0 0 0 0 0 0
+merge "VIN" "inv_d2_0/inv_0/VIN"
+merge "inv_d2_0/inv_0/VIN" "m2_1334_342#"
+merge "inv_d2_1/VSUB" "inv_d2_0/VSUB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_d2_0/VSUB" "VSUB"

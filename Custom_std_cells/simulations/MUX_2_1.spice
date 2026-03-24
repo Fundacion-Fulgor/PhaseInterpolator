@@ -1,28 +1,40 @@
 ** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/MUX_2_1.sch
 .subckt MUX_2_1 VDD VINA VOUT VS VINB VSS
 *.PININFO VOUT:O VINA:I VINB:I VS:I VDD:B VSS:B
-x1 net5 net1 VS net3 VDD VSS tg_custom
-x8 net2 VS net1 net4 VDD VSS tg_custom
-x3 VDD net1 VS VSS inv
-x4 VDD net3 VINA VSS inv_PI
-x5 VDD net4 VINB VSS inv_PI
-x6[5] net5 tiel tieh net3 VDD VSS tg_custom
-x6[4] net5 tiel tieh net3 VDD VSS tg_custom
-x6[3] net5 tiel tieh net3 VDD VSS tg_custom
-x6[2] net5 tiel tieh net3 VDD VSS tg_custom
-x6[1] net5 tiel tieh net3 VDD VSS tg_custom
-x6[0] net5 tiel tieh net3 VDD VSS tg_custom
-x7[5] net2 tiel tieh net4 VDD VSS tg_custom
-x7[4] net2 tiel tieh net4 VDD VSS tg_custom
-x7[3] net2 tiel tieh net4 VDD VSS tg_custom
-x7[2] net2 tiel tieh net4 VDD VSS tg_custom
-x7[1] net2 tiel tieh net4 VDD VSS tg_custom
-x7[0] net2 tiel tieh net4 VDD VSS tg_custom
-x2 VOUT tieh tiel net5 VDD VSS tg_custom
-x6 VOUT tieh tiel net2 VDD VSS tg_custom
-x7 VDD tieh VSS tieh_custom
-x9 VDD tiel VSS tiel_custom
+x12 VDD tieh VSS tieh_custom
+x7 VDD tiel VSS tiel_custom
+x14 net4 tiel tieh net2 VDD VSS tg_custom
+x15[1] net4 net1 VS net2 VDD VSS tg_custom
+x15[0] net4 net1 VS net2 VDD VSS tg_custom
+x16 net5 VS net1 net3 VDD VSS tg_custom
+x17[1] net5 tiel tieh net3 VDD VSS tg_custom
+x17[0] net5 tiel tieh net3 VDD VSS tg_custom
+x10 VDD net1 VS VSS inv
+x4 VDD net2 VINA VSS inv_PI
+x9 VDD net3 VINB VSS inv_PI
+x11 VOUT tieh tiel net4 VDD VSS tg_custom
+x13 VOUT tieh tiel net5 VDD VSS tg_custom
 .ends
+
+* expanding   symbol:  tieh_custom.sym # of pins=3
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tieh_custom.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tieh_custom.sch
+.subckt tieh_custom VDD VOUT VSS
+*.PININFO VDD:B VSS:B VOUT:O
+M2 VOUT net1 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+M1 net1 net1 VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  tiel_custom.sym # of pins=3
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tiel_custom.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tiel_custom.sch
+.subckt tiel_custom VDD VOUT VSS
+*.PININFO VDD:B VSS:B VOUT:O
+M2 net1 net1 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+M1 VOUT net1 VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+.ends
+
 
 * expanding   symbol:  tg_custom.sym # of pins=6
 ** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tg_custom.sym
@@ -51,25 +63,5 @@ M1 VOUT VIN VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
 *.PININFO VDD:B VSS:B VOUT:O VIN:I
 M2 VOUT VIN VDD VDD sg13_lv_pmos w=0.45u l=0.13u ng=3 m=1
 M1 VOUT VIN VSS VSS sg13_lv_nmos w=0.3u l=0.13u ng=2 m=1
-.ends
-
-
-* expanding   symbol:  tieh_custom.sym # of pins=3
-** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tieh_custom.sym
-** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tieh_custom.sch
-.subckt tieh_custom VDD VOUT VSS
-*.PININFO VDD:B VSS:B VOUT:O
-M2 VOUT net1 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
-M1 net1 net1 VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
-.ends
-
-
-* expanding   symbol:  tiel_custom.sym # of pins=3
-** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tiel_custom.sym
-** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/tiel_custom.sch
-.subckt tiel_custom VDD VOUT VSS
-*.PININFO VDD:B VSS:B VOUT:O
-M2 net1 net1 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
-M1 VOUT net1 VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
 .ends
 

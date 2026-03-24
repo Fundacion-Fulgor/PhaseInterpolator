@@ -1,0 +1,79 @@
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/buff_PI_d32.sch
+.subckt buff_PI_d32 VDD VOUT VIN VSS
+*.PININFO VOUT:O VSS:B VDD:B VIN:I
+x5 VDD net2 VIN VSS buff_PI_d16
+x15 VDD net1 net2 VSS inv_PI_d16
+x20 VDD VOUT net1 VSS inv_PI_d32
+.ends
+
+* expanding   symbol:  buff_PI_d16.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/buff_PI_d16.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/buff_PI_d16.sch
+.subckt buff_PI_d16 VDD VOUT VIN VSS
+*.PININFO VIN:I VOUT:O VDD:B VSS:B
+x7 VDD net1 VIN VSS inv_PI_d2
+x8 VDD net2 net1 VSS inv_PI_d4
+x9 VDD net3 net2 VSS inv_PI_d8
+x10 VDD VOUT net3 VSS inv_PI_d16
+.ends
+
+
+* expanding   symbol:  inv_PI_d16.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d16.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d16.sch
+.subckt inv_PI_d16 VDD VOUT VIN VSS
+*.PININFO VIN:I VOUT:O VDD:B VSS:B
+x1[1] VDD VOUT VIN VSS inv_PI_d8
+x1[0] VDD VOUT VIN VSS inv_PI_d8
+.ends
+
+
+* expanding   symbol:  inv_PI_d32.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d32.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d32.sch
+.subckt inv_PI_d32 VDD VOUT VIN VSS
+*.PININFO VIN:I VOUT:O VDD:B VSS:B
+x1[1] VDD VOUT VIN VSS inv_PI_d16
+x1[0] VDD VOUT VIN VSS inv_PI_d16
+.ends
+
+
+* expanding   symbol:  inv_PI_d2.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d2.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d2.sch
+.subckt inv_PI_d2 VDD VOUT VIN VSS
+*.PININFO VIN:I VOUT:O VDD:B VSS:B
+x1[1] VDD VOUT VIN VSS inv_PI
+x1[0] VDD VOUT VIN VSS inv_PI
+.ends
+
+
+* expanding   symbol:  inv_PI_d4.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d4.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d4.sch
+.subckt inv_PI_d4 VDD VOUT VIN VSS
+*.PININFO VIN:I VOUT:O VDD:B VSS:B
+x1[1] VDD VOUT VIN VSS inv_PI_d2
+x1[0] VDD VOUT VIN VSS inv_PI_d2
+.ends
+
+
+* expanding   symbol:  inv_PI_d8.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d8.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d8.sch
+.subckt inv_PI_d8 VDD VOUT VIN VSS
+*.PININFO VIN:I VOUT:O VDD:B VSS:B
+x1[1] VDD VOUT VIN VSS inv_PI_d4
+x1[0] VDD VOUT VIN VSS inv_PI_d4
+.ends
+
+
+* expanding   symbol:  inv_PI.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sch
+.subckt inv_PI VDD VOUT VIN VSS
+*.PININFO VDD:B VSS:B VOUT:O VIN:I
+M2 VOUT VIN VDD VDD sg13_lv_pmos w=0.45u l=0.13u ng=3 m=1
+M1 VOUT VIN VSS VSS sg13_lv_nmos w=0.3u l=0.13u ng=2 m=1
+.ends
+

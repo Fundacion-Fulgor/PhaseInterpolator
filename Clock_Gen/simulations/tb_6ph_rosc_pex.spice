@@ -1,0 +1,47 @@
+** sch_path: /foss/designs/PhaseInterpolator/Clock_Gen/tb_6ph_rosc_pex.sch
+**.subckt tb_6ph_rosc_pex
+Vdd4 vc_pex GND 0.9
+Vdd3 vss_pex GND 0
+Vdd1 vdd_pex GND 1.2
+x2 vc_pex v0_pex v3_pex v2_pex v5_pex v4_pex v1_pex vss_pex vdd_pex 6ph_rosc_pex
+**** begin user architecture code
+
+.lib cornerMOSlv.lib mos_tt
+*.include /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+
+
+
+.inc /foss/designs/PhaseInterpolator/Clock_Gen/6ph_rosc_pex.spice
+
+
+
+.options rshunt = 1e12
+.save v(v0) v(v1) v(v2) v(v3) v(v4) v(v5) v(v6) v(v0_pex) v(v1_pex) v(v2_pex) v(v3_pex) v(v4_pex) v(v5_pex) v(v6_pex)
+.tran 2p 20n
+
+.control
+run
+set color0=white
+set filetype = ascii
+write 6ph_rosc_pex.raw
+
+*let period_0 = T0
+*let period_1 = T1
+*let period_2 = T2
+
+
+meas tran T0 TRIG v(v0) VAL=0.6 RISE=5 TARG v(v0) VAL=0.6 RISE=6
+meas tran T0_pex TRIG v(v0_pex) VAL=0.6 RISE=5 TARG v(v0_pex) VAL=0.6 RISE=6
+
+let freq_0 = 1/T0
+let freq_0_pex = 1/T0_pex
+
+plot freq_0 freq_0_pex
+
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

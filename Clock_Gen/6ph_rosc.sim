@@ -1,0 +1,2381 @@
+| units: 0.5 tech: ihp-sg13g2 format: MIT
+x psdiff_1.buff_d8_0.inv_d8_0.VIN VDD psdiff_1.VOUTDP VDD s=4020,268 d=2220,148 l=26 w=30 x=3861 y=371 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4080 y=3277 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_2.CLKP VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=7368 y=2009 sg13_lv_nmos
+x psdiff_0.buff_d8_0.inv_d2_0.VIN psdiff_0.buff_d8_0.inv_d4_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=8133 y=371 sg13_lv_pmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=758 y=878 sg13_lv_nmos
+x psdiff_0.buff_d8_1.inv_d2_0.VIN psdiff_0.buff_d8_1.inv_d4_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=6184 y=2009 sg13_lv_nmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=1556 y=980 sg13_lv_nmos
+x buff_d8_2.inv_d8_0.VIN PH4 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=3632 y=3000 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN VSS psdiff_2.VOUTDP VSS s=4020,268 d=2220,148 l=26 w=30 x=167 y=81 sg13_lv_nmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7666 y=3549 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d4_0.VIN VSS psdiff_0.buff_d8_1.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=6842 y=2009 sg13_lv_nmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=7390 y=776 sg13_lv_nmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=6592 y=776 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1922 y=3821 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6952 y=3277 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d4_0.VIN psdiff_1.buff_d8_1.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=3622 y=2299 sg13_lv_pmos
+x VSS psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=1556 y=1502 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1616 y=3821 sg13_lv_pmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN VDD psdiff_2.VOUTDN VDD s=4020,268 d=2220,148 l=26 w=30 x=2386 y=2299 sg13_lv_pmos
+x VSS psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=1100 y=1502 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6646 y=3277 sg13_lv_pmos
+x buff_d8_2.inv_d8_0.VIN PH4 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=3992 y=2710 sg13_lv_nmos
+x buff_d8_1.inv_d8_0.VIN PH5 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=8431 y=-329 sg13_lv_pmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7960 y=980 sg13_lv_nmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=4188 y=776 sg13_lv_nmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=3390 y=980 sg13_lv_nmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.VOUTDN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=1780 y=2009 sg13_lv_nmos
+x a_1214_1266# psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=2012 y=1321 sg13_lv_pmos
+x VSS VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=5100 y=1604 sg13_lv_pmos
+x VSS psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=3390 y=1604 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN VSS psdiff_2.CLKN VSS s=4020,268 d=2220,148 l=26 w=30 x=6115 y=81 sg13_lv_nmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN VDD psdiff_1.VOUTDP VDD s=4020,268 d=2220,148 l=26 w=30 x=2781 y=371 sg13_lv_pmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=188 y=878 sg13_lv_nmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3672 y=4093 sg13_lv_pmos
+x buff_d8_5.inv_d4_0.VIN VSS buff_d8_5.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=1316 y=2710 sg13_lv_nmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4758 y=980 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=902 y=4093 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=13600,536 l=26 w=200 x=3366 y=4093 sg13_lv_pmos
+x psdiff_1.buff_d8_0.VIN psdiff_1.buff_d8_0.inv_d2_0.VIN VDD VDD s=4020,268 d=4020,268 l=26 w=30 x=5457 y=371 sg13_lv_pmos
+x VSS psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=188 y=1502 sg13_lv_pmos
+x buff_d8_3.inv_d4_0.VIN VSS buff_d8_3.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=3491 y=-619 sg13_lv_nmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=302 y=776 sg13_lv_nmos
+x PH1 PH4 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=4394 y=4964 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_2.CLKP VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=8088 y=2009 sg13_lv_nmos
+x VSS psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=644 y=1502 sg13_lv_pmos
+x VSS VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=7846 y=1502 sg13_lv_pmos
+x buff_d8_3.inv_d8_0.VIN VSS PH1 VSS s=4020,268 d=2220,148 l=26 w=30 x=4623 y=-619 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=494 y=4093 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1922 y=3549 sg13_lv_pmos
+x buff_d8_4.inv_d8_0.VIN PH3 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=1403 y=-329 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1616 y=3549 sg13_lv_pmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4530 y=878 sg13_lv_nmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.VOUTDN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=4394 y=2299 sg13_lv_pmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=8188 y=776 sg13_lv_nmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=7390 y=980 sg13_lv_nmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=3732 y=878 sg13_lv_nmos
+x buff_d8_5.inv_d8_0.VIN PH0 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=658 y=2710 sg13_lv_nmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=6592 y=980 sg13_lv_nmos
+x a_6005_1122# psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=6592 y=1321 sg13_lv_pmos
+x psdiff_2.VOUTDP VSS buff_d8_4.inv_d2_0.VIN VSS s=4020,268 d=4020,268 l=26 w=30 x=-192 y=-619 sg13_lv_nmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=2126 y=878 sg13_lv_nmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=1328 y=878 sg13_lv_nmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=4188 y=980 sg13_lv_nmos
+x buff_d8_5.inv_d2_0.VIN VSS buff_d8_5.inv_d4_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=2088 y=2710 sg13_lv_nmos
+x buff_d8_2.inv_d8_0.VIN VSS PH4 VSS s=4020,268 d=2220,148 l=26 w=30 x=2798 y=2710 sg13_lv_nmos
+x VSS VDD psdiff_0.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=6478 y=1604 sg13_lv_pmos
+x buff_d8_1.inv_d8_0.VIN VDD PH5 VDD s=4020,268 d=2220,148 l=26 w=30 x=7237 y=-329 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3672 y=3821 sg13_lv_pmos
+x buff_d8_1.inv_d2_0.VIN VDD buff_d8_1.inv_d4_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=6053 y=-329 sg13_lv_pmos
+x VSS VDD psdiff_0.buff_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=6022 y=1604 sg13_lv_pmos
+x a_3031_1122# psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=3846 y=1321 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=902 y=3821 sg13_lv_pmos
+x VSS VDD psdiff_0.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=6934 y=1604 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=13600,536 l=26 w=200 x=3366 y=3821 sg13_lv_pmos
+x psdiff_2.buff_d8_1.inv_d4_0.VIN psdiff_2.buff_d8_1.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=1008 y=2009 sg13_lv_nmos
+x buff_d8_1.inv_d4_0.VIN buff_d8_1.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=6579 y=-619 sg13_lv_nmos
+x buff_d8_4.inv_d2_0.VIN VSS buff_d8_4.inv_d4_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=105 y=-619 sg13_lv_nmos
+x PH4 PH1 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=3982 y=4674 sg13_lv_nmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=302 y=980 sg13_lv_nmos
+x buff_d8_5.inv_d8_0.VIN VDD PH0 VDD s=4020,268 d=2220,148 l=26 w=30 x=544 y=3000 sg13_lv_pmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7732 y=878 sg13_lv_nmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=3162 y=878 sg13_lv_nmos
+x VSS VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=1670 y=1604 sg13_lv_pmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=6934 y=878 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=494 y=3821 sg13_lv_pmos
+x CTRL a_3031_1122# psdiff_1.buff_d8_1.VIN VSS s=2220,148 d=4020,268 l=26 w=30 x=3960 y=1137 sg13_lv_nmos
+x buff_d8_3.inv_d8_0.VIN VSS PH1 VSS s=4020,268 d=2220,148 l=26 w=30 x=5343 y=-619 sg13_lv_nmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_2.CLKN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=6589 y=371 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN VSS psdiff_1.VOUTDP VSS s=4020,268 d=2220,148 l=26 w=30 x=2781 y=81 sg13_lv_nmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7870 y=3277 sg13_lv_pmos
+x buff_d8_0.inv_d8_0.VIN PH2 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=6966 y=3000 sg13_lv_pmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=1670 y=776 sg13_lv_nmos
+x PH3 VSS PH0 VSS s=4020,268 d=2220,148 l=26 w=30 x=1306 y=4674 sg13_lv_nmos
+x buff_d8_4.inv_d8_0.VIN PH3 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=2123 y=-329 sg13_lv_pmos
+x PH2 PH5 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=6956 y=4964 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7564 y=3277 sg13_lv_pmos
+x buff_d8_2.inv_d8_0.VIN VDD PH4 VDD s=4020,268 d=2220,148 l=26 w=30 x=3158 y=3000 sg13_lv_pmos
+x psdiff_2.buff_d8_1.inv_d4_0.VIN VDD psdiff_2.buff_d8_1.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=534 y=2299 sg13_lv_pmos
+x VSS psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=5214 y=1502 sg13_lv_pmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=8188 y=980 sg13_lv_nmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7258 y=3277 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4590 y=4093 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3672 y=3549 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d4_0.VIN psdiff_0.buff_d8_1.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=6956 y=2299 sg13_lv_pmos
+x psdiff_0.buff_d8_1.VIN VDD psdiff_0.buff_d8_1.inv_d2_0.VIN VDD s=4020,268 d=4020,268 l=26 w=30 x=5772 y=2299 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=902 y=3549 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=13600,536 l=26 w=200 x=3366 y=3549 sg13_lv_pmos
+x VSS VDD psdiff_1.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=3960 y=1502 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4284 y=4093 sg13_lv_pmos
+x a_4188_1266# VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=4872 y=1321 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7960 y=1604 sg13_lv_pmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=7162 y=878 sg13_lv_nmos
+x buff_d8_4.inv_d4_0.VIN buff_d8_4.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=991 y=-329 sg13_lv_pmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=6364 y=878 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=494 y=3549 sg13_lv_pmos
+x buff_d8_1.inv_d8_0.VIN PH5 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=7351 y=-619 sg13_lv_nmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_2.CLKN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=6589 y=81 sg13_lv_nmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=4872 y=776 sg13_lv_nmos
+x VSS psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4758 y=1604 sg13_lv_pmos
+x a_1214_1266# VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=1214 y=1321 sg13_lv_pmos
+x VSS psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4302 y=1604 sg13_lv_pmos
+x buff_d8_1.inv_d8_0.VIN VSS PH5 VSS s=4020,268 d=2220,148 l=26 w=30 x=7957 y=-619 sg13_lv_nmos
+x psdiff_1.buff_d8_0.inv_d2_0.VIN VSS psdiff_1.buff_d8_0.inv_d4_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=5045 y=81 sg13_lv_nmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=872 y=878 sg13_lv_nmos
+x buff_d8_3.inv_d8_0.VIN PH1 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=4737 y=-329 sg13_lv_pmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=1670 y=980 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1820 y=3277 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1514 y=3277 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d2_0.VIN VDD psdiff_1.buff_d8_0.inv_d4_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=5045 y=371 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d4_0.VIN psdiff_2.buff_d8_0.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=1773 y=81 sg13_lv_nmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4590 y=3821 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=6136 y=1502 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1208 y=3277 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4284 y=3821 sg13_lv_pmos
+x a_6005_1122# psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7048 y=1321 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6442 y=4093 sg13_lv_pmos
+x a_57_1122# VDD psdiff_2.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=758 y=1321 sg13_lv_pmos
+x psdiff_1.VOUTDN buff_d8_2.inv_d2_0.VIN VSS VSS s=4020,268 d=4020,268 l=26 w=30 x=5474 y=2710 sg13_lv_nmos
+x a_57_1122# VDD psdiff_2.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=302 y=1321 sg13_lv_pmos
+x a_7162_1266# psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7504 y=1321 sg13_lv_pmos
+x buff_d8_2.inv_d4_0.VIN VSS buff_d8_2.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=4290 y=2710 sg13_lv_nmos
+x VSS psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=1784 y=1502 sg13_lv_pmos
+x PH0 VSS PH3 VSS s=4020,268 d=2220,148 l=26 w=30 x=894 y=4674 sg13_lv_nmos
+x buff_d8_0.inv_d8_0.VIN PH2 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=6606 y=2710 sg13_lv_nmos
+x psdiff_1.buff_d8_1.inv_d4_0.VIN VSS psdiff_1.buff_d8_1.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=3868 y=2009 sg13_lv_nmos
+x psdiff_1.buff_d8_1.inv_d2_0.VIN psdiff_1.buff_d8_1.inv_d4_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=3210 y=2009 sg13_lv_nmos
+x a_1214_1266# psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=2240 y=1321 sg13_lv_pmos
+x buff_d8_1.inv_d8_0.VIN PH5 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=8071 y=-619 sg13_lv_nmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=4872 y=980 sg13_lv_nmos
+x CTRL psdiff_2.buff_d8_1.VIN a_57_1122# VSS s=4020,268 d=2220,148 l=26 w=30 x=872 y=1137 sg13_lv_nmos
+x buff_d8_4.inv_d2_0.VIN buff_d8_4.inv_d4_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=219 y=-329 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3978 y=3277 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.VOUTDP VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=3975 y=371 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4590 y=3549 sg13_lv_pmos
+x psdiff_0.buff_d8_0.VIN psdiff_0.buff_d8_0.inv_d2_0.VIN VSS VSS s=4020,268 d=4020,268 l=26 w=30 x=8431 y=81 sg13_lv_nmos
+x buff_d8_3.inv_d8_0.VIN PH1 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=5457 y=-329 sg13_lv_pmos
+x buff_d8_3.inv_d8_0.VIN VDD PH1 VDD s=4020,268 d=2220,148 l=26 w=30 x=4983 y=-329 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4284 y=3549 sg13_lv_pmos
+x VSS VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=2126 y=1604 sg13_lv_pmos
+x VSS VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=7162 y=1502 sg13_lv_pmos
+x CTRL a_4188_1266# psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=4020,268 l=26 w=30 x=4416 y=1137 sg13_lv_nmos
+x VSS psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=872 y=1502 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN VSS psdiff_1.VOUTDP VSS s=4020,268 d=2220,148 l=26 w=30 x=3861 y=81 sg13_lv_nmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.VOUTDP VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=-78 y=81 sg13_lv_nmos
+x a_7162_1266# VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=8074 y=1321 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3570 y=3277 sg13_lv_pmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=2240 y=878 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6442 y=3821 sg13_lv_pmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=1442 y=878 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=800 y=3277 sg13_lv_pmos
+x buff_d8_0.inv_d4_0.VIN buff_d8_0.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=7378 y=2710 sg13_lv_nmos
+x buff_d8_4.inv_d8_0.VIN VSS PH3 VSS s=4020,268 d=2220,148 l=26 w=30 x=1649 y=-619 sg13_lv_nmos
+x VSS VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=4416 y=1502 sg13_lv_pmos
+x buff_d8_5.inv_d4_0.VIN buff_d8_5.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=1430 y=3000 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7768 y=4093 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.VOUTDP VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=2895 y=371 sg13_lv_pmos
+x PH3 PH0 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=1420 y=4964 sg13_lv_pmos
+x buff_d8_5.inv_d8_0.VIN PH0 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=-61 y=3000 sg13_lv_pmos
+x buff_d8_0.inv_d8_0.VIN VSS PH2 VSS s=4020,268 d=2220,148 l=26 w=30 x=6852 y=2710 sg13_lv_nmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.VOUTDN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=5114 y=2009 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=13600,536 l=26 w=200 x=392 y=3277 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN VSS psdiff_1.VOUTDN VSS s=4020,268 d=2220,148 l=26 w=30 x=4640 y=2009 sg13_lv_nmos
+x a_3031_1122# psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=3162 y=1321 sg13_lv_pmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=416 y=776 sg13_lv_nmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.VOUTDN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=1420 y=2299 sg13_lv_pmos
+x VSS VDD psdiff_0.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=6250 y=1604 sg13_lv_pmos
+x PH1 VSS PH4 VSS s=4020,268 d=2220,148 l=26 w=30 x=4280 y=4674 sg13_lv_nmos
+x psdiff_0.buff_d8_0.inv_d4_0.VIN VSS psdiff_0.buff_d8_0.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=7607 y=81 sg13_lv_nmos
+x buff_d8_5.inv_d4_0.VIN buff_d8_5.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=1790 y=2710 sg13_lv_nmos
+x psdiff_2.CLKP buff_d8_0.inv_d2_0.VIN VDD VDD s=4020,268 d=4020,268 l=26 w=30 x=8448 y=3000 sg13_lv_pmos
+x psdiff_1.buff_d8_0.VIN psdiff_1.buff_d8_0.inv_d2_0.VIN VSS VSS s=4020,268 d=4020,268 l=26 w=30 x=5457 y=81 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6442 y=3549 sg13_lv_pmos
+x buff_d8_0.inv_d4_0.VIN VDD buff_d8_0.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=7264 y=3000 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7360 y=4093 sg13_lv_pmos
+x VSS VDD psdiff_1.buff_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=3048 y=1604 sg13_lv_pmos
+x buff_d8_3.inv_d2_0.VIN VDD buff_d8_3.inv_d4_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=3079 y=-329 sg13_lv_pmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=4644 y=878 sg13_lv_nmos
+x PH5 VDD PH2 VDD s=4020,268 d=2220,148 l=26 w=30 x=7254 y=4964 sg13_lv_pmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=3846 y=878 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7054 y=4093 sg13_lv_pmos
+x VSS VDD psdiff_1.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=3504 y=1604 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN VDD psdiff_2.CLKP VDD s=4020,268 d=2220,148 l=26 w=30 x=7254 y=2299 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d2_0.VIN VDD psdiff_0.buff_d8_1.inv_d4_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=6070 y=2299 sg13_lv_pmos
+x buff_d8_0.inv_d2_0.VIN buff_d8_0.inv_d4_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=8150 y=2710 sg13_lv_nmos
+x psdiff_0.buff_d8_1.inv_d4_0.VIN psdiff_0.buff_d8_1.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=6596 y=2009 sg13_lv_nmos
+x buff_d8_4.inv_d8_0.VIN VSS PH3 VSS s=4020,268 d=2220,148 l=26 w=30 x=2369 y=-619 sg13_lv_nmos
+x buff_d8_3.inv_d4_0.VIN buff_d8_3.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=3605 y=-619 sg13_lv_nmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4896 y=3277 sg13_lv_pmos
+x psdiff_2.buff_d8_1.inv_d2_0.VIN VSS psdiff_2.buff_d8_1.inv_d4_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=122 y=2009 sg13_lv_nmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7768 y=3821 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_2.CLKP VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=7728 y=2009 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1718 y=4093 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN VSS psdiff_1.VOUTDN VSS s=4020,268 d=2220,148 l=26 w=30 x=5360 y=2009 sg13_lv_nmos
+x psdiff_0.buff_d8_0.inv_d4_0.VIN VDD psdiff_0.buff_d8_0.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=7607 y=371 sg13_lv_pmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=74 y=878 sg13_lv_nmos
+x PH5 PH2 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=7368 y=4674 sg13_lv_nmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4074 y=878 sg13_lv_nmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=416 y=980 sg13_lv_nmos
+x psdiff_1.buff_d8_1.VIN VDD psdiff_1.buff_d8_1.inv_d2_0.VIN VDD s=4020,268 d=4020,268 l=26 w=30 x=2798 y=2299 sg13_lv_pmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=7846 y=878 sg13_lv_nmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=3276 y=878 sg13_lv_nmos
+x a_6005_1122# VDD psdiff_0.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=6706 y=1321 sg13_lv_pmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.VOUTDN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=2140 y=2299 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7360 y=3821 sg13_lv_pmos
+x VSS psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4074 y=1604 sg13_lv_pmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=1784 y=776 sg13_lv_nmos
+x PH2 VSS PH5 VSS s=4020,268 d=2220,148 l=26 w=30 x=6842 y=4674 sg13_lv_nmos
+x VSS psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4986 y=1604 sg13_lv_pmos
+x a_1214_1266# VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=1898 y=1321 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4182 y=3277 sg13_lv_pmos
+x a_1214_1266# VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=1442 y=1321 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1310 y=4093 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7054 y=3821 sg13_lv_pmos
+x VSS psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4530 y=1604 sg13_lv_pmos
+x buff_d8_5.inv_d8_0.VIN PH0 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=1018 y=2710 sg13_lv_nmos
+x CTRL psdiff_0.buff_d8_1.VIN a_6005_1122# VSS s=4020,268 d=2220,148 l=26 w=30 x=6820 y=1137 sg13_lv_nmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7768 y=3549 sg13_lv_pmos
+x buff_d8_3.inv_d8_0.VIN PH1 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=4377 y=-619 sg13_lv_nmos
+x psdiff_0.buff_d8_0.inv_d4_0.VIN psdiff_0.buff_d8_0.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=7361 y=81 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1004 y=4093 sg13_lv_pmos
+x buff_d8_3.inv_d2_0.VIN buff_d8_3.inv_d4_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=3193 y=-619 sg13_lv_nmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN VSS psdiff_2.VOUTDP VSS s=4020,268 d=2220,148 l=26 w=30 x=-192 y=81 sg13_lv_nmos
+x VSS psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=1328 y=1604 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=6364 y=1502 sg13_lv_pmos
+x buff_d8_3.inv_d4_0.VIN VSS buff_d8_3.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=3851 y=-619 sg13_lv_nmos
+x buff_d8_2.inv_d4_0.VIN buff_d8_2.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=4764 y=3000 sg13_lv_pmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=8074 y=878 sg13_lv_nmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7276 y=878 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1718 y=3821 sg13_lv_pmos
+x VSS VDD psdiff_2.buff_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=74 y=1502 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=6820 y=1502 sg13_lv_pmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=6478 y=878 sg13_lv_nmos
+x a_7162_1266# psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7276 y=1321 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6748 y=3277 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_2.CLKP VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=8448 y=2009 sg13_lv_nmos
+x a_57_1122# VDD psdiff_2.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=986 y=1321 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN VSS psdiff_2.CLKP VSS s=4020,268 d=2220,148 l=26 w=30 x=7974 y=2009 sg13_lv_nmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN VSS psdiff_2.VOUTDP VSS s=4020,268 d=2220,148 l=26 w=30 x=527 y=81 sg13_lv_nmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7360 y=3549 sg13_lv_pmos
+x a_57_1122# VDD psdiff_2.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=530 y=1321 sg13_lv_pmos
+x a_7162_1266# psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7732 y=1321 sg13_lv_pmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4986 y=776 sg13_lv_nmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3774 y=4093 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7054 y=3549 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.VOUTDN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=4754 y=2299 sg13_lv_pmos
+x VSS psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=3618 y=1502 sg13_lv_pmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=986 y=878 sg13_lv_nmos
+x CTRL a_7162_1266# psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=4020,268 l=26 w=30 x=7390 y=1137 sg13_lv_nmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3468 y=4093 sg13_lv_pmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=1784 y=980 sg13_lv_nmos
+x VSS VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=7618 y=1604 sg13_lv_pmos
+x psdiff_2.buff_d8_0.VIN psdiff_2.buff_d8_0.inv_d2_0.VIN VDD VDD s=4020,268 d=4020,268 l=26 w=30 x=2483 y=371 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1310 y=3821 sg13_lv_pmos
+x VSS psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=416 y=1604 sg13_lv_pmos
+x buff_d8_1.inv_d4_0.VIN VDD buff_d8_1.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=6465 y=-329 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=13600,536 l=26 w=200 x=6340 y=3277 sg13_lv_pmos
+x buff_d8_5.inv_d8_0.VIN PH0 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=298 y=3000 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_2.CLKN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=5869 y=81 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1004 y=3821 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=596 y=4093 sg13_lv_pmos
+x psdiff_2.VOUTDN buff_d8_5.inv_d2_0.VIN VSS VSS s=4020,268 d=4020,268 l=26 w=30 x=2500 y=2710 sg13_lv_nmos
+x buff_d8_4.inv_d4_0.VIN VSS buff_d8_4.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=517 y=-619 sg13_lv_nmos
+x buff_d8_3.inv_d8_0.VIN PH1 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=5097 y=-619 sg13_lv_nmos
+x psdiff_1.buff_d8_0.inv_d2_0.VIN psdiff_1.buff_d8_0.inv_d4_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=5159 y=371 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d4_0.VIN psdiff_1.buff_d8_0.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=4387 y=81 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1718 y=3549 sg13_lv_pmos
+x VSS VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=7390 y=1502 sg13_lv_pmos
+x buff_d8_1.inv_d4_0.VIN buff_d8_1.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=6939 y=-619 sg13_lv_nmos
+x psdiff_2.CLKN VSS buff_d8_1.inv_d2_0.VIN VSS s=4020,268 d=4020,268 l=26 w=30 x=5755 y=-619 sg13_lv_nmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=6022 y=776 sg13_lv_nmos
+x buff_d8_5.inv_d8_0.VIN VDD PH0 VDD s=4020,268 d=2220,148 l=26 w=30 x=904 y=3000 sg13_lv_pmos
+x PH0 PH3 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=1008 y=4674 sg13_lv_nmos
+x psdiff_2.buff_d8_1.inv_d2_0.VIN psdiff_2.buff_d8_1.inv_d4_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=236 y=2299 sg13_lv_pmos
+x VSS VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=4188 y=1502 sg13_lv_pmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4986 y=980 sg13_lv_nmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3774 y=3821 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1310 y=3549 sg13_lv_pmos
+x buff_d8_2.inv_d8_0.VIN VDD PH4 VDD s=4020,268 d=2220,148 l=26 w=30 x=3518 y=3000 sg13_lv_pmos
+x VSS VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=4644 y=1502 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=8188 y=1604 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.VOUTDN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=5474 y=2299 sg13_lv_pmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=530 y=776 sg13_lv_nmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3468 y=3821 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1004 y=3549 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d4_0.VIN psdiff_2.buff_d8_0.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=1413 y=371 sg13_lv_pmos
+x a_4188_1266# VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=5100 y=1321 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.VOUTDP VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=281 y=81 sg13_lv_nmos
+x buff_d8_2.inv_d8_0.VIN PH4 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=3272 y=2710 sg13_lv_nmos
+x a_3031_1122# psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=3390 y=1321 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d4_0.VIN VDD psdiff_1.buff_d8_1.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=3508 y=2299 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=596 y=3821 sg13_lv_pmos
+x buff_d8_2.inv_d4_0.VIN buff_d8_2.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=4404 y=2710 sg13_lv_nmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=3960 y=878 sg13_lv_nmos
+x buff_d8_2.inv_d8_0.VIN VSS PH4 VSS s=4020,268 d=2220,148 l=26 w=30 x=3878 y=2710 sg13_lv_nmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN VSS psdiff_2.VOUTDN VSS s=4020,268 d=2220,148 l=26 w=30 x=1666 y=2009 sg13_lv_nmos
+x buff_d8_1.inv_d8_0.VIN VDD PH5 VDD s=4020,268 d=2220,148 l=26 w=30 x=8317 y=-329 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN VSS psdiff_2.CLKN VSS s=4020,268 d=2220,148 l=26 w=30 x=6475 y=81 sg13_lv_nmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7666 y=3277 sg13_lv_pmos
+x VSS VDD psdiff_1.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=3276 y=1604 sg13_lv_pmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=1556 y=878 sg13_lv_nmos
+x buff_d8_1.inv_d8_0.VIN PH5 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=7711 y=-619 sg13_lv_nmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3774 y=3549 sg13_lv_pmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=6022 y=980 sg13_lv_nmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4692 y=4093 sg13_lv_pmos
+x VSS VDD psdiff_1.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=3732 y=1604 sg13_lv_pmos
+x buff_d8_3.inv_d4_0.VIN buff_d8_3.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=3965 y=-329 sg13_lv_pmos
+x buff_d8_5.inv_d8_0.VIN VSS PH0 VSS s=4020,268 d=2220,148 l=26 w=30 x=-175 y=2710 sg13_lv_nmos
+x psdiff_1.VOUTDP VDD buff_d8_3.inv_d2_0.VIN VDD s=4020,268 d=4020,268 l=26 w=30 x=2781 y=-329 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4386 y=4093 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3468 y=3549 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d4_0.VIN psdiff_0.buff_d8_0.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=7721 y=371 sg13_lv_pmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=530 y=980 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=596 y=3549 sg13_lv_pmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7960 y=878 sg13_lv_nmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=3390 y=878 sg13_lv_nmos
+x psdiff_1.buff_d8_1.inv_d2_0.VIN VDD psdiff_1.buff_d8_1.inv_d4_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=3096 y=2299 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN VDD psdiff_2.CLKN VDD s=4020,268 d=2220,148 l=26 w=30 x=6115 y=371 sg13_lv_pmos
+x buff_d8_2.inv_d2_0.VIN buff_d8_2.inv_d4_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=5176 y=2710 sg13_lv_nmos
+x buff_d8_0.inv_d8_0.VIN PH2 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=5886 y=2710 sg13_lv_nmos
+x a_6005_1122# VDD psdiff_0.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=6478 y=1321 sg13_lv_pmos
+x VSS psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=2012 y=1502 sg13_lv_pmos
+x a_6005_1122# VDD psdiff_0.buff_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=6022 y=1321 sg13_lv_pmos
+x a_6005_1122# VDD psdiff_0.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=6934 y=1321 sg13_lv_pmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4758 y=878 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1922 y=3277 sg13_lv_pmos
+x buff_d8_2.inv_d4_0.VIN VSS buff_d8_2.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=4650 y=2710 sg13_lv_nmos
+x psdiff_1.buff_d8_1.inv_d4_0.VIN psdiff_1.buff_d8_1.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=3622 y=2009 sg13_lv_nmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN VSS psdiff_2.VOUTDN VSS s=4020,268 d=2220,148 l=26 w=30 x=2386 y=2009 sg13_lv_nmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=1100 y=776 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1616 y=3277 sg13_lv_pmos
+x a_1214_1266# VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=1670 y=1321 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_2.CLKN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=6949 y=81 sg13_lv_nmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4692 y=3821 sg13_lv_pmos
+x buff_d8_1.inv_d8_0.VIN PH5 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=8431 y=-619 sg13_lv_nmos
+x psdiff_2.buff_d8_0.inv_d2_0.VIN VDD psdiff_2.buff_d8_0.inv_d4_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=2071 y=371 sg13_lv_pmos
+x PH4 VSS PH1 VSS s=4020,268 d=2220,148 l=26 w=30 x=3868 y=4674 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6850 y=4093 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4386 y=3821 sg13_lv_pmos
+x buff_d8_0.inv_d8_0.VIN PH2 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=6246 y=3000 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN VDD psdiff_2.VOUTDP VDD s=4020,268 d=2220,148 l=26 w=30 x=527 y=371 sg13_lv_pmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=7390 y=878 sg13_lv_nmos
+x buff_d8_2.inv_d2_0.VIN VDD buff_d8_2.inv_d4_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=5062 y=3000 sg13_lv_pmos
+x buff_d8_0.inv_d8_0.VIN VDD PH2 VDD s=4020,268 d=2220,148 l=26 w=30 x=5772 y=3000 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.VOUTDP VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=3255 y=81 sg13_lv_nmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=6592 y=878 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6544 y=4093 sg13_lv_pmos
+x VSS psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=1556 y=1604 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=6592 y=1502 sg13_lv_pmos
+x CTRL psdiff_1.buff_d8_1.VIN a_3031_1122# VSS s=4020,268 d=2220,148 l=26 w=30 x=3846 y=1137 sg13_lv_nmos
+x VSS psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=1100 y=1604 sg13_lv_pmos
+x buff_d8_4.inv_d8_0.VIN VDD PH3 VDD s=4020,268 d=2220,148 l=26 w=30 x=2009 y=-329 sg13_lv_pmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=4188 y=878 sg13_lv_nmos
+x buff_d8_5.inv_d8_0.VIN VSS PH0 VSS s=4020,268 d=2220,148 l=26 w=30 x=184 y=2710 sg13_lv_nmos
+x buff_d8_4.inv_d8_0.VIN PH3 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=1403 y=-619 sg13_lv_nmos
+x a_7162_1266# psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7960 y=1321 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.VOUTDN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=4394 y=2009 sg13_lv_nmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=5100 y=776 sg13_lv_nmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4302 y=776 sg13_lv_nmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=3504 y=776 sg13_lv_nmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=1898 y=776 sg13_lv_nmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN VDD psdiff_1.VOUTDN VDD s=4020,268 d=2220,148 l=26 w=30 x=5000 y=2299 sg13_lv_pmos
+x VSS psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=3846 y=1502 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d4_0.VIN VDD psdiff_0.buff_d8_0.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=7247 y=371 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4692 y=3549 sg13_lv_pmos
+x buff_d8_0.inv_d4_0.VIN buff_d8_0.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=7738 y=2710 sg13_lv_nmos
+x VSS psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=188 y=1604 sg13_lv_pmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=302 y=878 sg13_lv_nmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4386 y=3549 sg13_lv_pmos
+x a_4188_1266# psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4758 y=1321 sg13_lv_pmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=1100 y=980 sg13_lv_nmos
+x VSS psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=644 y=1604 sg13_lv_pmos
+x VSS VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=7846 y=1604 sg13_lv_pmos
+x a_4188_1266# psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4302 y=1321 sg13_lv_pmos
+x buff_d8_4.inv_d4_0.VIN VDD buff_d8_4.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=877 y=-329 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.VOUTDP VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=1001 y=371 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6850 y=3821 sg13_lv_pmos
+x buff_d8_1.inv_d8_0.VIN VSS PH5 VSS s=4020,268 d=2220,148 l=26 w=30 x=7237 y=-619 sg13_lv_nmos
+x buff_d8_1.inv_d2_0.VIN VSS buff_d8_1.inv_d4_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=6053 y=-619 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6544 y=3821 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3672 y=3277 sg13_lv_pmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=8188 y=878 sg13_lv_nmos
+x buff_d8_0.inv_d8_0.VIN VDD PH2 VDD s=4020,268 d=2220,148 l=26 w=30 x=6492 y=3000 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=902 y=3277 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=13600,536 l=26 w=200 x=3366 y=3277 sg13_lv_pmos
+x buff_d8_0.inv_d4_0.VIN VDD buff_d8_0.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=7624 y=3000 sg13_lv_pmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7504 y=776 sg13_lv_nmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN VDD psdiff_1.VOUTDP VDD s=4020,268 d=2220,148 l=26 w=30 x=3501 y=371 sg13_lv_pmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=6706 y=776 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=494 y=3277 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d4_0.VIN VDD psdiff_0.buff_d8_1.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=6482 y=2299 sg13_lv_pmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=5100 y=980 sg13_lv_nmos
+x psdiff_2.buff_d8_1.inv_d4_0.VIN VSS psdiff_2.buff_d8_1.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=534 y=2009 sg13_lv_nmos
+x VSS VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=4872 y=1502 sg13_lv_pmos
+x buff_d8_4.inv_d8_0.VIN PH3 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=2123 y=-619 sg13_lv_nmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4302 y=980 sg13_lv_nmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=1898 y=980 sg13_lv_nmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN VDD psdiff_2.CLKP VDD s=4020,268 d=2220,148 l=26 w=30 x=7614 y=2299 sg13_lv_pmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=3504 y=980 sg13_lv_nmos
+x psdiff_0.buff_d8_1.inv_d4_0.VIN psdiff_0.buff_d8_1.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=6956 y=2009 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6850 y=3549 sg13_lv_pmos
+x psdiff_0.buff_d8_1.VIN VSS psdiff_0.buff_d8_1.inv_d2_0.VIN VSS s=4020,268 d=4020,268 l=26 w=30 x=5772 y=2009 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6544 y=3549 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7462 y=4093 sg13_lv_pmos
+x VSS VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=1214 y=1502 sg13_lv_pmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=1670 y=878 sg13_lv_nmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7156 y=4093 sg13_lv_pmos
+x a_1214_1266# VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=2126 y=1321 sg13_lv_pmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=6136 y=776 sg13_lv_nmos
+x VSS psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=5214 y=1604 sg13_lv_pmos
+x buff_d8_4.inv_d4_0.VIN buff_d8_4.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=991 y=-619 sg13_lv_nmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.VOUTDN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=2500 y=2299 sg13_lv_pmos
+x buff_d8_3.inv_d8_0.VIN VDD PH1 VDD s=4020,268 d=2220,148 l=26 w=30 x=4263 y=-329 sg13_lv_pmos
+x VSS VDD psdiff_1.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=3960 y=1604 sg13_lv_pmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7504 y=980 sg13_lv_nmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=6706 y=980 sg13_lv_nmos
+x VSS psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7048 y=1502 sg13_lv_pmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=644 y=776 sg13_lv_nmos
+x psdiff_2.buff_d8_0.inv_d2_0.VIN psdiff_2.buff_d8_0.inv_d4_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=2185 y=81 sg13_lv_nmos
+x VSS VDD psdiff_2.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=758 y=1502 sg13_lv_pmos
+x buff_d8_3.inv_d8_0.VIN PH1 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=4737 y=-619 sg13_lv_nmos
+x VSS VDD psdiff_2.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=302 y=1502 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7504 y=1502 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d4_0.VIN VDD psdiff_1.buff_d8_0.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=4633 y=371 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN VDD psdiff_2.CLKP VDD s=4020,268 d=2220,148 l=26 w=30 x=8334 y=2299 sg13_lv_pmos
+x buff_d8_2.inv_d8_0.VIN PH4 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=3992 y=3000 sg13_lv_pmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=4872 y=878 sg13_lv_nmos
+x PH4 PH1 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=3982 y=4964 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4590 y=3277 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7462 y=3821 sg13_lv_pmos
+x VSS psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=2240 y=1502 sg13_lv_pmos
+x buff_d8_0.inv_d8_0.VIN VSS PH2 VSS s=4020,268 d=2220,148 l=26 w=30 x=6132 y=2710 sg13_lv_nmos
+x a_6005_1122# VDD psdiff_0.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=6250 y=1321 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7156 y=3821 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4284 y=3277 sg13_lv_pmos
+x buff_d8_5.inv_d4_0.VIN VDD buff_d8_5.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=1316 y=3000 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1412 y=4093 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d4_0.VIN psdiff_1.buff_d8_1.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=3982 y=2299 sg13_lv_pmos
+x PH3 VDD PH0 VDD s=4020,268 d=2220,148 l=26 w=30 x=1306 y=4964 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1106 y=4093 sg13_lv_pmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=6136 y=980 sg13_lv_nmos
+x VSS psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=6136 y=1604 sg13_lv_pmos
+x a_3031_1122# VDD psdiff_1.buff_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=3048 y=1321 sg13_lv_pmos
+x buff_d8_1.inv_d2_0.VIN buff_d8_1.inv_d4_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=6167 y=-329 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.VOUTDP VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=641 y=371 sg13_lv_pmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN VDD psdiff_2.VOUTDN VDD s=4020,268 d=2220,148 l=26 w=30 x=1306 y=2299 sg13_lv_pmos
+x a_3031_1122# VDD psdiff_1.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=3504 y=1321 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN VSS psdiff_2.CLKN VSS s=4020,268 d=2220,148 l=26 w=30 x=5755 y=81 sg13_lv_nmos
+x buff_d8_5.inv_d2_0.VIN buff_d8_5.inv_d4_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=2202 y=2710 sg13_lv_nmos
+x buff_d8_2.inv_d8_0.VIN PH4 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=2912 y=2710 sg13_lv_nmos
+x VSS VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=8074 y=1502 sg13_lv_pmos
+x buff_d8_4.inv_d2_0.VIN buff_d8_4.inv_d4_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=219 y=-619 sg13_lv_nmos
+x buff_d8_5.inv_d4_0.VIN VSS buff_d8_5.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=1676 y=2710 sg13_lv_nmos
+x buff_d8_1.inv_d4_0.VIN VDD buff_d8_1.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=6825 y=-329 sg13_lv_pmos
+x buff_d8_5.inv_d8_0.VIN PH0 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=658 y=3000 sg13_lv_pmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=644 y=980 sg13_lv_nmos
+x psdiff_1.buff_d8_0.inv_d4_0.VIN VSS psdiff_1.buff_d8_0.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=4273 y=81 sg13_lv_nmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7462 y=3549 sg13_lv_pmos
+x psdiff_2.buff_d8_1.VIN VDD psdiff_2.buff_d8_1.inv_d2_0.VIN VDD s=4020,268 d=4020,268 l=26 w=30 x=-175 y=2299 sg13_lv_pmos
+x VSS psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=1784 y=1604 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d4_0.VIN psdiff_0.buff_d8_0.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=7721 y=81 sg13_lv_nmos
+x buff_d8_3.inv_d8_0.VIN PH1 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=5457 y=-619 sg13_lv_nmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_2.CLKN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=6229 y=371 sg13_lv_pmos
+x buff_d8_3.inv_d8_0.VIN VSS PH1 VSS s=4020,268 d=2220,148 l=26 w=30 x=4983 y=-619 sg13_lv_nmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3876 y=4093 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7156 y=3549 sg13_lv_pmos
+x buff_d8_4.inv_d8_0.VIN PH3 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=1763 y=-329 sg13_lv_pmos
+x buff_d8_5.inv_d2_0.VIN VDD buff_d8_5.inv_d4_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=2088 y=3000 sg13_lv_pmos
+x buff_d8_2.inv_d8_0.VIN VDD PH4 VDD s=4020,268 d=2220,148 l=26 w=30 x=2798 y=3000 sg13_lv_pmos
+x psdiff_2.buff_d8_1.inv_d4_0.VIN psdiff_2.buff_d8_1.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=648 y=2299 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d4_0.VIN psdiff_0.buff_d8_0.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=7361 y=371 sg13_lv_pmos
+x buff_d8_0.inv_d2_0.VIN VSS buff_d8_0.inv_d4_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=8036 y=2710 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1412 y=3821 sg13_lv_pmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=2012 y=776 sg13_lv_nmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=1214 y=776 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6442 y=3277 sg13_lv_pmos
+x VSS psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=3162 y=1502 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1106 y=3821 sg13_lv_pmos
+x a_3031_1122# psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4074 y=1321 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=698 y=4093 sg13_lv_pmos
+x VSS VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=7162 y=1604 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d2_0.VIN psdiff_2.buff_d8_0.inv_d4_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=2185 y=371 sg13_lv_pmos
+x a_4188_1266# psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4986 y=1321 sg13_lv_pmos
+x VSS psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=872 y=1604 sg13_lv_pmos
+x a_4188_1266# psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4530 y=1321 sg13_lv_pmos
+x buff_d8_1.inv_d8_0.VIN VDD PH5 VDD s=4020,268 d=2220,148 l=26 w=30 x=7597 y=-329 sg13_lv_pmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN VDD psdiff_2.VOUTDN VDD s=4020,268 d=2220,148 l=26 w=30 x=2026 y=2299 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d2_0.VIN VSS psdiff_0.buff_d8_0.inv_d4_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=8019 y=81 sg13_lv_nmos
+x buff_d8_2.inv_d8_0.VIN PH4 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=3632 y=2710 sg13_lv_nmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.VOUTDN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=1420 y=2009 sg13_lv_nmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=6820 y=776 sg13_lv_nmos
+x a_1214_1266# psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=1328 y=1321 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d4_0.VIN VSS psdiff_2.buff_d8_0.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=1299 y=81 sg13_lv_nmos
+x VSS VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=4416 y=1604 sg13_lv_pmos
+x PH0 VDD PH3 VDD s=4020,268 d=2220,148 l=26 w=30 x=894 y=4964 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3876 y=3821 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d4_0.VIN psdiff_1.buff_d8_0.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=4747 y=81 sg13_lv_nmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN VDD psdiff_2.VOUTDP VDD s=4020,268 d=2220,148 l=26 w=30 x=167 y=371 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1412 y=3549 sg13_lv_pmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=5214 y=776 sg13_lv_nmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=4416 y=776 sg13_lv_nmos
+x buff_d8_4.inv_d8_0.VIN PH3 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=2483 y=-329 sg13_lv_pmos
+x buff_d8_3.inv_d2_0.VIN VSS buff_d8_3.inv_d4_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=3079 y=-619 sg13_lv_nmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=3618 y=776 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1106 y=3549 sg13_lv_pmos
+x psdiff_2.buff_d8_1.inv_d4_0.VIN VDD psdiff_2.buff_d8_1.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=894 y=2299 sg13_lv_pmos
+x CTRL a_1214_1266# psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=4020,268 l=26 w=30 x=1442 y=1137 sg13_lv_nmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=416 y=878 sg13_lv_nmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN VSS psdiff_2.CLKP VSS s=4020,268 d=2220,148 l=26 w=30 x=7254 y=2009 sg13_lv_nmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=2012 y=980 sg13_lv_nmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=1214 y=980 sg13_lv_nmos
+x psdiff_0.buff_d8_1.inv_d2_0.VIN VSS psdiff_0.buff_d8_1.inv_d4_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=6070 y=2009 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=698 y=3821 sg13_lv_pmos
+x VSS VDD psdiff_0.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=6706 y=1502 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN VSS psdiff_2.VOUTDP VSS s=4020,268 d=2220,148 l=26 w=30 x=887 y=81 sg13_lv_nmos
+x a_7162_1266# VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=7618 y=1321 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7768 y=3277 sg13_lv_pmos
+x a_57_1122# psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=416 y=1321 sg13_lv_pmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=6250 y=776 sg13_lv_nmos
+x VSS VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=1898 y=1502 sg13_lv_pmos
+x VSS VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=1442 y=1502 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.VOUTDP VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=641 y=81 sg13_lv_nmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4794 y=4093 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3876 y=3549 sg13_lv_pmos
+x CTRL psdiff_0.buff_d8_0.VIN a_7162_1266# VSS s=4020,268 d=2220,148 l=26 w=30 x=7276 y=1137 sg13_lv_nmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.VOUTDN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=2140 y=2009 sg13_lv_nmos
+x psdiff_1.buff_d8_1.VIN VSS psdiff_1.buff_d8_1.inv_d2_0.VIN VSS s=4020,268 d=4020,268 l=26 w=30 x=2798 y=2009 sg13_lv_nmos
+x CTRL a_57_1122# psdiff_2.buff_d8_1.VIN VSS s=2220,148 d=4020,268 l=26 w=30 x=986 y=1137 sg13_lv_nmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=7618 y=776 sg13_lv_nmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=3048 y=776 sg13_lv_nmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.VOUTDP VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=3615 y=371 sg13_lv_pmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=6820 y=980 sg13_lv_nmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4488 y=4093 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN VSS psdiff_2.CLKN VSS s=4020,268 d=2220,148 l=26 w=30 x=6835 y=81 sg13_lv_nmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7360 y=3277 sg13_lv_pmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=5214 y=980 sg13_lv_nmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=4416 y=980 sg13_lv_nmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=3618 y=980 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=698 y=3549 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7054 y=3277 sg13_lv_pmos
+x psdiff_1.VOUTDN buff_d8_2.inv_d2_0.VIN VDD VDD s=4020,268 d=4020,268 l=26 w=30 x=5474 y=3000 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7276 y=1502 sg13_lv_pmos
+x buff_d8_2.inv_d4_0.VIN VDD buff_d8_2.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=4290 y=3000 sg13_lv_pmos
+x VSS VDD psdiff_2.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=986 y=1502 sg13_lv_pmos
+x buff_d8_4.inv_d8_0.VIN VDD PH3 VDD s=4020,268 d=2220,148 l=26 w=30 x=1289 y=-329 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN VSS psdiff_1.VOUTDP VSS s=4020,268 d=2220,148 l=26 w=30 x=3141 y=81 sg13_lv_nmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN VDD psdiff_1.VOUTDP VDD s=4020,268 d=2220,148 l=26 w=30 x=3141 y=371 sg13_lv_pmos
+x PH1 VDD PH4 VDD s=4020,268 d=2220,148 l=26 w=30 x=4280 y=4964 sg13_lv_pmos
+x buff_d8_0.inv_d8_0.VIN PH2 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=6606 y=3000 sg13_lv_pmos
+x VSS VDD psdiff_2.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=530 y=1502 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7732 y=1502 sg13_lv_pmos
+x a_7162_1266# psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=8188 y=1321 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4080 y=4093 sg13_lv_pmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=1784 y=878 sg13_lv_nmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN VDD psdiff_1.VOUTDN VDD s=4020,268 d=2220,148 l=26 w=30 x=4280 y=2299 sg13_lv_pmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7048 y=776 sg13_lv_nmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=6250 y=980 sg13_lv_nmos
+x buff_d8_5.inv_d8_0.VIN VSS PH0 VSS s=4020,268 d=2220,148 l=26 w=30 x=544 y=2710 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1718 y=3277 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4794 y=3821 sg13_lv_pmos
+x buff_d8_0.inv_d8_0.VIN PH2 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=6966 y=2710 sg13_lv_nmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.VOUTDN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=4754 y=2009 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6952 y=4093 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4488 y=3821 sg13_lv_pmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=7618 y=980 sg13_lv_nmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=3048 y=980 sg13_lv_nmos
+x buff_d8_2.inv_d8_0.VIN VSS PH4 VSS s=4020,268 d=2220,148 l=26 w=30 x=3158 y=2710 sg13_lv_nmos
+x a_3031_1122# VDD psdiff_1.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=3276 y=1321 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=6364 y=1604 sg13_lv_pmos
+x buff_d8_4.inv_d4_0.VIN buff_d8_4.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=631 y=-329 sg13_lv_pmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=758 y=776 sg13_lv_nmos
+x PH1 PH4 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=4394 y=4674 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6646 y=4093 sg13_lv_pmos
+x a_3031_1122# VDD psdiff_1.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=3732 y=1321 sg13_lv_pmos
+x VSS VDD psdiff_2.buff_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=74 y=1604 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=6820 y=1604 sg13_lv_pmos
+x buff_d8_1.inv_d4_0.VIN VSS buff_d8_1.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=6465 y=-619 sg13_lv_nmos
+x psdiff_1.buff_d8_0.inv_d4_0.VIN psdiff_1.buff_d8_0.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=4747 y=371 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1310 y=3277 sg13_lv_pmos
+x buff_d8_0.inv_d4_0.VIN buff_d8_0.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=7378 y=3000 sg13_lv_pmos
+x PH5 PH2 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=7368 y=4964 sg13_lv_pmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4986 y=878 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1004 y=3277 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4080 y=3821 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.VOUTDP VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=3615 y=81 sg13_lv_nmos
+x buff_d8_0.inv_d8_0.VIN VDD PH2 VDD s=4020,268 d=2220,148 l=26 w=30 x=6852 y=3000 sg13_lv_pmos
+x VSS psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=3618 y=1604 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4794 y=3549 sg13_lv_pmos
+x PH2 VDD PH5 VDD s=4020,268 d=2220,148 l=26 w=30 x=6842 y=4964 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_2.CLKP VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=7368 y=2299 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d4_0.VIN VDD psdiff_1.buff_d8_0.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=4273 y=371 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d2_0.VIN psdiff_0.buff_d8_1.inv_d4_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=6184 y=2299 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4488 y=3549 sg13_lv_pmos
+x VSS VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=5100 y=1502 sg13_lv_pmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7048 y=980 sg13_lv_nmos
+x psdiff_2.buff_d8_1.inv_d2_0.VIN psdiff_2.buff_d8_1.inv_d4_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=236 y=2009 sg13_lv_nmos
+x VSS psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=3390 y=1502 sg13_lv_pmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=188 y=776 sg13_lv_nmos
+x psdiff_0.buff_d8_1.inv_d4_0.VIN VDD psdiff_0.buff_d8_1.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=6842 y=2299 sg13_lv_pmos
+x buff_d8_5.inv_d4_0.VIN buff_d8_5.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=1790 y=3000 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6952 y=3821 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3774 y=3277 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.VOUTDN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=5474 y=2009 sg13_lv_nmos
+x VSS VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=7390 y=1604 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6646 y=3821 sg13_lv_pmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=758 y=980 sg13_lv_nmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3468 y=3277 sg13_lv_pmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=6022 y=878 sg13_lv_nmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4080 y=3549 sg13_lv_pmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.VOUTDN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=1780 y=2299 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.VOUTDP VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=281 y=371 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d4_0.VIN VSS psdiff_1.buff_d8_1.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=3508 y=2009 sg13_lv_nmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.VOUTDP VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=-78 y=371 sg13_lv_pmos
+x PH2 PH5 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=6956 y=4674 sg13_lv_nmos
+x VSS VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=4188 y=1604 sg13_lv_pmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4530 y=776 sg13_lv_nmos
+x buff_d8_0.inv_d2_0.VIN buff_d8_0.inv_d4_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=8150 y=3000 sg13_lv_pmos
+x a_1214_1266# psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=1556 y=1321 sg13_lv_pmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=3732 y=776 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=596 y=3277 sg13_lv_pmos
+x VSS VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=4644 y=1604 sg13_lv_pmos
+x a_57_1122# psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=1100 y=1321 sg13_lv_pmos
+x buff_d8_3.inv_d4_0.VIN VDD buff_d8_3.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=3491 y=-329 sg13_lv_pmos
+x buff_d8_1.inv_d8_0.VIN VSS PH5 VSS s=4020,268 d=2220,148 l=26 w=30 x=8317 y=-619 sg13_lv_nmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=530 y=878 sg13_lv_nmos
+x CTRL a_6005_1122# psdiff_0.buff_d8_1.VIN VSS s=2220,148 d=4020,268 l=26 w=30 x=6934 y=1137 sg13_lv_nmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=2126 y=776 sg13_lv_nmos
+x buff_d8_3.inv_d8_0.VIN VDD PH1 VDD s=4020,268 d=2220,148 l=26 w=30 x=4623 y=-329 sg13_lv_pmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=1328 y=776 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6952 y=3549 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_2.CLKP VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=8088 y=2299 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7870 y=4093 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d2_0.VIN VSS psdiff_2.buff_d8_0.inv_d4_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=2071 y=81 sg13_lv_nmos
+x VSS VDD psdiff_0.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=6478 y=1502 sg13_lv_pmos
+x buff_d8_3.inv_d4_0.VIN buff_d8_3.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=3965 y=-619 sg13_lv_nmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7564 y=4093 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6646 y=3549 sg13_lv_pmos
+x VSS VDD psdiff_0.buff_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=6022 y=1502 sg13_lv_pmos
+x psdiff_1.VOUTDP VSS buff_d8_3.inv_d2_0.VIN VSS s=4020,268 d=4020,268 l=26 w=30 x=2781 y=-619 sg13_lv_nmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=188 y=980 sg13_lv_nmos
+x VSS VDD psdiff_0.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=6934 y=1502 sg13_lv_pmos
+x a_57_1122# psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=188 y=1321 sg13_lv_pmos
+x psdiff_2.VOUTDP VDD buff_d8_4.inv_d2_0.VIN VDD s=4020,268 d=4020,268 l=26 w=30 x=-192 y=-329 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7258 y=4093 sg13_lv_pmos
+x a_57_1122# psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=644 y=1321 sg13_lv_pmos
+x a_7162_1266# VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=7846 y=1321 sg13_lv_pmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7732 y=776 sg13_lv_nmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=3162 y=776 sg13_lv_nmos
+x buff_d8_5.inv_d8_0.VIN PH0 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=1018 y=3000 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d2_0.VIN VSS psdiff_1.buff_d8_1.inv_d4_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=3096 y=2009 sg13_lv_nmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=6934 y=776 sg13_lv_nmos
+x VSS VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=1670 y=1502 sg13_lv_pmos
+x PH0 PH3 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=1008 y=4964 sg13_lv_pmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4530 y=980 sg13_lv_nmos
+x buff_d8_1.inv_d4_0.VIN buff_d8_1.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=6579 y=-329 sg13_lv_pmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=3732 y=980 sg13_lv_nmos
+x psdiff_2.buff_d8_1.inv_d4_0.VIN psdiff_2.buff_d8_1.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=1008 y=2299 sg13_lv_pmos
+x buff_d8_4.inv_d2_0.VIN VDD buff_d8_4.inv_d4_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=105 y=-329 sg13_lv_pmos
+x buff_d8_5.inv_d4_0.VIN buff_d8_5.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=1430 y=2710 sg13_lv_nmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=2126 y=980 sg13_lv_nmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=1328 y=980 sg13_lv_nmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7870 y=3821 sg13_lv_pmos
+x buff_d8_3.inv_d8_0.VIN VDD PH1 VDD s=4020,268 d=2220,148 l=26 w=30 x=5343 y=-329 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7564 y=3821 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4692 y=3277 sg13_lv_pmos
+x buff_d8_5.inv_d8_0.VIN PH0 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=-61 y=2710 sg13_lv_nmos
+x VSS psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=2012 y=1604 sg13_lv_pmos
+x CTRL psdiff_1.buff_d8_0.VIN a_4188_1266# VSS s=4020,268 d=2220,148 l=26 w=30 x=4302 y=1137 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1820 y=4093 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7960 y=1502 sg13_lv_pmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=7162 y=776 sg13_lv_nmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4386 y=3277 sg13_lv_pmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=6364 y=776 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1514 y=4093 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7258 y=3821 sg13_lv_pmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=1100 y=878 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1208 y=4093 sg13_lv_pmos
+x psdiff_2.CLKP buff_d8_0.inv_d2_0.VIN VSS VSS s=4020,268 d=4020,268 l=26 w=30 x=8448 y=2710 sg13_lv_nmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.VOUTDP VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=1001 y=81 sg13_lv_nmos
+x buff_d8_0.inv_d4_0.VIN VSS buff_d8_0.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=7264 y=2710 sg13_lv_nmos
+x VSS psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4758 y=1502 sg13_lv_pmos
+x buff_d8_4.inv_d8_0.VIN VSS PH3 VSS s=4020,268 d=2220,148 l=26 w=30 x=2009 y=-619 sg13_lv_nmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7732 y=980 sg13_lv_nmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=3162 y=980 sg13_lv_nmos
+x psdiff_0.buff_d8_0.VIN psdiff_0.buff_d8_0.inv_d2_0.VIN VDD VDD s=4020,268 d=4020,268 l=26 w=30 x=8431 y=371 sg13_lv_pmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=6934 y=980 sg13_lv_nmos
+x psdiff_2.VOUTDN buff_d8_5.inv_d2_0.VIN VDD VDD s=4020,268 d=4020,268 l=26 w=30 x=2500 y=3000 sg13_lv_pmos
+x VSS psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4302 y=1502 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN VDD psdiff_2.CLKN VDD s=4020,268 d=2220,148 l=26 w=30 x=6835 y=371 sg13_lv_pmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=872 y=776 sg13_lv_nmos
+x a_4188_1266# psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=5214 y=1321 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN VSS psdiff_1.VOUTDN VSS s=4020,268 d=2220,148 l=26 w=30 x=5000 y=2009 sg13_lv_nmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7870 y=3549 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=6592 y=1604 sg13_lv_pmos
+x buff_d8_1.inv_d8_0.VIN PH5 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=7351 y=-329 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7564 y=3549 sg13_lv_pmos
+x a_3031_1122# VDD psdiff_1.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=3960 y=1321 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.VOUTDP VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=3255 y=371 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7258 y=3549 sg13_lv_pmos
+x buff_d8_1.inv_d8_0.VIN VDD PH5 VDD s=4020,268 d=2220,148 l=26 w=30 x=7957 y=-329 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d4_0.VIN VDD psdiff_2.buff_d8_0.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=1659 y=371 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3978 y=4093 sg13_lv_pmos
+x buff_d8_4.inv_d4_0.VIN VSS buff_d8_4.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=877 y=-619 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1820 y=3821 sg13_lv_pmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=5100 y=878 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6850 y=3277 sg13_lv_pmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4302 y=878 sg13_lv_nmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=1898 y=878 sg13_lv_nmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=7162 y=980 sg13_lv_nmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=3504 y=878 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1514 y=3821 sg13_lv_pmos
+x VSS psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=3846 y=1604 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d4_0.VIN VSS psdiff_1.buff_d8_0.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=4633 y=81 sg13_lv_nmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=6364 y=980 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6544 y=3277 sg13_lv_pmos
+x psdiff_2.buff_d8_0.VIN psdiff_2.buff_d8_0.inv_d2_0.VIN VSS VSS s=4020,268 d=4020,268 l=26 w=30 x=2483 y=81 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1208 y=3821 sg13_lv_pmos
+x PH3 PH0 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=1420 y=4674 sg13_lv_nmos
+x buff_d8_2.inv_d8_0.VIN PH4 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=3272 y=3000 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN VDD psdiff_2.CLKN VDD s=4020,268 d=2220,148 l=26 w=30 x=5755 y=371 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3570 y=4093 sg13_lv_pmos
+x buff_d8_2.inv_d4_0.VIN buff_d8_2.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=4404 y=3000 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d4_0.VIN VSS psdiff_0.buff_d8_1.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=6482 y=2009 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=800 y=4093 sg13_lv_pmos
+x buff_d8_2.inv_d8_0.VIN VDD PH4 VDD s=4020,268 d=2220,148 l=26 w=30 x=3878 y=3000 sg13_lv_pmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=872 y=980 sg13_lv_nmos
+x PH4 VDD PH1 VDD s=4020,268 d=2220,148 l=26 w=30 x=3868 y=4964 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN VSS psdiff_2.CLKP VSS s=4020,268 d=2220,148 l=26 w=30 x=7614 y=2009 sg13_lv_nmos
+x VSS VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=2126 y=1502 sg13_lv_pmos
+x a_6005_1122# psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=6136 y=1321 sg13_lv_pmos
+x PH5 VSS PH2 VSS s=4020,268 d=2220,148 l=26 w=30 x=7254 y=4674 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1820 y=3549 sg13_lv_pmos
+x buff_d8_1.inv_d8_0.VIN PH5 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=8071 y=-329 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=13600,536 l=26 w=200 x=392 y=4093 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d2_0.VIN psdiff_1.buff_d8_1.inv_d4_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=3210 y=2299 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d4_0.VIN VDD psdiff_1.buff_d8_1.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=3868 y=2299 sg13_lv_pmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7504 y=878 sg13_lv_nmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3978 y=3821 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1514 y=3549 sg13_lv_pmos
+x buff_d8_5.inv_d8_0.VIN VDD PH0 VDD s=4020,268 d=2220,148 l=26 w=30 x=-175 y=3000 sg13_lv_pmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=6706 y=878 sg13_lv_nmos
+x buff_d8_2.inv_d4_0.VIN buff_d8_2.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=4764 y=2710 sg13_lv_nmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=2240 y=776 sg13_lv_nmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=1442 y=776 sg13_lv_nmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1208 y=3549 sg13_lv_pmos
+x a_1214_1266# psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=1784 y=1321 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_2.CLKN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=6229 y=81 sg13_lv_nmos
+x VSS VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=4872 y=1604 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d4_0.VIN psdiff_1.buff_d8_0.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=4387 y=371 sg13_lv_pmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.VOUTDN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=2500 y=2009 sg13_lv_nmos
+x buff_d8_3.inv_d8_0.VIN VSS PH1 VSS s=4020,268 d=2220,148 l=26 w=30 x=4263 y=-619 sg13_lv_nmos
+x psdiff_2.buff_d8_0.inv_d4_0.VIN VSS psdiff_2.buff_d8_0.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=1659 y=81 sg13_lv_nmos
+x buff_d8_2.inv_d2_0.VIN buff_d8_2.inv_d4_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=5176 y=3000 sg13_lv_pmos
+x buff_d8_0.inv_d8_0.VIN PH2 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=5886 y=3000 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3570 y=3821 sg13_lv_pmos
+x VSS VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=1214 y=1604 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=800 y=3821 sg13_lv_pmos
+x VSS VDD psdiff_0.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=6250 y=1502 sg13_lv_pmos
+x buff_d8_5.inv_d8_0.VIN PH0 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=298 y=2710 sg13_lv_nmos
+x buff_d8_2.inv_d4_0.VIN VDD buff_d8_2.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=4650 y=3000 sg13_lv_pmos
+x buff_d8_4.inv_d8_0.VIN VDD PH3 VDD s=4020,268 d=2220,148 l=26 w=30 x=1649 y=-329 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d4_0.VIN psdiff_2.buff_d8_0.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=1413 y=81 sg13_lv_nmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3978 y=3549 sg13_lv_pmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=6136 y=878 sg13_lv_nmos
+x a_7162_1266# VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=7162 y=1321 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4896 y=4093 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN VSS psdiff_2.CLKP VSS s=4020,268 d=2220,148 l=26 w=30 x=8334 y=2009 sg13_lv_nmos
+x a_57_1122# psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=872 y=1321 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=13600,536 l=26 w=200 x=392 y=3821 sg13_lv_pmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=4644 y=776 sg13_lv_nmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.VOUTDN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=5114 y=2299 sg13_lv_pmos
+x VSS VDD psdiff_1.buff_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=3048 y=1502 sg13_lv_pmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=3846 y=776 sg13_lv_nmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN VDD psdiff_1.VOUTDN VDD s=4020,268 d=2220,148 l=26 w=30 x=4640 y=2299 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7462 y=3277 sg13_lv_pmos
+x VSS VDD psdiff_1.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=3504 y=1502 sg13_lv_pmos
+x buff_d8_5.inv_d8_0.VIN VSS PH0 VSS s=4020,268 d=2220,148 l=26 w=30 x=904 y=2710 sg13_lv_nmos
+x VSS psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7048 y=1604 sg13_lv_pmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=2240 y=980 sg13_lv_nmos
+x psdiff_2.CLKP psdiff_2.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=644 y=878 sg13_lv_nmos
+x psdiff_1.buff_d8_1.inv_d4_0.VIN psdiff_1.buff_d8_1.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=3982 y=2009 sg13_lv_nmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=1442 y=980 sg13_lv_nmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7156 y=3277 sg13_lv_pmos
+x VSS VDD psdiff_2.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=758 y=1604 sg13_lv_pmos
+x a_4188_1266# VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=4416 y=1321 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3570 y=3549 sg13_lv_pmos
+x VSS VDD psdiff_2.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=302 y=1604 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7504 y=1604 sg13_lv_pmos
+x buff_d8_5.inv_d8_0.VIN VDD PH0 VDD s=4020,268 d=2220,148 l=26 w=30 x=184 y=3000 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=800 y=3549 sg13_lv_pmos
+x buff_d8_2.inv_d8_0.VIN VSS PH4 VSS s=4020,268 d=2220,148 l=26 w=30 x=3518 y=2710 sg13_lv_nmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4182 y=4093 sg13_lv_pmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN VSS psdiff_2.VOUTDN VSS s=4020,268 d=2220,148 l=26 w=30 x=1306 y=2009 sg13_lv_nmos
+x buff_d8_1.inv_d2_0.VIN buff_d8_1.inv_d4_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=6167 y=-619 sg13_lv_nmos
+x psdiff_0.buff_d8_0.inv_d2_0.VIN psdiff_0.buff_d8_0.inv_d4_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=8133 y=81 sg13_lv_nmos
+x VSS psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=2240 y=1604 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.VOUTDP VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=2895 y=81 sg13_lv_nmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=74 y=776 sg13_lv_nmos
+x buff_d8_0.inv_d4_0.VIN buff_d8_0.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=7738 y=3000 sg13_lv_pmos
+x buff_d8_1.inv_d4_0.VIN VSS buff_d8_1.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=6825 y=-619 sg13_lv_nmos
+x PH0 CTRL CTRL VDD d=13600,536 l=26 w=200 x=392 y=3549 sg13_lv_pmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=7846 y=776 sg13_lv_nmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4074 y=776 sg13_lv_nmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=3276 y=776 sg13_lv_nmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4896 y=3821 sg13_lv_pmos
+x psdiff_2.buff_d8_1.VIN VSS psdiff_2.buff_d8_1.inv_d2_0.VIN VSS s=4020,268 d=4020,268 l=26 w=30 x=-175 y=2009 sg13_lv_nmos
+x buff_d8_4.inv_d8_0.VIN VDD PH3 VDD s=4020,268 d=2220,148 l=26 w=30 x=2369 y=-329 sg13_lv_pmos
+x buff_d8_3.inv_d4_0.VIN buff_d8_3.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=3605 y=-329 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN VSS psdiff_1.VOUTDP VSS s=4020,268 d=2220,148 l=26 w=30 x=3501 y=81 sg13_lv_nmos
+x psdiff_0.buff_d8_1.inv_d4_0.VIN psdiff_0.buff_d8_1.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=6596 y=2299 sg13_lv_pmos
+x psdiff_2.buff_d8_1.inv_d2_0.VIN VDD psdiff_2.buff_d8_1.inv_d4_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=122 y=2299 sg13_lv_pmos
+x VSS psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4074 y=1502 sg13_lv_pmos
+x CTRL psdiff_2.buff_d8_0.VIN a_1214_1266# VSS s=4020,268 d=2220,148 l=26 w=30 x=1328 y=1137 sg13_lv_nmos
+x psdiff_2.buff_d8_1.inv_d4_0.VIN psdiff_2.buff_d8_1.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=648 y=2009 sg13_lv_nmos
+x VSS psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4986 y=1502 sg13_lv_pmos
+x buff_d8_4.inv_d8_0.VIN PH3 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=1763 y=-619 sg13_lv_nmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=4644 y=980 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6748 y=4093 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_2.CLKP VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=7728 y=2299 sg13_lv_pmos
+x VSS psdiff_1.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=4530 y=1502 sg13_lv_pmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=3846 y=980 sg13_lv_nmos
+x VSS VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=8074 y=1604 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN VDD psdiff_1.VOUTDN VDD s=4020,268 d=2220,148 l=26 w=30 x=5360 y=2299 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d2_0.VIN VDD psdiff_0.buff_d8_0.inv_d4_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=8019 y=371 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1412 y=3277 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d4_0.VIN psdiff_2.buff_d8_0.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=1773 y=371 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1106 y=3277 sg13_lv_pmos
+x VSS psdiff_2.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=1328 y=1502 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4182 y=3821 sg13_lv_pmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=8074 y=776 sg13_lv_nmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN VSS psdiff_2.VOUTDN VSS s=4020,268 d=2220,148 l=26 w=30 x=2026 y=2009 sg13_lv_nmos
+x buff_d8_1.inv_d8_0.VIN VSS PH5 VSS s=4020,268 d=2220,148 l=26 w=30 x=7597 y=-619 sg13_lv_nmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7276 y=776 sg13_lv_nmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=6478 y=776 sg13_lv_nmos
+x PH2 CTRL CTRL VDD d=13600,536 l=26 w=200 x=6340 y=4093 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4896 y=3549 sg13_lv_pmos
+x buff_d8_3.inv_d8_0.VIN PH1 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=4377 y=-329 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d2_0.VIN psdiff_1.buff_d8_0.inv_d4_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=5159 y=81 sg13_lv_nmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=2012 y=878 sg13_lv_nmos
+x buff_d8_3.inv_d2_0.VIN buff_d8_3.inv_d4_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=3193 y=-329 sg13_lv_pmos
+x psdiff_2.CLKN VSS psdiff_2.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=1214 y=878 sg13_lv_nmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=74 y=980 sg13_lv_nmos
+x VSS psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=3162 y=1604 sg13_lv_pmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4074 y=980 sg13_lv_nmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=7846 y=980 sg13_lv_nmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=3276 y=980 sg13_lv_nmos
+x buff_d8_3.inv_d4_0.VIN VDD buff_d8_3.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=3851 y=-329 sg13_lv_pmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=986 y=776 sg13_lv_nmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_2.CLKN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=6949 y=371 sg13_lv_pmos
+x PH4 CTRL CTRL VDD d=7600,276 l=26 w=200 x=3876 y=3277 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6748 y=3821 sg13_lv_pmos
+x VSS psdiff_2.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=416 y=1502 sg13_lv_pmos
+x VSS VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=7618 y=1502 sg13_lv_pmos
+x buff_d8_4.inv_d8_0.VIN PH3 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=2483 y=-619 sg13_lv_nmos
+x psdiff_2.buff_d8_1.inv_d4_0.VIN VSS psdiff_2.buff_d8_1.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=894 y=2009 sg13_lv_nmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_2.CLKP VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=8448 y=2299 sg13_lv_pmos
+x psdiff_0.buff_d8_1.inv_d8_0.VIN VDD psdiff_2.CLKP VDD s=4020,268 d=2220,148 l=26 w=30 x=7974 y=2299 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4182 y=3549 sg13_lv_pmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=6820 y=878 sg13_lv_nmos
+x buff_d8_0.inv_d8_0.VIN PH2 VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=6246 y=2710 sg13_lv_nmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN VDD psdiff_2.CLKN VDD s=4020,268 d=2220,148 l=26 w=30 x=6475 y=371 sg13_lv_pmos
+x a_6005_1122# psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=6364 y=1321 sg13_lv_pmos
+x PH0 CTRL CTRL VDD d=7600,276 l=26 w=200 x=698 y=3277 sg13_lv_pmos
+x buff_d8_2.inv_d2_0.VIN VSS buff_d8_2.inv_d4_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=5062 y=2710 sg13_lv_nmos
+x buff_d8_0.inv_d8_0.VIN VSS PH2 VSS s=4020,268 d=2220,148 l=26 w=30 x=5772 y=2710 sg13_lv_nmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=5214 y=878 sg13_lv_nmos
+x a_57_1122# VDD psdiff_2.buff_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=74 y=1321 sg13_lv_pmos
+x psdiff_2.VOUTDP VSS psdiff_1.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=4416 y=878 sg13_lv_nmos
+x a_6005_1122# psdiff_0.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=6820 y=1321 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=13600,536 l=26 w=200 x=6340 y=3821 sg13_lv_pmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=8074 y=980 sg13_lv_nmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7276 y=980 sg13_lv_nmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=3618 y=878 sg13_lv_nmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=6478 y=980 sg13_lv_nmos
+x buff_d8_4.inv_d4_0.VIN VDD buff_d8_4.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=517 y=-329 sg13_lv_pmos
+x buff_d8_3.inv_d8_0.VIN PH1 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=5097 y=-329 sg13_lv_pmos
+x psdiff_0.buff_d8_0.inv_d4_0.VIN VSS psdiff_0.buff_d8_0.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=7247 y=81 sg13_lv_nmos
+x psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_2.CLKN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=5869 y=371 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d4_0.VIN VDD psdiff_2.buff_d8_0.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=1299 y=371 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=7600,276 l=26 w=200 x=6748 y=3549 sg13_lv_pmos
+x a_3031_1122# psdiff_1.buff_d8_0.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=3618 y=1321 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7666 y=4093 sg13_lv_pmos
+x VSS VDD psdiff_0.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=6706 y=1604 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=8188 y=1502 sg13_lv_pmos
+x buff_d8_1.inv_d4_0.VIN buff_d8_1.inv_d8_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=6939 y=-329 sg13_lv_pmos
+x psdiff_2.CLKN VDD buff_d8_1.inv_d2_0.VIN VDD s=4020,268 d=4020,268 l=26 w=30 x=5755 y=-329 sg13_lv_pmos
+x buff_d8_0.inv_d8_0.VIN VDD PH2 VDD s=4020,268 d=2220,148 l=26 w=30 x=6132 y=3000 sg13_lv_pmos
+x psdiff_2.CLKP VSS psdiff_2.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=986 y=980 sg13_lv_nmos
+x VSS VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=1898 y=1604 sg13_lv_pmos
+x psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.VOUTDP VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=3975 y=81 sg13_lv_nmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN VDD psdiff_2.VOUTDP VDD s=4020,268 d=2220,148 l=26 w=30 x=887 y=371 sg13_lv_pmos
+x psdiff_1.VOUTDN VSS psdiff_0.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=6250 y=878 sg13_lv_nmos
+x VSS VDD psdiff_2.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=1442 y=1604 sg13_lv_pmos
+x buff_d8_4.inv_d8_0.VIN VSS PH3 VSS s=4020,268 d=2220,148 l=26 w=30 x=1289 y=-619 sg13_lv_nmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=3960 y=776 sg13_lv_nmos
+x psdiff_1.VOUTDP VSS psdiff_0.buff_d8_0.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=7618 y=878 sg13_lv_nmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=3048 y=878 sg13_lv_nmos
+x a_7162_1266# VDD psdiff_0.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=7390 y=1321 sg13_lv_pmos
+x PH2 CTRL CTRL VDD d=13600,536 l=26 w=200 x=6340 y=3549 sg13_lv_pmos
+x psdiff_2.buff_d8_0.inv_d8_0.VIN VDD psdiff_2.VOUTDP VDD s=4020,268 d=2220,148 l=26 w=30 x=-192 y=371 sg13_lv_pmos
+x buff_d8_0.inv_d8_0.VIN VSS PH2 VSS s=4020,268 d=2220,148 l=26 w=30 x=6492 y=2710 sg13_lv_nmos
+x VSS VDD psdiff_1.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=3276 y=1502 sg13_lv_pmos
+x buff_d8_5.inv_d2_0.VIN buff_d8_5.inv_d4_0.VIN VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=2202 y=3000 sg13_lv_pmos
+x buff_d8_2.inv_d8_0.VIN PH4 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=2912 y=3000 sg13_lv_pmos
+x psdiff_1.buff_d8_1.inv_d8_0.VIN VSS psdiff_1.VOUTDN VSS s=4020,268 d=2220,148 l=26 w=30 x=4280 y=2009 sg13_lv_nmos
+x psdiff_2.CLKN psdiff_2.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=1556 y=776 sg13_lv_nmos
+x buff_d8_5.inv_d4_0.VIN VDD buff_d8_5.inv_d8_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=1676 y=3000 sg13_lv_pmos
+x buff_d8_0.inv_d4_0.VIN VSS buff_d8_0.inv_d8_0.VIN VSS s=4020,268 d=2220,148 l=26 w=30 x=7624 y=2710 sg13_lv_nmos
+x VSS VDD psdiff_1.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=3732 y=1502 sg13_lv_pmos
+x a_4188_1266# VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=4188 y=1321 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7276 y=1604 sg13_lv_pmos
+x VSS VDD psdiff_2.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=986 y=1604 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4794 y=3277 sg13_lv_pmos
+x VSS psdiff_0.buff_d8_1.VIN VDD VDD s=2220,148 d=2220,148 l=26 w=30 x=7732 y=1604 sg13_lv_pmos
+x a_4188_1266# VDD psdiff_1.buff_d8_1.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=4644 y=1321 sg13_lv_pmos
+x PH5 CTRL CTRL VDD d=7600,276 l=26 w=200 x=7666 y=3821 sg13_lv_pmos
+x VSS VDD psdiff_2.buff_d8_0.VIN VDD s=2220,148 d=2220,148 l=26 w=30 x=530 y=1604 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1922 y=4093 sg13_lv_pmos
+x psdiff_2.buff_d8_1.inv_d8_0.VIN VDD psdiff_2.VOUTDN VDD s=4020,268 d=2220,148 l=26 w=30 x=1666 y=2299 sg13_lv_pmos
+x PH1 CTRL CTRL VDD d=7600,276 l=26 w=200 x=4488 y=3277 sg13_lv_pmos
+x PH3 CTRL CTRL VDD d=7600,276 l=26 w=200 x=1616 y=4093 sg13_lv_pmos
+x buff_d8_4.inv_d4_0.VIN buff_d8_4.inv_d8_0.VIN VSS VSS s=2220,148 d=4020,268 l=26 w=30 x=631 y=-619 sg13_lv_nmos
+x buff_d8_1.inv_d8_0.VIN PH5 VDD VDD s=2220,148 d=4020,268 l=26 w=30 x=7711 y=-329 sg13_lv_pmos
+x psdiff_1.VOUTDP psdiff_0.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7960 y=776 sg13_lv_nmos
+x psdiff_2.VOUTDN psdiff_1.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=3390 y=776 sg13_lv_nmos
+x buff_d8_0.inv_d2_0.VIN VDD buff_d8_0.inv_d4_0.VIN VDD s=4020,268 d=2220,148 l=26 w=30 x=8036 y=3000 sg13_lv_pmos
+x psdiff_1.VOUTDN psdiff_0.buff_d8_1.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=7048 y=878 sg13_lv_nmos
+x psdiff_2.VOUTDP psdiff_1.buff_d8_0.VIN VSS VSS s=2220,148 d=2220,148 l=26 w=30 x=4758 y=776 sg13_lv_nmos
+x psdiff_2.VOUTDN VSS psdiff_1.buff_d8_1.VIN VSS s=2220,148 d=2220,148 l=26 w=30 x=3960 y=980 sg13_lv_nmos
+C PH1 VDD 3.6
+C CTRL VDD 8.2
+C PH5 VDD 3.1
+C VDD PH3 3.5
+C CTRL psdiff_2.CLKP 2.2
+C psdiff_2.buff_d8_1.VIN VDD 2.1
+C psdiff_1.buff_d8_0.VIN VDD 2.3
+C PH0 VDD 3.0
+C PH2 VDD 3.2
+C psdiff_0.buff_d8_1.VIN VDD 2.2
+C psdiff_0.buff_d8_0.VIN VDD 2.3
+C psdiff_2.buff_d8_0.VIN VDD 2.3
+C VDD PH4 3.2
+C psdiff_1.buff_d8_1.VIN VDD 2.2
+C VDD0 52.7
+R VDD 185
+= VDD flywheel_0.inv_d2_1.inv_1.VDD
+= VDD flywheel_0.inv_d2_1.inv_0.VDD
+= VDD flywheel_0.inv_d2_1.VDD
+= VDD flywheel_0.inv_d2_0.inv_1.VDD
+= VDD flywheel_0.inv_d2_0.inv_0.VDD
+= VDD flywheel_0.inv_d2_0.VDD
+= VDD flywheel_0.VDD
+= VDD flywheel_1.inv_d2_1.inv_1.VDD
+= VDD flywheel_1.inv_d2_1.inv_0.VDD
+= VDD flywheel_1.inv_d2_1.VDD
+= VDD flywheel_1.inv_d2_0.inv_1.VDD
+= VDD flywheel_1.inv_d2_0.inv_0.VDD
+= VDD flywheel_1.inv_d2_0.VDD
+= VDD flywheel_1.VDD
+= VDD flywheel_2.inv_d2_1.inv_1.VDD
+= VDD flywheel_2.inv_d2_1.inv_0.VDD
+= VDD flywheel_2.inv_d2_1.VDD
+= VDD flywheel_2.inv_d2_0.inv_1.VDD
+= VDD flywheel_2.inv_d2_0.inv_0.VDD
+= VDD flywheel_2.inv_d2_0.VDD
+= VDD flywheel_2.VDD
+= VDD decap_1.VDD
+= VDD buff_d8_0.inv_0.VDD
+= VDD buff_d8_0.inv_d2_0.inv_1.VDD
+= VDD buff_d8_0.inv_d2_0.inv_0.VDD
+= VDD buff_d8_0.inv_d2_0.VDD
+= VDD buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD buff_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD buff_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD buff_d8_0.inv_d4_0.VDD
+= VDD buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VDD
+= VDD buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VDD
+= VDD buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VDD
+= VDD buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VDD
+= VDD buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VDD
+= VDD buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VDD
+= VDD buff_d8_0.inv_d8_0.inv_d4_1.VDD
+= VDD buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD buff_d8_0.inv_d8_0.inv_d4_0.VDD
+= VDD buff_d8_0.inv_d8_0.VDD
+= VDD buff_d8_0.VDD
+= VDD decap_2.VDD
+= VDD decap_0.VDD
+= VDD buff_d8_2.inv_0.VDD
+= VDD buff_d8_2.inv_d2_0.inv_1.VDD
+= VDD buff_d8_2.inv_d2_0.inv_0.VDD
+= VDD buff_d8_2.inv_d2_0.VDD
+= VDD buff_d8_2.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD buff_d8_2.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD buff_d8_2.inv_d4_0.inv_d2_1.VDD
+= VDD buff_d8_2.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD buff_d8_2.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD buff_d8_2.inv_d4_0.inv_d2_0.VDD
+= VDD buff_d8_2.inv_d4_0.VDD
+= VDD buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VDD
+= VDD buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VDD
+= VDD buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_1.VDD
+= VDD buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VDD
+= VDD buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VDD
+= VDD buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_0.VDD
+= VDD buff_d8_2.inv_d8_0.inv_d4_1.VDD
+= VDD buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD buff_d8_2.inv_d8_0.inv_d4_0.VDD
+= VDD buff_d8_2.inv_d8_0.VDD
+= VDD buff_d8_2.VDD
+= VDD buff_d8_5.inv_0.VDD
+= VDD buff_d8_5.inv_d2_0.inv_1.VDD
+= VDD buff_d8_5.inv_d2_0.inv_0.VDD
+= VDD buff_d8_5.inv_d2_0.VDD
+= VDD buff_d8_5.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD buff_d8_5.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD buff_d8_5.inv_d4_0.inv_d2_1.VDD
+= VDD buff_d8_5.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD buff_d8_5.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD buff_d8_5.inv_d4_0.inv_d2_0.VDD
+= VDD buff_d8_5.inv_d4_0.VDD
+= VDD buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VDD
+= VDD buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VDD
+= VDD buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_1.VDD
+= VDD buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VDD
+= VDD buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VDD
+= VDD buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_0.VDD
+= VDD buff_d8_5.inv_d8_0.inv_d4_1.VDD
+= VDD buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD buff_d8_5.inv_d8_0.inv_d4_0.VDD
+= VDD buff_d8_5.inv_d8_0.VDD
+= VDD buff_d8_5.VDD
+= VDD buff_d8_1.inv_0.VDD
+= VDD buff_d8_1.inv_d2_0.inv_1.VDD
+= VDD buff_d8_1.inv_d2_0.inv_0.VDD
+= VDD buff_d8_1.inv_d2_0.VDD
+= VDD buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD buff_d8_1.inv_d4_0.inv_d2_1.VDD
+= VDD buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD buff_d8_1.inv_d4_0.inv_d2_0.VDD
+= VDD buff_d8_1.inv_d4_0.VDD
+= VDD buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VDD
+= VDD buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VDD
+= VDD buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VDD
+= VDD buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VDD
+= VDD buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VDD
+= VDD buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VDD
+= VDD buff_d8_1.inv_d8_0.inv_d4_1.VDD
+= VDD buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD buff_d8_1.inv_d8_0.inv_d4_0.VDD
+= VDD buff_d8_1.inv_d8_0.VDD
+= VDD buff_d8_1.VDD
+= VDD psdiff_0.buff_d8_1.inv_0.VDD
+= VDD psdiff_0.buff_d8_1.inv_d2_0.inv_1.VDD
+= VDD psdiff_0.buff_d8_1.inv_d2_0.inv_0.VDD
+= VDD psdiff_0.buff_d8_1.inv_d2_0.VDD
+= VDD psdiff_0.buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD psdiff_0.buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD psdiff_0.buff_d8_1.inv_d4_0.inv_d2_1.VDD
+= VDD psdiff_0.buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_0.buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_0.buff_d8_1.inv_d4_0.inv_d2_0.VDD
+= VDD psdiff_0.buff_d8_1.inv_d4_0.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.VDD
+= VDD psdiff_0.buff_d8_1.inv_d8_0.VDD
+= VDD psdiff_0.buff_d8_1.VDD
+= VDD psdiff_0.buff_d8_0.inv_0.VDD
+= VDD psdiff_0.buff_d8_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_0.buff_d8_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_0.buff_d8_0.inv_d2_0.VDD
+= VDD psdiff_0.buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD psdiff_0.buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD psdiff_0.buff_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD psdiff_0.buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_0.buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_0.buff_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD psdiff_0.buff_d8_0.inv_d4_0.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.VDD
+= VDD psdiff_0.buff_d8_0.inv_d8_0.VDD
+= VDD psdiff_0.buff_d8_0.VDD
+= VDD psdiff_0.VDD
+= VDD buff_d8_3.inv_0.VDD
+= VDD buff_d8_3.inv_d2_0.inv_1.VDD
+= VDD buff_d8_3.inv_d2_0.inv_0.VDD
+= VDD buff_d8_3.inv_d2_0.VDD
+= VDD buff_d8_3.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD buff_d8_3.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD buff_d8_3.inv_d4_0.inv_d2_1.VDD
+= VDD buff_d8_3.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD buff_d8_3.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD buff_d8_3.inv_d4_0.inv_d2_0.VDD
+= VDD buff_d8_3.inv_d4_0.VDD
+= VDD buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VDD
+= VDD buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VDD
+= VDD buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_1.VDD
+= VDD buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VDD
+= VDD buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VDD
+= VDD buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_0.VDD
+= VDD buff_d8_3.inv_d8_0.inv_d4_1.VDD
+= VDD buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD buff_d8_3.inv_d8_0.inv_d4_0.VDD
+= VDD buff_d8_3.inv_d8_0.VDD
+= VDD buff_d8_3.VDD
+= VDD buff_d8_4.inv_0.VDD
+= VDD buff_d8_4.inv_d2_0.inv_1.VDD
+= VDD buff_d8_4.inv_d2_0.inv_0.VDD
+= VDD buff_d8_4.inv_d2_0.VDD
+= VDD buff_d8_4.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD buff_d8_4.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD buff_d8_4.inv_d4_0.inv_d2_1.VDD
+= VDD buff_d8_4.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD buff_d8_4.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD buff_d8_4.inv_d4_0.inv_d2_0.VDD
+= VDD buff_d8_4.inv_d4_0.VDD
+= VDD buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VDD
+= VDD buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VDD
+= VDD buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_1.VDD
+= VDD buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VDD
+= VDD buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VDD
+= VDD buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_0.VDD
+= VDD buff_d8_4.inv_d8_0.inv_d4_1.VDD
+= VDD buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD buff_d8_4.inv_d8_0.inv_d4_0.VDD
+= VDD buff_d8_4.inv_d8_0.VDD
+= VDD buff_d8_4.VDD
+= VDD psdiff_1.buff_d8_1.inv_0.VDD
+= VDD psdiff_1.buff_d8_1.inv_d2_0.inv_1.VDD
+= VDD psdiff_1.buff_d8_1.inv_d2_0.inv_0.VDD
+= VDD psdiff_1.buff_d8_1.inv_d2_0.VDD
+= VDD psdiff_1.buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD psdiff_1.buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD psdiff_1.buff_d8_1.inv_d4_0.inv_d2_1.VDD
+= VDD psdiff_1.buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_1.buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_1.buff_d8_1.inv_d4_0.inv_d2_0.VDD
+= VDD psdiff_1.buff_d8_1.inv_d4_0.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.VDD
+= VDD psdiff_1.buff_d8_1.inv_d8_0.VDD
+= VDD psdiff_1.buff_d8_1.VDD
+= VDD psdiff_1.buff_d8_0.inv_0.VDD
+= VDD psdiff_1.buff_d8_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_1.buff_d8_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_1.buff_d8_0.inv_d2_0.VDD
+= VDD psdiff_1.buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD psdiff_1.buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD psdiff_1.buff_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD psdiff_1.buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_1.buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_1.buff_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD psdiff_1.buff_d8_0.inv_d4_0.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.VDD
+= VDD psdiff_1.buff_d8_0.inv_d8_0.VDD
+= VDD psdiff_1.buff_d8_0.VDD
+= VDD psdiff_1.VDD
+= VDD psdiff_2.buff_d8_1.inv_0.VDD
+= VDD psdiff_2.buff_d8_1.inv_d2_0.inv_1.VDD
+= VDD psdiff_2.buff_d8_1.inv_d2_0.inv_0.VDD
+= VDD psdiff_2.buff_d8_1.inv_d2_0.VDD
+= VDD psdiff_2.buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD psdiff_2.buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD psdiff_2.buff_d8_1.inv_d4_0.inv_d2_1.VDD
+= VDD psdiff_2.buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_2.buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_2.buff_d8_1.inv_d4_0.inv_d2_0.VDD
+= VDD psdiff_2.buff_d8_1.inv_d4_0.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.VDD
+= VDD psdiff_2.buff_d8_1.inv_d8_0.VDD
+= VDD psdiff_2.buff_d8_1.VDD
+= VDD psdiff_2.buff_d8_0.inv_0.VDD
+= VDD psdiff_2.buff_d8_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_2.buff_d8_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_2.buff_d8_0.inv_d2_0.VDD
+= VDD psdiff_2.buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD psdiff_2.buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD psdiff_2.buff_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD psdiff_2.buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_2.buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_2.buff_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD psdiff_2.buff_d8_0.inv_d4_0.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.VDD
+= VDD psdiff_2.buff_d8_0.inv_d8_0.VDD
+= VDD psdiff_2.buff_d8_0.VDD
+= VDD psdiff_2.VDD
+R VSS 238
+= VSS flywheel_0.inv_d2_1.inv_1.VSS
+= VSS flywheel_0.inv_d2_1.inv_0.VSS
+= VSS flywheel_0.inv_d2_1.VSS
+= VSS flywheel_0.inv_d2_0.inv_1.VSS
+= VSS flywheel_0.inv_d2_0.inv_0.VSS
+= VSS flywheel_0.inv_d2_0.VSS
+= VSS flywheel_0.VSS
+= VSS flywheel_1.inv_d2_1.inv_1.VSS
+= VSS flywheel_1.inv_d2_1.inv_0.VSS
+= VSS flywheel_1.inv_d2_1.VSS
+= VSS flywheel_1.inv_d2_0.inv_1.VSS
+= VSS flywheel_1.inv_d2_0.inv_0.VSS
+= VSS flywheel_1.inv_d2_0.VSS
+= VSS flywheel_1.VSS
+= VSS flywheel_2.inv_d2_1.inv_1.VSS
+= VSS flywheel_2.inv_d2_1.inv_0.VSS
+= VSS flywheel_2.inv_d2_1.VSS
+= VSS flywheel_2.inv_d2_0.inv_1.VSS
+= VSS flywheel_2.inv_d2_0.inv_0.VSS
+= VSS flywheel_2.inv_d2_0.VSS
+= VSS flywheel_2.VSS
+= VSS buff_d8_0.inv_0.VSS
+= VSS buff_d8_0.inv_d2_0.inv_1.VSS
+= VSS buff_d8_0.inv_d2_0.inv_0.VSS
+= VSS buff_d8_0.inv_d2_0.VSS
+= VSS buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS buff_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS buff_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS buff_d8_0.inv_d4_0.VSS
+= VSS buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VSS
+= VSS buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VSS
+= VSS buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VSS
+= VSS buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VSS
+= VSS buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VSS
+= VSS buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VSS
+= VSS buff_d8_0.inv_d8_0.inv_d4_1.VSS
+= VSS buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS buff_d8_0.inv_d8_0.inv_d4_0.VSS
+= VSS buff_d8_0.inv_d8_0.VSS
+= VSS buff_d8_0.VSS
+= VSS buff_d8_2.inv_0.VSS
+= VSS buff_d8_2.inv_d2_0.inv_1.VSS
+= VSS buff_d8_2.inv_d2_0.inv_0.VSS
+= VSS buff_d8_2.inv_d2_0.VSS
+= VSS buff_d8_2.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS buff_d8_2.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS buff_d8_2.inv_d4_0.inv_d2_1.VSS
+= VSS buff_d8_2.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS buff_d8_2.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS buff_d8_2.inv_d4_0.inv_d2_0.VSS
+= VSS buff_d8_2.inv_d4_0.VSS
+= VSS buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VSS
+= VSS buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VSS
+= VSS buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_1.VSS
+= VSS buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VSS
+= VSS buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VSS
+= VSS buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_0.VSS
+= VSS buff_d8_2.inv_d8_0.inv_d4_1.VSS
+= VSS buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS buff_d8_2.inv_d8_0.inv_d4_0.VSS
+= VSS buff_d8_2.inv_d8_0.VSS
+= VSS buff_d8_2.VSS
+= VSS buff_d8_5.inv_0.VSS
+= VSS buff_d8_5.inv_d2_0.inv_1.VSS
+= VSS buff_d8_5.inv_d2_0.inv_0.VSS
+= VSS buff_d8_5.inv_d2_0.VSS
+= VSS buff_d8_5.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS buff_d8_5.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS buff_d8_5.inv_d4_0.inv_d2_1.VSS
+= VSS buff_d8_5.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS buff_d8_5.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS buff_d8_5.inv_d4_0.inv_d2_0.VSS
+= VSS buff_d8_5.inv_d4_0.VSS
+= VSS buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VSS
+= VSS buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VSS
+= VSS buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_1.VSS
+= VSS buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VSS
+= VSS buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VSS
+= VSS buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_0.VSS
+= VSS buff_d8_5.inv_d8_0.inv_d4_1.VSS
+= VSS buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS buff_d8_5.inv_d8_0.inv_d4_0.VSS
+= VSS buff_d8_5.inv_d8_0.VSS
+= VSS buff_d8_5.VSS
+= VSS buff_d8_1.inv_0.VSS
+= VSS buff_d8_1.inv_d2_0.inv_1.VSS
+= VSS buff_d8_1.inv_d2_0.inv_0.VSS
+= VSS buff_d8_1.inv_d2_0.VSS
+= VSS buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS buff_d8_1.inv_d4_0.inv_d2_1.VSS
+= VSS buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS buff_d8_1.inv_d4_0.inv_d2_0.VSS
+= VSS buff_d8_1.inv_d4_0.VSS
+= VSS buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VSS
+= VSS buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VSS
+= VSS buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VSS
+= VSS buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VSS
+= VSS buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VSS
+= VSS buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VSS
+= VSS buff_d8_1.inv_d8_0.inv_d4_1.VSS
+= VSS buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS buff_d8_1.inv_d8_0.inv_d4_0.VSS
+= VSS buff_d8_1.inv_d8_0.VSS
+= VSS buff_d8_1.VSS
+= VSS psdiff_0.buff_d8_1.inv_0.VSS
+= VSS psdiff_0.buff_d8_1.inv_d2_0.inv_1.VSS
+= VSS psdiff_0.buff_d8_1.inv_d2_0.inv_0.VSS
+= VSS psdiff_0.buff_d8_1.inv_d2_0.VSS
+= VSS psdiff_0.buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS psdiff_0.buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS psdiff_0.buff_d8_1.inv_d4_0.inv_d2_1.VSS
+= VSS psdiff_0.buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_0.buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_0.buff_d8_1.inv_d4_0.inv_d2_0.VSS
+= VSS psdiff_0.buff_d8_1.inv_d4_0.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.VSS
+= VSS psdiff_0.buff_d8_1.inv_d8_0.VSS
+= VSS psdiff_0.buff_d8_1.VSS
+= VSS psdiff_0.buff_d8_0.inv_0.VSS
+= VSS psdiff_0.buff_d8_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_0.buff_d8_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_0.buff_d8_0.inv_d2_0.VSS
+= VSS psdiff_0.buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS psdiff_0.buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS psdiff_0.buff_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS psdiff_0.buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_0.buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_0.buff_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS psdiff_0.buff_d8_0.inv_d4_0.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.VSS
+= VSS psdiff_0.buff_d8_0.inv_d8_0.VSS
+= VSS psdiff_0.buff_d8_0.VSS
+= VSS psdiff_0.VSS
+= VSS buff_d8_3.inv_0.VSS
+= VSS buff_d8_3.inv_d2_0.inv_1.VSS
+= VSS buff_d8_3.inv_d2_0.inv_0.VSS
+= VSS buff_d8_3.inv_d2_0.VSS
+= VSS buff_d8_3.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS buff_d8_3.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS buff_d8_3.inv_d4_0.inv_d2_1.VSS
+= VSS buff_d8_3.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS buff_d8_3.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS buff_d8_3.inv_d4_0.inv_d2_0.VSS
+= VSS buff_d8_3.inv_d4_0.VSS
+= VSS buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VSS
+= VSS buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VSS
+= VSS buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_1.VSS
+= VSS buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VSS
+= VSS buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VSS
+= VSS buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_0.VSS
+= VSS buff_d8_3.inv_d8_0.inv_d4_1.VSS
+= VSS buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS buff_d8_3.inv_d8_0.inv_d4_0.VSS
+= VSS buff_d8_3.inv_d8_0.VSS
+= VSS buff_d8_3.VSS
+= VSS buff_d8_4.inv_0.VSS
+= VSS buff_d8_4.inv_d2_0.inv_1.VSS
+= VSS buff_d8_4.inv_d2_0.inv_0.VSS
+= VSS buff_d8_4.inv_d2_0.VSS
+= VSS buff_d8_4.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS buff_d8_4.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS buff_d8_4.inv_d4_0.inv_d2_1.VSS
+= VSS buff_d8_4.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS buff_d8_4.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS buff_d8_4.inv_d4_0.inv_d2_0.VSS
+= VSS buff_d8_4.inv_d4_0.VSS
+= VSS buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VSS
+= VSS buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VSS
+= VSS buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_1.VSS
+= VSS buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VSS
+= VSS buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VSS
+= VSS buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_0.VSS
+= VSS buff_d8_4.inv_d8_0.inv_d4_1.VSS
+= VSS buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS buff_d8_4.inv_d8_0.inv_d4_0.VSS
+= VSS buff_d8_4.inv_d8_0.VSS
+= VSS buff_d8_4.VSS
+= VSS psdiff_1.buff_d8_1.inv_0.VSS
+= VSS psdiff_1.buff_d8_1.inv_d2_0.inv_1.VSS
+= VSS psdiff_1.buff_d8_1.inv_d2_0.inv_0.VSS
+= VSS psdiff_1.buff_d8_1.inv_d2_0.VSS
+= VSS psdiff_1.buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS psdiff_1.buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS psdiff_1.buff_d8_1.inv_d4_0.inv_d2_1.VSS
+= VSS psdiff_1.buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_1.buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_1.buff_d8_1.inv_d4_0.inv_d2_0.VSS
+= VSS psdiff_1.buff_d8_1.inv_d4_0.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.VSS
+= VSS psdiff_1.buff_d8_1.inv_d8_0.VSS
+= VSS psdiff_1.buff_d8_1.VSS
+= VSS psdiff_1.buff_d8_0.inv_0.VSS
+= VSS psdiff_1.buff_d8_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_1.buff_d8_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_1.buff_d8_0.inv_d2_0.VSS
+= VSS psdiff_1.buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS psdiff_1.buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS psdiff_1.buff_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS psdiff_1.buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_1.buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_1.buff_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS psdiff_1.buff_d8_0.inv_d4_0.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.VSS
+= VSS psdiff_1.buff_d8_0.inv_d8_0.VSS
+= VSS psdiff_1.buff_d8_0.VSS
+= VSS psdiff_1.VSS
+= VSS psdiff_2.buff_d8_1.inv_0.VSS
+= VSS psdiff_2.buff_d8_1.inv_d2_0.inv_1.VSS
+= VSS psdiff_2.buff_d8_1.inv_d2_0.inv_0.VSS
+= VSS psdiff_2.buff_d8_1.inv_d2_0.VSS
+= VSS psdiff_2.buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS psdiff_2.buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS psdiff_2.buff_d8_1.inv_d4_0.inv_d2_1.VSS
+= VSS psdiff_2.buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_2.buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_2.buff_d8_1.inv_d4_0.inv_d2_0.VSS
+= VSS psdiff_2.buff_d8_1.inv_d4_0.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.VSS
+= VSS psdiff_2.buff_d8_1.inv_d8_0.VSS
+= VSS psdiff_2.buff_d8_1.VSS
+= VSS psdiff_2.buff_d8_0.inv_0.VSS
+= VSS psdiff_2.buff_d8_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_2.buff_d8_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_2.buff_d8_0.inv_d2_0.VSS
+= VSS psdiff_2.buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS psdiff_2.buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS psdiff_2.buff_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS psdiff_2.buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_2.buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_2.buff_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS psdiff_2.buff_d8_0.inv_d4_0.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.VSS
+= VSS psdiff_2.buff_d8_0.inv_d8_0.VSS
+= VSS psdiff_2.buff_d8_0.VSS
+= VSS psdiff_2.VSS
+R buff_d8_1.inv_d8_0.VIN 12
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VOUT
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VOUT
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d4_0.inv_d2_1.VOUT
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VOUT
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VOUT
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d4_0.inv_d2_0.VOUT
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d4_0.VOUT
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VIN
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VIN
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VIN
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VIN
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VIN
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VIN
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d8_0.inv_d4_1.VIN
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VIN
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VIN
+= buff_d8_1.inv_d8_0.VIN buff_d8_1.inv_d8_0.inv_d4_0.VIN
+= buff_d8_1.inv_d4_0.VIN buff_d8_1.inv_d2_0.inv_1.VOUT
+= buff_d8_1.inv_d4_0.VIN buff_d8_1.inv_d2_0.inv_0.VOUT
+= buff_d8_1.inv_d4_0.VIN buff_d8_1.inv_d2_0.VOUT
+= buff_d8_1.inv_d4_0.VIN buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VIN
+= buff_d8_1.inv_d4_0.VIN buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VIN
+= buff_d8_1.inv_d4_0.VIN buff_d8_1.inv_d4_0.inv_d2_1.VIN
+= buff_d8_1.inv_d4_0.VIN buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VIN
+= buff_d8_1.inv_d4_0.VIN buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VIN
+= buff_d8_1.inv_d4_0.VIN buff_d8_1.inv_d4_0.inv_d2_0.VIN
+= buff_d8_1.inv_d2_0.VIN buff_d8_1.inv_0.VOUT
+= buff_d8_1.inv_d2_0.VIN buff_d8_1.inv_d2_0.inv_1.VIN
+= buff_d8_1.inv_d2_0.VIN buff_d8_1.inv_d2_0.inv_0.VIN
+R buff_d8_3.inv_d8_0.VIN 12
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d4_0.inv_d2_1.inv_1.VOUT
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d4_0.inv_d2_1.inv_0.VOUT
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d4_0.inv_d2_1.VOUT
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d4_0.inv_d2_0.inv_1.VOUT
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d4_0.inv_d2_0.inv_0.VOUT
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d4_0.inv_d2_0.VOUT
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d4_0.VOUT
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VIN
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VIN
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_1.VIN
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VIN
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VIN
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_0.VIN
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d8_0.inv_d4_1.VIN
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_1.VIN
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_0.VIN
+= buff_d8_3.inv_d8_0.VIN buff_d8_3.inv_d8_0.inv_d4_0.VIN
+= buff_d8_3.inv_d4_0.VIN buff_d8_3.inv_d2_0.inv_1.VOUT
+= buff_d8_3.inv_d4_0.VIN buff_d8_3.inv_d2_0.inv_0.VOUT
+= buff_d8_3.inv_d4_0.VIN buff_d8_3.inv_d2_0.VOUT
+= buff_d8_3.inv_d4_0.VIN buff_d8_3.inv_d4_0.inv_d2_1.inv_1.VIN
+= buff_d8_3.inv_d4_0.VIN buff_d8_3.inv_d4_0.inv_d2_1.inv_0.VIN
+= buff_d8_3.inv_d4_0.VIN buff_d8_3.inv_d4_0.inv_d2_1.VIN
+= buff_d8_3.inv_d4_0.VIN buff_d8_3.inv_d4_0.inv_d2_0.inv_1.VIN
+= buff_d8_3.inv_d4_0.VIN buff_d8_3.inv_d4_0.inv_d2_0.inv_0.VIN
+= buff_d8_3.inv_d4_0.VIN buff_d8_3.inv_d4_0.inv_d2_0.VIN
+= buff_d8_3.inv_d2_0.VIN buff_d8_3.inv_0.VOUT
+= buff_d8_3.inv_d2_0.VIN buff_d8_3.inv_d2_0.inv_1.VIN
+= buff_d8_3.inv_d2_0.VIN buff_d8_3.inv_d2_0.inv_0.VIN
+R buff_d8_4.inv_d8_0.VIN 12
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d4_0.inv_d2_1.inv_1.VOUT
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d4_0.inv_d2_1.inv_0.VOUT
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d4_0.inv_d2_1.VOUT
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d4_0.inv_d2_0.inv_1.VOUT
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d4_0.inv_d2_0.inv_0.VOUT
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d4_0.inv_d2_0.VOUT
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d4_0.VOUT
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VIN
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VIN
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_1.VIN
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VIN
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VIN
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_0.VIN
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d8_0.inv_d4_1.VIN
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_1.VIN
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_0.VIN
+= buff_d8_4.inv_d8_0.VIN buff_d8_4.inv_d8_0.inv_d4_0.VIN
+= buff_d8_4.inv_d4_0.VIN buff_d8_4.inv_d2_0.inv_1.VOUT
+= buff_d8_4.inv_d4_0.VIN buff_d8_4.inv_d2_0.inv_0.VOUT
+= buff_d8_4.inv_d4_0.VIN buff_d8_4.inv_d2_0.VOUT
+= buff_d8_4.inv_d4_0.VIN buff_d8_4.inv_d4_0.inv_d2_1.inv_1.VIN
+= buff_d8_4.inv_d4_0.VIN buff_d8_4.inv_d4_0.inv_d2_1.inv_0.VIN
+= buff_d8_4.inv_d4_0.VIN buff_d8_4.inv_d4_0.inv_d2_1.VIN
+= buff_d8_4.inv_d4_0.VIN buff_d8_4.inv_d4_0.inv_d2_0.inv_1.VIN
+= buff_d8_4.inv_d4_0.VIN buff_d8_4.inv_d4_0.inv_d2_0.inv_0.VIN
+= buff_d8_4.inv_d4_0.VIN buff_d8_4.inv_d4_0.inv_d2_0.VIN
+= buff_d8_4.inv_d2_0.VIN buff_d8_4.inv_0.VOUT
+= buff_d8_4.inv_d2_0.VIN buff_d8_4.inv_d2_0.inv_1.VIN
+= buff_d8_4.inv_d2_0.VIN buff_d8_4.inv_d2_0.inv_0.VIN
+= psdiff_0.buff_d8_0.inv_d2_0.VIN psdiff_0.buff_d8_0.inv_0.VOUT
+= psdiff_0.buff_d8_0.inv_d2_0.VIN psdiff_0.buff_d8_0.inv_d2_0.inv_1.VIN
+= psdiff_0.buff_d8_0.inv_d2_0.VIN psdiff_0.buff_d8_0.inv_d2_0.inv_0.VIN
+= psdiff_0.buff_d8_0.inv_d4_0.VIN psdiff_0.buff_d8_0.inv_d2_0.inv_1.VOUT
+= psdiff_0.buff_d8_0.inv_d4_0.VIN psdiff_0.buff_d8_0.inv_d2_0.inv_0.VOUT
+= psdiff_0.buff_d8_0.inv_d4_0.VIN psdiff_0.buff_d8_0.inv_d2_0.VOUT
+= psdiff_0.buff_d8_0.inv_d4_0.VIN psdiff_0.buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= psdiff_0.buff_d8_0.inv_d4_0.VIN psdiff_0.buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= psdiff_0.buff_d8_0.inv_d4_0.VIN psdiff_0.buff_d8_0.inv_d4_0.inv_d2_1.VIN
+= psdiff_0.buff_d8_0.inv_d4_0.VIN psdiff_0.buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= psdiff_0.buff_d8_0.inv_d4_0.VIN psdiff_0.buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= psdiff_0.buff_d8_0.inv_d4_0.VIN psdiff_0.buff_d8_0.inv_d4_0.inv_d2_0.VIN
+R psdiff_0.buff_d8_0.inv_d8_0.VIN 12
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d4_0.inv_d2_1.VOUT
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d4_0.inv_d2_0.VOUT
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d4_0.VOUT
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VIN
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VIN
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VIN
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VIN
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VIN
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VIN
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.VIN
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VIN
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VIN
+= psdiff_0.buff_d8_0.inv_d8_0.VIN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.VIN
+= psdiff_1.buff_d8_0.inv_d2_0.VIN psdiff_1.buff_d8_0.inv_0.VOUT
+= psdiff_1.buff_d8_0.inv_d2_0.VIN psdiff_1.buff_d8_0.inv_d2_0.inv_1.VIN
+= psdiff_1.buff_d8_0.inv_d2_0.VIN psdiff_1.buff_d8_0.inv_d2_0.inv_0.VIN
+= psdiff_1.buff_d8_0.inv_d4_0.VIN psdiff_1.buff_d8_0.inv_d2_0.inv_1.VOUT
+= psdiff_1.buff_d8_0.inv_d4_0.VIN psdiff_1.buff_d8_0.inv_d2_0.inv_0.VOUT
+= psdiff_1.buff_d8_0.inv_d4_0.VIN psdiff_1.buff_d8_0.inv_d2_0.VOUT
+= psdiff_1.buff_d8_0.inv_d4_0.VIN psdiff_1.buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= psdiff_1.buff_d8_0.inv_d4_0.VIN psdiff_1.buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= psdiff_1.buff_d8_0.inv_d4_0.VIN psdiff_1.buff_d8_0.inv_d4_0.inv_d2_1.VIN
+= psdiff_1.buff_d8_0.inv_d4_0.VIN psdiff_1.buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= psdiff_1.buff_d8_0.inv_d4_0.VIN psdiff_1.buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= psdiff_1.buff_d8_0.inv_d4_0.VIN psdiff_1.buff_d8_0.inv_d4_0.inv_d2_0.VIN
+R psdiff_1.buff_d8_0.inv_d8_0.VIN 12
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d4_0.inv_d2_1.VOUT
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d4_0.inv_d2_0.VOUT
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d4_0.VOUT
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VIN
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VIN
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VIN
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VIN
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VIN
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VIN
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.VIN
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VIN
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VIN
+= psdiff_1.buff_d8_0.inv_d8_0.VIN psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.VIN
+= psdiff_2.buff_d8_0.inv_d2_0.VIN psdiff_2.buff_d8_0.inv_0.VOUT
+= psdiff_2.buff_d8_0.inv_d2_0.VIN psdiff_2.buff_d8_0.inv_d2_0.inv_1.VIN
+= psdiff_2.buff_d8_0.inv_d2_0.VIN psdiff_2.buff_d8_0.inv_d2_0.inv_0.VIN
+= psdiff_2.buff_d8_0.inv_d4_0.VIN psdiff_2.buff_d8_0.inv_d2_0.inv_1.VOUT
+= psdiff_2.buff_d8_0.inv_d4_0.VIN psdiff_2.buff_d8_0.inv_d2_0.inv_0.VOUT
+= psdiff_2.buff_d8_0.inv_d4_0.VIN psdiff_2.buff_d8_0.inv_d2_0.VOUT
+= psdiff_2.buff_d8_0.inv_d4_0.VIN psdiff_2.buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= psdiff_2.buff_d8_0.inv_d4_0.VIN psdiff_2.buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= psdiff_2.buff_d8_0.inv_d4_0.VIN psdiff_2.buff_d8_0.inv_d4_0.inv_d2_1.VIN
+= psdiff_2.buff_d8_0.inv_d4_0.VIN psdiff_2.buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= psdiff_2.buff_d8_0.inv_d4_0.VIN psdiff_2.buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= psdiff_2.buff_d8_0.inv_d4_0.VIN psdiff_2.buff_d8_0.inv_d4_0.inv_d2_0.VIN
+R psdiff_2.buff_d8_0.inv_d8_0.VIN 12
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d4_0.inv_d2_1.VOUT
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d4_0.inv_d2_0.VOUT
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d4_0.VOUT
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VIN
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VIN
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VIN
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VIN
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VIN
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VIN
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.VIN
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VIN
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VIN
+= psdiff_2.buff_d8_0.inv_d8_0.VIN psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.VIN
+C psdiff_1.VOUTDP0 5.4
+R psdiff_1.VOUTDP 25
+= psdiff_1.VOUTDP psdiff_0.CLKN
+= psdiff_1.VOUTDP buff_d8_3.inv_0.VIN
+= psdiff_1.VOUTDP buff_d8_3.VIN
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.inv_d4_1.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.inv_d4_0.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.inv_d8_0.VOUT
+= psdiff_1.VOUTDP psdiff_1.buff_d8_0.VOUT
+C psdiff_2.VOUTDP0 5.7
+R psdiff_2.VOUTDP 25
+= psdiff_2.VOUTDP buff_d8_4.inv_0.VIN
+= psdiff_2.VOUTDP buff_d8_4.VIN
+= psdiff_2.VOUTDP psdiff_1.CLKN
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.inv_d4_1.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.inv_d4_0.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.inv_d8_0.VOUT
+= psdiff_2.VOUTDP psdiff_2.buff_d8_0.VOUT
+C psdiff_2.CLKN0 3.7
+R psdiff_2.CLKN 23
+= psdiff_2.CLKN buff_d8_1.inv_0.VIN
+= psdiff_2.CLKN buff_d8_1.VIN
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_1.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.inv_d4_0.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.inv_d8_0.VOUT
+= psdiff_2.CLKN psdiff_0.buff_d8_0.VOUT
+= psdiff_2.CLKN psdiff_0.VOUTDP
+C psdiff_0.buff_d8_0.VIN0 2.3
+R psdiff_0.buff_d8_0.VIN 23
+= psdiff_0.buff_d8_0.VIN psdiff_0.buff_d8_0.inv_0.VIN
+C psdiff_1.buff_d8_0.VIN0 2.3
+R psdiff_1.buff_d8_0.VIN 23
+= psdiff_1.buff_d8_0.VIN psdiff_1.buff_d8_0.inv_0.VIN
+C psdiff_2.buff_d8_0.VIN0 2.3
+R psdiff_2.buff_d8_0.VIN 23
+= psdiff_2.buff_d8_0.VIN psdiff_2.buff_d8_0.inv_0.VIN
+R psdiff_0.buff_d8_1.inv_d8_0.VIN 12
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VOUT
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VOUT
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d4_0.inv_d2_1.VOUT
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VOUT
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VOUT
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d4_0.inv_d2_0.VOUT
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d4_0.VOUT
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VIN
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VIN
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VIN
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VIN
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VIN
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VIN
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.VIN
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VIN
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VIN
+= psdiff_0.buff_d8_1.inv_d8_0.VIN psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.VIN
+= psdiff_0.buff_d8_1.inv_d4_0.VIN psdiff_0.buff_d8_1.inv_d2_0.inv_1.VOUT
+= psdiff_0.buff_d8_1.inv_d4_0.VIN psdiff_0.buff_d8_1.inv_d2_0.inv_0.VOUT
+= psdiff_0.buff_d8_1.inv_d4_0.VIN psdiff_0.buff_d8_1.inv_d2_0.VOUT
+= psdiff_0.buff_d8_1.inv_d4_0.VIN psdiff_0.buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VIN
+= psdiff_0.buff_d8_1.inv_d4_0.VIN psdiff_0.buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VIN
+= psdiff_0.buff_d8_1.inv_d4_0.VIN psdiff_0.buff_d8_1.inv_d4_0.inv_d2_1.VIN
+= psdiff_0.buff_d8_1.inv_d4_0.VIN psdiff_0.buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VIN
+= psdiff_0.buff_d8_1.inv_d4_0.VIN psdiff_0.buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VIN
+= psdiff_0.buff_d8_1.inv_d4_0.VIN psdiff_0.buff_d8_1.inv_d4_0.inv_d2_0.VIN
+= psdiff_0.buff_d8_1.inv_d2_0.VIN psdiff_0.buff_d8_1.inv_0.VOUT
+= psdiff_0.buff_d8_1.inv_d2_0.VIN psdiff_0.buff_d8_1.inv_d2_0.inv_1.VIN
+= psdiff_0.buff_d8_1.inv_d2_0.VIN psdiff_0.buff_d8_1.inv_d2_0.inv_0.VIN
+C psdiff_0.buff_d8_1.VIN0 2.3
+R psdiff_0.buff_d8_1.VIN 23
+= psdiff_0.buff_d8_1.VIN psdiff_0.buff_d8_1.inv_0.VIN
+R psdiff_1.buff_d8_1.inv_d8_0.VIN 12
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VOUT
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VOUT
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d4_0.inv_d2_1.VOUT
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VOUT
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VOUT
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d4_0.inv_d2_0.VOUT
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d4_0.VOUT
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VIN
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VIN
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VIN
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VIN
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VIN
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VIN
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.VIN
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VIN
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VIN
+= psdiff_1.buff_d8_1.inv_d8_0.VIN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.VIN
+= psdiff_1.buff_d8_1.inv_d4_0.VIN psdiff_1.buff_d8_1.inv_d2_0.inv_1.VOUT
+= psdiff_1.buff_d8_1.inv_d4_0.VIN psdiff_1.buff_d8_1.inv_d2_0.inv_0.VOUT
+= psdiff_1.buff_d8_1.inv_d4_0.VIN psdiff_1.buff_d8_1.inv_d2_0.VOUT
+= psdiff_1.buff_d8_1.inv_d4_0.VIN psdiff_1.buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VIN
+= psdiff_1.buff_d8_1.inv_d4_0.VIN psdiff_1.buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VIN
+= psdiff_1.buff_d8_1.inv_d4_0.VIN psdiff_1.buff_d8_1.inv_d4_0.inv_d2_1.VIN
+= psdiff_1.buff_d8_1.inv_d4_0.VIN psdiff_1.buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VIN
+= psdiff_1.buff_d8_1.inv_d4_0.VIN psdiff_1.buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VIN
+= psdiff_1.buff_d8_1.inv_d4_0.VIN psdiff_1.buff_d8_1.inv_d4_0.inv_d2_0.VIN
+= psdiff_1.buff_d8_1.inv_d2_0.VIN psdiff_1.buff_d8_1.inv_0.VOUT
+= psdiff_1.buff_d8_1.inv_d2_0.VIN psdiff_1.buff_d8_1.inv_d2_0.inv_1.VIN
+= psdiff_1.buff_d8_1.inv_d2_0.VIN psdiff_1.buff_d8_1.inv_d2_0.inv_0.VIN
+C psdiff_1.buff_d8_1.VIN0 2.3
+R psdiff_1.buff_d8_1.VIN 23
+= psdiff_1.buff_d8_1.VIN psdiff_1.buff_d8_1.inv_0.VIN
+R psdiff_2.buff_d8_1.inv_d8_0.VIN 12
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VOUT
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VOUT
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d4_0.inv_d2_1.VOUT
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VOUT
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VOUT
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d4_0.inv_d2_0.VOUT
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d4_0.VOUT
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VIN
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VIN
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VIN
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VIN
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VIN
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VIN
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.VIN
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VIN
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VIN
+= psdiff_2.buff_d8_1.inv_d8_0.VIN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.VIN
+= psdiff_2.buff_d8_1.inv_d4_0.VIN psdiff_2.buff_d8_1.inv_d2_0.inv_1.VOUT
+= psdiff_2.buff_d8_1.inv_d4_0.VIN psdiff_2.buff_d8_1.inv_d2_0.inv_0.VOUT
+= psdiff_2.buff_d8_1.inv_d4_0.VIN psdiff_2.buff_d8_1.inv_d2_0.VOUT
+= psdiff_2.buff_d8_1.inv_d4_0.VIN psdiff_2.buff_d8_1.inv_d4_0.inv_d2_1.inv_1.VIN
+= psdiff_2.buff_d8_1.inv_d4_0.VIN psdiff_2.buff_d8_1.inv_d4_0.inv_d2_1.inv_0.VIN
+= psdiff_2.buff_d8_1.inv_d4_0.VIN psdiff_2.buff_d8_1.inv_d4_0.inv_d2_1.VIN
+= psdiff_2.buff_d8_1.inv_d4_0.VIN psdiff_2.buff_d8_1.inv_d4_0.inv_d2_0.inv_1.VIN
+= psdiff_2.buff_d8_1.inv_d4_0.VIN psdiff_2.buff_d8_1.inv_d4_0.inv_d2_0.inv_0.VIN
+= psdiff_2.buff_d8_1.inv_d4_0.VIN psdiff_2.buff_d8_1.inv_d4_0.inv_d2_0.VIN
+= psdiff_2.buff_d8_1.inv_d2_0.VIN psdiff_2.buff_d8_1.inv_0.VOUT
+= psdiff_2.buff_d8_1.inv_d2_0.VIN psdiff_2.buff_d8_1.inv_d2_0.inv_1.VIN
+= psdiff_2.buff_d8_1.inv_d2_0.VIN psdiff_2.buff_d8_1.inv_d2_0.inv_0.VIN
+C psdiff_2.buff_d8_1.VIN0 2.6
+R psdiff_2.buff_d8_1.VIN 23
+= psdiff_2.buff_d8_1.VIN psdiff_2.buff_d8_1.inv_0.VIN
+C psdiff_2.CLKP0 5.3
+R psdiff_2.CLKP 35
+= psdiff_2.CLKP buff_d8_0.inv_0.VIN
+= psdiff_2.CLKP buff_d8_0.VIN
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.inv_d4_1.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.inv_d4_0.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.inv_d8_0.VOUT
+= psdiff_2.CLKP psdiff_0.buff_d8_1.VOUT
+= psdiff_2.CLKP psdiff_0.VOUTDN
+= buff_d8_0.inv_d2_0.VIN buff_d8_0.inv_0.VOUT
+= buff_d8_0.inv_d2_0.VIN buff_d8_0.inv_d2_0.inv_1.VIN
+= buff_d8_0.inv_d2_0.VIN buff_d8_0.inv_d2_0.inv_0.VIN
+= buff_d8_0.inv_d4_0.VIN buff_d8_0.inv_d2_0.inv_1.VOUT
+= buff_d8_0.inv_d4_0.VIN buff_d8_0.inv_d2_0.inv_0.VOUT
+= buff_d8_0.inv_d4_0.VIN buff_d8_0.inv_d2_0.VOUT
+= buff_d8_0.inv_d4_0.VIN buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= buff_d8_0.inv_d4_0.VIN buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= buff_d8_0.inv_d4_0.VIN buff_d8_0.inv_d4_0.inv_d2_1.VIN
+= buff_d8_0.inv_d4_0.VIN buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= buff_d8_0.inv_d4_0.VIN buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= buff_d8_0.inv_d4_0.VIN buff_d8_0.inv_d4_0.inv_d2_0.VIN
+R buff_d8_0.inv_d8_0.VIN 12
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d4_0.inv_d2_1.VOUT
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d4_0.inv_d2_0.VOUT
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d4_0.VOUT
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VIN
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VIN
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VIN
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VIN
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VIN
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VIN
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d8_0.inv_d4_1.VIN
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VIN
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VIN
+= buff_d8_0.inv_d8_0.VIN buff_d8_0.inv_d8_0.inv_d4_0.VIN
+C psdiff_1.VOUTDN0 2.9
+R psdiff_1.VOUTDN 13
+= psdiff_1.VOUTDN buff_d8_2.inv_0.VIN
+= psdiff_1.VOUTDN buff_d8_2.VIN
+= psdiff_1.VOUTDN psdiff_0.CLKP
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_1.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.inv_d4_0.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.inv_d8_0.VOUT
+= psdiff_1.VOUTDN psdiff_1.buff_d8_1.VOUT
+= buff_d8_2.inv_d2_0.VIN buff_d8_2.inv_0.VOUT
+= buff_d8_2.inv_d2_0.VIN buff_d8_2.inv_d2_0.inv_1.VIN
+= buff_d8_2.inv_d2_0.VIN buff_d8_2.inv_d2_0.inv_0.VIN
+= buff_d8_2.inv_d4_0.VIN buff_d8_2.inv_d2_0.inv_1.VOUT
+= buff_d8_2.inv_d4_0.VIN buff_d8_2.inv_d2_0.inv_0.VOUT
+= buff_d8_2.inv_d4_0.VIN buff_d8_2.inv_d2_0.VOUT
+= buff_d8_2.inv_d4_0.VIN buff_d8_2.inv_d4_0.inv_d2_1.inv_1.VIN
+= buff_d8_2.inv_d4_0.VIN buff_d8_2.inv_d4_0.inv_d2_1.inv_0.VIN
+= buff_d8_2.inv_d4_0.VIN buff_d8_2.inv_d4_0.inv_d2_1.VIN
+= buff_d8_2.inv_d4_0.VIN buff_d8_2.inv_d4_0.inv_d2_0.inv_1.VIN
+= buff_d8_2.inv_d4_0.VIN buff_d8_2.inv_d4_0.inv_d2_0.inv_0.VIN
+= buff_d8_2.inv_d4_0.VIN buff_d8_2.inv_d4_0.inv_d2_0.VIN
+R buff_d8_2.inv_d8_0.VIN 12
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d4_0.inv_d2_1.inv_1.VOUT
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d4_0.inv_d2_1.inv_0.VOUT
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d4_0.inv_d2_1.VOUT
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d4_0.inv_d2_0.inv_1.VOUT
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d4_0.inv_d2_0.inv_0.VOUT
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d4_0.inv_d2_0.VOUT
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d4_0.VOUT
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VIN
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VIN
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_1.VIN
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VIN
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VIN
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_0.VIN
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d8_0.inv_d4_1.VIN
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_1.VIN
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_0.VIN
+= buff_d8_2.inv_d8_0.VIN buff_d8_2.inv_d8_0.inv_d4_0.VIN
+C psdiff_2.VOUTDN0 2.9
+R psdiff_2.VOUTDN 13
+= psdiff_2.VOUTDN buff_d8_5.inv_0.VIN
+= psdiff_2.VOUTDN buff_d8_5.VIN
+= psdiff_2.VOUTDN psdiff_1.CLKP
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_1.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.inv_d4_0.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.inv_d8_0.VOUT
+= psdiff_2.VOUTDN psdiff_2.buff_d8_1.VOUT
+= buff_d8_5.inv_d2_0.VIN buff_d8_5.inv_0.VOUT
+= buff_d8_5.inv_d2_0.VIN buff_d8_5.inv_d2_0.inv_1.VIN
+= buff_d8_5.inv_d2_0.VIN buff_d8_5.inv_d2_0.inv_0.VIN
+= buff_d8_5.inv_d4_0.VIN buff_d8_5.inv_d2_0.inv_1.VOUT
+= buff_d8_5.inv_d4_0.VIN buff_d8_5.inv_d2_0.inv_0.VOUT
+= buff_d8_5.inv_d4_0.VIN buff_d8_5.inv_d2_0.VOUT
+= buff_d8_5.inv_d4_0.VIN buff_d8_5.inv_d4_0.inv_d2_1.inv_1.VIN
+= buff_d8_5.inv_d4_0.VIN buff_d8_5.inv_d4_0.inv_d2_1.inv_0.VIN
+= buff_d8_5.inv_d4_0.VIN buff_d8_5.inv_d4_0.inv_d2_1.VIN
+= buff_d8_5.inv_d4_0.VIN buff_d8_5.inv_d4_0.inv_d2_0.inv_1.VIN
+= buff_d8_5.inv_d4_0.VIN buff_d8_5.inv_d4_0.inv_d2_0.inv_0.VIN
+= buff_d8_5.inv_d4_0.VIN buff_d8_5.inv_d4_0.inv_d2_0.VIN
+R buff_d8_5.inv_d8_0.VIN 12
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d4_0.inv_d2_1.inv_1.VOUT
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d4_0.inv_d2_1.inv_0.VOUT
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d4_0.inv_d2_1.VOUT
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d4_0.inv_d2_0.inv_1.VOUT
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d4_0.inv_d2_0.inv_0.VOUT
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d4_0.inv_d2_0.VOUT
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d4_0.VOUT
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VIN
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VIN
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_1.VIN
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VIN
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VIN
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_0.VIN
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d8_0.inv_d4_1.VIN
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VIN
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VIN
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_1.VIN
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VIN
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VIN
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_0.VIN
+= buff_d8_5.inv_d8_0.VIN buff_d8_5.inv_d8_0.inv_d4_0.VIN
+C CTRL0 8.4
+R CTRL 225
+= CTRL decap_1.CTRL
+= CTRL decap_2.CTRL
+= CTRL decap_0.CTRL
+= CTRL psdiff_0.CTRL
+= CTRL psdiff_1.CTRL
+= CTRL psdiff_2.CTRL
+C PH50 5.7
+R PH5 23
+= PH5 flywheel_0.inv_d2_1.inv_1.VOUT
+= PH5 flywheel_0.inv_d2_1.inv_0.VOUT
+= PH5 flywheel_0.inv_d2_1.VOUT
+= PH5 flywheel_0.inv_d2_0.inv_1.VIN
+= PH5 flywheel_0.inv_d2_0.inv_0.VIN
+= PH5 flywheel_0.inv_d2_0.VIN
+= PH5 flywheel_0.PH0
+= PH5 decap_1.VOUTDP
+= PH5 buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VOUT
+= PH5 buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VOUT
+= PH5 buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_1.VOUT
+= PH5 buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VOUT
+= PH5 buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VOUT
+= PH5 buff_d8_1.inv_d8_0.inv_d4_1.inv_d2_0.VOUT
+= PH5 buff_d8_1.inv_d8_0.inv_d4_1.VOUT
+= PH5 buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= PH5 buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= PH5 buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_1.VOUT
+= PH5 buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= PH5 buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= PH5 buff_d8_1.inv_d8_0.inv_d4_0.inv_d2_0.VOUT
+= PH5 buff_d8_1.inv_d8_0.inv_d4_0.VOUT
+= PH5 buff_d8_1.inv_d8_0.VOUT
+= PH5 buff_d8_1.VOUT
+C PH20 4.8
+R PH2 19
+= PH2 flywheel_0.inv_d2_1.inv_1.VIN
+= PH2 flywheel_0.inv_d2_1.inv_0.VIN
+= PH2 flywheel_0.inv_d2_1.VIN
+= PH2 flywheel_0.inv_d2_0.inv_1.VOUT
+= PH2 flywheel_0.inv_d2_0.inv_0.VOUT
+= PH2 flywheel_0.inv_d2_0.VOUT
+= PH2 flywheel_0.PH1
+= PH2 decap_1.VOUTDN
+= PH2 buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VOUT
+= PH2 buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VOUT
+= PH2 buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_1.VOUT
+= PH2 buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VOUT
+= PH2 buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VOUT
+= PH2 buff_d8_0.inv_d8_0.inv_d4_1.inv_d2_0.VOUT
+= PH2 buff_d8_0.inv_d8_0.inv_d4_1.VOUT
+= PH2 buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= PH2 buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= PH2 buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_1.VOUT
+= PH2 buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= PH2 buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= PH2 buff_d8_0.inv_d8_0.inv_d4_0.inv_d2_0.VOUT
+= PH2 buff_d8_0.inv_d8_0.inv_d4_0.VOUT
+= PH2 buff_d8_0.inv_d8_0.VOUT
+= PH2 buff_d8_0.VOUT
+C PH10 5.2
+R PH1 23
+= PH1 flywheel_1.inv_d2_1.inv_1.VOUT
+= PH1 flywheel_1.inv_d2_1.inv_0.VOUT
+= PH1 flywheel_1.inv_d2_1.VOUT
+= PH1 flywheel_1.inv_d2_0.inv_1.VIN
+= PH1 flywheel_1.inv_d2_0.inv_0.VIN
+= PH1 flywheel_1.inv_d2_0.VIN
+= PH1 flywheel_1.PH0
+= PH1 decap_2.VOUTDN
+= PH1 buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VOUT
+= PH1 buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VOUT
+= PH1 buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_1.VOUT
+= PH1 buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VOUT
+= PH1 buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VOUT
+= PH1 buff_d8_3.inv_d8_0.inv_d4_1.inv_d2_0.VOUT
+= PH1 buff_d8_3.inv_d8_0.inv_d4_1.VOUT
+= PH1 buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= PH1 buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= PH1 buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_1.VOUT
+= PH1 buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= PH1 buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= PH1 buff_d8_3.inv_d8_0.inv_d4_0.inv_d2_0.VOUT
+= PH1 buff_d8_3.inv_d8_0.inv_d4_0.VOUT
+= PH1 buff_d8_3.inv_d8_0.VOUT
+= PH1 buff_d8_3.VOUT
+C PH40 4.8
+R PH4 19
+= PH4 flywheel_1.inv_d2_1.inv_1.VIN
+= PH4 flywheel_1.inv_d2_1.inv_0.VIN
+= PH4 flywheel_1.inv_d2_1.VIN
+= PH4 flywheel_1.inv_d2_0.inv_1.VOUT
+= PH4 flywheel_1.inv_d2_0.inv_0.VOUT
+= PH4 flywheel_1.inv_d2_0.VOUT
+= PH4 flywheel_1.PH1
+= PH4 decap_2.VOUTDP
+= PH4 buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VOUT
+= PH4 buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VOUT
+= PH4 buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_1.VOUT
+= PH4 buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VOUT
+= PH4 buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VOUT
+= PH4 buff_d8_2.inv_d8_0.inv_d4_1.inv_d2_0.VOUT
+= PH4 buff_d8_2.inv_d8_0.inv_d4_1.VOUT
+= PH4 buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= PH4 buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= PH4 buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_1.VOUT
+= PH4 buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= PH4 buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= PH4 buff_d8_2.inv_d8_0.inv_d4_0.inv_d2_0.VOUT
+= PH4 buff_d8_2.inv_d8_0.inv_d4_0.VOUT
+= PH4 buff_d8_2.inv_d8_0.VOUT
+= PH4 buff_d8_2.VOUT
+C PH30 5.2
+R PH3 23
+= PH3 flywheel_2.inv_d2_1.inv_1.VOUT
+= PH3 flywheel_2.inv_d2_1.inv_0.VOUT
+= PH3 flywheel_2.inv_d2_1.VOUT
+= PH3 flywheel_2.inv_d2_0.inv_1.VIN
+= PH3 flywheel_2.inv_d2_0.inv_0.VIN
+= PH3 flywheel_2.inv_d2_0.VIN
+= PH3 flywheel_2.PH0
+= PH3 decap_0.VOUTDP
+= PH3 buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VOUT
+= PH3 buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VOUT
+= PH3 buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_1.VOUT
+= PH3 buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VOUT
+= PH3 buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VOUT
+= PH3 buff_d8_4.inv_d8_0.inv_d4_1.inv_d2_0.VOUT
+= PH3 buff_d8_4.inv_d8_0.inv_d4_1.VOUT
+= PH3 buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= PH3 buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= PH3 buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_1.VOUT
+= PH3 buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= PH3 buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= PH3 buff_d8_4.inv_d8_0.inv_d4_0.inv_d2_0.VOUT
+= PH3 buff_d8_4.inv_d8_0.inv_d4_0.VOUT
+= PH3 buff_d8_4.inv_d8_0.VOUT
+= PH3 buff_d8_4.VOUT
+C PH00 5.0
+R PH0 19
+= PH0 flywheel_2.inv_d2_1.inv_1.VIN
+= PH0 flywheel_2.inv_d2_1.inv_0.VIN
+= PH0 flywheel_2.inv_d2_1.VIN
+= PH0 flywheel_2.inv_d2_0.inv_1.VOUT
+= PH0 flywheel_2.inv_d2_0.inv_0.VOUT
+= PH0 flywheel_2.inv_d2_0.VOUT
+= PH0 flywheel_2.PH1
+= PH0 decap_0.VOUTDN
+= PH0 buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_1.inv_1.VOUT
+= PH0 buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_1.inv_0.VOUT
+= PH0 buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_1.VOUT
+= PH0 buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_0.inv_1.VOUT
+= PH0 buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_0.inv_0.VOUT
+= PH0 buff_d8_5.inv_d8_0.inv_d4_1.inv_d2_0.VOUT
+= PH0 buff_d8_5.inv_d8_0.inv_d4_1.VOUT
+= PH0 buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_1.inv_1.VOUT
+= PH0 buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_1.inv_0.VOUT
+= PH0 buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_1.VOUT
+= PH0 buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_0.inv_1.VOUT
+= PH0 buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_0.inv_0.VOUT
+= PH0 buff_d8_5.inv_d8_0.inv_d4_0.inv_d2_0.VOUT
+= PH0 buff_d8_5.inv_d8_0.inv_d4_0.VOUT
+= PH0 buff_d8_5.inv_d8_0.VOUT
+= PH0 buff_d8_5.VOUT

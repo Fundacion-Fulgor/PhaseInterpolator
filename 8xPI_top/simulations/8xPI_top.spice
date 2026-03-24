@@ -132,8 +132,8 @@ x6 VDD Sbuff[3] S[3] VSS buff_d8
 *.ipin VS[1],VS[0]
 *.ipin VST
 x3 VDD VINC net2 VS[1] VIND VSS MUX_2_1
-x4 VDD VINA net1 VS[0] VINB VSS MUX_2_1
 x5 VDD net1 VOUT VST net2 VSS MUX_2_1
+x1 VDD VINA net1 VS[0] VINB VSS MUX_2_1
 .ends
 
 
@@ -178,18 +178,18 @@ x10 VDD VOUT net3 VSS inv_PI_d16
 *.opin PH1
 *.opin PH4
 *.opin PH3
-x1 VDD net1 net2 CTRL net6 net5 VSS psdiff
-x2 VDD net3 net4 CTRL net2 net1 VSS psdiff
-x3 VDD net5 net6 CTRL net4 net3 VSS psdiff
+x1 VDD Ph4_in Ph1_in CTRL Ph3_in Ph0_in VSS psdiff
+x2 VDD Ph2_in Ph5_in CTRL Ph1_in Ph4_in VSS psdiff
+x3 VDD Ph0_in Ph3_in CTRL Ph5_in Ph2_in VSS psdiff
 x4 CTRL Ph0 Ph3 VDD decap
 x5 CTRL Ph2 Ph5 VDD decap
 x6 CTRL Ph1 Ph4 VDD decap
-x7 VDD PH1 net2 VSS buff_d8
-x8 VDD PH4 net1 VSS buff_d8
-x9 VDD PH5 net4 VSS buff_d8
-x10 VDD PH2 net3 VSS buff_d8
-x11 VDD PH3 net6 VSS buff_d8
-x12 VDD PH0 net5 VSS buff_d8
+x7 VDD PH1 Ph1_in VSS buff_d8
+x8 VDD PH4 Ph4_in VSS buff_d8
+x9 VDD PH5 Ph5_in VSS buff_d8
+x10 VDD PH2 Ph2_in VSS buff_d8
+x11 VDD PH3 Ph3_in VSS buff_d8
+x12 VDD PH0 Ph0_in VSS buff_d8
 x19 VDD Ph2 Ph5 VSS flywheel
 x17 VDD Ph0 Ph3 VSS flywheel
 x13 VDD Ph4 Ph1 VSS flywheel
@@ -214,24 +214,16 @@ x13 VDD Ph4 Ph1 VSS flywheel
 *.iopin VSS
 x16 VDD V4 v270 V5 VSS PI_clk
 x2 VDD V1 v90 V2 VSS PI_clk
-x8 VDD net9 V0 VSS inv_PI_d2
-x9 VDD net10 V3 VSS inv_PI_d2
-x10 VDD v360 net9 VSS inv_PI_d2
-x11 VDD v180 net10 VSS inv_PI_d2
-x3 VDD net6 v180 VSS buff_PI_d16
-x4 VDD net7 v90 VSS buff_PI_d16
-x5 VDD net5 v360 VSS buff_PI_d16
-x6 VDD net8 v270 VSS buff_PI_d16
+x8 VDD net1 V0 VSS inv_PI_d2
+x9 VDD net2 V3 VSS inv_PI_d2
+x10 VDD v360 net1 VSS inv_PI_d2
+x11 VDD v180 net2 VSS inv_PI_d2
 x7 VDD v180 v360 VSS flywheel_clk
 x12 VDD v270 v90 VSS flywheel_clk
-x13 VDD net2 net6 VSS inv_PI_d16
-x14 VDD net3 net7 VSS inv_PI_d16
-x15 VDD net4 net5 VSS inv_PI_d16
-x17 VDD net1 net8 VSS inv_PI_d16
-x18 VDD PH180 net2 VSS inv_PI_d32
-x19 VDD PH90 net3 VSS inv_PI_d32
-x20 VDD PH0 net4 VSS inv_PI_d32
-x21 VDD PH270 net1 VSS inv_PI_d32
+x1 VDD PH0 v360 VSS buff_PI_d32
+x4 VDD PH90 v90 VSS buff_PI_d32
+x3 VDD PH180 v180 VSS buff_PI_d32
+x5 VDD PH270 v270 VSS buff_PI_d32
 .ends
 
 
@@ -386,27 +378,19 @@ x10 VDD VOUT net3 VSS inv_d8
 *.ipin VS
 *.iopin VDD
 *.iopin VSS
-x1 net5 net1 VS net3 VDD VSS tg_custom
-x8 net2 VS net1 net4 VDD VSS tg_custom
-x3 VDD net1 VS VSS inv
-x4 VDD net3 VINA VSS inv_PI
-x5 VDD net4 VINB VSS inv_PI
-x6[5] net5 tiel tieh net3 VDD VSS tg_custom
-x6[4] net5 tiel tieh net3 VDD VSS tg_custom
-x6[3] net5 tiel tieh net3 VDD VSS tg_custom
-x6[2] net5 tiel tieh net3 VDD VSS tg_custom
-x6[1] net5 tiel tieh net3 VDD VSS tg_custom
-x6[0] net5 tiel tieh net3 VDD VSS tg_custom
-x7[5] net2 tiel tieh net4 VDD VSS tg_custom
-x7[4] net2 tiel tieh net4 VDD VSS tg_custom
-x7[3] net2 tiel tieh net4 VDD VSS tg_custom
-x7[2] net2 tiel tieh net4 VDD VSS tg_custom
-x7[1] net2 tiel tieh net4 VDD VSS tg_custom
-x7[0] net2 tiel tieh net4 VDD VSS tg_custom
-x2 VOUT tieh tiel net5 VDD VSS tg_custom
-x6 VOUT tieh tiel net2 VDD VSS tg_custom
-x7 VDD tieh VSS tieh_custom
-x9 VDD tiel VSS tiel_custom
+x12 VDD tieh VSS tieh_custom
+x7 VDD tiel VSS tiel_custom
+x14 net4 tiel tieh net2 VDD VSS tg_custom
+x15[1] net4 net1 VS net2 VDD VSS tg_custom
+x15[0] net4 net1 VS net2 VDD VSS tg_custom
+x16 net5 VS net1 net3 VDD VSS tg_custom
+x17[1] net5 tiel tieh net3 VDD VSS tg_custom
+x17[0] net5 tiel tieh net3 VDD VSS tg_custom
+x10 VDD net1 VS VSS inv
+x4 VDD net2 VINA VSS inv_PI
+x9 VDD net3 VINB VSS inv_PI
+x11 VOUT tieh tiel net4 VDD VSS tg_custom
+x13 VOUT tieh tiel net5 VDD VSS tg_custom
 .ends
 
 
@@ -540,16 +524,17 @@ x14 VDD PH0 PH1 VSS inv_d2
 .ends
 
 
-* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d32.sym # of pins=4
-** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d32.sym
-** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d32.sch
-.subckt inv_PI_d32 VDD VOUT VIN VSS
-*.ipin VIN
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/buff_PI_d32.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/buff_PI_d32.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/buff_PI_d32.sch
+.subckt buff_PI_d32 VDD VOUT VIN VSS
 *.opin VOUT
-*.iopin VDD
 *.iopin VSS
-x1[1] VDD VOUT VIN VSS inv_PI_d16
-x1[0] VDD VOUT VIN VSS inv_PI_d16
+*.iopin VDD
+*.ipin VIN
+x5 VDD net2 VIN VSS buff_PI_d16
+x15 VDD net1 net2 VSS inv_PI_d16
+x20 VDD VOUT net1 VSS inv_PI_d32
 .ends
 
 
@@ -643,6 +628,19 @@ XM1 net1 net1 VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
 *.opin VOUT
 XM2 net1 net1 VDD VDD sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
 XM1 VOUT net1 VSS VSS sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d32.sym # of pins=4
+** sym_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d32.sym
+** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI_d32.sch
+.subckt inv_PI_d32 VDD VOUT VIN VSS
+*.ipin VIN
+*.opin VOUT
+*.iopin VDD
+*.iopin VSS
+x1[1] VDD VOUT VIN VSS inv_PI_d16
+x1[0] VDD VOUT VIN VSS inv_PI_d16
 .ends
 
 .end

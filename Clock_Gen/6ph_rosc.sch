@@ -104,9 +104,9 @@ N 1910 120 1910 180 {lab=VSS}
 N 1700 0 1810 0 {lab=Ph5}
 N 2010 0 2120 0 {lab=Ph2}
 N 2450 -360 2450 -300 {lab=VSS}
-C {psdiff.sym} 310 -110 0 0 {name=x1}
-C {psdiff.sym} 730 -110 0 0 {name=x2}
-C {psdiff.sym} 1150 -110 0 0 {name=x3}
+C {/foss/designs/PhaseInterpolator/Clock_Gen/psdiff.sym} 310 -110 0 0 {name=x1}
+C {/foss/designs/PhaseInterpolator/Clock_Gen/psdiff.sym} 730 -110 0 0 {name=x2}
+C {/foss/designs/PhaseInterpolator/Clock_Gen/psdiff.sym} 1150 -110 0 0 {name=x3}
 C {iopin.sym} 840 -310 0 0 {name=p1 lab=VDD}
 C {iopin.sym} 840 -90 2 0 {name=p2 lab=VSS}
 C {ipin.sym} 240 -240 0 0 {name=p3 lab=CTRL}
@@ -115,19 +115,19 @@ C {opin.sym} 1050 -500 3 0 {name=p6 lab=PH2}
 C {opin.sym} 1050 160 1 0 {name=p7 lab=PH5}
 C {opin.sym} 630 160 1 0 {name=p8 lab=PH1}
 C {opin.sym} 630 -500 3 0 {name=p9 lab=PH4}
-C {decap.sym} 450 -570 0 0 {name=x4
+C {/foss/designs/PhaseInterpolator/Clock_Gen/decap.sym} 450 -570 0 0 {name=x4
 }
 C {lab_pin.sym} 580 -720 0 0 {name=p10 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 440 -650 0 0 {name=p11 sig_type=std_logic lab=CTRL}
 C {lab_pin.sym} 420 -630 0 0 {name=p12 sig_type=std_logic lab=Ph0}
 C {lab_pin.sym} 420 -610 0 0 {name=p13 sig_type=std_logic lab=Ph3}
-C {decap.sym} 820 -570 0 0 {name=x5
+C {/foss/designs/PhaseInterpolator/Clock_Gen/decap.sym} 820 -570 0 0 {name=x5
 }
 C {lab_pin.sym} 950 -720 0 0 {name=p14 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 810 -650 0 0 {name=p15 sig_type=std_logic lab=CTRL}
 C {lab_pin.sym} 790 -630 0 0 {name=p16 sig_type=std_logic lab=Ph2}
 C {lab_pin.sym} 790 -610 0 0 {name=p17 sig_type=std_logic lab=Ph5}
-C {decap.sym} 1170 -570 0 0 {name=x6
+C {/foss/designs/PhaseInterpolator/Clock_Gen/decap.sym} 1170 -570 0 0 {name=x6
 }
 C {lab_pin.sym} 1300 -720 0 0 {name=p18 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 1160 -650 0 0 {name=p19 sig_type=std_logic lab=CTRL}
@@ -170,9 +170,9 @@ C {lab_pin.sym} 1910 -180 1 0 {name=p46 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 1910 180 1 1 {name=p49 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 1700 0 0 0 {name=p50 sig_type=std_logic lab=Ph5}
 C {lab_pin.sym} 2120 0 2 0 {name=p51 sig_type=std_logic lab=Ph2}
-C {flywheel.sym} 1910 0 0 0 {name=x19}
-C {flywheel.sym} 1910 -480 0 0 {name=x17}
-C {flywheel.sym} 2450 -480 0 0 {name=x13}
+C {/foss/designs/PhaseInterpolator/Clock_Gen/flywheel.sym} 1910 0 0 0 {name=x19}
+C {/foss/designs/PhaseInterpolator/Clock_Gen/flywheel.sym} 1910 -480 0 0 {name=x17}
+C {/foss/designs/PhaseInterpolator/Clock_Gen/flywheel.sym} 2450 -480 0 0 {name=x13}
 C {lab_wire.sym} 1470 -290 0 0 {name=p52 sig_type=std_logic lab=Ph0_in}
 C {lab_wire.sym} 1470 -90 0 0 {name=p35 sig_type=std_logic lab=Ph3_in}
 C {lab_wire.sym} 1050 -90 0 0 {name=p36 sig_type=std_logic lab=Ph5_in}

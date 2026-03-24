@@ -1,0 +1,45 @@
+timestamp 1602713833
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11
+use inv inv_0 -1 0 508 0 1 67
+use inv inv_1 1 0 0 0 1 67
+port "VOUT" 3 238 190 270 532 m1
+port "VDD" 2 48 598 460 706 m1
+node "VSS" 0 0 254 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 254 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 254 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 254 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 254 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 254 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 254 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 254 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 254 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 254 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 254 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 254 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 254 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VOUT" 1 137.598 238 190 m1 0 0 0 0 10944 748 0 0 0 0 0 0 0 0 0 0 0 0
+node "VIN" 1 155.962 125 341 m1 0 0 0 0 4872 400 10320 596 0 0 0 0 0 0 0 0 0 0
+node "VDD" 0 225.847 48 598 m1 0 0 0 0 44496 1040 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VDD" "VIN" 21.9412
+cap "VIN" "VOUT" 66.5942
+cap "VDD" "VOUT" 16.42
+cap "inv_0/VIN" "inv_0/VOUT" -52.3697
+cap "inv_0/VDD" "inv_0/VOUT" -42.1858
+cap "inv_0/VSS" "inv_0/VOUT" -18.1345
+cap "inv_0/VDD" "inv_0/VIN" -18.2538
+cap "inv_0/VSS" "inv_0/VIN" 6.22755
+cap "inv_0/VSS" "inv_0/VDD" -13.6913
+merge "inv_1/VOUT" "inv_0/VOUT" -272.598 0 0 0 0 -21888 -1496 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_0/VOUT" "VOUT"
+merge "inv_1/VSS" "inv_0/VSS" -108.204 0 0 0 0 -13248 -512 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_0/VSS" "VSUB"
+merge "VSUB" "VSS"
+merge "inv_1/VDD" "inv_0/VDD" -329.586 0 0 0 0 -64368 -1624 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_0/VDD" "VDD"
+merge "inv_1/VIN" "inv_0/VIN" -146.597 0 0 0 0 -4872 -400 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_0/VIN" "VIN"

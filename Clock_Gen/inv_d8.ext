@@ -1,0 +1,67 @@
+timestamp 1602713833
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11
+use inv_d4 inv_d4_0 1 0 720 0 1 0
+use inv_d4 inv_d4_1 1 0 0 0 1 0
+port "VSS" 3 1048 53 2540 125 m1
+port "VDD" 2 1048 598 2540 706 m1
+node "VOUT" 0 0 2334 361 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VIN" 0 0 1154 362 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VOUT" 0 0 2334 361 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VIN" 0 0 1154 362 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VOUT" 0 0 2334 361 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VIN" 0 0 1154 362 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VOUT" 0 0 2334 361 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VIN" 0 0 1154 362 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_1695_342#" 0 58.9147 1695 342 m2 0 0 0 0 0 0 8320 496 0 0 0 0 0 0 0 0 0 0
+node "VOUT" 1 118.76 1594 568 m2 0 0 0 0 0 0 16000 880 0 0 0 0 0 0 0 0 0 0
+node "VSS" 2 611.02 1048 53 m1 0 0 0 0 107424 3128 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDD" 2 672.289 1048 598 m1 0 0 0 0 161136 3200 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VOUT" "m2_1695_342#" 47.3558
+cap "VDD" "VSS" 92.5975
+cap "VSS" "m2_1695_342#" 5.68734
+cap "VSS" "VOUT" 2.05692
+cap "VDD" "m2_1695_342#" 1.57792
+cap "VDD" "VOUT" 55.4564
+cap "inv_d4_0/VDD" "inv_d4_0/VOUT" 11.1461
+cap "inv_d4_0/VSS" "inv_d4_0/VOUT" -1.56685
+cap "inv_d4_0/VDD" "inv_d4_0/inv_d2_0/inv_0/VIN" 6.00099
+cap "inv_d4_0/VSS" "inv_d4_0/inv_d2_0/inv_0/VIN" -1.77303
+cap "inv_d4_0/VSS" "inv_d4_0/VDD" -91.663
+cap "inv_d4_0/inv_d2_0/inv_0/VIN" "inv_d4_0/VOUT" 27.8086
+cap "inv_d4_0/VSS" "inv_d4_0/VDD" -5.70976
+merge "inv_d4_1/VSUB" "inv_d4_0/VSUB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_d4_0/VSUB" "VSUB"
+merge "inv_d4_1/inv_d2_0/inv_0/VIN" "VIN" -156.193 0 0 0 0 0 0 -4240 -372 0 0 0 0 0 0 0 0 0 0
+merge "VIN" "inv_d4_0/inv_d2_0/inv_0/VIN"
+merge "inv_d4_0/inv_d2_0/inv_0/VIN" "m2_1695_342#"
+merge "inv_d4_1/VOUT" "inv_d4_0/VOUT" -142.372 0 0 0 0 0 0 -3200 -320 0 0 0 0 0 0 0 0 0 0
+merge "inv_d4_0/VOUT" "VOUT"
+merge "inv_d4_1/inv_d2_0/inv_0/VSS" "inv_d4_1/inv_d2_0/inv_1/VSS" -694.927 0 0 0 0 -111168 -3376 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_d4_1/inv_d2_0/inv_1/VSS" "inv_d4_1/inv_d2_1/inv_0/VSS"
+merge "inv_d4_1/inv_d2_1/inv_0/VSS" "inv_d4_1/inv_d2_1/inv_1/VSS"
+merge "inv_d4_1/inv_d2_1/inv_1/VSS" "inv_d4_1/VSS"
+merge "inv_d4_1/VSS" "inv_d4_0/inv_d2_0/inv_0/VSS"
+merge "inv_d4_0/inv_d2_0/inv_0/VSS" "inv_d4_0/inv_d2_0/inv_1/VSS"
+merge "inv_d4_0/inv_d2_0/inv_1/VSS" "inv_d4_0/inv_d2_1/inv_0/VSS"
+merge "inv_d4_0/inv_d2_1/inv_0/VSS" "inv_d4_0/inv_d2_1/inv_1/VSS"
+merge "inv_d4_0/inv_d2_1/inv_1/VSS" "inv_d4_0/VSS"
+merge "inv_d4_0/VSS" "VSS"
+merge "inv_d4_1/inv_d2_0/VDD" "inv_d4_1/inv_d2_0/inv_0/VDD" -766.941 0 0 0 0 -166752 -3520 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_d4_1/inv_d2_0/inv_0/VDD" "inv_d4_1/inv_d2_0/inv_1/VDD"
+merge "inv_d4_1/inv_d2_0/inv_1/VDD" "inv_d4_1/inv_d2_1/VDD"
+merge "inv_d4_1/inv_d2_1/VDD" "inv_d4_1/inv_d2_1/inv_0/VDD"
+merge "inv_d4_1/inv_d2_1/inv_0/VDD" "inv_d4_1/inv_d2_1/inv_1/VDD"
+merge "inv_d4_1/inv_d2_1/inv_1/VDD" "inv_d4_1/VDD"
+merge "inv_d4_1/VDD" "inv_d4_0/inv_d2_0/VDD"
+merge "inv_d4_0/inv_d2_0/VDD" "inv_d4_0/inv_d2_0/inv_0/VDD"
+merge "inv_d4_0/inv_d2_0/inv_0/VDD" "inv_d4_0/inv_d2_0/inv_1/VDD"
+merge "inv_d4_0/inv_d2_0/inv_1/VDD" "inv_d4_0/inv_d2_1/VDD"
+merge "inv_d4_0/inv_d2_1/VDD" "inv_d4_0/inv_d2_1/inv_0/VDD"
+merge "inv_d4_0/inv_d2_1/inv_0/VDD" "inv_d4_0/inv_d2_1/inv_1/VDD"
+merge "inv_d4_0/inv_d2_1/inv_1/VDD" "inv_d4_0/VDD"
+merge "inv_d4_0/VDD" "VDD"

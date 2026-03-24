@@ -92,26 +92,6 @@ Cell pin lists are equivalent.
 Device classes tg_custom and tg_custom are equivalent.
 
 Subcircuit summary:
-Circuit 1: tiel_custom                     |Circuit 2: tiel_custom                     
--------------------------------------------|-------------------------------------------
-sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
-sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
-Number of devices: 2                       |Number of devices: 2                       
-Number of nets: 4                          |Number of nets: 4                          
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: tiel_custom                     |Circuit 2: tiel_custom                     
--------------------------------------------|-------------------------------------------
-VOUT                                       |VOUT                                       
-VDD                                        |VDD                                        
-VSS                                        |VSS                                        
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes tiel_custom and tiel_custom are equivalent.
-
-Subcircuit summary:
 Circuit 1: tieh_custom                     |Circuit 2: tieh_custom                     
 -------------------------------------------|-------------------------------------------
 sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
@@ -153,6 +133,26 @@ Cell pin lists are equivalent.
 Device classes inv and inv are equivalent.
 
 Subcircuit summary:
+Circuit 1: tiel_custom                     |Circuit 2: tiel_custom                     
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
+sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: tiel_custom                     |Circuit 2: tiel_custom                     
+-------------------------------------------|-------------------------------------------
+VOUT                                       |VOUT                                       
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes tiel_custom and tiel_custom are equivalent.
+
+Subcircuit summary:
 Circuit 1: inv_PI_d8                       |Circuit 2: inv_PI_d8                       
 -------------------------------------------|-------------------------------------------
 inv_PI_d4 (2)                              |inv_PI_d4 (2)                              
@@ -178,12 +178,12 @@ Device classes inv_PI_d8 and inv_PI_d8 are equivalent.
 Subcircuit summary:
 Circuit 1: MUX_2_1                         |Circuit 2: MUX_2_1                         
 -------------------------------------------|-------------------------------------------
-tg_custom (16)                             |tg_custom (16)                             
-tiel_custom (1)                            |tiel_custom (1)                            
-inv_PI (2)                                 |inv_PI (2)                                 
+tg_custom (8)                              |tg_custom (8)                              
 tieh_custom (1)                            |tieh_custom (1)                            
+inv_PI (2)                                 |inv_PI (2)                                 
 inv (1)                                    |inv (1)                                    
-Number of devices: 21                      |Number of devices: 21                      
+tiel_custom (1)                            |tiel_custom (1)                            
+Number of devices: 13                      |Number of devices: 13                      
 Number of nets: 13                         |Number of nets: 13                         
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
@@ -194,10 +194,10 @@ Netlists match with 2 symmetries.
 Subcircuit pins:
 Circuit 1: MUX_2_1                         |Circuit 2: MUX_2_1                         
 -------------------------------------------|-------------------------------------------
-VS                                         |VS                                         
-VINA                                       |VINA                                       
 VINB                                       |VINB                                       
+VINA                                       |VINA                                       
 VOUT                                       |VOUT                                       
+VS                                         |VS                                         
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
@@ -239,14 +239,14 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: MUX_4_1                         |Circuit 2: MUX_4_1                         
 -------------------------------------------|-------------------------------------------
+VOUT                                       |VOUT                                       
+VST                                        |VST                                        
 VINC                                       |VINC                                       
 VINA                                       |VINA                                       
 VS[1]                                      |VS[1]                                      
 VS[0]                                      |VS[0]                                      
 VIND                                       |VIND                                       
 VINB                                       |VINB                                       
-VOUT                                       |VOUT                                       
-VST                                        |VST                                        
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
@@ -292,14 +292,6 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: 8xPI                            |Circuit 2: 8xPI                            
 -------------------------------------------|-------------------------------------------
-VINI                                       |VINI                                       
-VINIB                                      |VINIB                                      
-VS[1]                                      |VS[1]                                      
-VS[0]                                      |VS[0]                                      
-VINQ                                       |VINQ                                       
-VINQB                                      |VINQB                                      
-VDD                                        |VDD                                        
-VSS                                        |VSS                                        
 VST[5]                                     |VST[5]                                     
 VST[3]                                     |VST[3]                                     
 VST[2]                                     |VST[2]                                     
@@ -309,6 +301,14 @@ VST[6]                                     |VST[6]
 VST[4]                                     |VST[4]                                     
 VST[7]                                     |VST[7]                                     
 VOUT                                       |VOUT                                       
+VINI                                       |VINI                                       
+VINIB                                      |VINIB                                      
+VS[1]                                      |VS[1]                                      
+VS[0]                                      |VS[0]                                      
+VINQ                                       |VINQ                                       
+VINQB                                      |VINQB                                      
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes 8xPI and 8xPI are equivalent.
