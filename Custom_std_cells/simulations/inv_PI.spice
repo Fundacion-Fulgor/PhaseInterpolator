@@ -1,6 +1,0 @@
-** sch_path: /foss/designs/PhaseInterpolator/Custom_std_cells/inv_PI.sch
-.subckt inv_PI VDD VOUT VIN VSS
-*.PININFO VDD:B VSS:B VOUT:O VIN:I
-M2 VOUT VIN VDD VDD sg13_lv_pmos w=0.45u l=0.13u ng=3 m=1
-M1 VOUT VIN VSS VSS sg13_lv_nmos w=0.3u l=0.13u ng=2 m=1
-.ends

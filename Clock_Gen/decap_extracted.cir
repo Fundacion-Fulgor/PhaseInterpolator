@@ -1,8 +1,0 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 06/03/2026 00:57
-
-.SUBCKT decap CTRL VOUTDN VDD VOUTDP
-M$1 CTRL VOUTDN CTRL VDD sg13_lv_pmos L=0.13u W=32u AS=6.68p AD=6.08p PS=49.36u
-+ PD=44.16u
-M$9 CTRL VOUTDP CTRL VDD sg13_lv_pmos L=0.13u W=32u AS=6.08p AD=6.68p PS=44.16u
-+ PD=49.36u
-.ENDS decap
