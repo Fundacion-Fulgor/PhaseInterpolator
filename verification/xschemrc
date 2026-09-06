@@ -1,1 +1,1 @@
-source ../xschemrc
+source [file dirname [info script]]/../xschemrc
